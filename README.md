@@ -46,3 +46,36 @@ Each page is a half-arch rather than a table:
 Geometry is calibrated per page from the yellow ring artwork and the printed palier
 labels, so a re-issued PDF recalibrates itself instead of breaking on shifted
 coordinates.
+
+## Extracting the scoring rules
+
+`decompo-note.pdf` holds one page per apparatus, each split into columns — one per
+*évolution* (A1, A2, B1, B2, B3, C1, C2, C3; A2 and C1 are women's only, so the
+men's apparatus run six columns wide).
+
+```sh
+uv run scripts/extract_decompo.py data/pdf/decompo-note.pdf data/csv/decompo-note.csv
+```
+
+Two encodings make these pages harder to read than they look:
+
+- **palier grids always print all eight paliers**; an unavailable one is greyed and
+  struck through with two diagonal rules. An earlier draft of the grids also
+  survives in the file as a full set of crosses hidden *beneath* the coloured
+  panels, so painting order decides whether a cross actually prints.
+- **the display font is outlined** on pages 4-9, so apparatus names and some column
+  captions no longer exist as text. Names come from page order and from each
+  discipline's fixed series of évolutions; the captions that did survive are used to
+  check that alignment rather than to drive it.
+
+Page 1 gives the scoring formula — one point per Tronc Commun requirement, plus the
+chosen valorisations at three points each for the ones flagged `(*)` and two for the
+rest — and the total it should reach (A → 13, B1 → 14, B2/B3/C → 15). The script
+recomputes that total per column and flags any that misses, which is how the three
+draft inconsistencies in the current issue were found:
+
+| Column | Read | Expected | Cause |
+| --- | --- | --- | --- |
+| Arçons C2 | 14 | 15 | one valorisation flagged `(*)` where later évolutions have two |
+| Barre fixe A1 | 15 | 13 | no `CHOISIR n VALORISATIONS PARMIS LES m` banner printed |
+| Barre fixe B1 | 13 | 14 | one valorisation flagged `(*)` instead of two |
