@@ -16,12 +16,24 @@ itself rather than relying on hardcoded coordinates.
 import argparse
 import csv
 import math
+import pathlib
 import re
 
 import pymupdf
 
-RING_FILL = (0.99, 0.73, 0.19)
-RING_TOLERANCE = 0.06
+# One PDF per apparatus, so its name comes from the file rather than the banner.
+AGRES = {
+    "sol": "Sol",
+    "saut": "Saut",
+    "barres-asym": "Barres asymétriques",
+    "poutre": "Poutre",
+    "arcons": "Arçons",
+    "anneaux": "Anneaux",
+    "barres-paralleles": "Barres parallèles",
+    "barre-fixe": "Barre fixe",
+}
+WHITE = 0xFFFFFF
+CAPTION_GAP = 15
 PALIER_LABEL = re.compile(r"^P\d$")
 ELEMENT_NUMBER = re.compile(r"^\d+\+?$")
 NOISE = ("Imprimerie", "EN COURS DE VALIDATION")
@@ -29,24 +41,21 @@ HEADER_BOTTOM = 62
 MONTH_YEAR = r"\b(JANV|F[EÉ]VR|MARS|AVRIL|MAI|JUIN|JUIL|AO[UÛ]T|SEPT|OCT|NOV|D[EÉ]C)[A-Z]*\.?\s*\d{2}\b"
 
 
-def close_to_ring_fill(fill) -> bool:
-    if fill is None or len(fill) != 3:
-        return False
-    return all(abs(a - b) < RING_TOLERANCE for a, b in zip(fill, RING_FILL))
-
-
 def calibrate(page):
-    """Return (centre_x, baseline_y, outer_radius) from the widest yellow ring."""
-    rings = [
-        d["rect"]
-        for d in page.get_drawings()
-        if close_to_ring_fill(d.get("fill"))
-        and d["rect"].width > 400
-        and d["rect"].height > 200
-    ]
-    if not rings:
+    """Return (centre_x, baseline_y, outer_radius) from the widest ring.
+
+    Each apparatus prints its arch in its own colour, so the rings are recognised
+    as the largest group of same-coloured shapes big enough to span an arch.
+    """
+    groups: dict[tuple, list] = {}
+    for drawing in page.get_drawings():
+        fill, rect = drawing.get("fill"), drawing["rect"]
+        if fill is None or rect.width < 400 or rect.height < 200:
+            continue
+        groups.setdefault(tuple(round(c, 2) for c in fill), []).append(rect)
+    if not groups:
         return None
-    outer = max(rings, key=lambda r: r.width)
+    outer = max(max(groups.values(), key=len), key=lambda r: r.width)
     return (outer.x0 + outer.x1) / 2, outer.y1, outer.width / 2
 
 
@@ -78,9 +87,22 @@ def rebuild_line(line) -> str:
     return "".join(c for _, c in sorted(glyphs))
 
 
-def side_captions(page, centre_x, baseline_y):
-    """Reconstruct the large rotated family captions on each half of the arch."""
-    halves: dict[str, list[str]] = {"gauche": [], "droite": []}
+def angle_of(x, y, centre_x, baseline_y) -> float:
+    """Bearing of a point on the arch, from 0° at the right foot to 180° at the left."""
+    return math.degrees(math.atan2(baseline_y - y, x - centre_x))
+
+
+def family_captions(page, centre_x, baseline_y):
+    """The large rotated family captions, as (angle, name) along the arch.
+
+    A caption is broken into fragments that each form their own text block, so
+    they are regrouped by bearing: fragments of one caption sit a few degrees
+    apart while distinct captions stand tens of degrees apart.
+
+    Some pages carry a caption left over from an earlier layout, painted white on
+    white (SOL p.3, right half); it does not print, so it is dropped.
+    """
+    fragments = []
     for block in page.get_text("rawdict")["blocks"]:
         if block["type"] != 0:
             continue
@@ -88,43 +110,93 @@ def side_captions(page, centre_x, baseline_y):
             span = line["spans"][0]
             if span["size"] < 15 or "Phenomena" not in span["font"]:
                 continue
-            x0, y0, x1, y1 = line["bbox"]
-            if not (HEADER_BOTTOM < (y0 + y1) / 2 < baseline_y):
+            if span["color"] == WHITE:
                 continue
-            side = "gauche" if (x0 + x1) / 2 < centre_x else "droite"
-            halves[side].append(rebuild_line(line))
+            x0, y0, x1, y1 = line["bbox"]
+            middle = (y0 + y1) / 2
+            if not (HEADER_BOTTOM < middle < baseline_y):
+                continue
+            angle = angle_of((x0 + x1) / 2, middle, centre_x, baseline_y)
+            fragments.append((angle, rebuild_line(line)))
 
-    return {
-        side: re.sub(r"\s+", " ", "".join(parts)).strip()
-        for side, parts in halves.items()
-    }
+    captions, previous = [], None
+    for angle, text in sorted(fragments, reverse=True):
+        if previous is not None and previous - angle <= CAPTION_GAP:
+            captions[-1][1].append(text)
+        else:
+            captions.append((angle, [text]))
+        previous = angle
+    return [(a, re.sub(r"\s+", " ", "".join(p)).strip()) for a, p in captions]
 
 
-def belongs_to_arch(caption, arche) -> bool:
-    """A family is a subdivision of the arch, so its name is echoed in the title.
+def sector_count(captions) -> int:
+    """How many equal sectors the arch is divided into.
 
-    Some pages carry an invisible caption left over from an earlier layout
-    (SOL p.3 right half); this discards it instead of inventing a family.
+    Each sector carries at most one caption, so a half holding two captions means
+    the halves are themselves subdivided (ANNEAUX 'Force / Croix / ATR / Appuis').
     """
-    words = {w for w in re.findall(r"\w+", caption.lower()) if len(w) > 2}
-    return bool(words & set(re.findall(r"\w+", arche.lower())))
+    for side in (True, False):
+        if sum(1 for angle, _ in captions if (angle > 90) == side) > 1:
+            return 4
+    return 2
 
 
-def page_header(page):
-    """Read the arch identity from the top banner: number, agrès, arch name."""
+def sector_of(angle, count) -> int:
+    return min(max(int((180 - angle) / (180 / count)), 0), count - 1)
+
+
+def family_at(angle, captions, count) -> str:
+    """The family an element belongs to, or none when its sector is uncaptioned."""
+    wanted = sector_of(angle, count)
+    return next(
+        (text for a, text in captions if sector_of(a, count) == wanted),
+        "",
+    )
+
+
+def family_of(chunk, captions, count, centre_x, baseline_y):
+    """The family of an element, and whether its words agree on it.
+
+    An element normally sits well inside one sector, so all its words agree. Some
+    pages draw no separator at the apex and centre a few labels across it; there
+    the family really is undecided, and a straddle is reported rather than settled
+    on a fraction of a degree of centroid.
+    """
+    families = {
+        family_at(
+            angle_of((x0 + x1) / 2, (y0 + y1) / 2, centre_x, baseline_y),
+            captions,
+            count,
+        )
+        for _, (x0, y0, x1, y1) in chunk
+    }
+    if len(families) == 1:
+        return families.pop(), False
+    return "", True
+
+
+def page_header(page, agres):
+    """Read the arch number and name from the top banner.
+
+    The banner also names the apparatus, but not always in the same place — on
+    Anneaux it trails the arch name instead of leading it — and a name of several
+    words does not survive being split on whitespace. The apparatus is already
+    known from the file, so it is removed from the banner rather than parsed out.
+
+    Arch numbers run to two digits, whereas the digits inside a name count a
+    family or an approach ("ACROS 2", "APPEL 1 PIED"), which keeps them apart.
+    """
     parts = [w[4] for w in page.get_text("words") if (w[1] + w[3]) / 2 < HEADER_BOTTOM]
     text = re.sub(r"\s+", " ", " ".join(parts)).strip()
-    text = re.sub(MONTH_YEAR, "", text, flags=re.IGNORECASE).strip()
+    text = re.sub(MONTH_YEAR, "", text, flags=re.IGNORECASE)
+    text = re.sub(rf"\b{re.escape(agres)}s?\b", "", text, count=1, flags=re.IGNORECASE)
+
+    numero = re.search(r"\b\d{2,}\b", text)
+    if numero:
+        text = text[: numero.start()] + text[numero.end() :]
 
     chunks = [c.strip() for c in text.split(" I ") if c.strip()]
-    numero = chunks.pop(0) if chunks and chunks[0].isdigit() else ""
-    if not chunks:
-        return numero, "", ""
-
-    head = chunks[0].split()
-    agres = head[0] if head else ""
-    arche = " / ".join(filter(None, [" ".join(head[1:]), *chunks[1:]]))
-    return numero, agres, arche
+    return (numero.group() if numero else ""), " / ".join(chunks)
 
 
 def is_element_start(words, i) -> bool:
@@ -180,12 +252,13 @@ def ring_step(rings) -> float:
     return sum(gaps) / len(gaps) if gaps else 67.5
 
 
-def controles(palier, libelle):
+def controles(palier, libelle, famille_incertaine):
     """Flag rows a human needs to look at. Cheap consistency checks, not guesses."""
     flags = []
     if palier in ("", "HORS-ANNEAU"):
         flags.append("palier indéterminé")
-
+    if famille_incertaine:
+        flags.append("famille incertaine")
     if not libelle:
         flags.append("libellé vide")
     return " ; ".join(flags)
@@ -199,18 +272,15 @@ def parse_label(text):
     return match.group(1), (match.group(2) or "").lower(), match.group(3).strip()
 
 
-def extract_page(page, page_no):
+def extract_page(page, page_no, agres):
     geometry = calibrate(page)
     if geometry is None:
         return []
     centre_x, baseline_y, outer_radius = geometry
     rings = palier_rings(page, centre_x, baseline_y)
-    numero, agres, arche = page_header(page)
-    captions = {
-        side: caption
-        for side, caption in side_captions(page, centre_x, baseline_y).items()
-        if belongs_to_arch(caption, arche)
-    }
+    numero, arche = page_header(page, agres)
+    captions = family_captions(page, centre_x, baseline_y)
+    sectors = sector_count(captions)
     strip_top = baseline_y + 18
 
     blocks: dict[int, list] = {}
@@ -231,7 +301,13 @@ def extract_page(page, page_no):
             # Elements in the PRÉ-REQUIS / NOMADE strip sit outside the arch, so the
             # left/right split there carries no family meaning.
             in_strip = palier in ("PRÉ-REQUIS", "NOMADE")
-            famille = "" if in_strip else captions.get(side, "")
+            famille, incertaine = family_of(
+                chunk, captions, sectors, centre_x, baseline_y
+            )
+            # The strip sits outside the arch, and the P1 disc is narrower than a
+            # label, so neither carries a family.
+            if in_strip or palier == "P1":
+                famille, incertaine = "", False
             rows.append(
                 {
                     "page": page_no,
@@ -248,7 +324,7 @@ def extract_page(page, page_no):
                     "x": round(cx, 1),
                     "y": round(cy, 1),
                     "rayon": round(radius, 1) if radius is not None else "",
-                    "controle": controles(palier, libelle),
+                    "controle": controles(palier, libelle, incertaine),
                 }
             )
     return rows
@@ -259,7 +335,11 @@ def main():
     parser.add_argument("pdf")
     parser.add_argument("out")
     parser.add_argument("--pages", default="")
+    parser.add_argument("--agres", default="")
     args = parser.parse_args()
+
+    stem = pathlib.Path(args.pdf).stem.removeprefix("arches-")
+    agres = args.agres or AGRES.get(stem, stem)
 
     doc = pymupdf.open(args.pdf)
     wanted = (
@@ -270,7 +350,7 @@ def main():
 
     rows = []
     for page_no in wanted:
-        page_rows = extract_page(doc[page_no - 1], page_no)
+        page_rows = extract_page(doc[page_no - 1], page_no, agres)
         rows.extend(page_rows)
         print(f"page {page_no}: {len(page_rows)} éléments")
 
