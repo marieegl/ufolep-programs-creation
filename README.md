@@ -36,21 +36,24 @@ npm run data     # rebuild src/data/catalog.json from the CSVs and the rules
 npm run test     # check the engine against the notes published on page 1
 ```
 
-## Publishing
+## Sharing the app
 
-Two workflows, because the two ways of getting the app have different requirements.
+The app is handed over as the file itself: `dist/index.html` is self-contained, so it
+travels by mail or by USB stick and opens on a double-click, with no network, install or
+account. There is nothing hosted — this is a calculator for a handful of coaches, not a
+public site. Note that nothing is saved either: a reload clears the chosen elements.
 
-`build.yml` runs on every push and pull request. Besides the typecheck, the tests and
-the build, it re-derives the catalog and diffs it against the committed copy: the
-catalog is checked in so the app builds without Python, but it is generated, and an
-edited CSV that nobody re-resolved would otherwise stay invisible until the next person
-ran `npm run data`. Each run attaches `dist/index.html` as an artifact — that single
-file is what a coach without a GitHub account is handed.
+```sh
+npm run build
+cp dist/index.html ~/Desktop/"Note de départ NPT UFOLEP.html"
+```
 
-`pages.yml` publishes the same build to GitHub Pages, and runs **on demand only**:
-Pages on a private repository needs a paid plan, so a deploy that cannot succeed should
-not turn `main` red. It enables Pages itself on its first successful run. Once one has
-gone through — or the repository is made public — give it a `push` trigger on `main`.
+`.github/workflows/build.yml` runs on every push and pull request. Besides the
+typecheck, the tests and the build, it re-derives the catalog and diffs it against the
+committed copy: the catalog is checked in so the app builds without Python, but it is
+generated, and an edited CSV that nobody re-resolved would otherwise stay invisible
+until the next person ran `npm run data`. Each run also attaches `dist/index.html`, so a
+built copy of any revision can be downloaded without a local toolchain.
 
 ## Extracting the elements
 
