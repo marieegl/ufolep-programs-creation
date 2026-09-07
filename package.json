@@ -3,7 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "data": "uv run scripts/build_data.py data/csv src/data/catalog.json",
+    "catalog": "uv run scripts/build_data.py data/csv src/data/catalog.json data/criteres.csv",
+    "resolve": "uv run scripts/resolve_criteres.py data/criteres.csv src/data/catalog.json data/csv/criteres-elements.csv",
+    "data": "npm run catalog && npm run resolve && npm run catalog",
     "dev": "vite",
     "build": "npm run data && tsc --noEmit && vite build",
     "preview": "vite preview",

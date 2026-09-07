@@ -1,0 +1,335 @@
+agres,genre,texte,type,nombre,confirmation,palier,arche,famille,libelle,exclure,exclure_arche,attendu,commentaire
+Saut,valorisation,Saut à 1m,manuel,1,,,,,,,,,"hauteur de l'agrès, pas un élément"
+Saut,valorisation,Saut tremplin,manuel,1,,,,,,,,,réglage de l'agrès ; distinct du saut avec un élément sur le tremplin
+Saut,valorisation,2 sauts à 1.20 m (min.),manuel,2,,,,,,,,,hauteur de l'agrès
+Saut,valorisation,2 sauts de 1er envol différents,familles,2,,,,saut par,,,,,le 1er envol est ce que nomme la famille
+Saut,valorisation,Saut avec rotation longitudinale ou transversale,elements,1,,,,,rotation longitudinale|rotation transversale,,,,
+Saut,valorisation,Saut avec un élément sur le tremplin,elements,1,,,,,tremplin,,,,
+Saut,valorisation,En cours de Validation,manuel,1,,,,,,,,,texte non rédigé dans le brouillon
+Sol,exigence,4 Arches,arches,4,,,,,,,,,
+Sol,exigence,6 à 8 éléments,total,6-8,,,,,,,,,
+Sol,exigence,1 souplesse,elements,1,,,,souplesse,,,,,
+Sol,exigence,2 acros,elements,2,,,acros,,,,,,
+Sol,valorisation,1 ATR Départ et retour en fente,elements,1,,,,,atr.*fente|fente.*atr,,,,
+Sol,valorisation,1 saut,elements,1,,,sauts gymniques,,,,,,
+Sol,valorisation,1 élément P2,elements,1,,P2,,,,,,,
+Sol,valorisation,2 acros de sens différents,familles,2,,,acros,,,,,,les familles d'une arche acro sont En avant / En arrière
+Sol,exigence,1 saut,elements,1,,,sauts gymniques,,,,,,
+Sol,valorisation,1 saut P2 (min.),elements,1,,P2+,sauts gymniques,,,,,,
+Sol,valorisation,Sursaut + fente + roue,elements,1,oui,,,,roue,,,,seule la roue est un élément du catalogue ; la liaison reste à confirmer
+Sol,exigence,1 PG ou 1 FORCE,elements,1,oui,,,force,,,,,PG n'est défini dans aucun des PDF
+Sol,exigence,1 LA,manuel,1,,,,,,,,,liaison acrobatique : qualité de l'enchaînement
+Sol,valorisation,1 ATR tenu 2’’ Départ et retour en fente,elements,1,oui,,,,atr.*fente|fente.*atr,,,,le maintien 2'' est une qualité d'exécution
+Sol,valorisation,1 LAE dont 1 élément P3 (min.),elements,1,oui,P3+,acros,,,,,,LAE : liaison acro avec envol ; la liaison reste à confirmer
+Sol,valorisation,1 FORCE ou 1 saut écart P3 (min.),elements,1,,P3+,,force,,,,,
+Sol,valorisation,1 FORCE ou 1 saut écart P3 (min.),elements,1,,P3+,sauts gymniques,,ecart,,,,
+Sol,valorisation,1 élément acro avec envol P3 (min.),elements,1,oui,P3+,acros,,,,,,l'envol n'est pas marqué dans le catalogue
+Sol,exigence,8 à 10 éléments,total,8-10,,,,,,,,,
+Sol,exigence,2 LA distinctes,manuel,2,,,,,,,,,liaisons acrobatiques
+Sol,exigence,1 élément P4,elements,1,,P4,,,,,,,
+Sol,valorisation,1 LAE dont 1 acro avec appui manuel,elements,1,oui,,acros,,appui|roue|renversement|rondade,,,,« appui manuel » ne figure pas tel quel dans les libellés
+Sol,valorisation,1 LAE dont 1 élément P4 (min.),elements,1,oui,P4+,acros,,,,,,
+Sol,valorisation,1 salto en P4,elements,1,,P4,,,salto,,,,
+Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,oui,,acros,,,,,,
+Sol,exigence,1 élément P5,elements,1,,P5,,,,,,,
+Sol,valorisation,1 LAE dont 1 salto appel 2 pieds,elements,1,oui,,acros,,salto,,,,l'appel n'est pas marqué sur les éléments acro
+Sol,valorisation,1 LAE dont 1 élément P5,elements,1,oui,P5,acros,,,,,,
+Sol,valorisation,1 FORCE ou 1 Saut écart P4 (min.),elements,1,,P4+,,force,,,,,
+Sol,valorisation,1 FORCE ou 1 Saut écart P4 (min.),elements,1,,P4+,sauts gymniques,,ecart,,,,
+Sol,valorisation,1 salto en P5,elements,1,,P5,,,salto,,,,
+Sol,exigence,8 à 12 éléments,total,8-12,,,,,,,,,
+Sol,exigence,1 élément P5 (min.),elements,1,,P5+,,,,,,,
+Sol,valorisation,1 salto position tendue,elements,1,,,,,salto.*tendu,,,,
+Sol,valorisation,1 LAE de 3 éléments différents dont 1 P5 (min.),elements,1,oui,P5+,acros,,,,,,les 3 éléments de la liaison restent à confirmer
+Sol,valorisation,1 FORCE ou 1 SAUT P4 (min.),elements,1,,P4+,,force,,,,,
+Sol,valorisation,1 FORCE ou 1 SAUT P4 (min.),elements,1,,P4+,sauts gymniques,,,,,,
+Sol,valorisation,1 élément acro avec envol P5 (min.),elements,1,oui,P5+,acros,,,,,,
+Sol,valorisation,2 salti appel 2 pieds liés directement ou indirectement,elements,2,oui,,,,salto,,,,
+Sol,exigence,1 élément P6 (min.),elements,1,,P6+,,,,,,,
+Sol,valorisation,1 salto avec rotation longitudinale 360°,elements,1,,,,,salto.*360|vrille,,,,
+Sol,valorisation,1 FORCE ou 1 SAUT P5 (min.),elements,1,,P5+,,force,,,,,
+Sol,valorisation,1 FORCE ou 1 SAUT P5 (min.),elements,1,,P5+,sauts gymniques,,,,,,
+Sol,valorisation,1 élément acro P6 (min.),elements,1,,P6+,acros,,,,,,
+Sol,exigence,1 élément P7,elements,1,,P7,,,,,,,
+Sol,valorisation,"1 acro avec double rotation longitudinale ou transversale, avec envol",elements,1,oui,,acros,,double,,,,
+Sol,valorisation,1 LAE de 3 éléments différents dont 1 P6 (min.),elements,1,oui,P6+,acros,,,,,,
+Sol,valorisation,1 FORCE ou 1 SAUT P6 (min.),elements,1,,P6+,,force,,,,,
+Sol,valorisation,1 FORCE ou 1 SAUT P6 (min.),elements,1,,P6+,sauts gymniques,,,,,,
+Sol,valorisation,1 élément acro P7,elements,1,,P7,acros,,,,,,
+Sol,valorisation,2 salti liés dont 1 P5 (min.),elements,2,oui,,,,salto,,,,le palier ne porte que sur l'un des deux salti ; laissé au coach
+Barres asymétriques,exigence,4 Arches,arches,4,,,,,,,,,
+Barres asymétriques,exigence,6 à 8 éléments,total,6-8,,,,,,,,,
+Barres asymétriques,exigence,1 élément BI et 1 BS,manuel,2,,,,,,,,,"BI / BS (barre inférieure, supérieure) ne figurent pas dans les libellés"
+Barres asymétriques,exigence,1 élément des arches des balancés,elements,1,,,balances,,,,,,
+Barres asymétriques,valorisation,1 élément des arches Balancés (hors sortie),elements,1,,,balances,,,sortie,,,
+Barres asymétriques,valorisation,1 mvt en 2 parties avec interruption (BI ou BS ou inversement ),manuel,1,,,,,,,,,qualité de l'enchaînement
+Barres asymétriques,valorisation,1 éléments de l’arche des élans,elements,1,,,elans,,,,,,
+Barres asymétriques,valorisation,1 élément de l’arche venir à l’appui,elements,1,,,venir a l appui,,,,,,
+Barres asymétriques,valorisation,Enchainement de 2 balancers (av. et arr) aide possible au démarrage du bal. av. (hors sortie),elements,2,oui,,balances,,,sortie,,,
+Barres asymétriques,valorisation,1 sauter à l’appui,elements,1,oui,,venir a l appui,,saut,,,,
+Barres asymétriques,valorisation,1 élément de l’arche des élans,elements,1,,,elans,,,,,,
+Barres asymétriques,valorisation,1 pose de pieds à la station debout puis sortie en saut droit vers l’avant,manuel,1,,,,,,,,,liaison décrite hors catalogue
+Barres asymétriques,exigence,1 élément des arches venir à l’appui,elements,1,,,venir a l appui,,,,,,
+Barres asymétriques,valorisation,Enchaînement de deux balancers (av et ar ou inversement x2) (hors sortie),elements,2,oui,,balances,,,sortie,,,
+Barres asymétriques,valorisation,1 élément P2 (min.),elements,1,,P2+,,,,,,,
+Barres asymétriques,valorisation,1 prise d’élan tour d’appui arrière,elements,1,oui,,,,prise d elan|tour d appui,,,,
+Barres asymétriques,valorisation,1 changement de barre BI - BS,manuel,1,,,,,,,,,le changement de barre ne figure pas dans les libellés
+Barres asymétriques,valorisation,1 sortie amenée du balancé arrière,elements,1,oui,,,sorties,,,,,l'arche des balancés arrière ne porte pas de famille Sorties
+Barres asymétriques,exigence,1 changement de barre BI-BS,manuel,1,,,,,,,,,le changement de barre ne figure pas dans les libellés
+Barres asymétriques,exigence,1 élément des arches des élans,elements,1,,,elans,,,,,,
+Barres asymétriques,valorisation,1 élément P3 (min.),elements,1,,P3+,,,,,,,
+Barres asymétriques,valorisation,1 rotation P3 (min.),elements,1,,P3+,rotations,,,,,,
+Barres asymétriques,valorisation,Bascule prise d’élan à l’horizontale,elements,1,oui,,,,bascule,,,,la hauteur de la prise d'élan est une qualité d'exécution
+Barres asymétriques,valorisation,1 sortie P3 (min.),elements,1,,P3+,,sorties,,,,,
+Barres asymétriques,exigence,8 à 10 éléments,total,8-10,,,,,,,,,
+Barres asymétriques,valorisation,1 élément en balancé av ou arr (hors sortie),elements,1,,,balances,,,sortie,,,
+Barres asymétriques,valorisation,2 élements P3 (min.),elements,2,,P3+,,,,,,,
+Barres asymétriques,valorisation,Bascule P4 prise d’élan au dessus de l’horizontale,elements,1,oui,P4,,,bascule,,,,
+Barres asymétriques,valorisation,1 sortie P4 (min.),elements,1,,P4+,,sorties,,,,,
+Barres asymétriques,valorisation,1 lâcher,manuel,1,,,,,,,,,« lâcher » n'apparaît dans aucun libellé
+Barres asymétriques,valorisation,1 élément P4 (min.),elements,1,,P4+,,,,,,,
+Barres asymétriques,valorisation,1 rotation P4 (min.),elements,1,,P4+,rotations,,,,,,
+Barres asymétriques,valorisation,1 élément fini à l’ATR,elements,1,oui,,,,atr,,,,
+Barres asymétriques,valorisation,1 sortie P4 (min.) amené du balancé,elements,1,,P4+,balances,sorties,,,,,
+Barres asymétriques,exigence,1 élément à l’ATR,elements,1,,,,,atr,,,,
+Barres asymétriques,valorisation,1 grand tour,elements,1,,,,,grand tour,,,,
+Barres asymétriques,valorisation,1 élément P5 (min.),elements,1,,P5+,,,,,,,
+Barres asymétriques,valorisation,Bascule avec un élément fini à l’ATR,elements,1,oui,,,,bascule,,,,
+Barres asymétriques,valorisation,1 sortie P5 (min.),elements,1,,P5+,,sorties,,,,,
+Barres asymétriques,exigence,2 éléments à l’ATR,elements,2,,,,,atr,,,,
+Barres asymétriques,valorisation,1 lâcher P5 (min.),manuel,1,,,,,,,,,« lâcher » n'apparaît dans aucun libellé
+Barres asymétriques,valorisation,1 élément en balancé av ou arr P5 (min.) (hors sortie),elements,1,,P5+,balances,,,sortie,,,
+Barres asymétriques,valorisation,1 rotation P6 (min.),elements,1,,P6+,rotations,,,,,,
+Barres asymétriques,valorisation,"1 ATR ou grand tour, avec rotation 180° (min.)",elements,1,oui,,,,atr|grand tour,,,,
+Barres asymétriques,valorisation,1 sortie P5 (min.) amené d’un élément P5 (min.),elements,1,oui,P5+,,sorties,,,,,
+Poutre,exigence,4 Arches,arches,4,,,,,,,,,
+Poutre,exigence,6 à 8 éléments,total,6-8,,,,,,,,,
+Poutre,exigence,1 acro en poutre haute,elements,1,,,acro [12],,,,,,l'arche ACCRO POUTRE MOUSSE est écartée par le motif
+Poutre,exigence,2 sauts,elements,2,,,sauts appel,,,,,,
+Poutre,valorisation,1 élément de l’arche des pivots,elements,1,,,pivot,,,,,,
+Poutre,valorisation,1 cabriole,elements,1,,,,,cabriole,,,,
+Poutre,valorisation,ATR 1 jambe ou placement du dos,elements,1,,,,,1 jambe|placement du dos,,,,
+Poutre,valorisation,1 demi pivot sur 1 jambe,elements,1,oui,,pivot,,,,,,le demi-tour et la jambe d'appui ne sont pas marqués
+Poutre,valorisation,1 saut appel 2 pieds,elements,1,,,sauts appel 2 pieds,,,,,,
+Poutre,valorisation,1 ATR P2,elements,1,,P2,,atr,,,,,
+Poutre,exigence,2 acros en poutre haute,elements,2,,,acro [12],,,,,,
+Poutre,valorisation,1 élément pivot P3 (min.),elements,1,,P3+,pivot,,,,,,
+Poutre,valorisation,1 saut P3 (min.),elements,1,,P3+,sauts appel,,,,,,
+Poutre,valorisation,1 acro P2 (min.),elements,1,,P2+,acro [12],,,,,,
+Poutre,valorisation,1 sortie P3 (min.),manuel,1,,,,,,,,,la Poutre n'a aucune arche ni famille de sorties dans le catalogue
+Poutre,exigence,5 Arches,arches,5,,,,,,,,,
+Poutre,exigence,8 à 10 éléments,total,8-10,,,,,,,,,
+Poutre,exigence,1 pivots P4 (min.),elements,1,,P4+,pivot,,,,,,
+Poutre,exigence,1 élément P3,elements,1,,P3,,,,,,,
+Poutre,valorisation,2 éléments gymniques P3 (min.) dans le mouvement,elements,2,,P3+,atr et maintien|pivot|sauts appel,,,,,,« gymnique » = tout ce qui n'est pas acrobatique
+Poutre,valorisation,1 saut avec écart antéro,elements,1,,,sauts appel,,ecart,,,,
+Poutre,valorisation,1 élément acro sur la poutre P3 (min.),elements,1,,P3+,acro [12],,,,,,
+Poutre,exigence,3 acros en poutre haute,elements,3,,,acro [12],,,,,,
+Poutre,exigence,1 élément P4,elements,1,,P4,,,,,,,
+Poutre,valorisation,1 LG ou LM,manuel,1,,,,,,,,,liaison gymnique ou mixte
+Poutre,valorisation,1 acro sur la poutre P4 (min.),elements,1,,P4+,acro [12],,,,,,
+Poutre,valorisation,1 sortie P4 (min.),manuel,1,,,,,,,,,aucune sortie au catalogue de la Poutre
+Poutre,exigence,1 élément P5,elements,1,,P5,,,,,,,
+Poutre,valorisation,1 LG ou LM dont 2 P3 (min.),manuel,1,,,,,,,,,liaison gymnique ou mixte
+Poutre,valorisation,1 saut avec 1 rotation à 180° (min.),elements,1,oui,,sauts appel,,180|tour,,,,
+Poutre,valorisation,1 LA sur poutre,manuel,1,,,,,,,,,liaison acrobatique
+Poutre,valorisation,1 élément acro P5 (min.) sur la poutre,elements,1,,P5+,acro [12],,,,,,
+Poutre,valorisation,1 sortie avec liaison acro,manuel,1,,,,,,,,,aucune sortie au catalogue de la Poutre
+Poutre,exigence,1 élément P6,elements,1,,P6,,,,,,,
+Poutre,valorisation,1 LG ou LM dont 2 P4 (min.),manuel,1,,,,,,,,,liaison gymnique ou mixte
+Poutre,valorisation,1 saut avec 1 rotation à 180°,elements,1,oui,,sauts appel,,180|tour,,,,
+Poutre,valorisation,1 LA dont 1 élément avec envol sur poutre,manuel,1,,,,,,,,,liaison acrobatique ; l'envol n'est pas marqué
+Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,oui,,acro [12],,,,,,l'envol n'est pas marqué
+Poutre,valorisation,1 sortie avec liaison acro dont un élément P5 (min.),manuel,1,,,,,,,,,aucune sortie au catalogue de la Poutre
+Poutre,exigence,1 élément P7,elements,1,,P7,,,,,,,
+Poutre,valorisation,1 saut écart avec 1 rotation à 180°,elements,1,oui,,sauts appel,,ecart,,,,
+Poutre,valorisation,1 LA 2 éléments dont 1 salto sur poutre,elements,1,oui,,acro [12],,salto,,,,
+Poutre,valorisation,1 salto sur poutre P6 (min.),elements,1,,P6+,acro [12],,salto,,,,
+Poutre,valorisation,1 sortie avec liaison acro dont 1 élément P5 (min.),manuel,1,,,,,,,,,aucune sortie au catalogue de la Poutre
+Poutre,valorisation,Poutre mousse : 1 ATR (PR),elements,1,,PR,accro poutre mousse,,atr,,,,
+Poutre,valorisation,Poutre mousse : ROUE,elements,1,,,accro poutre mousse,,^roue,,,,« ou roue arabe » est une souplesse avant : le motif est ancré
+Poutre,valorisation,Poutre mousse : Acro P2 (min.),elements,1,,P2+,accro poutre mousse,,,,,,
+Poutre,valorisation,Poutre mousse : Acro P3 (min.),elements,1,,P3+,accro poutre mousse,,,,,,
+Poutre,valorisation,Poutre mousse : Acro P4 (min.),elements,1,,P4+,accro poutre mousse,,,,,,
+Poutre,valorisation,Poutre mousse : 1 LA dont 1 élément avec envol,elements,2,oui,,accro poutre mousse,,,,,,liaison acrobatique de 2 éléments ; l'envol n'est pas marqué dans les libellés
+Poutre,valorisation,Poutre mousse : 1 LA 2 éléments dont 1 salto,elements,1,oui,,accro poutre mousse,,salto,,,,
+Poutre,valorisation,Poutre mousse : 1 LA de 2 éléments avec envol dont 1 salto,elements,1,oui,,accro poutre mousse,,salto,,,,
+Arçons,exigence,3 Arches,arches,3,,,,,,,,,
+Arçons,exigence,6 à 8 éléments,total,6-8,,,,,,,,,
+Arçons,exigence,1 élément sur champignon,elements,1,,,champignon,,,,,,
+Arçons,exigence,1 position dorsale,elements,1,,,,,dorsal,,,,
+Arçons,valorisation,1 élément arche péda,elements,1,,,peda,,,,,,
+Arçons,valorisation,1 élément arche champignon P1,elements,1,,P1,champignon,,,,,,
+Arçons,valorisation,1 cercle sur champignon,elements,1,,,champignon,,cercle,,,,
+Arçons,valorisation,1 élément arche péda (min.) P2,elements,1,,P2,peda,,,,,,
+Arçons,exigence,3 arches,arches,3,,,,,,,,,
+Arçons,exigence,1 cercle,elements,1,,,,,cercle,,,,
+Arçons,exigence,1 élan,elements,1,,,elan,,,,,,
+Arçons,valorisation,Utiliser 2 parties de cheval (1 élément sur chaque),manuel,2,,,,,,,,,les parties du cheval ne sont pas marquées
+Arçons,valorisation,1 élément arche péda P3,elements,1,,P3,peda,,,,,,
+Arçons,valorisation,3 cercles (min.) sur champignon,elements,3,oui,,champignon,,cercle,,,,
+Arçons,valorisation,1 élément élan P2,elements,1,,P2,elan,,,,,,
+Arçons,valorisation,1 élément P4 (hors arche champignon),elements,1,,P4,,,,,champignon,,
+Arçons,exigence,3 arches (péda NON),arches,3,,,,,,,peda,,
+Arçons,exigence,8 à 10 éléments,total,8-10,,,,,,,,,
+Arçons,exigence,3 cercles enchainés,elements,3,oui,,,,cercle,,,,
+Arçons,exigence,1 sortie,elements,1,,,,,sortie,,,,
+Arçons,valorisation,1 élément des cercles sur 2 parties de cheval,manuel,1,,,,,,,,,les parties du cheval ne sont pas marquées
+Arçons,valorisation,1 élément arche cercles transversaux,elements,1,,,cercles transversaux,,,,,,
+Arçons,valorisation,10 cercles (min.) sur champignon,elements,10,oui,,champignon,,cercle,,,,
+Arçons,valorisation,1 élément élan P3,elements,1,,P3,elan,,,,,,
+Arçons,valorisation,1 sortie P2,elements,1,,P2,,,sortie,,,,
+Arçons,exigence,4 arches (péda NON),arches,4,,,,,,,peda,,
+Arçons,exigence,1 transversal,elements,1,,,,,transversal,,,,
+Arçons,valorisation,1 élément arche cercle latéral P2,elements,1,,P2,cercle lateral,,,,,,
+Arçons,valorisation,2 transversaux enchainés,elements,2,oui,,,,transversal,,,,
+Arçons,valorisation,enchainer au champignon 5 cercles + 1 élément AUTRE P4 (min.),manuel,1,,,,,,,,,liaison décrite hors catalogue
+Arçons,valorisation,1 sortie P4,elements,1,,P4,,,sortie,,,,
+Arçons,exigence,8 à 12 éléments,total,8-12,,,,,,,,,
+Arçons,exigence,3 éléments des cercles,elements,3,,,cercle,,,,,,
+Arçons,valorisation,1 élément arche cercle latéral P4,elements,1,,P4,cercle lateral,,,,,,
+Arçons,valorisation,3 transversaux enchainés,elements,3,oui,,,,transversal,,,,
+Arçons,valorisation,3 éléments P4 de champignon (en 1 passage),elements,3,oui,P4,champignon,,,,,,
+Arçons,valorisation,1 élément élan P4,elements,1,,P4,elan,,,,,,
+Arçons,valorisation,1 élément arche cercles transversaux P3,elements,1,,P3,cercles transversaux,,,,,,
+Arçons,exigence,3 arches (péda + champi NON),arches,3,,,,,,,peda|champignon,,
+Arçons,exigence,1 transport transversal,elements,1,,,,,transport,,,,
+Arçons,valorisation,1 élément arche cercle latéral P5,elements,1,,P5,cercle lateral,,,,,,
+Arçons,valorisation,1 élément P5 (min.),elements,1,,P5+,,,,,,,
+Arçons,valorisation,1 élément élan P5 (min.),elements,1,,P5+,elan,,,,,,
+Arçons,valorisation,1 élément arche cercles transversaux P4,elements,1,,P4,cercles transversaux,,,,,,
+Arçons,valorisation,1 sortie P5,elements,1,,P5,,,sortie,,,,
+Anneaux,exigence,4 Arches,arches,4,,,,,,,,,
+Anneaux,exigence,6 à 10 éléments,total,6-10,,,,,,,,,
+Anneaux,exigence,1 élément de la famille des maintiens,elements,1,,,,croix|appuis|atr,,,,,question ouverte : lesquelles des quatre familles de l'arche FORCE ET MAINTIEN sont « les maintiens »
+Anneaux,exigence,1 élément P2,elements,1,,P2,,,,,,,
+Anneaux,valorisation,1 maintien P2,elements,1,,P2,,croix|appuis|atr,,,,,
+Anneaux,valorisation,1 «suspension» P2,elements,1,,P2,suspension,,,,,,
+Anneaux,valorisation,Enchainer 3 balancés complets,elements,3,oui,,,,balance,,,,"3 balancés enchaînés : liaison, non dérivable"
+Anneaux,valorisation,utilisation des sangles,manuel,1,,,,,,,,,« sangle » n'apparaît dans aucun libellé
+Anneaux,exigence,1 dislocation,elements,1,,,,,disloc,,,,
+Anneaux,exigence,1 élément P3,elements,1,,P3,,,,,,,
+Anneaux,valorisation,1 force P3 (min.),elements,1,,P3+,,force,,,,,
+Anneaux,valorisation,1 PR max dans tout l’enchaînement,max,1,,PR,,,,,,,
+Anneaux,valorisation,1 élément des ATR P2 (min.),elements,1,,P2+,,atr,,,,,
+Anneaux,valorisation,1 sortie P2 (min.),elements,1,,P2+,,,sortie,,,,
+Anneaux,exigence,7 à 10 éléments,total,7-10,,,,,,,,,
+Anneaux,exigence,1 élément P4,elements,1,,P4,,,,,,,
+Anneaux,exigence,1 sortie,elements,1,,,,,sortie,,,,
+Anneaux,valorisation,1 maintien P3 (min.),elements,1,,P3+,,croix|appuis|atr,,,,,
+Anneaux,valorisation,1 établissement de la suspension à l’appui (min.) P3,elements,1,,P3+,,,etablissement,,,,
+Anneaux,valorisation,2 dislocations de sens différents,elements,2,oui,,,,disloc,,,,le sens n'est pas marqué sur les éléments
+Anneaux,valorisation,1 élément des ATR P3 (min.),elements,1,,P3+,,atr,,,,,
+Anneaux,valorisation,1 sortie P3 (min.),elements,1,,P3+,,,sortie,,,,
+Anneaux,exigence,Enchainer 2 dislocations (même sens),elements,2,oui,,,,disloc,,,,
+Anneaux,exigence,1 élément P5,elements,1,,P5,,,,,,,
+Anneaux,valorisation,1 établissement de la suspension à l’appui P4 (min.),elements,1,,P4+,,,etablissement,,,,
+Anneaux,valorisation,1 descente (lune / soleil) de l’ATR P3 (min.),elements,1,,P3+,,,lune|soleil,,,,
+Anneaux,valorisation,1 élément des ATR P4 (min.),elements,1,,P4+,,atr,,,,,
+Anneaux,valorisation,1 sortie P4 (min.),elements,1,,P4+,,,sortie,,,,
+Anneaux,exigence,8 à 12 éléments,total,8-12,,,,,,,,,
+Anneaux,exigence,Exécuter une descente (lune ou soleil),elements,1,,,,,lune|soleil,,,,
+Anneaux,valorisation,1 maintien P5 (min.),elements,1,,P5+,,croix|appuis|atr,,,,,
+Anneaux,valorisation,Enchainer directement 1 élément derrière 1 descente (lune / soleil),elements,1,oui,,,,lune|soleil,,,,la liaison reste à confirmer
+Anneaux,valorisation,1 élément des ATR P5 (min.),elements,1,,P5+,,atr,,,,,
+Anneaux,valorisation,1 élément P5 (min.),elements,1,,P5+,,,,,,,
+Anneaux,valorisation,1 sortie P5 (min.),elements,1,,P5+,,,sortie,,,,
+Anneaux,exigence,1 élément à l’ATR tenu,elements,1,oui,,,atr,,,,,le maintien est une qualité d'exécution
+Anneaux,valorisation,1 maintien P6 (min.),elements,1,,P6+,,croix|appuis|atr,,,,,
+Anneaux,valorisation,1 élément P6 (min.),elements,1,,P6+,,,,,,,
+Anneaux,valorisation,Enchainer directement 1 élément P4 derrière 1 descente (lune / soleil),elements,1,oui,,,,lune|soleil,,,,la liaison reste à confirmer
+Anneaux,valorisation,1 élément P7,elements,1,,P7,,,,,,,
+Anneaux,valorisation,réaliser 1 grand tour,elements,1,,,,,grand tour,,,,
+Anneaux,valorisation,1 sortie P6 (min.),elements,1,,P6+,,,sortie,,,aucune sortie au-delà de P5 au catalogue Anneaux,
+Barres parallèles,exigence,4 Arches,arches,4,,,,,,,,,
+Barres parallèles,exigence,6 à 10 éléments,total,6-10,,,,,,,,,
+Barres parallèles,exigence,Appuis / Maintiens,elements,1,,,appuis et maintien,,,,,,
+Barres parallèles,exigence,1 élément P2,elements,1,,P2,,,,,,,
+Barres parallèles,valorisation,Enchainer 2 balancés complets en suspension,elements,2,oui,,elan suspension,,,,,,
+Barres parallèles,valorisation,Enchainer 3 balancés complet en appui,elements,3,oui,,elan vers,,,sortie,,,
+Barres parallèles,valorisation,Appuis / Maintiens P2,elements,1,,P2,appuis et maintien,,,,,,
+Barres parallèles,valorisation,1 travail sur porte mains,elements,1,,,,,porte main,,,,
+Barres parallèles,exigence,Enchainer la suspension à l’enchainement,elements,1,oui,,elan suspension,,,,,,
+Barres parallèles,exigence,1 élément P3,elements,1,,P3,,,,,,,
+Barres parallèles,valorisation,1 élan en suspension P2 (min.),elements,1,,P2+,elan suspension,,,,,,
+Barres parallèles,valorisation,Appuis / Maintiens P3 (min.),elements,1,,P3+,appuis et maintien,,,,,,
+Barres parallèles,valorisation,1 passage à l’ATR,elements,1,,,,,atr,,,,
+Barres parallèles,valorisation,1 élément brachial,elements,1,,,brachial,,,,,,
+Barres parallèles,exigence,7 à 10 éléments,total,7-10,,,,,,,,,
+Barres parallèles,exigence,Passage à l’ATR tenu 2’’,elements,1,oui,,,,atr,,,,le maintien 2'' est une qualité d'exécution
+Barres parallèles,exigence,Un élément P4,elements,1,,P4,,,,,,,
+Barres parallèles,exigence,1 sortie,elements,1,,,,sorties,,,,,
+Barres parallèles,valorisation,1 élan en suspension P3 (min.),elements,1,,P3+,elan suspension,,,,,,
+Barres parallèles,valorisation,1 montée en force à l’ATR,elements,1,oui,,,,force,,,,
+Barres parallèles,valorisation,de l'ATR 1/2 tour avant à l'ATR,elements,1,oui,,,,atr,,,,le demi-tour n'est pas marqué
+Barres parallèles,valorisation,1 brachial P3 (min.),elements,1,,P3+,brachial,,,,,,
+Barres parallèles,valorisation,1 sortie avec salto P3 (min.),elements,1,,P3+,,sorties,salto,,,,
+Barres parallèles,exigence,Passage à l'ATR avec rotation longitudinale,elements,1,oui,,,,atr,,,,la rotation n'est pas marquée
+Barres parallèles,exigence,1 élément P5,elements,1,,P5,,,,,,,
+Barres parallèles,exigence,1 sortie avec salto,elements,1,,,,sorties,salto,,,,
+Barres parallèles,valorisation,1 élan en suspension P4 (min.),elements,1,,P4+,elan suspension,,,,,,
+Barres parallèles,valorisation,Elan sauté,elements,1,oui,,,,saute,,,,« sauté » qualifie l'élan ; le motif retient aussi des éléments voisins
+Barres parallèles,valorisation,1 montée en force à l’ATR tenu,elements,1,oui,,,,force,,,,
+Barres parallèles,valorisation,1 élément P5,elements,1,,P5,,,,,,,
+Barres parallèles,valorisation,1 sortie P4 (min.),elements,1,,P4+,,sorties,,,,,
+Barres parallèles,exigence,8 à 12 éléments,total,8-12,,,,,,,,,
+Barres parallèles,exigence,1 élément P6,elements,1,,P6,,,,,,,
+Barres parallèles,valorisation,1 élan en suspension P5 (min.),elements,1,,P5+,elan suspension,,,,,,
+Barres parallèles,valorisation,1 salto en appui P4 (min.),elements,1,,P4+,,,salto,sortie,,,
+Barres parallèles,valorisation,1 élément en appui avec rotation longitudinale 360°,elements,1,oui,,,,360|tour,,,,
+Barres parallèles,valorisation,1 élément P6,elements,1,,P6,,,,,,,
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,P5+,,,,,,,
+Barres parallèles,valorisation,1 sortie P5 (min.),elements,1,,P5+,,sorties,,,,,
+Barres parallèles,exigence,Passage à l’ATR avec rotation longitudinale,elements,1,oui,,,,atr,,,,la rotation n'est pas marquée
+Barres parallèles,exigence,1 élément P7,elements,1,,P7,,,,,,,
+Barres parallèles,valorisation,1 élan en suspension P6 (min.),elements,1,,P6+,elan suspension,,,,,,
+Barres parallèles,valorisation,1 élément avant ou arrière en P6 (min.),elements,1,,P6+,elan vers,,,,,,
+Barres parallèles,valorisation,1 élément P7,elements,1,,P7,,,,,,,
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,P5+,,,,,,,
+Barres parallèles,valorisation,1 sortie P6 (min.),elements,1,,P6+,,sorties,,,,,
+Barre fixe,exigence,4 Arches,arches,4,,,,,,,,,
+Barre fixe,exigence,6 à 8 éléments,total,6-8,,,,,,,,,
+Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,oui,,balances,,,,,,
+Barre fixe,exigence,1 élément PR,elements,1,,PR,,,,,,,
+Barre fixe,valorisation,Réaliser les 2 courbes PR,elements,2,,PR,,,courbe,,,,
+Barre fixe,valorisation,1 balancé à l’oblique haute,elements,1,oui,,balances,,,,,,"« oblique haute » est une amplitude, absente des libellés"
+Barre fixe,valorisation,1 rotation,elements,1,,,rotation,,,,,,
+Barre fixe,valorisation,1 appui / élan,elements,1,,,appui elan,,,,,,
+Barre fixe,valorisation,Sangles obligatoires,manuel,1,,,,,,,,,« sangle » n'apparaît dans aucun libellé
+Barre fixe,exigence,1 élément P2,elements,1,,P2,,,,,,,
+Barre fixe,valorisation,1 appui / élan PXX,elements,1,,,appui elan,,,,,,« PXX » : le palier n'est pas renseigné dans le brouillon
+Barre fixe,valorisation,Faire 3 balancés successifs orientés «shoot avant»,elements,3,oui,,balances avant,,,,,,« shoot » n'apparaît dans aucun libellé
+Barre fixe,valorisation,"Faire 3 balancés successifs orientés ""shoot arrière""",elements,3,oui,,balances arriere,,,,,,« shoot » n'apparaît dans aucun libellé
+Barre fixe,valorisation,1 élément P2 (min.),elements,1,,P2+,,,,,,,
+Barre fixe,valorisation,1 rotation P1 (min.),elements,1,,P1+,rotation,,,,,,
+Barre fixe,exigence,8 à 10 éléments,total,8-10,,,,,,,,,
+Barre fixe,exigence,Exécuter un grand tour,elements,1,,,,,grand tour,,,,
+Barre fixe,exigence,Un élément P3,elements,1,,P3,,,,,,,
+Barre fixe,exigence,changement de prise,elements,1,oui,,,,prise,,,,
+Barre fixe,valorisation,1 grand tour,elements,1,,,,,grand tour,,,,
+Barre fixe,valorisation,1 changement de face P3 (min.),manuel,1,,,,,,,,,« changement de face » n'apparaît dans aucun libellé
+Barre fixe,valorisation,1 élément P3 (min.),elements,1,,P3+,,,,,,,
+Barre fixe,valorisation,1 rotation P2 (min.),elements,1,,P2+,rotation,,,,,,
+Barre fixe,valorisation,Sortie P3 (min.),elements,1,,P3+,,,sortie,,,,
+Barre fixe,exigence,Un lâché,manuel,1,,,,,,,,,« lâché » n'apparaît dans aucun libellé
+Barre fixe,exigence,1 élément P4,elements,1,,P4,,,,,,,
+Barre fixe,valorisation,1 grand tour arrière avec rotation longitudinale 180°,elements,1,oui,,,,grand tour,,,,
+Barre fixe,valorisation,1 changement de face P4 (min.),manuel,1,,,,,,,,,« changement de face » n'apparaît dans aucun libellé
+Barre fixe,valorisation,1 élément P4 (min.),elements,1,,P4+,,,,,,,
+Barre fixe,valorisation,1 rotation P4 (min.),elements,1,,P4+,rotation,,,,,,
+Barre fixe,valorisation,Sortie P4 (min.),elements,1,,P4+,,,sortie,,,,
+Barre fixe,exigence,8 à 12 éléments,total,8-12,,,,,,,,,
+Barre fixe,exigence,Un élément P5,elements,1,,P5,,,,,,,
+Barre fixe,exigence,1 sortie,elements,1,,,,,sortie,,,,
+Barre fixe,valorisation,1 grand tour avec rotation longitudinale 360°,elements,1,oui,,,,grand tour,,,,
+Barre fixe,valorisation,Exécuter 1 lâché P6,manuel,1,,,,,,,,,« lâché » n'apparaît dans aucun libellé
+Barre fixe,valorisation,Exécuter 1 lâché,manuel,1,,,,,,,,,« lâché » n'apparaît dans aucun libellé
+Barre fixe,valorisation,1 élément P5 (min.),elements,1,,P5+,,,,,,,
+Barre fixe,valorisation,1 rotation P5 (min.),elements,1,,P5+,rotation,,,,,,
+Barre fixe,valorisation,1 sortie P5 (min.),elements,1,,P5+,,,sortie,,,,
+Barre fixe,exigence,8 à 12 éléments différents,total,8-12,,,,,,,,,« différents » : les répétitions ne sont pas détectables au catalogue
+Barre fixe,exigence,1 élément P6,elements,1,,P6,,,,,,,
+Barre fixe,valorisation,Exécuter 1 lâché P7,manuel,1,,,,,,,,,« lâché » n'apparaît dans aucun libellé
+Barre fixe,valorisation,1 élément P6 (min.),elements,1,,P6+,,,,,,,
+Barre fixe,valorisation,1 rotation P6 (min.),elements,1,,P6+,rotation,,,,,,
+Barre fixe,valorisation,1 sortie P6 (min.),elements,1,,P6+,,,sortie,,,aucune sortie au-delà de P5 au catalogue Barre fixe,
