@@ -3,6 +3,11 @@
   line-height: 1.5;
   color: #16202b;
   background: #f6f7f9;
+
+  --satisfait: #2f8a4c;
+  --insuffisant: #cdd4dc;
+  --a-confirmer: #d99524;
+  --manuel: #6b83a8;
 }
 
 body {
@@ -10,35 +15,36 @@ body {
 }
 
 main {
-  max-width: 60rem;
+  max-width: 78rem;
   margin: 0 auto;
   padding: 1.5rem 1rem 4rem;
 }
 
 h1 {
-  font-size: 1.4rem;
-  margin-bottom: 0.25rem;
+  font-size: 1.3rem;
+  margin: 0 0 0.75rem;
 }
 
 h2 {
-  font-size: 1.05rem;
-  margin-top: 2rem;
+  font-size: 1rem;
+  margin: 1.5rem 0 0.5rem;
 }
 
-header p {
-  margin-top: 0;
+h2 small {
+  font-weight: normal;
   color: #5b6672;
 }
 
 nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
+  gap: 0.35rem;
+  margin-bottom: 0.4rem;
 }
 
 nav button {
   font: inherit;
-  padding: 0.35rem 0.7rem;
+  padding: 0.25rem 0.65rem;
   border: 1px solid #cdd4dc;
   border-radius: 999px;
   background: #fff;
@@ -51,40 +57,216 @@ nav button[aria-current="true"] {
   color: #fff;
 }
 
-nav small {
-  opacity: 0.6;
+/* The start score follows the coach down the page: it is the answer being composed. */
+.note {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-top: 0.75rem;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid #cdd4dc;
+  border-radius: 0.5rem;
+  background: #fff;
 }
 
-.evolutions {
-  padding-left: 1.1rem;
+.note p {
+  margin: 0;
+  color: #5b6672;
+  font-size: 0.85rem;
+}
+
+.note .total {
+  color: inherit;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.note .total strong {
+  font-size: 1.9rem;
+}
+
+.colonnes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+@media (max-width: 60rem) {
+  .colonnes {
+    grid-template-columns: 1fr;
+  }
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
   background: #fff;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
-th,
 td {
-  text-align: left;
-  padding: 0.35rem 0.5rem;
+  padding: 0.4rem 0.5rem;
   border-bottom: 1px solid #e7eaee;
   vertical-align: top;
 }
 
-th {
-  position: sticky;
-  top: 0;
-  background: #eef1f4;
+.criteres .genre td {
+  padding-top: 0.9rem;
+  border: 0;
+  color: #5b6672;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
-.badge {
-  margin-left: 0.3rem;
+.criteres tbody:first-child .genre td {
+  padding-top: 0.2rem;
+}
+
+.criteres .etat {
+  width: 0.5rem;
+  padding: 0;
+  background: var(--insuffisant);
+}
+
+.criteres tr[data-etat="satisfait"] .etat {
+  background: var(--satisfait);
+}
+
+.criteres tr[data-etat="a-confirmer"] .etat {
+  background: var(--a-confirmer);
+}
+
+.criteres tr[data-etat="manuel"] .etat {
+  background: var(--manuel);
+}
+
+.criteres tr[data-etat="satisfait"] {
+  background: #f3faf5;
+}
+
+.criteres .compte,
+.criteres .points {
+  white-space: nowrap;
+  text-align: right;
+  color: #5b6672;
+}
+
+.criteres .compte {
+  font-size: 0.8rem;
+}
+
+.criteres .points {
+  font-variant-numeric: tabular-nums;
+}
+
+.criteres .points small {
+  opacity: 0.5;
+}
+
+.criteres .coche {
+  width: 1.5rem;
+}
+
+.elements,
+.elements ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.elements {
+  max-height: 72vh;
+  overflow-y: auto;
+  border: 1px solid #e7eaee;
+  border-radius: 0.4rem;
+  background: #fff;
+}
+
+.elements h3 {
+  position: sticky;
+  top: 0;
+  margin: 0;
+  padding: 0.3rem 0.6rem;
+  background: #eef1f4;
+  border-bottom: 1px solid #dfe4ea;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #46525f;
+}
+
+.elements button {
+  display: flex;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.4rem 0.6rem;
+  border: 0;
+  border-bottom: 1px solid #e7eaee;
+  background: none;
+  font: inherit;
+  font-size: 0.85rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.elements button:hover {
+  background: #f1f4f7;
+}
+
+.elements button[aria-pressed="true"] {
+  background: #eaf3ec;
+  box-shadow: inset 0.25rem 0 0 var(--satisfait);
+}
+
+.elements .palier {
+  flex: 0 0 5.5rem;
+  color: #5b6672;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.elements .libelle {
+  flex: 1;
+}
+
+.elements .libelle small {
+  display: block;
+  color: #8a949f;
+  font-size: 0.75rem;
+}
+
+.elements .apports {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: flex-start;
+  gap: 0.2rem;
+}
+
+.apport {
   padding: 0 0.3rem;
   border-radius: 3px;
-  background: #d8ecd8;
+  background: #e7eaee;
+  color: #46525f;
   font-size: 0.7rem;
-  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.apport.valorisation {
+  background: #ddeee2;
+  color: #1f6b3a;
+}
+
+.apport.exigence {
+  background: #e2e9f5;
+  color: #33507f;
+}
+
+.apport.max {
+  background: #f7e2c9;
+  color: #8a5410;
 }
