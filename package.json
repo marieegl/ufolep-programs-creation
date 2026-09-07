@@ -1,0 +1,26 @@
+{
+  "name": "npt-ufolep",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "data": "uv run scripts/build_data.py data/csv src/data/catalog.json",
+    "dev": "vite",
+    "build": "npm run data && tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.1.0",
+    "vite-plugin-singlefile": "^2.3.0",
+    "vitest": "^3.2.0"
+  }
+}
