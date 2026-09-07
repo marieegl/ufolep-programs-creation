@@ -35,7 +35,7 @@ AGRES = {
 WHITE = 0xFFFFFF
 CAPTION_GAP = 15
 PALIER_LABEL = re.compile(r"^P\d$")
-ELEMENT_NUMBER = re.compile(r"^\d+\+?$")
+ELEMENT_NUMBER = re.compile(r"^\d+\+?(bis)?$", re.IGNORECASE)
 NOISE = ("Imprimerie", "EN COURS DE VALIDATION")
 HEADER_BOTTOM = 62
 MONTH_YEAR = r"\b(JANV|F[EÉ]VR|MARS|AVRIL|MAI|JUIN|JUIL|AO[UÛ]T|SEPT|OCT|NOV|D[EÉ]C)[A-Z]*\.?\s*\d{2}\b"
@@ -200,21 +200,53 @@ def page_header(page, agres):
 
 
 def is_element_start(words, i) -> bool:
+    """True at the element number of a 'NNN [MM] [new] - libellé' label.
+
+    The optional second number is the constant stamp every apparatus but Sol
+    prints; without accepting it here the split would start at the stamp and the
+    real element number would be dropped.
+    """
     if not ELEMENT_NUMBER.match(words[i]):
         return False
-    if i + 1 < len(words) and words[i + 1] == "-":
-        return True
-    return (
-        i + 2 < len(words)
-        and words[i + 1].lower().startswith("new")
-        and words[i + 2] == "-"
-    )
+    j = i + 1
+    if j < len(words) and ELEMENT_NUMBER.match(words[j]):
+        j += 1
+    if j < len(words) and words[j].lower().startswith("new"):
+        j += 1
+    return j < len(words) and words[j] == "-"
+
+
+def normalise_words(words):
+    """Regularise the ways an element number is broken up across words.
+
+    A number can be followed by a detached 'bis' ('55 bis 26 - …'), and the stamp
+    can be glued to the dash ('113 bis 26- Kenmotsu …').
+    """
+    out = []
+    for text, box in words:
+        if text.lower() == "bis" and out and ELEMENT_NUMBER.match(out[-1][0]):
+            prev_text, prev_box = out[-1]
+            out[-1] = (
+                prev_text + "bis",
+                (prev_box[0], min(prev_box[1], box[1]), box[2], max(prev_box[3], box[3])),
+            )
+        elif len(text) > 1 and text.endswith("-") and ELEMENT_NUMBER.match(text[:-1]):
+            split_x = box[0] + (box[2] - box[0]) * (len(text) - 1) / len(text)
+            out.append((text[:-1], (box[0], box[1], split_x, box[3])))
+            out.append(("-", (split_x, box[1], box[2], box[3])))
+        else:
+            out.append((text, box))
+    return out
 
 
 def split_into_elements(words):
     """Split a run of (text, bbox) words into element chunks at 'NNN - ' boundaries."""
+    words = normalise_words(words)
     texts = [w[0] for w in words]
     starts = [i for i in range(len(texts)) if is_element_start(texts, i)]
+    # In 'NNN MM - libellé' the stamp MM also looks like an element start; keep
+    # only the first of two adjacent candidates.
+    starts = [i for k, i in enumerate(starts) if k == 0 or i != starts[k - 1] + 1]
     if not starts:
         return []
     bounds = starts + [len(texts)]
@@ -265,11 +297,23 @@ def controles(palier, libelle, famille_incertaine):
 
 
 def parse_label(text):
-    """Split '82 new - Roulade arrière' into ('82', 'new', 'Roulade arrière')."""
-    match = re.match(r"^(\d+\+?)\s*(new\+?)?\s*-\s*(.*)$", text, re.IGNORECASE)
+    """Split '82 new - Roulade arrière' into ('82', 'new', '', 'Roulade arrière').
+
+    Every apparatus but Sol also prints a second, always-identical number between
+    the element number and the dash ('46 26 - De la suspension…'). Its meaning is
+    unknown, so it is kept in its own field rather than folded into the number.
+    """
+    match = re.match(
+        r"^(\d+\+?(?:bis)?)\s*(?:(\d+)\s*)?(new\+?)?\s*-\s*(.*)$", text, re.IGNORECASE
+    )
     if not match:
-        return "", "", text
-    return match.group(1), (match.group(2) or "").lower(), match.group(3).strip()
+        return "", "", "", text
+    return (
+        match.group(1).lower(),
+        (match.group(3) or "").lower(),
+        match.group(2) or "",
+        match.group(4).strip(),
+    )
 
 
 def extract_page(page, page_no, agres):
@@ -297,7 +341,7 @@ def extract_page(page, page_no, agres):
             palier, side, radius = classify(
                 cx, cy, centre_x, baseline_y, rings, strip_top
             )
-            numero_el, variante, libelle = parse_label(raw)
+            numero_el, variante, marque, libelle = parse_label(raw)
             # Elements in the PRÉ-REQUIS / NOMADE strip sit outside the arch, so the
             # left/right split there carries no family meaning.
             in_strip = palier in ("PRÉ-REQUIS", "NOMADE")
@@ -319,6 +363,7 @@ def extract_page(page, page_no, agres):
                     "palier": palier,
                     "numero": numero_el,
                     "variante": variante,
+                    "marque": marque,
                     "libelle": libelle,
                     "libelle_brut": raw,
                     "x": round(cx, 1),

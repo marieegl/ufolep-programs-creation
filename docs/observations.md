@@ -47,6 +47,7 @@ justification — or break it.
 | --- | --- | --- |
 | 7 | `arches-sol.pdf` p.3, right half carries the caption **"En arrière"** painted white on white. It does not print, and it does not belong: that half has no family. Captions are now filtered on colour. | `WHITE` filter in `family_captions` — drop it and see if a spurious family appears |
 | 8 | `decompo-note.pdf` keeps **a full earlier set of crosses hidden beneath the coloured panels** of the palier grids. They do not print. A cell is only struck out if its crosses were painted *after* the last panel covering it. | `marks()` in `extract_decompo.py` — ignore painting order and see if paliers stop increasing across évolutions |
+| 13 | **Element numbers are spelt three different ways.** Beyond the plain number, thirteen elements are numbered `bis` and the spelling varies — attached or detached, capitalised or not (`55 bis`, `19bis`, `71 Bis`), and one has the stamp of item 14 glued to the dash (`113 bis 26-`). All are normalised to a lowercase `Nbis`. Until this was handled, those labels were not recognised as element starts and their text was appended to the preceding element, which is why the catalog grew from 655 to 663. | `grep -c bis data/csv/elements-*.csv` should total 13 |
 | 9 | `decompo-note.pdf` pp.4-9 have the **display font converted to outlines**, so apparatus names, the discipline, and some évolution captions do not exist as text at all. Body text (Calibri) is intact. Names come from page order instead. | whether `page.get_text()` on p.4 yields "BARRES ASYMÉTRIQUES" |
 
 ## Open questions for the UFOLEP
@@ -56,6 +57,8 @@ justification — or break it.
 | 10 | **Ten elements have no decidable family.** On pages that draw no radial separator at the arch apex, a few labels are centred across it (the three *équerre* elements of SOL *MAINTIEN ET SOUPLESSE*, six of *BARRES ASYMÉTRIQUES BALANCÉS AVANT*, one of *ROTATIONS*). Do they belong to one family, or to the arch as a whole? They are left with no family and flagged `famille incertaine`. |
 | 11 | **Arch numbers are not unique.** They restart per discipline: GAF runs Sol 11-18, Barres asymétriques 19-23, Poutre 24-31, while GAM reuses 24-27 for Anneaux and 24-28 for Barres parallèles. So an element's key needs the apparatus, not just the arch number. |
 | 12 | **Is a palier global or per apparatus?** The same element name appears on several apparatus; nothing yet says whether its rating travels with it. |
+| 14 | **What is the second number printed on every element label but Sol's?** It is always **26** — `46 26 - De la suspension…` — and appears on 286 of the 663 elements. Nothing in the rulebooks mentions it. The edition is dated JUIL. **26**, so it may mark an element added or revised in this issue, which would make it a second, redundant spelling of the `new` marker some elements also carry. It is kept in its own `marque` column rather than folded into the number, so a later answer can reinterpret it without re-extracting. |
+| 15 | **Element numbers are not unique within an arch either.** Ten pairs share an arch and a number while sitting on different paliers, and only five of those are the known `+` variants. So the catalog key is apparatus + arch + palier + number. |
 
 ## Settled
 

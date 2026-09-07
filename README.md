@@ -15,7 +15,23 @@ re-runnable rather than hand-transcribed.
 | `data/pdf/` | The published PDFs, renamed to stable filenames |
 | `data/csv/` | Extracted catalog, one file per apparatus |
 | `scripts/` | Extraction and verification scripts |
+| `src/` | The web app, and the JSON catalog it is built with |
 | `docs/observations.md` | What looks wrong or unsettled in the source PDFs, to re-read against the next issue |
+
+## Running the app
+
+```sh
+npm install
+npm run dev      # or: npm run build, then open dist/index.html
+```
+
+`npm run build` re-derives `src/data/catalog.json` from the CSVs and emits a single
+self-contained `dist/index.html` — no separate asset files, so it works both on
+GitHub Pages and from a double-click on a downloaded copy.
+
+```sh
+uv run scripts/build_data.py data/csv src/data/catalog.json
+```
 
 ## Extracting the elements
 
@@ -34,7 +50,7 @@ for a in sol saut barres-asym poutre anneaux barres-paralleles barre-fixe; do
 done
 ```
 
-That yields 655 elements over 30 arches, of which 10 carry a `controle` flag.
+That yields 663 elements over 30 arches, of which 11 carry a `controle` flag.
 
 To eyeball the result, `overlay_check.py` re-renders each page with the extracted
 palier stamped on every element and the ring boundaries drawn:
@@ -55,6 +71,11 @@ Each page is a half-arch rather than a table:
   (*En avant* / *En arrière*), but ANNEAUX *Force et maintien* splits into quarters,
   so the sector count is read off the captions themselves. A sector may well be
   unnamed while its neighbour is named, as with the *Sorties* of the men's arches.
+- **an element label opens with its number**, but in several spellings: a bare
+  number, a `+` variant, a `bis` variant attached or detached from the digits, and
+  on every apparatus but Sol a second always-identical number whose meaning is
+  unknown. Splitting the page into elements has to recognise all of them, or a
+  label is silently glued to its neighbour.
 - **a grey strip below the arch** holds PRÉ-REQUIS on the left and NOMADE on the right.
   It sits outside the arch, so the split there carries no family meaning.
 
