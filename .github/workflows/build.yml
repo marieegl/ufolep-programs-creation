@@ -1,0 +1,39 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - uses: astral-sh/setup-uv@v5
+
+      - run: npm ci
+
+      # The catalog is committed so the app builds without Python, but it is derived from
+      # the CSVs and the rules. Rebuilding it here and diffing proves the checked-in copy
+      # is still what they produce — otherwise an edited CSV would go unnoticed until the
+      # next person ran `npm run data` and got an unexplained diff.
+      - run: npm run data
+      - run: git diff --exit-code -- src/data/catalog.json data/csv/criteres-elements.csv
+
+      - run: npm run typecheck
+      - run: npm run test
+      - run: npx vite build
+
+      # The single file, downloadable from the run page: what a coach without GitHub gets.
+      - uses: actions/upload-artifact@v4
+        with:
+          name: note-de-depart
+          path: dist/index.html

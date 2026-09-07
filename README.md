@@ -36,6 +36,22 @@ npm run data     # rebuild src/data/catalog.json from the CSVs and the rules
 npm run test     # check the engine against the notes published on page 1
 ```
 
+## Publishing
+
+Two workflows, because the two ways of getting the app have different requirements.
+
+`build.yml` runs on every push and pull request. Besides the typecheck, the tests and
+the build, it re-derives the catalog and diffs it against the committed copy: the
+catalog is checked in so the app builds without Python, but it is generated, and an
+edited CSV that nobody re-resolved would otherwise stay invisible until the next person
+ran `npm run data`. Each run attaches `dist/index.html` as an artifact — that single
+file is what a coach without a GitHub account is handed.
+
+`pages.yml` publishes the same build to GitHub Pages, and runs **on demand only**:
+Pages on a private repository needs a paid plan, so a deploy that cannot succeed should
+not turn `main` red. It enables Pages itself on its first successful run. Once one has
+gone through — or the repository is made public — give it a `push` trigger on `main`.
+
 ## Extracting the elements
 
 Scripts use [PEP 723](https://peps.python.org/pep-0723/) inline dependencies, so

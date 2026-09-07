@@ -1,0 +1,48 @@
+# Publishing to Pages needs a paid plan while the repository is private, so this runs on
+# demand rather than on every push: a deploy that cannot succeed should not turn main red.
+# Once a manual run goes through, add a `push: branches: [main]` trigger.
+name: pages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      # `enablement` turns Pages on for the repository, so the first run needs no visit to
+      # the settings page.
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - uses: astral-sh/setup-uv@v5
+
+      - run: npm ci
+      - run: npm run build
+
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
