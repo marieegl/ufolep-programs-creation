@@ -168,7 +168,7 @@ def main(csv_dir: Path, out_path: Path, rules_path: Path) -> None:
     evolutions = build_evolutions(csv_dir / "decompo-note.csv")
     criteres = build_criteres(rules_path, csv_dir / "criteres-elements.csv")
     catalog = {
-        "edition": "JUIL. 26",
+        "edition": "SEPT. 26",
         "paliers": PALIER_ORDER,
         "valeursSaut": VAULT_VALUES,
         "agres": build_agres(elements, evolutions),

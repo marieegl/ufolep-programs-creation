@@ -4,9 +4,11 @@ Tooling to turn the UFOLEP *Nouveau Programme Technique* (gymnastics) PDFs into 
 structured catalog, and eventually a static web app that composes a routine and
 computes its start score.
 
-Source PDFs: <https://ufolepgym.com/index.php/npt/> — the program is still a draft
-(every page carries an "EN COURS DE VALIDATION" watermark), so extraction is
-re-runnable rather than hand-transcribed.
+Source PDFs: <https://ufolepgym.com/index.php/npt/>. The women's apparatus (Sol,
+Saut, Barres asymétriques, Poutre) reached their first validated issue in
+September 2026 ("SEPT. 26", filed under *NPT - PRÊT POUR DIFFUSION*); the
+men's-only apparatus are still earlier drafts. Extraction stays re-runnable rather
+than hand-transcribed, so each re-issue is re-derived rather than re-typed.
 
 ## Layout
 
@@ -72,7 +74,7 @@ for a in sol saut barres-asym poutre anneaux barres-paralleles barre-fixe; do
 done
 ```
 
-That yields 663 elements over 30 arches, of which 11 carry a `controle` flag.
+That yields 675 elements over 30 arches, of which 11 carry a `controle` flag.
 
 To eyeball the result, `overlay_check.py` re-renders each page with the extracted
 palier stamped on every element and the ring boundaries drawn:
@@ -151,7 +153,7 @@ uv run scripts/resolve_criteres.py data/criteres.csv src/data/catalog.json \
   data/csv/criteres-elements.csv --strict
 ```
 
-329 rules over 334 lines expand to 3819 criterion-element pairs, so what a human
+329 rules over 334 lines expand to 3927 criterion-element pairs, so what a human
 maintains is eleven times smaller than what the app consumes — and a re-issued
 programme is re-resolved rather than re-read element by element. Five controls check
 that every printed criterion has a rule and every rule still means something; the
