@@ -4,6 +4,9 @@ import type { Element, Evolution } from "./catalog";
 import { cleDe, noteMaximale, noter } from "./score";
 import type { Etat, Ligne } from "./score";
 
+/** Injected at build time by Vite — see `define` in vite.config.ts. */
+declare const __DATE_BUILD__: string;
+
 const ETATS: Record<Etat, string> = {
   satisfait: "satisfaite",
   insuffisant: "non satisfaite",
@@ -236,6 +239,12 @@ export function App() {
           </div>
         </>
       )}
+
+      <footer>
+        <span>Édition {catalog.edition}</span>
+        <span>Généré le {__DATE_BUILD__}</span>
+        <span>Propriété de Marie Engel — usage personnel</span>
+      </footer>
     </main>
   );
 }

@@ -7,4 +7,6 @@ export default defineConfig({
   base: "./",
   plugins: [react(), viteSingleFile()],
   build: { outDir: "dist", assetsInlineLimit: 100_000_000 },
+  // Stamped into the footer so a shared copy carries the day it was generated.
+  define: { __DATE_BUILD__: JSON.stringify(new Date().toISOString().slice(0, 10)) },
 });
