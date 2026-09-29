@@ -41,6 +41,12 @@ COLUMNS = [
 ]
 MOTIF_COLUMNS = ("arche", "famille", "libelle")
 
+# A boolean attribute the element carries, not a regex on its text — used where the
+# programme rewards something no wording identifies, like a Poutre 'sortie'. The value
+# names the element flag to require (`sortie`). Kept out of MOTIF_COLUMNS: it is not
+# matched, folded or breadth-checked like an arch/family/label motif.
+TAG_COLUMN = "tag"
+
 
 def unaccent(text: str) -> str:
     return unicodedata.normalize("NFKD", text or "").encode("ascii", "ignore").decode().lower()
@@ -91,6 +97,11 @@ def parse_nombre(cell: str) -> tuple[int, int | None]:
 
 
 def matches(rule: dict, element: dict) -> bool:
+    # A tag is an element flag, not a motif: 'sortie' requires element["sortie"] is set.
+    # `.get(... or "")` because a rule row may predate the column and read back as None.
+    tag = (rule.get(TAG_COLUMN) or "").strip()
+    if tag and not element.get(tag):
+        return False
     for column, field in zip(MOTIF_COLUMNS, ("archeNom", "famille", "libelle")):
         motif = rule[column].strip()
         if motif and not re.search(fold_motif(motif), fold(element[field])):

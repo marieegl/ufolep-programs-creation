@@ -43,25 +43,35 @@ def read_rows(path: Path) -> list[dict[str, str]]:
         return list(csv.DictReader(handle))
 
 
-def build_elements(csv_dir: Path) -> list[dict]:
+def read_sorties(path: Path) -> set[str]:
+    """Element ids hand-tagged as a dismount.
+
+    The arches PDF publishes no *sortie* arch, family or wording, so a dismount cannot
+    be recognised from the catalog — it is named here by id instead. The flag rides on
+    the element so a rule can select it (see the `tag` column in `data/criteres.csv`).
+    """
+    return {row["element_id"] for row in read_rows(path)} if path.exists() else set()
+
+
+def build_elements(csv_dir: Path, sortie_ids: set[str]) -> list[dict]:
     elements = []
     for path in sorted(csv_dir.glob("elements-*.csv")):
         for row in read_rows(path):
             agres = row["agres"]
             nouveau = row["variante"].lower().startswith("new")
+            # Element numbers repeat across paliers within an arch, and arch numbers
+            # restart per discipline, so the key needs all four parts.
+            eid = "-".join(
+                (
+                    slug(agres),
+                    row["arche_numero"],
+                    slug(row["palier"]),
+                    slug(row["numero"].replace("+", "-plus")),
+                )
+            ) + ("-new" if nouveau else "")
             elements.append(
                 {
-                    # Element numbers repeat across paliers within an arch, and arch
-                    # numbers restart per discipline, so the key needs all four parts.
-                    "id": "-".join(
-                        (
-                            slug(agres),
-                            row["arche_numero"],
-                            slug(row["palier"]),
-                            slug(row["numero"].replace("+", "-plus")),
-                        )
-                    )
-                    + ("-new" if nouveau else ""),
+                    "id": eid,
                     "agres": agres,
                     "arche": int(row["arche_numero"]),
                     "archeNom": row["arche"],
@@ -70,6 +80,7 @@ def build_elements(csv_dir: Path) -> list[dict]:
                     "palier": row["palier"],
                     "numero": row["numero"],
                     "nouveau": nouveau,
+                    "sortie": eid in sortie_ids,
                     "marque": row["marque"] or None,
                     "libelle": row["libelle"],
                     "controle": row["controle"] or None,
@@ -164,7 +175,8 @@ def build_agres(elements: list[dict], evolutions: list[dict]) -> list[dict]:
 
 
 def main(csv_dir: Path, out_path: Path, rules_path: Path) -> None:
-    elements = build_elements(csv_dir)
+    sortie_ids = read_sorties(rules_path.parent / "sorties.csv")
+    elements = build_elements(csv_dir, sortie_ids)
     evolutions = build_evolutions(csv_dir / "decompo-note.csv")
     criteres = build_criteres(rules_path, csv_dir / "criteres-elements.csv")
     catalog = {

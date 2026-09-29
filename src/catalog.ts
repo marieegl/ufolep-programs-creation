@@ -20,6 +20,8 @@ export type Element = {
   palier: Palier;
   numero: string;
   nouveau: boolean;
+  /** Hand-tagged as a dismount in data/sorties.csv — the arches PDF marks none. */
+  sortie: boolean;
   marque: string | null;
   libelle: string;
   controle: string | null;

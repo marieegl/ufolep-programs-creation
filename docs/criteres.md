@@ -7,8 +7,8 @@ the element is a label, and the match lives in the reader's head.
 `data/criteres.csv` is where that reading is written down — **one rule per criterion**,
 never one row per element. `scripts/resolve_criteres.py` applies each rule to the
 catalog and emits `data/csv/criteres-elements.csv`, one row per criterion-element pair.
-The current issue resolves to **329 rules over 334 lines and 3819 pairs**, so the pairs
-file is eleven times the size of the thing a human maintains.
+The current issue resolves to **329 rules over 334 lines and 4003 pairs**, so the pairs
+file is twelve times the size of the thing a human maintains.
 
 That ratio is the whole point. A re-issued programme is re-resolved in a second; a
 hand-associated table would have to be re-read element by element. It also means a
@@ -34,6 +34,7 @@ touching `src/data/catalog.json`.
 | `confirmation` | `oui` when the elements are a necessary condition only, and a judge still has to tick it |
 | `palier` | `P3` means exactly P3, `P3+` means P3 or above, `PR` is PRÉ-REQUIS |
 | `arche` `famille` `libelle` | Regexes matched against the element's arch name, family and label |
+| `tag` | Requires a boolean element flag rather than matching text — `sortie` selects the elements hand-tagged in [`data/sorties.csv`](../data/sorties.csv) |
 | `exclure` | Regex that rejects on family **or** label |
 | `exclure_arche` | Regex that rejects on arch name |
 | `attendu` | Why a flag on this rule is expected rather than a bug |
@@ -67,6 +68,22 @@ all work.
 
 NOMADE sits outside the palier ladder, so a `P3+` threshold never reaches it.
 
+### Tags
+
+Some criteria reward something no wording in the catalog identifies. The Poutre
+*sorties* are the case: the arches PDF publishes no dismount arch, family or label, so
+no motif can find one. The dismounts are instead named by id in
+[`data/sorties.csv`](../data/sorties.csv); `build_data.py` turns that list into a
+`sortie` flag on each element, and a rule selects them with `tag,sortie`. The flag rides
+on the element, so it also shows as a `· sortie` badge in the app.
+
+A tag is not a motif — it is not folded, matched as a regex, or counted against the
+too-broad control — so it may sit next to a `palier` threshold: `1 sortie P3 (min.)` is
+`tag=sortie` plus `palier=P3+`, which selects the tagged dismounts at P3 and above and
+leaves out both the P2 dismounts and the nomade one (a nomade valorises nothing). The
+*liaison acro* dismount criteria carry `confirmation,oui` on top, because the tag proves
+there is a dismount but not that it is chained into an acro liaison — the judge ticks that.
+
 ### The six types
 
 | Type | Counts | Example |
@@ -85,9 +102,10 @@ what makes *"3 arches (péda NON)"* count arches minus the pedagogical one.
 A `manuel` rule must carry a `commentaire` saying what is not derivable, so that a
 deliberate hand-off cannot be confused with a motif nobody got round to writing.
 
-Of the 329 rules, **34 are `manuel`** — 10%. Those are almost all liaisons (a *LA* is a
-sequence of elements, not an element) and the Poutre sorties, which have no arch or
-family in the catalog at all.
+Of the 329 rules, **29 are `manuel`** — 9%. Those are almost all liaisons (a *LA* is a
+sequence of elements, not an element). The five Poutre sorties used to be here too —
+nothing in the catalog names a dismount — but they are now selected through the `tag`
+column against the hand-kept list of dismount ids described above.
 
 ## The controls
 

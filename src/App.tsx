@@ -1,8 +1,9 @@
 import { useMemo, useState } from "react";
-import { catalog, criteresOf, elementsOf, evolutionsOf } from "./catalog";
+import { catalog, criteresOf, elementById, elementsOf, evolutionsOf } from "./catalog";
 import type { Element, Evolution } from "./catalog";
 import { cleDe, noteMaximale, noter } from "./score";
 import type { Etat, Ligne } from "./score";
+import { lexique } from "./lexique";
 
 /** Injected at build time by Vite — see `define` in vite.config.ts. */
 declare const __DATE_BUILD__: string;
@@ -57,6 +58,9 @@ export function App() {
   const [evolutionNom, setEvolutionNom] = useState("A1");
   const [choisis, setChoisis] = useState<string[]>([]);
   const [coches, setCoches] = useState<Set<string>>(new Set());
+  /** Index of the composition row being dragged, while a drag is in progress. */
+  const [glisse, setGlisse] = useState<number | null>(null);
+  const [lexiqueOuvert, setLexiqueOuvert] = useState(false);
 
   const evolutions = evolutionsOf(agres);
   const evolution = evolutions.find((e) => e.evolution === evolutionNom) ?? evolutions[0];
@@ -104,6 +108,17 @@ export function App() {
       actuels.includes(id) ? actuels.filter((autre) => autre !== id) : [...actuels, id],
     );
 
+  /** Move a composition element to another rank. The order is the routine's order —
+  it does not change the score, which is set-based, but it lets the coach lay the
+  movement out as it will be performed. */
+  const reordonner = (depuis: number, vers: number) =>
+    setChoisis((actuels) => {
+      const copie = [...actuels];
+      const [deplace] = copie.splice(depuis, 1);
+      copie.splice(vers, 0, deplace);
+      return copie;
+    });
+
   const cocher = (cle: string) =>
     setCoches((actuelles) => {
       const suivantes = new Set(actuelles);
@@ -114,32 +129,48 @@ export function App() {
   return (
     <main>
       <header>
-        <h1>Note de départ — NPT UFOLEP</h1>
-        <nav aria-label="Agrès">
-          {catalog.agres.map((a) => (
-            <button
-              key={a.id}
-              onClick={() => changer(a.nom, evolutionNom)}
-              aria-current={a.nom === agres}
-            >
-              {a.nom}
-            </button>
-          ))}
-        </nav>
-        <nav aria-label="Évolution">
-          {evolutions.map((e) => (
-            <button
-              key={e.id}
-              onClick={() => changer(agres, e.evolution)}
-              aria-current={e.evolution === evolution?.evolution}
-            >
-              {e.evolution}
-            </button>
-          ))}
-        </nav>
+        <div className="titre">
+          <h1>Note de départ — NPT UFOLEP</h1>
+          <button
+            type="button"
+            className="lien-lexique"
+            onClick={() => setLexiqueOuvert((ouvert) => !ouvert)}
+            aria-pressed={lexiqueOuvert}
+          >
+            {lexiqueOuvert ? "← Retour au calcul" : "Lexique"}
+          </button>
+        </div>
+        {!lexiqueOuvert && (
+          <>
+            <nav aria-label="Agrès">
+              {catalog.agres.map((a) => (
+                <button
+                  key={a.id}
+                  onClick={() => changer(a.nom, evolutionNom)}
+                  aria-current={a.nom === agres}
+                >
+                  {a.nom}
+                </button>
+              ))}
+            </nav>
+            <nav aria-label="Évolution">
+              {evolutions.map((e) => (
+                <button
+                  key={e.id}
+                  onClick={() => changer(agres, e.evolution)}
+                  aria-current={e.evolution === evolution?.evolution}
+                >
+                  {e.evolution}
+                </button>
+              ))}
+            </nav>
+          </>
+        )}
       </header>
 
-      {!evolution || !note ? (
+      {lexiqueOuvert ? (
+        <Lexique />
+      ) : !evolution || !note ? (
         <p>Aucune évolution publiée pour cet agrès.</p>
       ) : (
         <>
@@ -163,6 +194,61 @@ export function App() {
               </p>
             )}
           </aside>
+
+          {choisis.length > 0 && (
+            <section className="composition">
+              <h2>
+                Composition du mouvement{" "}
+                <small>
+                  {choisis.length} élément{choisis.length > 1 ? "s" : ""} · glisser pour réordonner
+                </small>
+              </h2>
+              <ol>
+                {choisis.map((id, i) => {
+                  const element = elementById.get(id);
+                  if (!element) return null;
+                  return (
+                    <li
+                      key={id}
+                      draggable
+                      onDragStart={() => setGlisse(i)}
+                      onDragOver={(event) => {
+                        event.preventDefault();
+                        if (glisse !== null && glisse !== i) {
+                          reordonner(glisse, i);
+                          setGlisse(i);
+                        }
+                      }}
+                      onDragEnd={() => setGlisse(null)}
+                      data-drag={glisse === i || undefined}
+                    >
+                      <span className="poignee" aria-hidden="true">⠿</span>
+                      <span className="rang">{i + 1}</span>
+                      <span className="palier">{element.palier}</span>
+                      <span className="libelle">
+                        {element.libelle}
+                        <small>
+                          n° {element.numero}
+                          {element.famille && ` · ${element.famille}`}
+                          {element.sortie && " · sortie"}
+                        </small>
+                      </span>
+                      <Apports apports={roles.get(id) ?? []} />
+                      <button
+                        type="button"
+                        className="retirer"
+                        onClick={() => basculer(id)}
+                        aria-label={`Retirer ${element.libelle}`}
+                        title="Retirer de la composition"
+                      >
+                        ×
+                      </button>
+                    </li>
+                  );
+                })}
+              </ol>
+            </section>
+          )}
 
           <div className="colonnes">
             <section>
@@ -267,16 +353,48 @@ function Choix({ element, apports, choisi, onClick }: ChoixProps) {
             n° {element.numero}
             {element.famille && ` · ${element.famille}`}
             {element.nouveau && " · nouveau"}
+            {element.sortie && " · sortie"}
           </small>
         </span>
-        <span className="apports">
-          {apports.map((apport) => (
-            <span key={apport.texte} className={`apport ${apport.genre}`} title={apport.texte}>
-              {apport.genre === "exigence" ? "E" : apport.genre === "max" ? "!" : `+${apport.points}`}
-            </span>
-          ))}
-        </span>
+        <Apports apports={apports} />
       </button>
     </li>
+  );
+}
+
+/** The programme's vocabulary, grouped so LA / LAE / LG / LM / PG read side by side. */
+function Lexique() {
+  return (
+    <section className="lexique">
+      {lexique.map((groupe) => (
+        <div key={groupe.titre} className="groupe">
+          <h2>{groupe.titre}</h2>
+          <dl>
+            {groupe.entrees.map((entree) => (
+              <div key={entree.terme}>
+                <dt>{entree.terme}</dt>
+                <dd>
+                  {entree.definition}
+                  {entree.precision && <small>{entree.precision}</small>}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      ))}
+    </section>
+  );
+}
+
+/** The little E / ! / +n chips that say why an element is worth picking. */
+function Apports({ apports }: { apports: { genre: string; texte: string; points: number }[] }) {
+  return (
+    <span className="apports">
+      {apports.map((apport) => (
+        <span key={apport.texte} className={`apport ${apport.genre}`} title={apport.texte}>
+          {apport.genre === "exigence" ? "E" : apport.genre === "max" ? "!" : `+${apport.points}`}
+        </span>
+      ))}
+    </span>
   );
 }

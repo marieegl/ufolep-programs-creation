@@ -25,6 +25,30 @@ h1 {
   margin: 0 0 0.75rem;
 }
 
+.titre {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.lien-lexique {
+  flex: 0 0 auto;
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 0.25rem 0.7rem;
+  border: 1px solid #cdd4dc;
+  border-radius: 999px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.lien-lexique[aria-pressed="true"] {
+  background: #16202b;
+  border-color: #16202b;
+  color: #fff;
+}
+
 h2 {
   font-size: 1rem;
   margin: 1.5rem 0 0.5rem;
@@ -269,6 +293,141 @@ td {
 .apport.max {
   background: #f7e2c9;
   color: #8a5410;
+}
+
+/* The routine as it is being built: an ordered, drag-to-reorder list of the picks. */
+.composition ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #e7eaee;
+  border-radius: 0.4rem;
+  background: #fff;
+}
+
+.composition li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.55rem;
+  padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid #e7eaee;
+  font-size: 0.85rem;
+  cursor: grab;
+}
+
+.composition li:last-child {
+  border-bottom: 0;
+}
+
+.composition li[data-drag] {
+  background: #eef4fb;
+  opacity: 0.9;
+}
+
+.composition .poignee {
+  color: #c2cad3;
+}
+
+.composition .rang {
+  flex: 0 0 1.3rem;
+  text-align: right;
+  color: #8a949f;
+  font-variant-numeric: tabular-nums;
+}
+
+.composition .palier {
+  flex: 0 0 5.5rem;
+  color: #5b6672;
+  white-space: nowrap;
+}
+
+.composition .libelle {
+  flex: 1;
+}
+
+.composition .libelle small {
+  display: block;
+  color: #8a949f;
+  font-size: 0.75rem;
+}
+
+.composition .apports {
+  display: flex;
+  align-items: baseline;
+  gap: 0.2rem;
+}
+
+.composition .retirer {
+  flex: 0 0 auto;
+  padding: 0 0.2rem;
+  border: 0;
+  background: none;
+  color: #b3bcc6;
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.composition .retirer:hover {
+  color: #c0392b;
+}
+
+/* The glossary view: one card per group, two columns where the width allows. */
+.lexique {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+@media (max-width: 60rem) {
+  .lexique {
+    grid-template-columns: 1fr;
+  }
+}
+
+.lexique .groupe {
+  border: 1px solid #e7eaee;
+  border-radius: 0.5rem;
+  background: #fff;
+  padding: 0.4rem 0.9rem 0.9rem;
+}
+
+.lexique h2 {
+  font-size: 0.95rem;
+}
+
+.lexique dl {
+  margin: 0;
+}
+
+.lexique dl > div {
+  padding: 0.55rem 0;
+  border-bottom: 1px solid #eef1f4;
+}
+
+.lexique dl > div:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.lexique dt {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.lexique dd {
+  margin: 0.15rem 0 0;
+  font-size: 0.85rem;
+  color: #3a4653;
+}
+
+.lexique dd small {
+  display: block;
+  margin-top: 0.2rem;
+  color: #8a949f;
+  font-style: italic;
 }
 
 footer {

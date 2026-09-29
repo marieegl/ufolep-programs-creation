@@ -153,7 +153,7 @@ uv run scripts/resolve_criteres.py data/criteres.csv src/data/catalog.json \
   data/csv/criteres-elements.csv --strict
 ```
 
-329 rules over 334 lines expand to 3927 criterion-element pairs, so what a human
+329 rules over 334 lines expand to 4003 criterion-element pairs, so what a human
 maintains is eleven times smaller than what the app consumes — and a re-issued
 programme is re-resolved rather than re-read element by element. Five controls check
 that every printed criterion has a rule and every rule still means something; the

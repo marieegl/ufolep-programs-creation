@@ -1,4 +1,4 @@
-agres,genre,texte,type,nombre,confirmation,palier,arche,famille,libelle,exclure,exclure_arche,attendu,commentaire
+agres,genre,texte,type,nombre,confirmation,palier,arche,famille,libelle,exclure,exclure_arche,attendu,commentaire,tag
 Saut,valorisation,Saut à 1m,manuel,1,,,,,,,,,"hauteur de l'agrès, pas un élément"
 Saut,valorisation,Saut tremplin,manuel,1,,,,,,,,,réglage de l'agrès ; distinct du saut avec un élément sur le tremplin
 Saut,valorisation,2 sauts à 1.20 m (min.),manuel,2,,,,,,,,,hauteur de l'agrès
@@ -116,7 +116,7 @@ Poutre,exigence,2 acros en poutre haute,elements,2,,,acro [12],,,,,,
 Poutre,valorisation,1 élément pivot P3 (min.),elements,1,,P3+,pivot,,,,,,
 Poutre,valorisation,1 saut P3 (min.),elements,1,,P3+,sauts appel,,,,,,
 Poutre,valorisation,1 acro P2 (min.),elements,1,,P2+,acro [12],,,,,,
-Poutre,valorisation,1 sortie P3 (min.),manuel,1,,,,,,,,,la Poutre n'a aucune arche ni famille de sorties dans le catalogue
+Poutre,valorisation,1 sortie P3 (min.),elements,1,oui,P3+,,,,,,,"sortie repérée par data/sorties.csv (le catalogue n'a ni arche ni famille de sorties) ; le juge confirme qu'elle est exécutée en sortie",sortie
 Poutre,exigence,5 Arches,arches,5,,,,,,,,,
 Poutre,exigence,8 à 10 éléments,total,8-10,,,,,,,,,
 Poutre,exigence,1 pivots P4 (min.),elements,1,,P4+,pivot,,,,,,
@@ -128,24 +128,24 @@ Poutre,exigence,3 acros en poutre haute,elements,3,,,acro [12],,,,,,
 Poutre,exigence,1 élément P4,elements,1,,P4,,,,,,,
 Poutre,valorisation,1 LG ou LM,manuel,1,,,,,,,,,liaison gymnique ou mixte
 Poutre,valorisation,1 acro sur la poutre P4 (min.),elements,1,,P4+,acro [12],,,,,,
-Poutre,valorisation,1 sortie P4 (min.),manuel,1,,,,,,,,,aucune sortie au catalogue de la Poutre
+Poutre,valorisation,1 sortie P4 (min.),elements,1,oui,P4+,,,,,,,"sortie repérée par data/sorties.csv ; le juge confirme qu'elle est exécutée en sortie",sortie
 Poutre,exigence,1 élément P5,elements,1,,P5,,,,,,,
 Poutre,valorisation,1 LG ou LM dont 2 P3 (min.),manuel,1,,,,,,,,,liaison gymnique ou mixte
 Poutre,valorisation,1 saut avec 1 rotation à 180° (min.),elements,1,oui,,sauts appel,,180|tour,,,,
 Poutre,valorisation,1 LA sur poutre,manuel,1,,,,,,,,,liaison acrobatique
 Poutre,valorisation,1 élément acro P5 (min.) sur la poutre,elements,1,,P5+,acro [12],,,,,,
-Poutre,valorisation,1 sortie avec liaison acro,manuel,1,,,,,,,,,aucune sortie au catalogue de la Poutre
+Poutre,valorisation,1 sortie avec liaison acro,elements,1,oui,P3+,,,,,,,"sortie repérée par data/sorties.csv (P3+ écarte le nomade — qui ne valorise pas — et les sorties non-acro) ; la liaison acro est confirmée à la main",sortie
 Poutre,exigence,1 élément P6,elements,1,,P6,,,,,,,
 Poutre,valorisation,1 LG ou LM dont 2 P4 (min.),manuel,1,,,,,,,,,liaison gymnique ou mixte
 Poutre,valorisation,1 saut avec 1 rotation à 180°,elements,1,oui,,sauts appel,,180|tour,,,,
 Poutre,valorisation,1 LA dont 1 élément avec envol sur poutre,manuel,1,,,,,,,,,liaison acrobatique ; l'envol n'est pas marqué
 Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,oui,,acro [12],,,,,,l'envol n'est pas marqué
-Poutre,valorisation,1 sortie avec liaison acro dont un élément P5 (min.),manuel,1,,,,,,,,,aucune sortie au catalogue de la Poutre
+Poutre,valorisation,1 sortie avec liaison acro dont un élément P5 (min.),elements,1,oui,P3+,,,,,,,"sortie repérée par data/sorties.csv (P3+ écarte le nomade) ; la liaison acro et l'élément P5 sont confirmés à la main",sortie
 Poutre,exigence,1 élément P7,elements,1,,P7,,,,,,,
 Poutre,valorisation,1 saut écart avec 1 rotation à 180°,elements,1,oui,,sauts appel,,ecart,,,,
 Poutre,valorisation,1 LA 2 éléments dont 1 salto sur poutre,elements,1,oui,,acro [12],,salto,,,,
 Poutre,valorisation,1 salto sur poutre P6 (min.),elements,1,,P6+,acro [12],,salto,,,,
-Poutre,valorisation,1 sortie avec liaison acro dont 1 élément P5 (min.),manuel,1,,,,,,,,,aucune sortie au catalogue de la Poutre
+Poutre,valorisation,1 sortie avec liaison acro dont 1 élément P5 (min.),elements,1,oui,P3+,,,,,,,"sortie repérée par data/sorties.csv (P3+ écarte le nomade) ; la liaison acro et l'élément P5 sont confirmés à la main",sortie
 Poutre,valorisation,Poutre mousse : 1 ATR (PR),elements,1,,PR,accro poutre mousse,,atr,,,,
 Poutre,valorisation,Poutre mousse : ROUE,elements,1,,,accro poutre mousse,,^roue,,,,« ou roue arabe » est une souplesse avant : le motif est ancré
 Poutre,valorisation,Poutre mousse : Acro P2 (min.),elements,1,,P2+,accro poutre mousse,,,,,,
