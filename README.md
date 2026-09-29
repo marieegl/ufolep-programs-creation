@@ -42,13 +42,22 @@ npm run test     # check the engine against the notes published on page 1
 
 The app is handed over as the file itself: `dist/index.html` is self-contained, so it
 travels by mail or by USB stick and opens on a double-click, with no network, install or
-account. There is nothing hosted — this is a calculator for a handful of coaches, not a
-public site. Note that nothing is saved either: a reload clears the chosen elements.
+account. Note that nothing is saved either: a reload clears the chosen elements.
 
 ```sh
 npm run build
 cp dist/index.html ~/Desktop/"Note de départ NPT UFOLEP.html"
 ```
+
+The single file is what runs on a desktop and off a USB stick, but it will not open on an
+iPhone — iOS refuses to run a local file's JavaScript. For phones the app is also served
+as a small PWA (`public/manifest.webmanifest`, `public/sw.js`, generated icons), deployed
+to GitHub Pages at <https://marieegl.github.io/ufolep-programs-creation/>: opened once in
+Safari it can be added to the home screen and, thanks to the service worker, works offline
+after the first visit. `scripts/make_icon.py` regenerates the home-screen icons.
+
+The work is Marie Engel's — see [`LICENSE`](LICENSE), all rights reserved. The page being
+public does not make the code reusable.
 
 `.github/workflows/build.yml` runs on every push and pull request. Besides the
 typecheck, the tests and the build, it re-derives the catalog and diffs it against the
