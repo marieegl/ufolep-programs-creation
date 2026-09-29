@@ -200,7 +200,7 @@ export function App() {
               <h2>
                 Composition du mouvement{" "}
                 <small>
-                  {choisis.length} élément{choisis.length > 1 ? "s" : ""} · glisser pour réordonner
+                  {choisis.length} élément{choisis.length > 1 ? "s" : ""} · glisser ou flèches pour réordonner
                 </small>
               </h2>
               <ol>
@@ -234,6 +234,26 @@ export function App() {
                         </small>
                       </span>
                       <Apports apports={roles.get(id) ?? []} />
+                      <span className="ordre">
+                        <button
+                          type="button"
+                          onClick={() => reordonner(i, i - 1)}
+                          disabled={i === 0}
+                          aria-label="Monter"
+                          title="Monter"
+                        >
+                          ▲
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => reordonner(i, i + 1)}
+                          disabled={i === choisis.length - 1}
+                          aria-label="Descendre"
+                          title="Descendre"
+                        >
+                          ▼
+                        </button>
+                      </span>
                       <button
                         type="button"
                         className="retirer"

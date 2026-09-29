@@ -357,6 +357,32 @@ td {
   gap: 0.2rem;
 }
 
+/* Touch-friendly reordering: drag needs a mouse, these work on a phone. */
+.composition .ordre {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.composition .ordre button {
+  padding: 0.15rem 0.3rem;
+  border: 0;
+  background: none;
+  color: #8a949f;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.composition .ordre button:disabled {
+  color: #d7dce2;
+  cursor: default;
+}
+
+.composition .ordre button:not(:disabled):active {
+  color: #16202b;
+}
+
 .composition .retirer {
   flex: 0 0 auto;
   padding: 0 0.2rem;
