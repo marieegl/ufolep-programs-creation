@@ -16,6 +16,18 @@ from pathlib import Path
 
 PALIER_ORDER = ["PRÉ-REQUIS", "P1", "P2", "P3", "P4", "P5", "P6", "P7", "NOMADE"]
 
+# A valorisation is a *liaison* (LA / LAE / LG / LM / PG) when the liaison itself is what
+# is rewarded. The scoring engine exempts these from the "one element, one valorisation"
+# rule — an element used inside a liaison may still count for another valorisation.
+# Uppercase tokens only, so the article "la" never matches; and a valorisation that rewards
+# elements *incorporated* in a liaison ("… incorporés dans les LAE") rewards the elements,
+# not the liaison, so it stays exclusive.
+LIAISON = re.compile(r"\b(LA|LAE|LG|LM|PG)\b")
+
+
+def est_liaison(genre: str, texte: str) -> bool:
+    return genre == "valorisation" and bool(LIAISON.search(texte)) and "incorpor" not in texte.lower()
+
 # The décomposition abbreviates PRÉ-REQUIS in its palier lists; the arches PDFs spell
 # it out on the elements. The catalog keeps one spelling so a palier can be compared.
 PALIER_ALIAS = {"PR": "PRÉ-REQUIS"}
@@ -146,6 +158,7 @@ def build_criteres(rules_path: Path, pairs_path: Path) -> list[dict]:
             "genre": row["genre"],
             "texte": row["texte"],
             "type": row["type"],
+            "liaison": est_liaison(row["genre"], row["texte"]),
             "nombreMin": int(low),
             "nombreMax": int(high) if high else None,
             "confirmation": row["confirmation"] == "oui",

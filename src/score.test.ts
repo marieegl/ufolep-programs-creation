@@ -120,6 +120,64 @@ describe("noter", () => {
     );
   });
 
+  it("ne crédite un élément partagé qu'à une seule valorisation exclusive", () => {
+    // Two exclusive valorisations of the same évolution that share an element.
+    let trouve:
+      | { evo: Evolution; a: string; b: string; element: string }
+      | undefined;
+    for (const evo of catalog.evolutions) {
+      const excl = criteresOf(evo).valorisations
+        .map((v) => v.critere)
+        .filter((c) => !c.liaison && c.type === "elements" && c.nombreMin === 1);
+      for (let i = 0; i < excl.length && !trouve; i++) {
+        for (let j = i + 1; j < excl.length && !trouve; j++) {
+          const partage = excl[i].elements.find((id) => excl[j].elements.includes(id));
+          if (partage) trouve = { evo, a: excl[i].texte, b: excl[j].texte, element: partage };
+        }
+      }
+      if (trouve) break;
+    }
+    expect(trouve).toBeTruthy();
+    const { evo, a, b, element } = trouve!;
+    const coches = new Set([`valorisation ${a}`, `valorisation ${b}`]);
+    const note = noter(evo, { elements: [element], coches });
+    const gagnees = note.valorisations.filter(
+      (l) => (l.critere.texte === a || l.critere.texte === b) && l.points > 0,
+    );
+    expect(gagnees).toHaveLength(1);
+  });
+
+  it("laisse un élément de liaison compter aussi pour une valorisation exclusive", () => {
+    let trouve:
+      | { evo: Evolution; liaison: string; exclusive: string; element: string }
+      | undefined;
+    for (const evo of catalog.evolutions) {
+      const crits = criteresOf(evo).valorisations.map((v) => v.critere);
+      const liaisons = crits.filter((c) => c.liaison && c.type === "elements" && c.nombreMin === 1);
+      const exclusives = crits.filter((c) => !c.liaison && c.type === "elements" && c.nombreMin === 1);
+      for (const l of liaisons) {
+        for (const x of exclusives) {
+          const partage = l.elements.find((id) => x.elements.includes(id));
+          if (partage) {
+            trouve = { evo, liaison: l.texte, exclusive: x.texte, element: partage };
+            break;
+          }
+        }
+        if (trouve) break;
+      }
+      if (trouve) break;
+    }
+    expect(trouve).toBeTruthy();
+    const { evo, liaison, exclusive, element } = trouve!;
+    const coches = new Set([`valorisation ${liaison}`, `valorisation ${exclusive}`]);
+    const note = noter(evo, { elements: [element], coches });
+    const ligneLiaison = note.valorisations.find((l) => l.critere.texte === liaison)!;
+    const ligneExclusive = note.valorisations.find((l) => l.critere.texte === exclusive)!;
+    // The single shared element credits the liaison and the exclusive valorisation both.
+    expect(ligneLiaison.points).toBeGreaterThan(0);
+    expect(ligneExclusive.points).toBeGreaterThan(0);
+  });
+
   it("note le Saut à la valeur du saut choisi", () => {
     const evo = evolution("Saut", "C3");
     const p7 = elementsOf("Saut").find((e) => e.palier === "P7")!;

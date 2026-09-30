@@ -86,6 +86,66 @@ const ligne = (critere: Critere, points: number, composition: Composition): Lign
   };
 };
 
+/** Which valorisations the composition satisfies, crediting each selected element to at
+most one *exclusive* valorisation. A liaison valorisation (LA/LAE/LG/LM/PG) is exempt: an
+element used inside a liaison may still count for another valorisation, so liaisons are
+scored independently and consume nothing. The exclusive ones are served best-paying first
+(then most-demanding, then narrowest pool), so a shared element lands where it is worth
+most. This is greedy, not a global optimum, but it never credits one element twice. */
+const evaluerValorisations = (
+  valorisations: { critere: Critere; points: number }[],
+  composition: Composition,
+): Ligne[] => {
+  const consommes = new Set<string>();
+  const exclusif = (c: Critere) => !c.liaison && (c.type === "elements" || c.type === "familles");
+  const ordre = valorisations
+    .filter((v) => exclusif(v.critere))
+    .sort(
+      (a, b) =>
+        b.points - a.points ||
+        b.critere.nombreMin - a.critere.nombreMin ||
+        a.critere.elements.length - b.critere.elements.length,
+    );
+
+  const credite = new Map<string, Ligne>();
+  for (const { critere, points } of ordre) {
+    const clef = cleDe(critere);
+    const dispo = composition.elements.filter(
+      (id) => critere.elements.includes(id) && !consommes.has(id),
+    );
+    let trouves: number;
+    let retenus: string[];
+    if (critere.type === "familles") {
+      const parFamille = new Map<string, string>();
+      for (const id of dispo) {
+        const famille = elementById.get(id)?.famille ?? "";
+        if (!parFamille.has(famille)) parFamille.set(famille, id);
+      }
+      trouves = parFamille.size;
+      retenus = trouves >= critere.nombreMin ? [...parFamille.values()].slice(0, critere.nombreMin) : [];
+    } else {
+      trouves = dispo.length;
+      retenus = trouves >= critere.nombreMin ? dispo.slice(0, critere.nombreMin) : [];
+    }
+    retenus.forEach((id) => consommes.add(id));
+    const etat = etatDe(critere, trouves, composition.coches.has(clef));
+    credite.set(clef, {
+      critere,
+      etat,
+      trouves,
+      requis: critere.nombreMin,
+      points: etat === "satisfait" ? points : 0,
+      pointsPossibles: points,
+      elementsRetenus: retenus,
+    });
+  }
+
+  // Keep the décomposition's order; liaisons and non-selecting valorisations stay independent.
+  return valorisations.map(
+    ({ critere, points }) => credite.get(cleDe(critere)) ?? ligne(critere, points, composition),
+  );
+};
+
 /** The value of the vault that counts — an integer per palier, not a tenth.
 
 Saut scores unlike every other apparatus: no Tronc Commun, and the start score is the
@@ -101,9 +161,7 @@ const valeurDuSaut = (composition: Composition) => {
 export const noter = (evolution: Evolution, composition: Composition): Note => {
   const { exigences, valorisations } = criteresOf(evolution);
   const lignesExigences = exigences.map(({ critere, points }) => ligne(critere, points, composition));
-  const lignesValorisations = valorisations.map(({ critere, points }) =>
-    ligne(critere, points, composition),
-  );
+  const lignesValorisations = evaluerValorisations(valorisations, composition);
 
   const pointsExigences = lignesExigences.reduce((sum, l) => sum + l.points, 0);
 

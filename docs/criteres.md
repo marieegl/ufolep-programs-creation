@@ -142,6 +142,15 @@ ticked) and `manuel`. The décomposition — not `criteres.csv` — stays the au
 which criteria an évolution asks for and what each valorisation is worth; a rule only
 says how to recognise one.
 
+**One element, one valorisation.** A selected element may satisfy several *exigences* of
+the Tronc Commun at once, but it is credited to at most **one** valorisation — except a
+**liaison** valorisation (LA / LAE / LG / LM / PG), which is exempt: an element used inside
+a liaison may still count for another valorisation. The `liaison` flag is computed in
+`build_data.py` (uppercase token, minus the "… incorporés dans les LAE" case, which rewards
+the elements not the liaison). The engine serves the exclusive valorisations best-paying
+first, so a shared element lands where it is worth most — greedy, not a global optimum, but
+it never credits one element twice.
+
 `noteMaximale` gives the ceiling: 1 point per exigence, plus the best-paying
 valorisations up to the `CHOISIR n PARMIS LES m` cap. `src/score.test.ts` checks it
 against the notes published on page 1 (A → 13, B1 → 14, B2/B3/C → 15) for all 48

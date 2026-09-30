@@ -55,6 +55,8 @@ export type Critere = {
   genre: "exigence" | "valorisation";
   texte: string;
   type: CritereType;
+  /** A liaison valorisation (LA/LAE/LG/LM/PG): exempt from the one-element-one-valorisation rule. */
+  liaison: boolean;
   nombreMin: number;
   nombreMax: number | null;
   /** The selected elements are a necessary condition only — the coach still ticks it. */
