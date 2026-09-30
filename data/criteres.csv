@@ -121,7 +121,7 @@ Poutre,exigence,8 à 10 éléments,total,8-10,,,,,,,,,
 Poutre,exigence,1 pivots P4 (min.),elements,1,,P4+,pivot,,,,,,
 Poutre,exigence,1 élément P3 (min.),elements,1,,P3+,,,,,,,
 Poutre,valorisation,2 éléments gymniques P3 (min.) dans le mouvement,elements,2,,P3+,atr et maintien|pivot|sauts appel,,,,,,« gymnique » = tout ce qui n'est pas acrobatique
-Poutre,valorisation,1 saut avec écart antéro,elements,1,,,sauts appel,,ecart,,,,
+Poutre,valorisation,1 saut avec écart antéro,elements,1,,,sauts appel,,enjambe|antero|changement de jambes,,,,"écart antéro-postérieur : enjambés / antéro-postérieurs / changements de jambes, pas le carpé écarté (latéral)"
 Poutre,valorisation,1 élément acro sur la poutre P3 (min.),elements,1,,P3+,acro [12],,,,,,
 Poutre,exigence,3 acros en poutre haute,elements,3,,,acro [12],,,,,,
 Poutre,exigence,1 élément P4 (min.),elements,1,,P4+,,,,,,,
