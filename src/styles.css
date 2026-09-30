@@ -187,6 +187,61 @@ td {
   color: #16202b;
 }
 
+/* The "+" prefix on an element (acro chained after another) — made visible up front. */
+.plus {
+  font-weight: 700;
+  color: #8a5410;
+}
+
+/* Legend for the état bar colours and the (*) 3-point rows. */
+.legende {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.9rem;
+  margin: 0.55rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.72rem;
+  color: #5b6672;
+}
+
+.legende li {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.legende li[data-etat]::before {
+  content: "";
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 2px;
+  background: var(--insuffisant);
+}
+
+.legende li[data-etat="satisfait"]::before {
+  background: var(--satisfait);
+}
+
+.legende li[data-etat="a-confirmer"]::before {
+  background: var(--a-confirmer);
+}
+
+.legende li[data-etat="manuel"]::before {
+  background: var(--manuel);
+}
+
+.legende-principale {
+  padding: 0 0.3rem;
+  border-radius: 2px;
+  background: #eceff3;
+}
+
+.legende-principale span {
+  font-weight: 700;
+  color: #16202b;
+}
+
 .criteres .compte,
 .criteres .points {
   white-space: nowrap;

@@ -15,6 +15,11 @@ const ETATS: Record<Etat, string> = {
   manuel: "à cocher",
 };
 
+/** An element whose number ends with "+": an acro chained directly after another. */
+const DEFINITION_PLUS =
+  "Élément + : élément acro enchaîné directement d’un autre élément acro au sol, ou gym pour les LM en poutre";
+const estPlus = (element: Element) => element.numero.endsWith("+");
+
 /** What the criterion counts, spelt so the number on the row means something. */
 const compteur = ({ critere, trouves }: Ligne) => {
   // A criterion that selects elements and has none is unreachable: either the apparatus
@@ -226,6 +231,9 @@ export function App() {
                       <span className="rang">{i + 1}</span>
                       <span className="palier">{element.palier}</span>
                       <span className="libelle">
+                        {estPlus(element) && (
+                          <span className="plus" title={DEFINITION_PLUS}>+ </span>
+                        )}
                         {element.libelle}
                         <small>
                           n° {element.numero}
@@ -328,6 +336,15 @@ export function App() {
                     </tbody>
                   ))}
               </table>
+              <ul className="legende" aria-label="Légende des états">
+                <li data-etat="satisfait">satisfaite</li>
+                <li data-etat="a-confirmer">à confirmer</li>
+                <li data-etat="manuel">à cocher</li>
+                <li data-etat="insuffisant">non satisfaite</li>
+                <li className="legende-principale">
+                  <span>(*)</span> vaut 3 points
+                </li>
+              </ul>
             </section>
 
             <section>
@@ -383,6 +400,7 @@ function Choix({ element, apports, choisi, onClick }: ChoixProps) {
       <button onClick={onClick} aria-pressed={choisi}>
         <span className="palier">{element.palier}</span>
         <span className="libelle">
+          {estPlus(element) && <span className="plus" title={DEFINITION_PLUS}>+ </span>}
           {element.libelle}
           <small>
             n° {element.numero}
