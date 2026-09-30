@@ -284,10 +284,24 @@ export function App() {
                       <tr className="genre">
                         <td colSpan={5}>{bloc.titre}</td>
                       </tr>
-                      {bloc.lignes.map((ligne) => (
-                        <tr key={cleDe(ligne.critere)} data-etat={ligne.etat}>
+                      {bloc.lignes.map((ligne) => {
+                        // A "principale" valorisation is worth 3 points, a "secondaire" 2.
+                        // The décomposition marks the principales with (*) on a darker cell.
+                        const principale =
+                          ligne.critere.genre === "valorisation" && ligne.pointsPossibles === 3;
+                        return (
+                        <tr
+                          key={cleDe(ligne.critere)}
+                          data-etat={ligne.etat}
+                          data-principale={principale || undefined}
+                        >
                           <td className="etat" title={ETATS[ligne.etat]} aria-label={ETATS[ligne.etat]} />
                           <td>
+                            {principale && (
+                              <span className="principale" title="Valorisation principale — 3 points">
+                                (*){" "}
+                              </span>
+                            )}
                             {ligne.critere.texte}
                             {ligne.critere.commentaire && (
                               <small title={ligne.critere.commentaire}> ⓘ</small>
@@ -309,7 +323,8 @@ export function App() {
                             <small>/{ligne.pointsPossibles}</small>
                           </td>
                         </tr>
-                      ))}
+                        );
+                      })}
                     </tbody>
                   ))}
               </table>

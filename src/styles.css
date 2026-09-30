@@ -173,6 +173,20 @@ td {
   background: #f3faf5;
 }
 
+/* Principale valorisation (3 pts): (*) on a darker row, as in the décomposition. */
+.criteres tr[data-principale] {
+  background: #eceff3;
+}
+
+.criteres tr[data-principale][data-etat="satisfait"] {
+  background: #e4f0e8;
+}
+
+.criteres .principale {
+  font-weight: 700;
+  color: #16202b;
+}
+
 .criteres .compte,
 .criteres .points {
   white-space: nowrap;
