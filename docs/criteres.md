@@ -146,8 +146,8 @@ says how to recognise one.
 the Tronc Commun at once, but it is credited to at most **one** valorisation — except a
 **liaison** valorisation (LA / LAE / LG / LM / PG), which is exempt: an element used inside
 a liaison may still count for another valorisation. The `liaison` flag is computed in
-`build_data.py` (uppercase token, minus the "… incorporés dans les LAE" case, which rewards
-the elements not the liaison). The engine serves the exclusive valorisations best-paying
+`build_data.py` (an uppercase liaison token, or a "2 acros de sens différents" valorisation,
+whose acros are what a liaison is built from). The engine serves the exclusive valorisations best-paying
 first, so a shared element lands where it is worth most — greedy, not a global optimum, but
 it never credits one element twice.
 
