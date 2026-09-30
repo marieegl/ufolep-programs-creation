@@ -66,6 +66,8 @@ export function App() {
   /** Index of the composition row being dragged, while a drag is in progress. */
   const [glisse, setGlisse] = useState<number | null>(null);
   const [lexiqueOuvert, setLexiqueOuvert] = useState(false);
+  /** Clé of the valorisation whose eligible elements are highlighted, or null. */
+  const [apercu, setApercu] = useState<string | null>(null);
 
   const evolutions = evolutionsOf(agres);
   const evolution = evolutions.find((e) => e.evolution === evolutionNom) ?? evolutions[0];
@@ -90,6 +92,13 @@ export function App() {
   const plafond = evolution ? noteMaximale(evolution) : 0;
   const roles = useMemo(() => (evolution ? apports(evolution) : new Map()), [evolution]);
 
+  /** The elements eligible for the previewed valorisation — highlighted in the list. */
+  const surbrillance = useMemo(() => {
+    if (!apercu || !note) return new Set<string>();
+    const ligne = note.valorisations.find((l) => cleDe(l.critere) === apercu);
+    return new Set(ligne?.critere.elements ?? []);
+  }, [apercu, note]);
+
   /** An évolution only allows some paliers, so changing it drops what it forbids.
 
   A2 and C1 are women's only, so the évolution being looked at may not exist on the
@@ -106,6 +115,7 @@ export function App() {
         : [],
     );
     if (nomAgres !== agres) setCoches(new Set());
+    setApercu(null);
   };
 
   const basculer = (id: string) =>
@@ -297,6 +307,10 @@ export function App() {
                         // The décomposition marks the principales with (*) on a darker cell.
                         const principale =
                           ligne.critere.genre === "valorisation" && ligne.pointsPossibles === 3;
+                        // Clicking a valorisation that selects elements previews them in the list.
+                        const cliquable =
+                          ligne.critere.genre === "valorisation" && ligne.critere.elements.length > 0;
+                        const actif = apercu === cleDe(ligne.critere);
                         return (
                         <tr
                           key={cleDe(ligne.critere)}
@@ -304,7 +318,16 @@ export function App() {
                           data-principale={principale || undefined}
                         >
                           <td className="etat" title={ETATS[ligne.etat]} aria-label={ETATS[ligne.etat]} />
-                          <td>
+                          <td
+                            className={cliquable ? "cliquable" : undefined}
+                            data-apercu={actif || undefined}
+                            onClick={
+                              cliquable
+                                ? () => setApercu(actif ? null : cleDe(ligne.critere))
+                                : undefined
+                            }
+                            title={cliquable ? "Voir les éléments correspondants dans la liste" : undefined}
+                          >
                             {principale && (
                               <span className="principale" title="Valorisation principale — 3 points">
                                 (*){" "}
@@ -365,6 +388,7 @@ export function App() {
                             element={element}
                             apports={roles.get(element.id) ?? []}
                             choisi={choisis.includes(element.id)}
+                            apercu={surbrillance.has(element.id)}
                             onClick={() => basculer(element.id)}
                           />
                         ))}
@@ -391,13 +415,14 @@ type ChoixProps = {
   element: Element;
   apports: { genre: string; texte: string; points: number }[];
   choisi: boolean;
+  apercu: boolean;
   onClick: () => void;
 };
 
-function Choix({ element, apports, choisi, onClick }: ChoixProps) {
+function Choix({ element, apports, choisi, apercu, onClick }: ChoixProps) {
   return (
     <li>
-      <button onClick={onClick} aria-pressed={choisi}>
+      <button onClick={onClick} aria-pressed={choisi} data-apercu={apercu || undefined}>
         <span className="palier">{element.palier}</span>
         <span className="libelle">
           {estPlus(element) && <span className="plus" title={DEFINITION_PLUS}>+ </span>}

@@ -187,6 +187,19 @@ td {
   color: #16202b;
 }
 
+/* A valorisation whose elements can be previewed in the list, and the active one. */
+.criteres td.cliquable {
+  cursor: pointer;
+}
+
+.criteres td.cliquable:hover {
+  text-decoration: underline;
+}
+
+.criteres td[data-apercu] {
+  background: #dfeafa;
+}
+
 /* The "+" prefix on an element (acro chained after another) — made visible up front. */
 .plus {
   font-weight: 700;
@@ -314,6 +327,12 @@ td {
 .elements button[aria-pressed="true"] {
   background: #eaf3ec;
   box-shadow: inset 0.25rem 0 0 var(--satisfait);
+}
+
+/* Blue preview of the elements eligible for a clicked valorisation. Placed after the
+   selected rule so a selected element keeps its green accent but takes the blue fill. */
+.elements button[data-apercu="true"] {
+  background: #dfeafa;
 }
 
 .elements .palier {
