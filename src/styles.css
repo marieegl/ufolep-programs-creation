@@ -1,13 +1,128 @@
 :root {
   font-family: system-ui, sans-serif;
   line-height: 1.5;
-  color: #16202b;
-  background: #f6f7f9;
+  color-scheme: light;
+
+  --bg: #f6f7f9;
+  --surface: #ffffff;
+  --surface-2: #eef1f4;
+  --border: #e7eaee;
+  --border-2: #dfe4ea;
+  --border-strong: #cdd4dc;
+  --ink: #16202b;
+  --text-2: #3a4653;
+  --muted: #5b6672;
+  --muted-2: #8a949f;
+  --muted-3: #46525f;
+  --faint: #c2cad3;
+  --hover: #f1f4f7;
+  --danger: #c0392b;
 
   --satisfait: #2f8a4c;
   --insuffisant: #cdd4dc;
   --a-confirmer: #d99524;
   --manuel: #6b83a8;
+
+  --satisfait-bg: #f3faf5;
+  --selected-bg: #eaf3ec;
+  --preview-bg: #dfeafa;
+  --principale-bg: #eceff3;
+  --principale-satisfait-bg: #e4f0e8;
+  --drag-bg: #eef4fb;
+
+  --apport-bg: #e7eaee;
+  --apport-fg: #46525f;
+  --apport-val-bg: #ddeee2;
+  --apport-val-fg: #1f6b3a;
+  --apport-exi-bg: #e2e9f5;
+  --apport-exi-fg: #33507f;
+  --apport-max-bg: #f7e2c9;
+  --apport-max-fg: #8a5410;
+
+  color: var(--ink);
+  background: var(--bg);
+}
+
+/* Dark palette: applied when the OS asks for dark (unless the coach forced light),
+   or when the theme toggle forces dark. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #0f141a;
+    --surface: #171d25;
+    --surface-2: #1f2730;
+    --border: #2b333d;
+    --border-2: #333c47;
+    --border-strong: #3c4650;
+    --ink: #e8ecf1;
+    --text-2: #c7cfd8;
+    --muted: #9aa4b0;
+    --muted-2: #7d8794;
+    --muted-3: #aeb7c1;
+    --faint: #59636f;
+    --hover: #1f2730;
+    --danger: #e0796d;
+
+    --satisfait: #4caf6e;
+    --insuffisant: #3c4650;
+    --a-confirmer: #e0a94a;
+    --manuel: #91a6cc;
+
+    --satisfait-bg: #14241b;
+    --selected-bg: #16301f;
+    --preview-bg: #15273c;
+    --principale-bg: #242d38;
+    --principale-satisfait-bg: #1a2f22;
+    --drag-bg: #1c2a3b;
+
+    --apport-bg: #2b333d;
+    --apport-fg: #aeb7c1;
+    --apport-val-bg: #1c3527;
+    --apport-val-fg: #7fd3a0;
+    --apport-exi-bg: #232f47;
+    --apport-exi-fg: #a3b8e2;
+    --apport-max-bg: #382e1b;
+    --apport-max-fg: #e0b070;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0f141a;
+  --surface: #171d25;
+  --surface-2: #1f2730;
+  --border: #2b333d;
+  --border-2: #333c47;
+  --border-strong: #3c4650;
+  --ink: #e8ecf1;
+  --text-2: #c7cfd8;
+  --muted: #9aa4b0;
+  --muted-2: #7d8794;
+  --muted-3: #aeb7c1;
+  --faint: #59636f;
+  --hover: #1f2730;
+  --danger: #e0796d;
+
+  --satisfait: #4caf6e;
+  --insuffisant: #3c4650;
+  --a-confirmer: #e0a94a;
+  --manuel: #91a6cc;
+
+  --satisfait-bg: #14241b;
+  --selected-bg: #16301f;
+  --preview-bg: #15273c;
+  --principale-bg: #242d38;
+  --principale-satisfait-bg: #1a2f22;
+  --drag-bg: #1c2a3b;
+
+  --apport-bg: #2b333d;
+  --apport-fg: #aeb7c1;
+  --apport-val-bg: #1c3527;
+  --apport-val-fg: #7fd3a0;
+  --apport-exi-bg: #232f47;
+  --apport-exi-fg: #a3b8e2;
+  --apport-max-bg: #382e1b;
+  --apport-max-fg: #e0b070;
 }
 
 body {
@@ -32,21 +147,42 @@ h1 {
   gap: 1rem;
 }
 
+.actions {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+
+.theme-toggle {
+  flex: 0 0 auto;
+  font: inherit;
+  font-size: 0.9rem;
+  line-height: 1;
+  padding: 0.3rem 0.55rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  background: var(--surface);
+  color: inherit;
+  cursor: pointer;
+}
+
 .lien-lexique {
   flex: 0 0 auto;
   font: inherit;
   font-size: 0.85rem;
   padding: 0.25rem 0.7rem;
-  border: 1px solid #cdd4dc;
+  border: 1px solid var(--border-strong);
   border-radius: 999px;
-  background: #fff;
+  background: var(--surface);
+  color: inherit;
   cursor: pointer;
 }
 
 .lien-lexique[aria-pressed="true"] {
-  background: #16202b;
-  border-color: #16202b;
-  color: #fff;
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--surface);
 }
 
 h2 {
@@ -56,7 +192,7 @@ h2 {
 
 h2 small {
   font-weight: normal;
-  color: #5b6672;
+  color: var(--muted);
 }
 
 nav {
@@ -69,16 +205,17 @@ nav {
 nav button {
   font: inherit;
   padding: 0.25rem 0.65rem;
-  border: 1px solid #cdd4dc;
+  border: 1px solid var(--border-strong);
   border-radius: 999px;
-  background: #fff;
+  background: var(--surface);
+  color: inherit;
   cursor: pointer;
 }
 
 nav button[aria-current="true"] {
-  background: #16202b;
-  border-color: #16202b;
-  color: #fff;
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--surface);
 }
 
 /* The start score follows the coach down the page: it is the answer being composed. */
@@ -91,14 +228,14 @@ nav button[aria-current="true"] {
   gap: 1rem;
   margin-top: 0.75rem;
   padding: 0.6rem 0.9rem;
-  border: 1px solid #cdd4dc;
+  border: 1px solid var(--border-strong);
   border-radius: 0.5rem;
-  background: #fff;
+  background: var(--surface);
 }
 
 .note p {
   margin: 0;
-  color: #5b6672;
+  color: var(--muted);
   font-size: 0.85rem;
 }
 
@@ -128,20 +265,20 @@ nav button[aria-current="true"] {
 table {
   width: 100%;
   border-collapse: collapse;
-  background: #fff;
+  background: var(--surface);
   font-size: 0.85rem;
 }
 
 td {
   padding: 0.4rem 0.5rem;
-  border-bottom: 1px solid #e7eaee;
+  border-bottom: 1px solid var(--border);
   vertical-align: top;
 }
 
 .criteres .genre td {
   padding-top: 0.9rem;
   border: 0;
-  color: #5b6672;
+  color: var(--muted);
   font-size: 0.72rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -170,21 +307,21 @@ td {
 }
 
 .criteres tr[data-etat="satisfait"] {
-  background: #f3faf5;
+  background: var(--satisfait-bg);
 }
 
 /* Principale valorisation (3 pts): (*) on a darker row, as in the décomposition. */
 .criteres tr[data-principale] {
-  background: #eceff3;
+  background: var(--principale-bg);
 }
 
 .criteres tr[data-principale][data-etat="satisfait"] {
-  background: #e4f0e8;
+  background: var(--principale-satisfait-bg);
 }
 
 .criteres .principale {
   font-weight: 700;
-  color: #16202b;
+  color: var(--ink);
 }
 
 /* A valorisation whose elements can be previewed in the list, and the active one. */
@@ -197,13 +334,13 @@ td {
 }
 
 .criteres td[data-apercu] {
-  background: #dfeafa;
+  background: var(--preview-bg);
 }
 
 /* The "+" prefix on an element (acro chained after another) — made visible up front. */
 .plus {
   font-weight: 700;
-  color: #8a5410;
+  color: var(--apport-max-fg);
 }
 
 /* Legend for the état bar colours and the (*) 3-point rows. */
@@ -215,7 +352,7 @@ td {
   padding: 0;
   list-style: none;
   font-size: 0.72rem;
-  color: #5b6672;
+  color: var(--muted);
 }
 
 .legende li {
@@ -247,19 +384,19 @@ td {
 .legende-principale {
   padding: 0 0.3rem;
   border-radius: 2px;
-  background: #eceff3;
+  background: var(--principale-bg);
 }
 
 .legende-principale span {
   font-weight: 700;
-  color: #16202b;
+  color: var(--ink);
 }
 
 .criteres .compte,
 .criteres .points {
   white-space: nowrap;
   text-align: right;
-  color: #5b6672;
+  color: var(--muted);
 }
 
 .criteres .compte {
@@ -288,9 +425,9 @@ td {
 .elements {
   max-height: 72vh;
   overflow-y: auto;
-  border: 1px solid #e7eaee;
+  border: 1px solid var(--border);
   border-radius: 0.4rem;
-  background: #fff;
+  background: var(--surface);
 }
 
 .elements h3 {
@@ -298,12 +435,12 @@ td {
   top: 0;
   margin: 0;
   padding: 0.3rem 0.6rem;
-  background: #eef1f4;
-  border-bottom: 1px solid #dfe4ea;
+  background: var(--surface-2);
+  border-bottom: 1px solid var(--border-2);
   font-size: 0.72rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #46525f;
+  color: var(--muted-3);
 }
 
 .elements button {
@@ -312,8 +449,9 @@ td {
   width: 100%;
   padding: 0.4rem 0.6rem;
   border: 0;
-  border-bottom: 1px solid #e7eaee;
+  border-bottom: 1px solid var(--border);
   background: none;
+  color: inherit;
   font: inherit;
   font-size: 0.85rem;
   text-align: left;
@@ -321,23 +459,23 @@ td {
 }
 
 .elements button:hover {
-  background: #f1f4f7;
+  background: var(--hover);
 }
 
 .elements button[aria-pressed="true"] {
-  background: #eaf3ec;
+  background: var(--selected-bg);
   box-shadow: inset 0.25rem 0 0 var(--satisfait);
 }
 
 /* Blue preview of the elements eligible for a clicked valorisation. Placed after the
    selected rule so a selected element keeps its green accent but takes the blue fill. */
 .elements button[data-apercu="true"] {
-  background: #dfeafa;
+  background: var(--preview-bg);
 }
 
 .elements .palier {
   flex: 0 0 5.5rem;
-  color: #5b6672;
+  color: var(--muted);
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
@@ -348,7 +486,7 @@ td {
 
 .elements .libelle small {
   display: block;
-  color: #8a949f;
+  color: var(--muted-2);
   font-size: 0.75rem;
 }
 
@@ -362,25 +500,25 @@ td {
 .apport {
   padding: 0 0.3rem;
   border-radius: 3px;
-  background: #e7eaee;
-  color: #46525f;
+  background: var(--apport-bg);
+  color: var(--apport-fg);
   font-size: 0.7rem;
   line-height: 1.5;
 }
 
 .apport.valorisation {
-  background: #ddeee2;
-  color: #1f6b3a;
+  background: var(--apport-val-bg);
+  color: var(--apport-val-fg);
 }
 
 .apport.exigence {
-  background: #e2e9f5;
-  color: #33507f;
+  background: var(--apport-exi-bg);
+  color: var(--apport-exi-fg);
 }
 
 .apport.max {
-  background: #f7e2c9;
-  color: #8a5410;
+  background: var(--apport-max-bg);
+  color: var(--apport-max-fg);
 }
 
 /* The routine as it is being built: an ordered, drag-to-reorder list of the picks. */
@@ -388,9 +526,9 @@ td {
   list-style: none;
   margin: 0;
   padding: 0;
-  border: 1px solid #e7eaee;
+  border: 1px solid var(--border);
   border-radius: 0.4rem;
-  background: #fff;
+  background: var(--surface);
 }
 
 .composition li {
@@ -398,7 +536,7 @@ td {
   align-items: baseline;
   gap: 0.55rem;
   padding: 0.4rem 0.6rem;
-  border-bottom: 1px solid #e7eaee;
+  border-bottom: 1px solid var(--border);
   font-size: 0.85rem;
   cursor: grab;
 }
@@ -407,25 +545,29 @@ td {
   border-bottom: 0;
 }
 
+.composition li[data-apercu] {
+  background: var(--preview-bg);
+}
+
 .composition li[data-drag] {
-  background: #eef4fb;
+  background: var(--drag-bg);
   opacity: 0.9;
 }
 
 .composition .poignee {
-  color: #c2cad3;
+  color: var(--faint);
 }
 
 .composition .rang {
   flex: 0 0 1.3rem;
   text-align: right;
-  color: #8a949f;
+  color: var(--muted-2);
   font-variant-numeric: tabular-nums;
 }
 
 .composition .palier {
   flex: 0 0 5.5rem;
-  color: #5b6672;
+  color: var(--muted);
   white-space: nowrap;
 }
 
@@ -435,7 +577,7 @@ td {
 
 .composition .libelle small {
   display: block;
-  color: #8a949f;
+  color: var(--muted-2);
   font-size: 0.75rem;
 }
 
@@ -457,18 +599,18 @@ td {
   padding: 0.15rem 0.3rem;
   border: 0;
   background: none;
-  color: #8a949f;
+  color: var(--muted-2);
   font-size: 0.8rem;
   cursor: pointer;
 }
 
 .composition .ordre button:disabled {
-  color: #d7dce2;
+  color: var(--faint);
   cursor: default;
 }
 
 .composition .ordre button:not(:disabled):active {
-  color: #16202b;
+  color: var(--ink);
 }
 
 .composition .retirer {
@@ -476,14 +618,14 @@ td {
   padding: 0 0.2rem;
   border: 0;
   background: none;
-  color: #b3bcc6;
+  color: var(--faint);
   font-size: 1.1rem;
   line-height: 1;
   cursor: pointer;
 }
 
 .composition .retirer:hover {
-  color: #c0392b;
+  color: var(--danger);
 }
 
 /* The glossary view: one card per group, two columns where the width allows. */
@@ -502,9 +644,9 @@ td {
 }
 
 .lexique .groupe {
-  border: 1px solid #e7eaee;
+  border: 1px solid var(--border);
   border-radius: 0.5rem;
-  background: #fff;
+  background: var(--surface);
   padding: 0.4rem 0.9rem 0.9rem;
 }
 
@@ -518,7 +660,7 @@ td {
 
 .lexique dl > div {
   padding: 0.55rem 0;
-  border-bottom: 1px solid #eef1f4;
+  border-bottom: 1px solid var(--surface-2);
 }
 
 .lexique dl > div:last-child {
@@ -534,13 +676,13 @@ td {
 .lexique dd {
   margin: 0.15rem 0 0;
   font-size: 0.85rem;
-  color: #3a4653;
+  color: var(--text-2);
 }
 
 .lexique dd small {
   display: block;
   margin-top: 0.2rem;
-  color: #8a949f;
+  color: var(--muted-2);
   font-style: italic;
 }
 
@@ -550,8 +692,8 @@ footer {
   gap: 0.4rem 1.2rem;
   margin-top: 2.5rem;
   padding-top: 1rem;
-  border-top: 1px solid #e7eaee;
-  color: #8a949f;
+  border-top: 1px solid var(--border);
+  color: var(--muted-2);
   font-size: 0.75rem;
 }
 

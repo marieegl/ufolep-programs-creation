@@ -68,6 +68,10 @@ export function App() {
   const [lexiqueOuvert, setLexiqueOuvert] = useState(false);
   /** Clé of the valorisation whose eligible elements are highlighted, or null. */
   const [apercu, setApercu] = useState<string | null>(null);
+  /** "light" | "dark" once the coach has chosen; null follows the OS setting. */
+  const [theme, setTheme] = useState<string | null>(
+    () => document.documentElement.dataset.theme || null,
+  );
 
   const evolutions = evolutionsOf(agres);
   const evolution = evolutions.find((e) => e.evolution === evolutionNom) ?? evolutions[0];
@@ -123,6 +127,18 @@ export function App() {
       actuels.includes(id) ? actuels.filter((autre) => autre !== id) : [...actuels, id],
     );
 
+  const sombre = theme ? theme === "dark" : !!window.matchMedia?.("(prefers-color-scheme: dark)").matches;
+  const basculerTheme = () => {
+    const suivant = sombre ? "light" : "dark";
+    setTheme(suivant);
+    document.documentElement.dataset.theme = suivant;
+    try {
+      localStorage.setItem("theme", suivant);
+    } catch {
+      // Private mode can block localStorage; the choice just won't be remembered.
+    }
+  };
+
   /** Move a composition element to another rank. The order is the routine's order —
   it does not change the score, which is set-based, but it lets the coach lay the
   movement out as it will be performed. */
@@ -146,14 +162,25 @@ export function App() {
       <header>
         <div className="titre">
           <h1>Note de départ — NPT UFOLEP</h1>
-          <button
-            type="button"
-            className="lien-lexique"
-            onClick={() => setLexiqueOuvert((ouvert) => !ouvert)}
-            aria-pressed={lexiqueOuvert}
-          >
-            {lexiqueOuvert ? "← Retour au calcul" : "Lexique"}
-          </button>
+          <div className="actions">
+            <button
+              type="button"
+              className="theme-toggle"
+              onClick={basculerTheme}
+              aria-label={sombre ? "Passer en mode clair" : "Passer en mode sombre"}
+              title={sombre ? "Mode clair" : "Mode sombre"}
+            >
+              {sombre ? "☀︎" : "🌙"}
+            </button>
+            <button
+              type="button"
+              className="lien-lexique"
+              onClick={() => setLexiqueOuvert((ouvert) => !ouvert)}
+              aria-pressed={lexiqueOuvert}
+            >
+              {lexiqueOuvert ? "← Retour au calcul" : "Lexique"}
+            </button>
+          </div>
         </div>
         {!lexiqueOuvert && (
           <>
@@ -236,6 +263,7 @@ export function App() {
                       }}
                       onDragEnd={() => setGlisse(null)}
                       data-drag={glisse === i || undefined}
+                      data-apercu={surbrillance.has(id) || undefined}
                     >
                       <span className="poignee" aria-hidden="true">⠿</span>
                       <span className="rang">{i + 1}</span>
