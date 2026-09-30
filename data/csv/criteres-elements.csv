@@ -704,15 +704,15 @@ Sol,exigence,1 élément P5 (min.),elements,1,,,sol-72-p6-67,P6,,Saut changement
 Sol,exigence,1 élément P5 (min.),elements,1,,,sol-72-p6-70,P6,,Saut changement de jambes pied/tête. Saut enjambé avec changement de jambes (angle d’écart 180°
 Sol,exigence,1 élément P5 (min.),elements,1,,,sol-72-p6-71,P6,,Saut enjambé avec 1 tour
 Sol,exigence,1 élément P5 (min.),elements,1,,,sol-72-p7-72,P7,,Saut avec changement de jambes 1 tour
-Sol,valorisation,1 salto position tendue,elements,1,,,sol-65-p5-172,P5,En arrière,Salto arriére corps tendu
-Sol,valorisation,1 salto position tendue,elements,1,,,sol-65-p6-178,P6,En arrière,"Salto arrière corps groupé , carpé, tendu, avec 1/2 tour (180°)"
-Sol,valorisation,1 salto position tendue,elements,1,,,sol-65-p6-179,P6,En arrière,"Salto arrière corps groupé, carpé, tendu, avec 1 tour (360°)"
-Sol,valorisation,1 salto position tendue,elements,1,,,sol-65-p6-180,P6,En avant,Salto avant corps tendu ou avec 1/2 tour (180°)
-Sol,valorisation,1 salto position tendue,elements,1,,,sol-65-p7-180-plus,P7,En avant,Salto avant corps tendu ou avec 1/2 tour (180°)
-Sol,valorisation,1 salto position tendue,elements,1,,,sol-65-p7-184,P7,En arrière,"Salto arrière corps groupé, carpé, tendu, avec 1 tour 1/2 (540°)"
-Sol,valorisation,1 salto position tendue,elements,1,,,sol-65-p7-185,P7,En avant,"Salto avant. corps groupé, carpé, tendu avec 1 tour (360°)"
-Sol,valorisation,1 salto position tendue,elements,1,,,sol-65-nomade-66,NOMADE,,Salto latéral jambes tendues écartées
-Sol,valorisation,1 salto position tendue,elements,1,,,sol-65-nomade-70,NOMADE,,Saut en arrière avec 1/2 tour et salto avant tendu
+Sol,valorisation,1 salto position tendue appel 2 pieds,elements,1,,,sol-65-p5-172,P5,En arrière,Salto arriére corps tendu
+Sol,valorisation,1 salto position tendue appel 2 pieds,elements,1,,,sol-65-p6-178,P6,En arrière,"Salto arrière corps groupé , carpé, tendu, avec 1/2 tour (180°)"
+Sol,valorisation,1 salto position tendue appel 2 pieds,elements,1,,,sol-65-p6-179,P6,En arrière,"Salto arrière corps groupé, carpé, tendu, avec 1 tour (360°)"
+Sol,valorisation,1 salto position tendue appel 2 pieds,elements,1,,,sol-65-p6-180,P6,En avant,Salto avant corps tendu ou avec 1/2 tour (180°)
+Sol,valorisation,1 salto position tendue appel 2 pieds,elements,1,,,sol-65-p7-180-plus,P7,En avant,Salto avant corps tendu ou avec 1/2 tour (180°)
+Sol,valorisation,1 salto position tendue appel 2 pieds,elements,1,,,sol-65-p7-184,P7,En arrière,"Salto arrière corps groupé, carpé, tendu, avec 1 tour 1/2 (540°)"
+Sol,valorisation,1 salto position tendue appel 2 pieds,elements,1,,,sol-65-p7-185,P7,En avant,"Salto avant. corps groupé, carpé, tendu avec 1 tour (360°)"
+Sol,valorisation,1 salto position tendue appel 2 pieds,elements,1,,,sol-65-nomade-66,NOMADE,,Salto latéral jambes tendues écartées
+Sol,valorisation,1 salto position tendue appel 2 pieds,elements,1,,,sol-65-nomade-70,NOMADE,,Saut en arrière avec 1/2 tour et salto avant tendu
 Sol,valorisation,1 LAE de 3 éléments différents dont 1 P5 (min.),elements,1,,oui,sol-65-p5-109,P5,En arrière,"Départ libre, roulade arrière à l’ATR bras tendus 1/2 tour (180°), retour libre"
 Sol,valorisation,1 LAE de 3 éléments différents dont 1 P5 (min.),elements,1,,oui,sol-65-p5-172,P5,En arrière,Salto arriére corps tendu
 Sol,valorisation,1 LAE de 3 éléments différents dont 1 P5 (min.),elements,1,,oui,sol-65-p5-173,P5,En avant,Salto avant réception pieds décalés
@@ -1843,27 +1843,101 @@ Poutre,exigence,1 pivots P4 (min.),elements,1,,,poutre-58-p4-82,P4,,"Pirouette 1
 Poutre,exigence,1 pivots P4 (min.),elements,1,,,poutre-58-p5-85,P5,,"Pirouette 1 tour 1/2 (540°) sur 1 jambe et sur 1/2 pointes, position de la jambe libre"
 Poutre,exigence,1 pivots P4 (min.),elements,1,,,poutre-58-p5-91,P5,,Pirouette 1/1 tour accroupie
 Poutre,exigence,1 pivots P4 (min.),elements,1,,,poutre-58-p6-88,P6,,"Pirouette 2 tours (720°) sur 1 jambe et sur 1/2 pointes, position de la jambe libre"
-Poutre,exigence,1 élément P3,elements,1,,,poutre-57-p3-104,P3,Maintien,Equerre écartée jambes tendues tenue 2’’
-Poutre,exigence,1 élément P3,elements,1,,,poutre-57-p3-154,P3,ATR,ATR tenu 2’’ retour libre
-Poutre,exigence,1 élément P3,elements,1,,,poutre-57-p3-155,P3,ATR,Etablissement latéral à l’ATR tenu 2“ retour des pieds sur la poutre entre les mains
-Poutre,exigence,1 élément P3,elements,1,,,poutre-57-p3-26-new,P3,Maintien,Maintien sur 1 jambe tendue à l’horizontale
-Poutre,exigence,1 élément P3,elements,1,,,poutre-58-p3-40-new,P3,,1/2 tour (180°) sur 1 jambe sur 1/2 pointes et détourné
-Poutre,exigence,1 élément P3,elements,1,,,poutre-59-p3-199,P3,Vers l’arrière,Salto arrière groupé
-Poutre,exigence,1 élément P3,elements,1,,,poutre-59-p3-201,P3,Vers l’avant,Salto avant corps groupé ou carpé à la station debout appel 1 ou 2 pieds
-Poutre,exigence,1 élément P3,elements,1,,,poutre-60-p3-150-plus,P3,Vers l’arrière,ATR passagé
-Poutre,exigence,1 élément P3,elements,1,,,poutre-60-p3-152,P3,Vers l’avant,Roue : renversement latéral sans envol arrivée 1 ou 2 pieds
-Poutre,exigence,1 élément P3,elements,1,,,poutre-60-p3-153,P3,Vers l’arrière,Souplesse arrière. Renversement arrière sans envol retour libre
-Poutre,exigence,1 élément P3,elements,1,,,poutre-60-p3-196,P3,Vers l’avant,Rondade à la station debout (avec ou sans sursaut)
-Poutre,exigence,1 élément P3,elements,1,,,poutre-60-p3-197,P3,Vers l’avant,Saut de mains. Renversement avant avec envol à la station debout avec ou sans sursaut
-Poutre,exigence,1 élément P3,elements,1,,,poutre-61-p3-19-new,P3,,Saut de mains. Renversement avant avec envol appel 1 pied et réception libre
-Poutre,exigence,1 élément P3,elements,1,,,poutre-61-p3-20-new,P3,,Rondade
-Poutre,exigence,1 élément P3,elements,1,,,poutre-62-p3-27-new,P3,,Saut de biche
-Poutre,exigence,1 élément P3,elements,1,,,poutre-62-p3-54,P3,,Saut de cosaque appel d’1 pied Saut groupé 1 jambe tendue à l’horizontale en avant
-Poutre,exigence,1 élément P3,elements,1,,,poutre-62-p3-56,P3,,Saut de chat en avant avec 1/2 tour (180°)
-Poutre,exigence,1 élément P3,elements,1,,,poutre-63-p3-49,P3,,Saut antéro-postérieur à 180° appel et réception des 2 pieds
-Poutre,exigence,1 élément P3,elements,1,,,poutre-63-p3-52,P3,,Saut en extension avec 1/2 tour (180°) appel et réception 2 pieds
-Poutre,exigence,1 élément P3,elements,1,,,poutre-64-p3-10,P3,,"Saut libre (sans appui des mains) à la station, appel 2 pieds réception libre au bout, au milieu"
-Poutre,exigence,1 élément P3,elements,1,,,poutre-64-p3-12,P3,,"De la station faciale latérale, sauter à l’équerre serrée ou écartée et tenir 2’’"
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-57-p3-104,P3,Maintien,Equerre écartée jambes tendues tenue 2’’
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-57-p3-154,P3,ATR,ATR tenu 2’’ retour libre
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-57-p3-155,P3,ATR,Etablissement latéral à l’ATR tenu 2“ retour des pieds sur la poutre entre les mains
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-57-p3-26-new,P3,Maintien,Maintien sur 1 jambe tendue à l’horizontale
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-57-p4-110,P4,Maintien,"Equerre renversée jambes serrées tendues ou écartées tendues, tenue 2’’"
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-57-p4-169,P4,ATR,Etablissement à l’ATR puis descente contrôlée à l’équerre écartée
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-57-p5-174,P5,ATR,De l’équerre monter en force à l’ATR tenu 2“
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-58-p3-40-new,P3,,1/2 tour (180°) sur 1 jambe sur 1/2 pointes et détourné
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-58-p4-82,P4,,"Pirouette 1 tour (360°) sur 1 jambe et sur 1/2 pointes, position de la jambe libre"
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-58-p5-85,P5,,"Pirouette 1 tour 1/2 (540°) sur 1 jambe et sur 1/2 pointes, position de la jambe libre"
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-58-p5-91,P5,,Pirouette 1/1 tour accroupie
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-58-p6-88,P6,,"Pirouette 2 tours (720°) sur 1 jambe et sur 1/2 pointes, position de la jambe libre"
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-59-p3-199,P3,Vers l’arrière,Salto arrière groupé
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-59-p3-201,P3,Vers l’avant,Salto avant corps groupé ou carpé à la station debout appel 1 ou 2 pieds
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-59-p4-203,P4,Vers l’avant,Salto avant avec demi-tour à la station debout (appel 2 pieds)
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-59-p5-187,P5,Vers l’arrière,Salto arrière corps groupé
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-59-p5-209,P5,Vers l’avant,Salto avant tendu appel 2 pieds aussi avec 1/2 tour (180°) à la station debout
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-59-p5-210,P5,Vers l’arrière,Salto arrière tendu aussi avec 1/2 tour (180°) à la station debout
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-59-p5-211,P5,Vers l’arrière,Twist Appel en arrière avec 1/2 tour (180°) et salto avant à la station debout
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-59-p6-188,P6,Vers l’arrière,Salto arrière carpé
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-59-p6-214,P6,Vers l’avant,"Salto avant corps groupé, carpé, appel des 2 pieds avec 1 tour (360°)"
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-59-p6-215,P6,Vers l’arrière,"Salto arrière corps groupé, carpé, tendu, avec 1 tour (360°)"
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-59-p6-26,P6,Vers l’avant,Salto avant corps groupé appel d’1 ou 2 pieds arriver au siège groupé
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-59-p7-186,P7,Vers l’avant,Salto avant corps groupé ou carpé appel 1 ou 2 pieds arrivée à la station debout
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-59-p7-191,P7,Vers l’arrière,"Salto arrière tendu, appel 2 pieds, réception 2 pieds"
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-59-p7-192,P7,Vers l’arrière,Salto arrière tendu pieds décalés
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-59-p7-214bis,P7,Vers l’avant,Salto avant corps tendu appel des 2 pieds avec 1 tour (360°)
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-59-p7-217,P7,Vers l’arrière,Salto arrière avec 3/2 tour ou+
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-59-p7-218,P7,Vers l’arrière,Double salto arrière
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-60-p3-150-plus,P3,Vers l’arrière,ATR passagé
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-60-p3-152,P3,Vers l’avant,Roue : renversement latéral sans envol arrivée 1 ou 2 pieds
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-60-p3-153,P3,Vers l’arrière,Souplesse arrière. Renversement arrière sans envol retour libre
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-60-p3-196,P3,Vers l’avant,Rondade à la station debout (avec ou sans sursaut)
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-60-p3-197,P3,Vers l’avant,Saut de mains. Renversement avant avec envol à la station debout avec ou sans sursaut
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-60-p4-152-plus,P4,Vers l’avant,Roue : renversement latéral sans envol arrivée 1 ou 2 pieds
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-60-p4-153-plus,P4,Vers l’arrière,Souplesse arrière. Renversement arrière sans envol retour libre
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-60-p4-154-plus,P4,Vers l’arrière,ATR tenu 2’’ retour libre
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-60-p4-159,P4,Vers l’avant,Souplesse avant ou roue arabe Renverse­ ment avant sans envol aussi avec appui sur 1 bras
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-60-p4-160,P4,Vers l’arrière,Tic-Tac. Renversement avant arrière sans envol
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-60-p4-200,P4,Vers l’avant,Costal
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-60-p5-159-plus,P5,Vers l’avant,Souplesse avant ou roue arabe Renverse­ ment avant sans envol aussi avec appui sur 1 bras
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-60-p5-160-plus,P5,Vers l’arrière,Tic-Tac. Renversement avant arrière sans envol
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-60-p5-164,P5,Vers l’avant,Rondade
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-60-p5-165,P5,Vers l’avant,Saut de mains. Renversement avant avec envol appel 1 pied et réception libre
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-60-p5-166,P5,Vers l’arrière,Flic-flac. Renversement arrière avec envol départ libre arrivée 2 pieds serrés
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-60-p5-168,P5,Vers l’arrière,Flic-flac arrivée pieds décalés
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-60-p5-202,P5,Vers l’avant,Salto avant tendu départ 1 pied
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-60-p6-164-plus,P6,Vers l’avant,Rondade
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-60-p6-168-plus,P6,Vers l’arrière,Flic-flac arrivée pieds décalés
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-60-p6-212,P6,Vers l’avant,"Salto avant corps groupé, carpé, tendu appel 1 pied avec 1 tour"
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-60-p7-175,P7,Vers l’arrière,Flic-flac avec 1/2 de tour en passant par l’ATR et renversement avant (Onodi)
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-60-p7-184,P7,Vers l’avant,"Salto costal, renversement latéral libre"
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-60-p7-185,P7,Vers l’avant,"Salto facial, renversement avant libre"
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-60-p7-190,P7,Vers l’avant,Salto japonais. Salto latéral groupé ou carpé appel 1 pied en latéral et réception
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-61-p3-19-new,P3,,Saut de mains. Renversement avant avec envol appel 1 pied et réception libre
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-61-p3-20-new,P3,,Rondade
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-61-p4-21-new,P4,,Salto avant corps groupé ou carpé appel 1 ou 2 pieds arrivée à la station debout
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-61-p4-22-new,P4,,Flic-flac. Renversement arrière avec envol départ libre arrivée 2 pieds serrés
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-61-p4-23-new,P4,,Flic-flac arrivée pieds décalés
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-61-p5-175,P5,,Flic-flac avec 1/2 de tour en passant par l’ATR et renversement avant (Onodi)
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-61-p5-184,P5,,"Salto costal, renversement latéral libre"
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-61-p5-187,P5,,Salto arrière corps groupé
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-61-p6-190,P6,,Salto japonais. Salto latéral groupé ou carpé appel 1 pied en latéral et réception à la station latérale
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-61-p7-185,P7,,"Salto facial, renversement avant libre"
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-61-p7-192,P7,,Salto arrière tendu pieds décalés
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-62-p3-27-new,P3,,Saut de biche
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-62-p3-54,P3,,Saut de cosaque appel d’1 pied Saut groupé 1 jambe tendue à l’horizontale en avant
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-62-p3-56,P3,,Saut de chat en avant avec 1/2 tour (180°)
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-62-p4-32-new,P4,,Cosaque changement
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-62-p4-62,P4,,Saut enjambé appel d’1 pied (écart à 180°) aussi avec la jambe libre fléchie tendue
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-62-p5-67,P5,,Saut enjambé avec changement de jambes (angle d’écart 180° après le changement)
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-62-p6-69,P6,,Saut enjambé avec 1/2 tour (180°)
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-62-p6-70,P6,,Saut enjambé avec changement de jambes (angle d’écart 180° après le changement)
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-62-p7-71,P7,,Saut changement de jambes avec 1/2 tour (180°)
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-63-p3-49,P3,,Saut antéro-postérieur à 180° appel et réception des 2 pieds
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-63-p3-52,P3,,Saut en extension avec 1/2 tour (180°) appel et réception 2 pieds
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-63-p4-55,P4,,Sissonne
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-63-p4-57,P4,,Saut de cosaque appel des 2 pieds Saut groupé 1 jambe tendue à l’horizontale
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-63-p4-58,P4,,Saut avec 3/4 de tour (270°) appel et réception 2 pieds
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-63-p4-61,P4,,Saut groupé avec 1/2 tour (180°) appel des 2 pieds
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-63-p5-66,P5,,Saut carpé écarté
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-63-p6-63,P6,,Saut antéropostérieur à 180° avec ½ tour (180°)
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-63-p6-64,P6,,Saut de cosaque 1/2 tour appel des 2 pieds Saut groupé 1 jambe tendue à l’horizontale en avant
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-63-p6-66bis,P6,,Saut carpé serré (angle du corps 90°)
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-63-p6-68,P6,,Saut avec 1 tour en l’air (360°) appel des 2 pieds
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-64-p3-10,P3,,"Saut libre (sans appui des mains) à la station, appel 2 pieds réception libre au bout, au milieu"
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-64-p3-12,P3,,"De la station faciale latérale, sauter à l’équerre serrée ou écartée et tenir 2’’"
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-64-p4-16,P4,,"Equerre renversée De la station faciale laté­ rale, franchissement groupé ou carpé à l’appui"
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-64-p5-19,P5,,"Saut, élan ou élévation à l’ATR retour libre au milieu, au bout ou latéralement par rapport"
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-64-p5-22,P5,,"Saut et renversement latéral avec corps tendu avant l’appui des mains sur la poutre et retour libre,"
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-64-p5-35-new,P5,,Entrée roue arrivée branchiale
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-64-p6-36-new,P6,,Entrée grand jeté
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-64-p7-25,P7,,"Salto avant à la station appel 2 pieds, élan en bout par rapport à la poutre"
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-64-p7-26,P7,,"Rondade devant le bout poutre flic-flac par l’ATR, retour libre"
+Poutre,exigence,1 élément P3 (min.),elements,1,,,poutre-64-p7-34-new,P7,,Entrée flip arrivée brachiale
 Poutre,valorisation,2 éléments gymniques P3 (min.) dans le mouvement,elements,2,,,poutre-57-p3-104,P3,Maintien,Equerre écartée jambes tendues tenue 2’’
 Poutre,valorisation,2 éléments gymniques P3 (min.) dans le mouvement,elements,2,,,poutre-57-p3-154,P3,ATR,ATR tenu 2’’ retour libre
 Poutre,valorisation,2 éléments gymniques P3 (min.) dans le mouvement,elements,2,,,poutre-57-p3-155,P3,ATR,Etablissement latéral à l’ATR tenu 2“ retour des pieds sur la poutre entre les mains
@@ -1995,26 +2069,80 @@ Poutre,exigence,3 acros en poutre haute,elements,3,,,poutre-60-p7-185,P7,Vers l�
 Poutre,exigence,3 acros en poutre haute,elements,3,,,poutre-60-p7-190,P7,Vers l’avant,Salto japonais. Salto latéral groupé ou carpé appel 1 pied en latéral et réception
 Poutre,exigence,3 acros en poutre haute,elements,3,,,poutre-60-nomade-158,NOMADE,,Renversement latéral avec envol avant ou après la pose des mains
 Poutre,exigence,3 acros en poutre haute,elements,3,,,poutre-60-nomade-167,NOMADE,,Flic-flac poisson
-Poutre,exigence,1 élément P4,elements,1,,,poutre-57-p4-110,P4,Maintien,"Equerre renversée jambes serrées tendues ou écartées tendues, tenue 2’’"
-Poutre,exigence,1 élément P4,elements,1,,,poutre-57-p4-169,P4,ATR,Etablissement à l’ATR puis descente contrôlée à l’équerre écartée
-Poutre,exigence,1 élément P4,elements,1,,,poutre-58-p4-82,P4,,"Pirouette 1 tour (360°) sur 1 jambe et sur 1/2 pointes, position de la jambe libre"
-Poutre,exigence,1 élément P4,elements,1,,,poutre-59-p4-203,P4,Vers l’avant,Salto avant avec demi-tour à la station debout (appel 2 pieds)
-Poutre,exigence,1 élément P4,elements,1,,,poutre-60-p4-152-plus,P4,Vers l’avant,Roue : renversement latéral sans envol arrivée 1 ou 2 pieds
-Poutre,exigence,1 élément P4,elements,1,,,poutre-60-p4-153-plus,P4,Vers l’arrière,Souplesse arrière. Renversement arrière sans envol retour libre
-Poutre,exigence,1 élément P4,elements,1,,,poutre-60-p4-154-plus,P4,Vers l’arrière,ATR tenu 2’’ retour libre
-Poutre,exigence,1 élément P4,elements,1,,,poutre-60-p4-159,P4,Vers l’avant,Souplesse avant ou roue arabe Renverse­ ment avant sans envol aussi avec appui sur 1 bras
-Poutre,exigence,1 élément P4,elements,1,,,poutre-60-p4-160,P4,Vers l’arrière,Tic-Tac. Renversement avant arrière sans envol
-Poutre,exigence,1 élément P4,elements,1,,,poutre-60-p4-200,P4,Vers l’avant,Costal
-Poutre,exigence,1 élément P4,elements,1,,,poutre-61-p4-21-new,P4,,Salto avant corps groupé ou carpé appel 1 ou 2 pieds arrivée à la station debout
-Poutre,exigence,1 élément P4,elements,1,,,poutre-61-p4-22-new,P4,,Flic-flac. Renversement arrière avec envol départ libre arrivée 2 pieds serrés
-Poutre,exigence,1 élément P4,elements,1,,,poutre-61-p4-23-new,P4,,Flic-flac arrivée pieds décalés
-Poutre,exigence,1 élément P4,elements,1,,,poutre-62-p4-32-new,P4,,Cosaque changement
-Poutre,exigence,1 élément P4,elements,1,,,poutre-62-p4-62,P4,,Saut enjambé appel d’1 pied (écart à 180°) aussi avec la jambe libre fléchie tendue
-Poutre,exigence,1 élément P4,elements,1,,,poutre-63-p4-55,P4,,Sissonne
-Poutre,exigence,1 élément P4,elements,1,,,poutre-63-p4-57,P4,,Saut de cosaque appel des 2 pieds Saut groupé 1 jambe tendue à l’horizontale
-Poutre,exigence,1 élément P4,elements,1,,,poutre-63-p4-58,P4,,Saut avec 3/4 de tour (270°) appel et réception 2 pieds
-Poutre,exigence,1 élément P4,elements,1,,,poutre-63-p4-61,P4,,Saut groupé avec 1/2 tour (180°) appel des 2 pieds
-Poutre,exigence,1 élément P4,elements,1,,,poutre-64-p4-16,P4,,"Equerre renversée De la station faciale laté­ rale, franchissement groupé ou carpé à l’appui"
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-57-p4-110,P4,Maintien,"Equerre renversée jambes serrées tendues ou écartées tendues, tenue 2’’"
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-57-p4-169,P4,ATR,Etablissement à l’ATR puis descente contrôlée à l’équerre écartée
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-57-p5-174,P5,ATR,De l’équerre monter en force à l’ATR tenu 2“
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-58-p4-82,P4,,"Pirouette 1 tour (360°) sur 1 jambe et sur 1/2 pointes, position de la jambe libre"
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-58-p5-85,P5,,"Pirouette 1 tour 1/2 (540°) sur 1 jambe et sur 1/2 pointes, position de la jambe libre"
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-58-p5-91,P5,,Pirouette 1/1 tour accroupie
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-58-p6-88,P6,,"Pirouette 2 tours (720°) sur 1 jambe et sur 1/2 pointes, position de la jambe libre"
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-59-p4-203,P4,Vers l’avant,Salto avant avec demi-tour à la station debout (appel 2 pieds)
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-59-p5-187,P5,Vers l’arrière,Salto arrière corps groupé
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-59-p5-209,P5,Vers l’avant,Salto avant tendu appel 2 pieds aussi avec 1/2 tour (180°) à la station debout
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-59-p5-210,P5,Vers l’arrière,Salto arrière tendu aussi avec 1/2 tour (180°) à la station debout
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-59-p5-211,P5,Vers l’arrière,Twist Appel en arrière avec 1/2 tour (180°) et salto avant à la station debout
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-59-p6-188,P6,Vers l’arrière,Salto arrière carpé
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-59-p6-214,P6,Vers l’avant,"Salto avant corps groupé, carpé, appel des 2 pieds avec 1 tour (360°)"
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-59-p6-215,P6,Vers l’arrière,"Salto arrière corps groupé, carpé, tendu, avec 1 tour (360°)"
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-59-p6-26,P6,Vers l’avant,Salto avant corps groupé appel d’1 ou 2 pieds arriver au siège groupé
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-59-p7-186,P7,Vers l’avant,Salto avant corps groupé ou carpé appel 1 ou 2 pieds arrivée à la station debout
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-59-p7-191,P7,Vers l’arrière,"Salto arrière tendu, appel 2 pieds, réception 2 pieds"
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-59-p7-192,P7,Vers l’arrière,Salto arrière tendu pieds décalés
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-59-p7-214bis,P7,Vers l’avant,Salto avant corps tendu appel des 2 pieds avec 1 tour (360°)
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-59-p7-217,P7,Vers l’arrière,Salto arrière avec 3/2 tour ou+
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-59-p7-218,P7,Vers l’arrière,Double salto arrière
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-60-p4-152-plus,P4,Vers l’avant,Roue : renversement latéral sans envol arrivée 1 ou 2 pieds
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-60-p4-153-plus,P4,Vers l’arrière,Souplesse arrière. Renversement arrière sans envol retour libre
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-60-p4-154-plus,P4,Vers l’arrière,ATR tenu 2’’ retour libre
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-60-p4-159,P4,Vers l’avant,Souplesse avant ou roue arabe Renverse­ ment avant sans envol aussi avec appui sur 1 bras
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-60-p4-160,P4,Vers l’arrière,Tic-Tac. Renversement avant arrière sans envol
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-60-p4-200,P4,Vers l’avant,Costal
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-60-p5-159-plus,P5,Vers l’avant,Souplesse avant ou roue arabe Renverse­ ment avant sans envol aussi avec appui sur 1 bras
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-60-p5-160-plus,P5,Vers l’arrière,Tic-Tac. Renversement avant arrière sans envol
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-60-p5-164,P5,Vers l’avant,Rondade
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-60-p5-165,P5,Vers l’avant,Saut de mains. Renversement avant avec envol appel 1 pied et réception libre
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-60-p5-166,P5,Vers l’arrière,Flic-flac. Renversement arrière avec envol départ libre arrivée 2 pieds serrés
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-60-p5-168,P5,Vers l’arrière,Flic-flac arrivée pieds décalés
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-60-p5-202,P5,Vers l’avant,Salto avant tendu départ 1 pied
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-60-p6-164-plus,P6,Vers l’avant,Rondade
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-60-p6-168-plus,P6,Vers l’arrière,Flic-flac arrivée pieds décalés
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-60-p6-212,P6,Vers l’avant,"Salto avant corps groupé, carpé, tendu appel 1 pied avec 1 tour"
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-60-p7-175,P7,Vers l’arrière,Flic-flac avec 1/2 de tour en passant par l’ATR et renversement avant (Onodi)
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-60-p7-184,P7,Vers l’avant,"Salto costal, renversement latéral libre"
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-60-p7-185,P7,Vers l’avant,"Salto facial, renversement avant libre"
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-60-p7-190,P7,Vers l’avant,Salto japonais. Salto latéral groupé ou carpé appel 1 pied en latéral et réception
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-61-p4-21-new,P4,,Salto avant corps groupé ou carpé appel 1 ou 2 pieds arrivée à la station debout
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-61-p4-22-new,P4,,Flic-flac. Renversement arrière avec envol départ libre arrivée 2 pieds serrés
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-61-p4-23-new,P4,,Flic-flac arrivée pieds décalés
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-61-p5-175,P5,,Flic-flac avec 1/2 de tour en passant par l’ATR et renversement avant (Onodi)
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-61-p5-184,P5,,"Salto costal, renversement latéral libre"
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-61-p5-187,P5,,Salto arrière corps groupé
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-61-p6-190,P6,,Salto japonais. Salto latéral groupé ou carpé appel 1 pied en latéral et réception à la station latérale
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-61-p7-185,P7,,"Salto facial, renversement avant libre"
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-61-p7-192,P7,,Salto arrière tendu pieds décalés
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-62-p4-32-new,P4,,Cosaque changement
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-62-p4-62,P4,,Saut enjambé appel d’1 pied (écart à 180°) aussi avec la jambe libre fléchie tendue
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-62-p5-67,P5,,Saut enjambé avec changement de jambes (angle d’écart 180° après le changement)
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-62-p6-69,P6,,Saut enjambé avec 1/2 tour (180°)
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-62-p6-70,P6,,Saut enjambé avec changement de jambes (angle d’écart 180° après le changement)
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-62-p7-71,P7,,Saut changement de jambes avec 1/2 tour (180°)
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-63-p4-55,P4,,Sissonne
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-63-p4-57,P4,,Saut de cosaque appel des 2 pieds Saut groupé 1 jambe tendue à l’horizontale
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-63-p4-58,P4,,Saut avec 3/4 de tour (270°) appel et réception 2 pieds
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-63-p4-61,P4,,Saut groupé avec 1/2 tour (180°) appel des 2 pieds
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-63-p5-66,P5,,Saut carpé écarté
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-63-p6-63,P6,,Saut antéropostérieur à 180° avec ½ tour (180°)
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-63-p6-64,P6,,Saut de cosaque 1/2 tour appel des 2 pieds Saut groupé 1 jambe tendue à l’horizontale en avant
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-63-p6-66bis,P6,,Saut carpé serré (angle du corps 90°)
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-63-p6-68,P6,,Saut avec 1 tour en l’air (360°) appel des 2 pieds
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-64-p4-16,P4,,"Equerre renversée De la station faciale laté­ rale, franchissement groupé ou carpé à l’appui"
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-64-p5-19,P5,,"Saut, élan ou élévation à l’ATR retour libre au milieu, au bout ou latéralement par rapport"
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-64-p5-22,P5,,"Saut et renversement latéral avec corps tendu avant l’appui des mains sur la poutre et retour libre,"
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-64-p5-35-new,P5,,Entrée roue arrivée branchiale
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-64-p6-36-new,P6,,Entrée grand jeté
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-64-p7-25,P7,,"Salto avant à la station appel 2 pieds, élan en bout par rapport à la poutre"
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-64-p7-26,P7,,"Rondade devant le bout poutre flic-flac par l’ATR, retour libre"
+Poutre,exigence,1 élément P4 (min.),elements,1,,,poutre-64-p7-34-new,P7,,Entrée flip arrivée brachiale
 Poutre,valorisation,1 acro sur la poutre P4 (min.),elements,1,,,poutre-59-p4-203,P4,Vers l’avant,Salto avant avec demi-tour à la station debout (appel 2 pieds)
 Poutre,valorisation,1 acro sur la poutre P4 (min.),elements,1,,,poutre-59-p5-187,P5,Vers l’arrière,Salto arrière corps groupé
 Poutre,valorisation,1 acro sur la poutre P4 (min.),elements,1,,,poutre-59-p5-209,P5,Vers l’avant,Salto avant tendu appel 2 pieds aussi avec 1/2 tour (180°) à la station debout
@@ -2050,40 +2178,60 @@ Poutre,valorisation,1 acro sur la poutre P4 (min.),elements,1,,,poutre-60-p7-175
 Poutre,valorisation,1 acro sur la poutre P4 (min.),elements,1,,,poutre-60-p7-184,P7,Vers l’avant,"Salto costal, renversement latéral libre"
 Poutre,valorisation,1 acro sur la poutre P4 (min.),elements,1,,,poutre-60-p7-185,P7,Vers l’avant,"Salto facial, renversement avant libre"
 Poutre,valorisation,1 acro sur la poutre P4 (min.),elements,1,,,poutre-60-p7-190,P7,Vers l’avant,Salto japonais. Salto latéral groupé ou carpé appel 1 pied en latéral et réception
-Poutre,valorisation,1 sortie P4 (min.),elements,1,,oui,poutre-59-p4-203,P4,Vers l’avant,Salto avant avec demi-tour à la station debout (appel 2 pieds)
-Poutre,valorisation,1 sortie P4 (min.),elements,1,,oui,poutre-59-p5-209,P5,Vers l’avant,Salto avant tendu appel 2 pieds aussi avec 1/2 tour (180°) à la station debout
-Poutre,valorisation,1 sortie P4 (min.),elements,1,,oui,poutre-59-p5-210,P5,Vers l’arrière,Salto arrière tendu aussi avec 1/2 tour (180°) à la station debout
-Poutre,valorisation,1 sortie P4 (min.),elements,1,,oui,poutre-59-p5-211,P5,Vers l’arrière,Twist Appel en arrière avec 1/2 tour (180°) et salto avant à la station debout
-Poutre,valorisation,1 sortie P4 (min.),elements,1,,oui,poutre-59-p6-214,P6,Vers l’avant,"Salto avant corps groupé, carpé, appel des 2 pieds avec 1 tour (360°)"
-Poutre,valorisation,1 sortie P4 (min.),elements,1,,oui,poutre-59-p6-215,P6,Vers l’arrière,"Salto arrière corps groupé, carpé, tendu, avec 1 tour (360°)"
-Poutre,valorisation,1 sortie P4 (min.),elements,1,,oui,poutre-59-p7-214bis,P7,Vers l’avant,Salto avant corps tendu appel des 2 pieds avec 1 tour (360°)
-Poutre,valorisation,1 sortie P4 (min.),elements,1,,oui,poutre-59-p7-217,P7,Vers l’arrière,Salto arrière avec 3/2 tour ou+
-Poutre,valorisation,1 sortie P4 (min.),elements,1,,oui,poutre-59-p7-218,P7,Vers l’arrière,Double salto arrière
-Poutre,valorisation,1 sortie P4 (min.),elements,1,,oui,poutre-60-p4-200,P4,Vers l’avant,Costal
-Poutre,valorisation,1 sortie P4 (min.),elements,1,,oui,poutre-60-p5-202,P5,Vers l’avant,Salto avant tendu départ 1 pied
-Poutre,valorisation,1 sortie P4 (min.),elements,1,,oui,poutre-60-p6-212,P6,Vers l’avant,"Salto avant corps groupé, carpé, tendu appel 1 pied avec 1 tour"
-Poutre,exigence,1 élément P5,elements,1,,,poutre-57-p5-174,P5,ATR,De l’équerre monter en force à l’ATR tenu 2“
-Poutre,exigence,1 élément P5,elements,1,,,poutre-58-p5-85,P5,,"Pirouette 1 tour 1/2 (540°) sur 1 jambe et sur 1/2 pointes, position de la jambe libre"
-Poutre,exigence,1 élément P5,elements,1,,,poutre-58-p5-91,P5,,Pirouette 1/1 tour accroupie
-Poutre,exigence,1 élément P5,elements,1,,,poutre-59-p5-187,P5,Vers l’arrière,Salto arrière corps groupé
-Poutre,exigence,1 élément P5,elements,1,,,poutre-59-p5-209,P5,Vers l’avant,Salto avant tendu appel 2 pieds aussi avec 1/2 tour (180°) à la station debout
-Poutre,exigence,1 élément P5,elements,1,,,poutre-59-p5-210,P5,Vers l’arrière,Salto arrière tendu aussi avec 1/2 tour (180°) à la station debout
-Poutre,exigence,1 élément P5,elements,1,,,poutre-59-p5-211,P5,Vers l’arrière,Twist Appel en arrière avec 1/2 tour (180°) et salto avant à la station debout
-Poutre,exigence,1 élément P5,elements,1,,,poutre-60-p5-159-plus,P5,Vers l’avant,Souplesse avant ou roue arabe Renverse­ ment avant sans envol aussi avec appui sur 1 bras
-Poutre,exigence,1 élément P5,elements,1,,,poutre-60-p5-160-plus,P5,Vers l’arrière,Tic-Tac. Renversement avant arrière sans envol
-Poutre,exigence,1 élément P5,elements,1,,,poutre-60-p5-164,P5,Vers l’avant,Rondade
-Poutre,exigence,1 élément P5,elements,1,,,poutre-60-p5-165,P5,Vers l’avant,Saut de mains. Renversement avant avec envol appel 1 pied et réception libre
-Poutre,exigence,1 élément P5,elements,1,,,poutre-60-p5-166,P5,Vers l’arrière,Flic-flac. Renversement arrière avec envol départ libre arrivée 2 pieds serrés
-Poutre,exigence,1 élément P5,elements,1,,,poutre-60-p5-168,P5,Vers l’arrière,Flic-flac arrivée pieds décalés
-Poutre,exigence,1 élément P5,elements,1,,,poutre-60-p5-202,P5,Vers l’avant,Salto avant tendu départ 1 pied
-Poutre,exigence,1 élément P5,elements,1,,,poutre-61-p5-175,P5,,Flic-flac avec 1/2 de tour en passant par l’ATR et renversement avant (Onodi)
-Poutre,exigence,1 élément P5,elements,1,,,poutre-61-p5-184,P5,,"Salto costal, renversement latéral libre"
-Poutre,exigence,1 élément P5,elements,1,,,poutre-61-p5-187,P5,,Salto arrière corps groupé
-Poutre,exigence,1 élément P5,elements,1,,,poutre-62-p5-67,P5,,Saut enjambé avec changement de jambes (angle d’écart 180° après le changement)
-Poutre,exigence,1 élément P5,elements,1,,,poutre-63-p5-66,P5,,Saut carpé écarté
-Poutre,exigence,1 élément P5,elements,1,,,poutre-64-p5-19,P5,,"Saut, élan ou élévation à l’ATR retour libre au milieu, au bout ou latéralement par rapport"
-Poutre,exigence,1 élément P5,elements,1,,,poutre-64-p5-22,P5,,"Saut et renversement latéral avec corps tendu avant l’appui des mains sur la poutre et retour libre,"
-Poutre,exigence,1 élément P5,elements,1,,,poutre-64-p5-35-new,P5,,Entrée roue arrivée branchiale
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-57-p5-174,P5,ATR,De l’équerre monter en force à l’ATR tenu 2“
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-58-p5-85,P5,,"Pirouette 1 tour 1/2 (540°) sur 1 jambe et sur 1/2 pointes, position de la jambe libre"
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-58-p5-91,P5,,Pirouette 1/1 tour accroupie
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-58-p6-88,P6,,"Pirouette 2 tours (720°) sur 1 jambe et sur 1/2 pointes, position de la jambe libre"
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-59-p5-187,P5,Vers l’arrière,Salto arrière corps groupé
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-59-p5-209,P5,Vers l’avant,Salto avant tendu appel 2 pieds aussi avec 1/2 tour (180°) à la station debout
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-59-p5-210,P5,Vers l’arrière,Salto arrière tendu aussi avec 1/2 tour (180°) à la station debout
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-59-p5-211,P5,Vers l’arrière,Twist Appel en arrière avec 1/2 tour (180°) et salto avant à la station debout
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-59-p6-188,P6,Vers l’arrière,Salto arrière carpé
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-59-p6-214,P6,Vers l’avant,"Salto avant corps groupé, carpé, appel des 2 pieds avec 1 tour (360°)"
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-59-p6-215,P6,Vers l’arrière,"Salto arrière corps groupé, carpé, tendu, avec 1 tour (360°)"
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-59-p6-26,P6,Vers l’avant,Salto avant corps groupé appel d’1 ou 2 pieds arriver au siège groupé
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-59-p7-186,P7,Vers l’avant,Salto avant corps groupé ou carpé appel 1 ou 2 pieds arrivée à la station debout
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-59-p7-191,P7,Vers l’arrière,"Salto arrière tendu, appel 2 pieds, réception 2 pieds"
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-59-p7-192,P7,Vers l’arrière,Salto arrière tendu pieds décalés
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-59-p7-214bis,P7,Vers l’avant,Salto avant corps tendu appel des 2 pieds avec 1 tour (360°)
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-59-p7-217,P7,Vers l’arrière,Salto arrière avec 3/2 tour ou+
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-59-p7-218,P7,Vers l’arrière,Double salto arrière
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-60-p5-159-plus,P5,Vers l’avant,Souplesse avant ou roue arabe Renverse­ ment avant sans envol aussi avec appui sur 1 bras
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-60-p5-160-plus,P5,Vers l’arrière,Tic-Tac. Renversement avant arrière sans envol
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-60-p5-164,P5,Vers l’avant,Rondade
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-60-p5-165,P5,Vers l’avant,Saut de mains. Renversement avant avec envol appel 1 pied et réception libre
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-60-p5-166,P5,Vers l’arrière,Flic-flac. Renversement arrière avec envol départ libre arrivée 2 pieds serrés
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-60-p5-168,P5,Vers l’arrière,Flic-flac arrivée pieds décalés
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-60-p5-202,P5,Vers l’avant,Salto avant tendu départ 1 pied
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-60-p6-164-plus,P6,Vers l’avant,Rondade
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-60-p6-168-plus,P6,Vers l’arrière,Flic-flac arrivée pieds décalés
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-60-p6-212,P6,Vers l’avant,"Salto avant corps groupé, carpé, tendu appel 1 pied avec 1 tour"
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-60-p7-175,P7,Vers l’arrière,Flic-flac avec 1/2 de tour en passant par l’ATR et renversement avant (Onodi)
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-60-p7-184,P7,Vers l’avant,"Salto costal, renversement latéral libre"
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-60-p7-185,P7,Vers l’avant,"Salto facial, renversement avant libre"
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-60-p7-190,P7,Vers l’avant,Salto japonais. Salto latéral groupé ou carpé appel 1 pied en latéral et réception
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-61-p5-175,P5,,Flic-flac avec 1/2 de tour en passant par l’ATR et renversement avant (Onodi)
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-61-p5-184,P5,,"Salto costal, renversement latéral libre"
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-61-p5-187,P5,,Salto arrière corps groupé
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-61-p6-190,P6,,Salto japonais. Salto latéral groupé ou carpé appel 1 pied en latéral et réception à la station latérale
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-61-p7-185,P7,,"Salto facial, renversement avant libre"
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-61-p7-192,P7,,Salto arrière tendu pieds décalés
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-62-p5-67,P5,,Saut enjambé avec changement de jambes (angle d’écart 180° après le changement)
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-62-p6-69,P6,,Saut enjambé avec 1/2 tour (180°)
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-62-p6-70,P6,,Saut enjambé avec changement de jambes (angle d’écart 180° après le changement)
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-62-p7-71,P7,,Saut changement de jambes avec 1/2 tour (180°)
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-63-p5-66,P5,,Saut carpé écarté
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-63-p6-63,P6,,Saut antéropostérieur à 180° avec ½ tour (180°)
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-63-p6-64,P6,,Saut de cosaque 1/2 tour appel des 2 pieds Saut groupé 1 jambe tendue à l’horizontale en avant
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-63-p6-66bis,P6,,Saut carpé serré (angle du corps 90°)
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-63-p6-68,P6,,Saut avec 1 tour en l’air (360°) appel des 2 pieds
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-64-p5-19,P5,,"Saut, élan ou élévation à l’ATR retour libre au milieu, au bout ou latéralement par rapport"
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-64-p5-22,P5,,"Saut et renversement latéral avec corps tendu avant l’appui des mains sur la poutre et retour libre,"
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-64-p5-35-new,P5,,Entrée roue arrivée branchiale
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-64-p6-36-new,P6,,Entrée grand jeté
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-64-p7-25,P7,,"Salto avant à la station appel 2 pieds, élan en bout par rapport à la poutre"
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-64-p7-26,P7,,"Rondade devant le bout poutre flic-flac par l’ATR, retour libre"
+Poutre,exigence,1 élément P5 (min.),elements,1,,,poutre-64-p7-34-new,P7,,Entrée flip arrivée brachiale
 Poutre,valorisation,1 saut avec 1 rotation à 180° (min.),elements,1,,oui,poutre-62-p3-56,P3,,Saut de chat en avant avec 1/2 tour (180°)
 Poutre,valorisation,1 saut avec 1 rotation à 180° (min.),elements,1,,oui,poutre-62-p4-62,P4,,Saut enjambé appel d’1 pied (écart à 180°) aussi avec la jambe libre fléchie tendue
 Poutre,valorisation,1 saut avec 1 rotation à 180° (min.),elements,1,,oui,poutre-62-p5-67,P5,,Saut enjambé avec changement de jambes (angle d’écart 180° après le changement)
@@ -2141,22 +2289,38 @@ Poutre,valorisation,1 sortie avec liaison acro,elements,1,,oui,poutre-60-p3-197,
 Poutre,valorisation,1 sortie avec liaison acro,elements,1,,oui,poutre-60-p4-200,P4,Vers l’avant,Costal
 Poutre,valorisation,1 sortie avec liaison acro,elements,1,,oui,poutre-60-p5-202,P5,Vers l’avant,Salto avant tendu départ 1 pied
 Poutre,valorisation,1 sortie avec liaison acro,elements,1,,oui,poutre-60-p6-212,P6,Vers l’avant,"Salto avant corps groupé, carpé, tendu appel 1 pied avec 1 tour"
-Poutre,exigence,1 élément P6,elements,1,,,poutre-58-p6-88,P6,,"Pirouette 2 tours (720°) sur 1 jambe et sur 1/2 pointes, position de la jambe libre"
-Poutre,exigence,1 élément P6,elements,1,,,poutre-59-p6-188,P6,Vers l’arrière,Salto arrière carpé
-Poutre,exigence,1 élément P6,elements,1,,,poutre-59-p6-214,P6,Vers l’avant,"Salto avant corps groupé, carpé, appel des 2 pieds avec 1 tour (360°)"
-Poutre,exigence,1 élément P6,elements,1,,,poutre-59-p6-215,P6,Vers l’arrière,"Salto arrière corps groupé, carpé, tendu, avec 1 tour (360°)"
-Poutre,exigence,1 élément P6,elements,1,,,poutre-59-p6-26,P6,Vers l’avant,Salto avant corps groupé appel d’1 ou 2 pieds arriver au siège groupé
-Poutre,exigence,1 élément P6,elements,1,,,poutre-60-p6-164-plus,P6,Vers l’avant,Rondade
-Poutre,exigence,1 élément P6,elements,1,,,poutre-60-p6-168-plus,P6,Vers l’arrière,Flic-flac arrivée pieds décalés
-Poutre,exigence,1 élément P6,elements,1,,,poutre-60-p6-212,P6,Vers l’avant,"Salto avant corps groupé, carpé, tendu appel 1 pied avec 1 tour"
-Poutre,exigence,1 élément P6,elements,1,,,poutre-61-p6-190,P6,,Salto japonais. Salto latéral groupé ou carpé appel 1 pied en latéral et réception à la station latérale
-Poutre,exigence,1 élément P6,elements,1,,,poutre-62-p6-69,P6,,Saut enjambé avec 1/2 tour (180°)
-Poutre,exigence,1 élément P6,elements,1,,,poutre-62-p6-70,P6,,Saut enjambé avec changement de jambes (angle d’écart 180° après le changement)
-Poutre,exigence,1 élément P6,elements,1,,,poutre-63-p6-63,P6,,Saut antéropostérieur à 180° avec ½ tour (180°)
-Poutre,exigence,1 élément P6,elements,1,,,poutre-63-p6-64,P6,,Saut de cosaque 1/2 tour appel des 2 pieds Saut groupé 1 jambe tendue à l’horizontale en avant
-Poutre,exigence,1 élément P6,elements,1,,,poutre-63-p6-66bis,P6,,Saut carpé serré (angle du corps 90°)
-Poutre,exigence,1 élément P6,elements,1,,,poutre-63-p6-68,P6,,Saut avec 1 tour en l’air (360°) appel des 2 pieds
-Poutre,exigence,1 élément P6,elements,1,,,poutre-64-p6-36-new,P6,,Entrée grand jeté
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-58-p6-88,P6,,"Pirouette 2 tours (720°) sur 1 jambe et sur 1/2 pointes, position de la jambe libre"
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-59-p6-188,P6,Vers l’arrière,Salto arrière carpé
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-59-p6-214,P6,Vers l’avant,"Salto avant corps groupé, carpé, appel des 2 pieds avec 1 tour (360°)"
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-59-p6-215,P6,Vers l’arrière,"Salto arrière corps groupé, carpé, tendu, avec 1 tour (360°)"
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-59-p6-26,P6,Vers l’avant,Salto avant corps groupé appel d’1 ou 2 pieds arriver au siège groupé
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-59-p7-186,P7,Vers l’avant,Salto avant corps groupé ou carpé appel 1 ou 2 pieds arrivée à la station debout
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-59-p7-191,P7,Vers l’arrière,"Salto arrière tendu, appel 2 pieds, réception 2 pieds"
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-59-p7-192,P7,Vers l’arrière,Salto arrière tendu pieds décalés
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-59-p7-214bis,P7,Vers l’avant,Salto avant corps tendu appel des 2 pieds avec 1 tour (360°)
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-59-p7-217,P7,Vers l’arrière,Salto arrière avec 3/2 tour ou+
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-59-p7-218,P7,Vers l’arrière,Double salto arrière
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-60-p6-164-plus,P6,Vers l’avant,Rondade
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-60-p6-168-plus,P6,Vers l’arrière,Flic-flac arrivée pieds décalés
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-60-p6-212,P6,Vers l’avant,"Salto avant corps groupé, carpé, tendu appel 1 pied avec 1 tour"
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-60-p7-175,P7,Vers l’arrière,Flic-flac avec 1/2 de tour en passant par l’ATR et renversement avant (Onodi)
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-60-p7-184,P7,Vers l’avant,"Salto costal, renversement latéral libre"
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-60-p7-185,P7,Vers l’avant,"Salto facial, renversement avant libre"
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-60-p7-190,P7,Vers l’avant,Salto japonais. Salto latéral groupé ou carpé appel 1 pied en latéral et réception
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-61-p6-190,P6,,Salto japonais. Salto latéral groupé ou carpé appel 1 pied en latéral et réception à la station latérale
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-61-p7-185,P7,,"Salto facial, renversement avant libre"
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-61-p7-192,P7,,Salto arrière tendu pieds décalés
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-62-p6-69,P6,,Saut enjambé avec 1/2 tour (180°)
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-62-p6-70,P6,,Saut enjambé avec changement de jambes (angle d’écart 180° après le changement)
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-62-p7-71,P7,,Saut changement de jambes avec 1/2 tour (180°)
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-63-p6-63,P6,,Saut antéropostérieur à 180° avec ½ tour (180°)
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-63-p6-64,P6,,Saut de cosaque 1/2 tour appel des 2 pieds Saut groupé 1 jambe tendue à l’horizontale en avant
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-63-p6-66bis,P6,,Saut carpé serré (angle du corps 90°)
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-63-p6-68,P6,,Saut avec 1 tour en l’air (360°) appel des 2 pieds
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-64-p6-36-new,P6,,Entrée grand jeté
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-64-p7-25,P7,,"Salto avant à la station appel 2 pieds, élan en bout par rapport à la poutre"
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-64-p7-26,P7,,"Rondade devant le bout poutre flic-flac par l’ATR, retour libre"
+Poutre,exigence,1 élément P6 (min.),elements,1,,,poutre-64-p7-34-new,P7,,Entrée flip arrivée brachiale
 Poutre,valorisation,1 saut avec 1 rotation à 180°,elements,1,,oui,poutre-62-p3-56,P3,,Saut de chat en avant avec 1/2 tour (180°)
 Poutre,valorisation,1 saut avec 1 rotation à 180°,elements,1,,oui,poutre-62-p4-62,P4,,Saut enjambé appel d’1 pied (écart à 180°) aussi avec la jambe libre fléchie tendue
 Poutre,valorisation,1 saut avec 1 rotation à 180°,elements,1,,oui,poutre-62-p5-67,P5,,Saut enjambé avec changement de jambes (angle d’écart 180° après le changement)
@@ -2223,22 +2387,22 @@ Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-60-p7
 Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-60-p7-190,P7,Vers l’avant,Salto japonais. Salto latéral groupé ou carpé appel 1 pied en latéral et réception
 Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-60-nomade-158,NOMADE,,Renversement latéral avec envol avant ou après la pose des mains
 Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-60-nomade-167,NOMADE,,Flic-flac poisson
-Poutre,valorisation,1 sortie avec liaison acro dont un élément P5 (min.),elements,1,,oui,poutre-59-p3-199,P3,Vers l’arrière,Salto arrière groupé
-Poutre,valorisation,1 sortie avec liaison acro dont un élément P5 (min.),elements,1,,oui,poutre-59-p3-201,P3,Vers l’avant,Salto avant corps groupé ou carpé à la station debout appel 1 ou 2 pieds
-Poutre,valorisation,1 sortie avec liaison acro dont un élément P5 (min.),elements,1,,oui,poutre-59-p4-203,P4,Vers l’avant,Salto avant avec demi-tour à la station debout (appel 2 pieds)
-Poutre,valorisation,1 sortie avec liaison acro dont un élément P5 (min.),elements,1,,oui,poutre-59-p5-209,P5,Vers l’avant,Salto avant tendu appel 2 pieds aussi avec 1/2 tour (180°) à la station debout
-Poutre,valorisation,1 sortie avec liaison acro dont un élément P5 (min.),elements,1,,oui,poutre-59-p5-210,P5,Vers l’arrière,Salto arrière tendu aussi avec 1/2 tour (180°) à la station debout
-Poutre,valorisation,1 sortie avec liaison acro dont un élément P5 (min.),elements,1,,oui,poutre-59-p5-211,P5,Vers l’arrière,Twist Appel en arrière avec 1/2 tour (180°) et salto avant à la station debout
-Poutre,valorisation,1 sortie avec liaison acro dont un élément P5 (min.),elements,1,,oui,poutre-59-p6-214,P6,Vers l’avant,"Salto avant corps groupé, carpé, appel des 2 pieds avec 1 tour (360°)"
-Poutre,valorisation,1 sortie avec liaison acro dont un élément P5 (min.),elements,1,,oui,poutre-59-p6-215,P6,Vers l’arrière,"Salto arrière corps groupé, carpé, tendu, avec 1 tour (360°)"
-Poutre,valorisation,1 sortie avec liaison acro dont un élément P5 (min.),elements,1,,oui,poutre-59-p7-214bis,P7,Vers l’avant,Salto avant corps tendu appel des 2 pieds avec 1 tour (360°)
-Poutre,valorisation,1 sortie avec liaison acro dont un élément P5 (min.),elements,1,,oui,poutre-59-p7-217,P7,Vers l’arrière,Salto arrière avec 3/2 tour ou+
-Poutre,valorisation,1 sortie avec liaison acro dont un élément P5 (min.),elements,1,,oui,poutre-59-p7-218,P7,Vers l’arrière,Double salto arrière
-Poutre,valorisation,1 sortie avec liaison acro dont un élément P5 (min.),elements,1,,oui,poutre-60-p3-196,P3,Vers l’avant,Rondade à la station debout (avec ou sans sursaut)
-Poutre,valorisation,1 sortie avec liaison acro dont un élément P5 (min.),elements,1,,oui,poutre-60-p3-197,P3,Vers l’avant,Saut de mains. Renversement avant avec envol à la station debout avec ou sans sursaut
-Poutre,valorisation,1 sortie avec liaison acro dont un élément P5 (min.),elements,1,,oui,poutre-60-p4-200,P4,Vers l’avant,Costal
-Poutre,valorisation,1 sortie avec liaison acro dont un élément P5 (min.),elements,1,,oui,poutre-60-p5-202,P5,Vers l’avant,Salto avant tendu départ 1 pied
-Poutre,valorisation,1 sortie avec liaison acro dont un élément P5 (min.),elements,1,,oui,poutre-60-p6-212,P6,Vers l’avant,"Salto avant corps groupé, carpé, tendu appel 1 pied avec 1 tour"
+Poutre,valorisation,1 sortie avec liaison acro dont un élément P4 (min.),elements,1,,oui,poutre-59-p3-199,P3,Vers l’arrière,Salto arrière groupé
+Poutre,valorisation,1 sortie avec liaison acro dont un élément P4 (min.),elements,1,,oui,poutre-59-p3-201,P3,Vers l’avant,Salto avant corps groupé ou carpé à la station debout appel 1 ou 2 pieds
+Poutre,valorisation,1 sortie avec liaison acro dont un élément P4 (min.),elements,1,,oui,poutre-59-p4-203,P4,Vers l’avant,Salto avant avec demi-tour à la station debout (appel 2 pieds)
+Poutre,valorisation,1 sortie avec liaison acro dont un élément P4 (min.),elements,1,,oui,poutre-59-p5-209,P5,Vers l’avant,Salto avant tendu appel 2 pieds aussi avec 1/2 tour (180°) à la station debout
+Poutre,valorisation,1 sortie avec liaison acro dont un élément P4 (min.),elements,1,,oui,poutre-59-p5-210,P5,Vers l’arrière,Salto arrière tendu aussi avec 1/2 tour (180°) à la station debout
+Poutre,valorisation,1 sortie avec liaison acro dont un élément P4 (min.),elements,1,,oui,poutre-59-p5-211,P5,Vers l’arrière,Twist Appel en arrière avec 1/2 tour (180°) et salto avant à la station debout
+Poutre,valorisation,1 sortie avec liaison acro dont un élément P4 (min.),elements,1,,oui,poutre-59-p6-214,P6,Vers l’avant,"Salto avant corps groupé, carpé, appel des 2 pieds avec 1 tour (360°)"
+Poutre,valorisation,1 sortie avec liaison acro dont un élément P4 (min.),elements,1,,oui,poutre-59-p6-215,P6,Vers l’arrière,"Salto arrière corps groupé, carpé, tendu, avec 1 tour (360°)"
+Poutre,valorisation,1 sortie avec liaison acro dont un élément P4 (min.),elements,1,,oui,poutre-59-p7-214bis,P7,Vers l’avant,Salto avant corps tendu appel des 2 pieds avec 1 tour (360°)
+Poutre,valorisation,1 sortie avec liaison acro dont un élément P4 (min.),elements,1,,oui,poutre-59-p7-217,P7,Vers l’arrière,Salto arrière avec 3/2 tour ou+
+Poutre,valorisation,1 sortie avec liaison acro dont un élément P4 (min.),elements,1,,oui,poutre-59-p7-218,P7,Vers l’arrière,Double salto arrière
+Poutre,valorisation,1 sortie avec liaison acro dont un élément P4 (min.),elements,1,,oui,poutre-60-p3-196,P3,Vers l’avant,Rondade à la station debout (avec ou sans sursaut)
+Poutre,valorisation,1 sortie avec liaison acro dont un élément P4 (min.),elements,1,,oui,poutre-60-p3-197,P3,Vers l’avant,Saut de mains. Renversement avant avec envol à la station debout avec ou sans sursaut
+Poutre,valorisation,1 sortie avec liaison acro dont un élément P4 (min.),elements,1,,oui,poutre-60-p4-200,P4,Vers l’avant,Costal
+Poutre,valorisation,1 sortie avec liaison acro dont un élément P4 (min.),elements,1,,oui,poutre-60-p5-202,P5,Vers l’avant,Salto avant tendu départ 1 pied
+Poutre,valorisation,1 sortie avec liaison acro dont un élément P4 (min.),elements,1,,oui,poutre-60-p6-212,P6,Vers l’avant,"Salto avant corps groupé, carpé, tendu appel 1 pied avec 1 tour"
 Poutre,exigence,1 élément P7,elements,1,,,poutre-59-p7-186,P7,Vers l’avant,Salto avant corps groupé ou carpé appel 1 ou 2 pieds arrivée à la station debout
 Poutre,exigence,1 élément P7,elements,1,,,poutre-59-p7-191,P7,Vers l’arrière,"Salto arrière tendu, appel 2 pieds, réception 2 pieds"
 Poutre,exigence,1 élément P7,elements,1,,,poutre-59-p7-192,P7,Vers l’arrière,Salto arrière tendu pieds décalés

@@ -12,6 +12,15 @@ arches (Anneaux, Barres parallèles, Barre fixe) are still earlier drafts, and t
 rulebook PDFs carry no date. Items below were re-checked against the SEPT. 26 issue;
 anything specific to the men's apparatus still reflects the earlier draft.
 
+The women's **décomposition** sheets were also refreshed from the SEPT. 26 brochure
+(*Programme Technique GAF 2026-2030*). `data/csv/decompo-note.csv` was hand-corrected
+against it rather than re-extracted — the brochure embeds the four sheets on pages 26/28/30/32
+instead of shipping the standalone `decompo-note.pdf` the extractor expects. The changes:
+Poutre B3 sortie `1 sortie P4 (min.)` → `1 sortie avec liaison acro`; Poutre C2 sortie
+element `P5 (min.)` → `P4 (min.)`; Poutre B2/B3/C1/C2 Tronc Commun element gained `(min.)`;
+Sol C1 `1 salto position tendue` → `… appel 2 pieds`; Saut B3 now carries real valorisations
+(item 16 below, resolved). Re-running `extract_decompo.py` on the old PDF would revert these.
+
 Re-run both extractors and diff the CSVs to see what moved:
 
 ```sh
@@ -32,7 +41,7 @@ is wrong. The scripts flag all of them in the `controle` column.
 | 2 | `decompo-note.pdf` p.9, Barre fixe **A1** | No `CHOISIR n VALORISATIONS PARMIS LES m` banner is printed at all — the page has 2 banners for 6 columns. Five valorisations are offered; taking all five gives **15 instead of 13**. A banner reading *CHOISIR 4 PARMIS LES 5* would give exactly 13. | `valorisations_a_choisir` non-empty for that row |
 | 3 | `decompo-note.pdf` p.9, Barre fixe **B1** | One valorisation flagged `(*)` instead of two, so the start score comes to **13 instead of 14**. | `controle` empty for that row |
 | 4 | `arches-poutre.pdf` p.5 | Arch 28 is titled **ACCRO POUTRE MOUSSE**; every other acrobatic arch is spelt *ACRO*. | the `arche` column for Poutre arch 28 |
-| 16 | `decompo-note.pdf` p.10, Saut **B3** | One valorisation reads literally **"En cours de Validation"** — the watermark, printed in a slot where a criterion should be. It is carried through as a criterion so the count stays right; nothing can be attached to it. | the `valorisations` cell for Saut B3 |
+| 16 | *(resolved SEPT. 26)* Saut **B3** | ~~One valorisation read literally **"En cours de Validation"** — the watermark in a criterion's slot.~~ The refreshed SEPT. 26 sheet fills it with the three real Saut valorisations, matching C1-C3; the placeholder criterion was removed from both `decompo-note.csv` and `criteres.csv`. | — |
 | 17 | `decompo-note.pdf` p.9, Barre fixe | A valorisation reads **"1 appui / élan PXX"** — an unfilled palier placeholder. Treated as a palier-less rule, so it selects the whole *appuis / élans* vocabulary instead of one palier's worth. | `grep PXX data/csv/decompo-note.csv` |
 
 ## Missing material

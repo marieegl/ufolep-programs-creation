@@ -7,7 +7,7 @@ the element is a label, and the match lives in the reader's head.
 `data/criteres.csv` is where that reading is written down — **one rule per criterion**,
 never one row per element. `scripts/resolve_criteres.py` applies each rule to the
 catalog and emits `data/csv/criteres-elements.csv`, one row per criterion-element pair.
-The current issue resolves to **329 rules over 334 lines and 4003 pairs**, so the pairs
+The current issue resolves to **327 rules over 332 lines and 4167 pairs**, so the pairs
 file is twelve times the size of the thing a human maintains.
 
 That ratio is the whole point. A re-issued programme is re-resolved in a second; a
@@ -102,7 +102,7 @@ what makes *"3 arches (péda NON)"* count arches minus the pedagogical one.
 A `manuel` rule must carry a `commentaire` saying what is not derivable, so that a
 deliberate hand-off cannot be confused with a motif nobody got round to writing.
 
-Of the 329 rules, **29 are `manuel`** — 9%. Those are almost all liaisons (a *LA* is a
+Of the 327 rules, **28 are `manuel`** — 9%. Those are almost all liaisons (a *LA* is a
 sequence of elements, not an element). The five Poutre sorties used to be here too —
 nothing in the catalog names a dismount — but they are now selected through the `tag`
 column against the hand-kept list of dismount ids described above.
