@@ -147,6 +147,29 @@ describe("noter", () => {
     expect(gagnees).toHaveLength(1);
   });
 
+  it("ne décompte un élément partagé que dans une seule valorisation", () => {
+    // The n°98 case: one element eligible for two exclusive valorisations must appear in a
+    // single count, not both.
+    let trouve: { evo: Evolution; a: string; b: string; element: string } | undefined;
+    for (const evo of catalog.evolutions) {
+      const excl = criteresOf(evo).valorisations
+        .map((v) => v.critere)
+        .filter((c) => !c.liaison && c.type === "elements");
+      for (let i = 0; i < excl.length && !trouve; i++) {
+        for (let j = i + 1; j < excl.length && !trouve; j++) {
+          const partage = excl[i].elements.find((id) => excl[j].elements.includes(id));
+          if (partage) trouve = { evo, a: excl[i].texte, b: excl[j].texte, element: partage };
+        }
+      }
+      if (trouve) break;
+    }
+    const { evo, a, b, element } = trouve!;
+    const note = noter(evo, { elements: [element], coches: new Set() });
+    const lignes = note.valorisations.filter((l) => l.critere.texte === a || l.critere.texte === b);
+    // The single element shows up in exactly one of the two counts.
+    expect(lignes.filter((l) => l.trouves > 0)).toHaveLength(1);
+  });
+
   it("épingle un élément partagé à la valorisation choisie par l'entraîneur", () => {
     // Same kind of shared element as above, but now the coach pins it elsewhere. The
     // default credits one valorisation; an affectation must move the credit to the other.
