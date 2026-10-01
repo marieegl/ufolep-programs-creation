@@ -309,22 +309,25 @@ export function App() {
                               l.critere.elements.includes(id),
                           );
                           if (options.length < 2) return null;
+                          // The valorisation currently crediting the element (by default
+                          // choice or pin) is shown selected — no separate "Auto" line, it
+                          // only duplicated whichever option it resolved to. Leaving the
+                          // default selection untouched keeps the automatic behaviour;
+                          // picking another pins the element there.
                           const creditee = note.valorisations.find((l) =>
                             l.elementsRetenus.includes(id),
                           );
+                          const defaut = creditee ? cleDe(creditee.critere) : cleDe(options[0].critere);
                           return (
                             <select
                               className="affectation"
-                              value={affectations.get(id) ?? ""}
+                              value={affectations.get(id) ?? defaut}
                               onChange={(event) => affecter(id, event.target.value)}
                               onClick={(event) => event.stopPropagation()}
                               onMouseDown={(event) => event.stopPropagation()}
                               title="Compter cet élément pour…"
                               aria-label={`Valorisation comptée pour ${element.libelle}`}
                             >
-                              <option value="">
-                                Auto{creditee ? ` — ${creditee.critere.texte}` : " — non compté"}
-                              </option>
                               {options.map((l) => (
                                 <option key={cleDe(l.critere)} value={cleDe(l.critere)}>
                                   {l.critere.texte}
