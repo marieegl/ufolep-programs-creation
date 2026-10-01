@@ -19,6 +19,7 @@ than hand-transcribed, so each re-issue is re-derived rather than re-typed.
 | `data/criteres.csv` | One hand-maintained rule per scoring criterion, saying which elements satisfy it |
 | `scripts/` | Extraction and verification scripts |
 | `src/` | The web app, and the JSON catalog it is built with |
+| `docs/regles-composition.md` | How to compose a routine and count the start score (coach-facing, French) |
 | `docs/criteres.md` | The rule language of `data/criteres.csv` and the controls that check it |
 | `docs/observations.md` | What looks wrong or unsettled in the source PDFs, to re-read against the next issue |
 
