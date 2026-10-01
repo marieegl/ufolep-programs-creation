@@ -1,7 +1,7 @@
 // Offline support for the hosted PWA. Network-first so a coach online always gets the
 // latest build, with a cache fallback so the app still opens in a gym with no signal.
 // Bump CACHE when the asset list changes to evict the old one.
-const CACHE = "npt-ufolep-v1";
+const CACHE = "npt-ufolep-v2";
 const ASSETS = [
   "./",
   "./index.html",
@@ -28,8 +28,12 @@ self.addEventListener("activate", (event) => {
 
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
+  // Bypass the browser's HTTP disk cache so an online coach can never be stuck on a stale
+  // page or bundle; the offline fallback below still serves the last good copy with no
+  // signal. A page navigation is the one request that must always be fresh.
+  const frais = event.request.mode === "navigate" ? "reload" : "no-cache";
   event.respondWith(
-    fetch(event.request)
+    fetch(event.request, { cache: frais })
       .then((response) => {
         const copy = response.clone();
         caches.open(CACHE).then((cache) => cache.put(event.request, copy));
