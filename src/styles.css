@@ -581,6 +581,24 @@ td {
   font-size: 0.75rem;
 }
 
+/* Pin a shared element to one valorisation; sits under the element's name. */
+.composition .affectation {
+  display: block;
+  margin-top: 0.25rem;
+  max-width: 100%;
+  padding: 0.1rem 0.3rem;
+  border: 1px solid var(--border-2);
+  border-radius: 0.3rem;
+  background: var(--surface);
+  color: var(--text-2);
+  font-size: 0.72rem;
+  cursor: pointer;
+}
+
+.composition .affectation:hover {
+  border-color: var(--border-strong);
+}
+
 .composition .apports {
   display: flex;
   align-items: baseline;

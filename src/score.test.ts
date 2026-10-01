@@ -147,6 +147,54 @@ describe("noter", () => {
     expect(gagnees).toHaveLength(1);
   });
 
+  it("épingle un élément partagé à la valorisation choisie par l'entraîneur", () => {
+    // Same kind of shared element as above, but now the coach pins it elsewhere. The
+    // default credits one valorisation; an affectation must move the credit to the other.
+    let trouve: { evo: Evolution; a: string; b: string; element: string } | undefined;
+    for (const evo of catalog.evolutions) {
+      const excl = criteresOf(evo).valorisations
+        .map((v) => v.critere)
+        .filter((c) => !c.liaison && c.type === "elements" && c.nombreMin === 1);
+      for (let i = 0; i < excl.length && !trouve; i++) {
+        for (let j = i + 1; j < excl.length && !trouve; j++) {
+          const partage = excl[i].elements.find((id) => excl[j].elements.includes(id));
+          if (partage) trouve = { evo, a: excl[i].texte, b: excl[j].texte, element: partage };
+        }
+      }
+      if (trouve) break;
+    }
+    const { evo, a, b, element } = trouve!;
+    const coches = new Set([`valorisation ${a}`, `valorisation ${b}`]);
+    const credite = (texte: string, affectations?: Map<string, string>) =>
+      noter(evo, { elements: [element], coches, affectations }).valorisations.find(
+        (l) => l.critere.texte === texte,
+      )!.points > 0;
+
+    // One of the two wins by default; pinning to the loser flips the credit.
+    const defautA = credite(a);
+    const perdante = defautA ? b : a;
+    const clefPerdante = `valorisation ${perdante}`;
+    const avecEpingle = new Map([[element, clefPerdante]]);
+    expect(credite(perdante, avecEpingle)).toBe(true);
+    expect(credite(defautA ? a : b, avecEpingle)).toBe(false);
+  });
+
+  it("ignore une épingle vers une valorisation inéligible et garde le défaut", () => {
+    const evo = evolution("Barres asymétriques", "B3");
+    const excl = criteresOf(evo).valorisations
+      .map((v) => v.critere)
+      .filter((c) => !c.liaison && c.type === "elements" && c.nombreMin === 1);
+    const cible = excl.find((c) => c.elements.length > 0)!;
+    const element = cible.elements[0];
+    const autre = excl.find((c) => !c.elements.includes(element));
+    const coches = new Set([cleDe(cible)]);
+    const bidon = new Map([[element, autre ? cleDe(autre) : "valorisation inexistante"]]);
+    // The element isn't eligible for the pinned valorisation, so the pin is dropped and
+    // the default credit stands.
+    const note = noter(evo, { elements: [element], coches, affectations: bidon });
+    expect(note.valorisations.find((l) => l.critere.texte === cible.texte)!.points).toBeGreaterThan(0);
+  });
+
   it("laisse un élément de liaison compter aussi pour une valorisation exclusive", () => {
     let trouve:
       | { evo: Evolution; liaison: string; exclusive: string; element: string }

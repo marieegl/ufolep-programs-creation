@@ -63,6 +63,8 @@ export function App() {
   const [evolutionNom, setEvolutionNom] = useState("A1");
   const [choisis, setChoisis] = useState<string[]>([]);
   const [coches, setCoches] = useState<Set<string>>(new Set());
+  /** element id → clé of the valorisation the coach pinned it to (overrides the default). */
+  const [affectations, setAffectations] = useState<Map<string, string>>(new Map());
   /** Index of the composition row being dragged, while a drag is in progress. */
   const [glisse, setGlisse] = useState<number | null>(null);
   const [lexiqueOuvert, setLexiqueOuvert] = useState(false);
@@ -92,7 +94,7 @@ export function App() {
     return out;
   }, [disponibles]);
 
-  const note = evolution ? noter(evolution, { elements: choisis, coches }) : null;
+  const note = evolution ? noter(evolution, { elements: choisis, coches, affectations }) : null;
   const plafond = evolution ? noteMaximale(evolution) : 0;
   const roles = useMemo(() => (evolution ? apports(evolution) : new Map()), [evolution]);
 
@@ -119,13 +121,32 @@ export function App() {
         : [],
     );
     if (nomAgres !== agres) setCoches(new Set());
+    // Valorisation keys differ per évolution, so pins never carry over.
+    setAffectations(new Map());
     setApercu(null);
   };
 
-  const basculer = (id: string) =>
+  const basculer = (id: string) => {
     setChoisis((actuels) =>
       actuels.includes(id) ? actuels.filter((autre) => autre !== id) : [...actuels, id],
     );
+    // Dropping an element drops any pin it carried.
+    setAffectations((actuelles) => {
+      if (!actuelles.has(id)) return actuelles;
+      const suivantes = new Map(actuelles);
+      suivantes.delete(id);
+      return suivantes;
+    });
+  };
+
+  /** Pin an element to a valorisation (empty clé → back to the automatic choice). */
+  const affecter = (id: string, clef: string) =>
+    setAffectations((actuelles) => {
+      const suivantes = new Map(actuelles);
+      if (clef) suivantes.set(id, clef);
+      else suivantes.delete(id);
+      return suivantes;
+    });
 
   const sombre = theme ? theme === "dark" : !!window.matchMedia?.("(prefers-color-scheme: dark)").matches;
   const basculerTheme = () => {
@@ -278,6 +299,40 @@ export function App() {
                           {element.famille && ` · ${element.famille}`}
                           {element.sortie && " · sortie"}
                         </small>
+                        {(() => {
+                          // When an element can serve several exclusive valorisations, let
+                          // the coach pin which one it counts for; "Auto" keeps the default.
+                          const options = note.valorisations.filter(
+                            (l) =>
+                              !l.critere.liaison &&
+                              (l.critere.type === "elements" || l.critere.type === "familles") &&
+                              l.critere.elements.includes(id),
+                          );
+                          if (options.length < 2) return null;
+                          const creditee = note.valorisations.find((l) =>
+                            l.elementsRetenus.includes(id),
+                          );
+                          return (
+                            <select
+                              className="affectation"
+                              value={affectations.get(id) ?? ""}
+                              onChange={(event) => affecter(id, event.target.value)}
+                              onClick={(event) => event.stopPropagation()}
+                              onMouseDown={(event) => event.stopPropagation()}
+                              title="Compter cet élément pour…"
+                              aria-label={`Valorisation comptée pour ${element.libelle}`}
+                            >
+                              <option value="">
+                                Auto{creditee ? ` — ${creditee.critere.texte}` : " — non compté"}
+                              </option>
+                              {options.map((l) => (
+                                <option key={cleDe(l.critere)} value={cleDe(l.critere)}>
+                                  {l.critere.texte}
+                                </option>
+                              ))}
+                            </select>
+                          );
+                        })()}
                       </span>
                       <Apports apports={roles.get(id) ?? []} />
                       <span className="ordre">

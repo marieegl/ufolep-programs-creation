@@ -6,6 +6,9 @@ export type Composition = {
   elements: string[];
   /** Keyed by `${genre} ${texte}` — the criteria the coach has confirmed by hand. */
   coches: Set<string>;
+  /** element id → clé of the valorisation the coach pinned it to, when it could serve
+  several. Overrides the greedy default; an empty/absent entry falls back to it. */
+  affectations?: Map<string, string>;
 };
 
 export type Etat = "satisfait" | "insuffisant" | "a-confirmer" | "manuel";
@@ -107,12 +110,29 @@ const evaluerValorisations = (
         a.critere.elements.length - b.critere.elements.length,
     );
 
+  // A coach can pin a shared element to one valorisation. Reserve those first so the
+  // best-paying pass can't claim them away; a pin to a valorisation the element isn't
+  // eligible for (or that isn't exclusive) is ignored.
+  const reserve = new Map<string, string>();
+  for (const [id, clef] of composition.affectations ?? new Map<string, string>()) {
+    if (!clef || !composition.elements.includes(id)) continue;
+    const cible = ordre.find((v) => cleDe(v.critere) === clef);
+    if (cible && cible.critere.elements.includes(id)) reserve.set(id, clef);
+  }
+
   const credite = new Map<string, Ligne>();
   for (const { critere, points } of ordre) {
     const clef = cleDe(critere);
-    const dispo = composition.elements.filter(
-      (id) => critere.elements.includes(id) && !consommes.has(id),
+    // Eligible, unconsumed, and not pinned to a *different* valorisation. Elements pinned
+    // here come first so the slice below never drops them.
+    const libres = composition.elements.filter(
+      (id) =>
+        critere.elements.includes(id) &&
+        !consommes.has(id) &&
+        (!reserve.has(id) || reserve.get(id) === clef),
     );
+    const epingles = libres.filter((id) => reserve.get(id) === clef);
+    const dispo = [...epingles, ...libres.filter((id) => !epingles.includes(id))];
     let trouves: number;
     let retenus: string[];
     if (critere.type === "familles") {
@@ -128,6 +148,9 @@ const evaluerValorisations = (
       retenus = trouves >= critere.nombreMin ? dispo.slice(0, critere.nombreMin) : [];
     }
     retenus.forEach((id) => consommes.add(id));
+    // If this valorisation couldn't actually use an element pinned to it, release the pin
+    // so a later (lower-paying) valorisation may still claim it.
+    for (const id of epingles) if (!retenus.includes(id)) reserve.delete(id);
     const etat = etatDe(critere, trouves, composition.coches.has(clef));
     credite.set(clef, {
       critere,
