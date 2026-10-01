@@ -522,6 +522,22 @@ td {
 }
 
 /* The routine as it is being built: an ordered, drag-to-reorder list of the picks. */
+.composition .avertissements {
+  list-style: none;
+  margin: 0 0 0.6rem;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid var(--a-confirmer);
+  border-left-width: 0.25rem;
+  border-radius: 0.4rem;
+  background: var(--principale-bg);
+  color: var(--muted-3);
+  font-size: 0.85rem;
+}
+
+.composition .avertissements li + li {
+  margin-top: 0.25rem;
+}
+
 .composition ol {
   list-style: none;
   margin: 0;

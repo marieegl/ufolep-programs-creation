@@ -20,6 +20,10 @@ const DEFINITION_PLUS =
   "Élément + : élément acro enchaîné directement d’un autre élément acro au sol, ou gym pour les LM en poutre";
 const estPlus = (element: Element) => element.numero.endsWith("+");
 
+/** Elements in the ENTRÉES arch are mounts. A routine has exactly one, like its sortie. */
+const estEntree = (element: Element) =>
+  element.archeNom.normalize("NFKD").replace(/[^A-Za-z]+/g, "").toUpperCase().startsWith("ENTR");
+
 /** What the criterion counts, spelt so the number on the row means something. */
 const compteur = ({ critere, trouves }: Ligne) => {
   // A criterion that selects elements and has none is unreachable: either the apparatus
@@ -93,6 +97,18 @@ export function App() {
     }
     return out;
   }, [disponibles]);
+
+  /** A routine has one entrée and one sortie — flag it when the coach picks more. Not
+  blocking: the score stays set-based, this only warns so a slip is caught before print. */
+  const avertissements = useMemo(() => {
+    const picks = choisis.map((id) => elementById.get(id)).filter((e): e is Element => !!e);
+    const entrees = picks.filter(estEntree).length;
+    const sorties = picks.filter((e) => e.sortie).length;
+    const out: string[] = [];
+    if (entrees > 1) out.push(`${entrees} entrées sélectionnées — un mouvement n’en compte qu’une.`);
+    if (sorties > 1) out.push(`${sorties} sorties sélectionnées — un mouvement n’en compte qu’une.`);
+    return out;
+  }, [choisis]);
 
   const note = evolution ? noter(evolution, { elements: choisis, coches, affectations }) : null;
   const plafond = evolution ? noteMaximale(evolution) : 0;
@@ -266,6 +282,13 @@ export function App() {
                   {choisis.length} élément{choisis.length > 1 ? "s" : ""} · glisser ou flèches pour réordonner
                 </small>
               </h2>
+              {avertissements.length > 0 && (
+                <ul className="avertissements" role="alert">
+                  {avertissements.map((a) => (
+                    <li key={a}>⚠ {a}</li>
+                  ))}
+                </ul>
+              )}
               <ol>
                 {choisis.map((id, i) => {
                   const element = elementById.get(id);
