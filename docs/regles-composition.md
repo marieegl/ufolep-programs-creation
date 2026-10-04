@@ -75,6 +75,24 @@ Un enchaînement valable respecte :
 - Les sorties de poutre ne sont pas une arche publiée : elles sont repérées par le drapeau
   `sortie` (voir `data/sorties.csv`).
 
+### Éléments « + » (acro enchaîné)
+
+Un élément dont le numéro finit par **`+`** est la variante *enchaînée* du même élément (en
+général **un palier au-dessus**).
+
+- **Définition** : l'élément acro qui est **enchaîné directement *par* un autre élément acro**
+  au sol (ou gymnique pour les LM en poutre) — autrement dit **l'élément suivi d'un autre
+  acro**, celui qui mène à la suite de la ligne.
+- Le **dernier acro d'une ligne reste en base** (pas de `+`) : rien ne l'enchaîne.
+- Le **premier** d'une ligne prend le `+` dès lors qu'un acro le suit.
+- Exemple — ligne `rondade → flic → salto arrière tendu` : **rondade = 148+**, **flic =
+  155+**, **salto arrière tendu = 172** (fin de ligne, base, d'ailleurs sans variante `+`).
+- Vérif. par le catalogue : les éléments qui mènent vers un autre acro (rondade, saut de
+  mains, flic, salto avant…) ont une variante `+` ; les saltos de fin de ligne (172, 169,
+  173, 174…) n'en ont **pas**.
+- Effet sur la note : le `+` **monte le palier** mais ne change pas le total à lui seul — il
+  compte là où ce palier plus élevé débloque une exigence/valorisation.
+
 ## 4. Recette d'une note maximale
 
 Pour un agrès + une évolution :
