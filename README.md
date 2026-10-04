@@ -6,9 +6,12 @@ computes its start score.
 
 Source PDFs: <https://ufolepgym.com/index.php/npt/>. The women's apparatus (Sol,
 Saut, Barres asymétriques, Poutre) reached their first validated issue in
-September 2026 ("SEPT. 26", filed under *NPT - PRÊT POUR DIFFUSION*); the
-men's-only apparatus are still earlier drafts. Extraction stays re-runnable rather
-than hand-transcribed, so each re-issue is re-derived rather than re-typed.
+September 2026 ("SEPT. 26", filed under *NPT - PRÊT POUR DIFFUSION*). The men's
+apparatus got their own SEPT. 26 brochure — `data/pdf/gam-reglement-decompo.pdf`,
+rulebook and décomposition in one file — but its five GAM sheets still carry the
+*EN COURS DE VALIDATION* watermark, so they are a dated draft rather than a
+validated issue; the men's arches are older still. Extraction stays re-runnable
+rather than hand-transcribed, so each re-issue is re-derived rather than re-typed.
 
 ## Layout
 
@@ -130,6 +133,28 @@ men's apparatus run six columns wide).
 
 ```sh
 uv run scripts/extract_decompo.py data/pdf/decompo-note.pdf data/csv/decompo-note.csv
+```
+
+The men's brochure embeds the same sheets at other page numbers (Sol 19, Arçons 20,
+Anneaux 21, Barres parallèles 22, Barre fixe 23, Saut 24) and ships no Barres
+asymétriques or Poutre page at all, so it is re-ordered into the layout the extractor
+expects before being run, and only the six apparatus it carries are taken from the
+result — the women's two keep the readings hand-corrected against the GAF brochure:
+
+```sh
+uv run python - <<'EOF'
+import pymupdf
+old = pymupdf.open("data/pdf/decompo-note.pdf")
+new = pymupdf.open("data/pdf/gam-reglement-decompo.pdf")
+out = pymupdf.open()
+out.insert_pdf(old, from_page=0, to_page=0)    # 1 unused by the extractor
+out.insert_pdf(new, from_page=23, to_page=23)  # 2 Saut
+out.insert_pdf(new, from_page=18, to_page=18)  # 3 Sol
+out.insert_pdf(old, from_page=3, to_page=4)    # 4-5 Barres asymétriques, Poutre
+out.insert_pdf(new, from_page=19, to_page=22)  # 6-9 the four men's apparatus
+out.save("/tmp/decompo-composite.pdf")
+EOF
+uv run scripts/extract_decompo.py /tmp/decompo-composite.pdf /tmp/decompo-new.csv
 ```
 
 Two encodings make these pages harder to read than they look:

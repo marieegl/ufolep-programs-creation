@@ -1,28 +1,28 @@
 agres,genre,texte,type,nombre_min,nombre_max,confirmation,element_id,palier,famille,libelle
-Saut,valorisation,2 sauts de 1er envol différents,familles,2,,,saut-50-p2-19,P2,Saut par renversement avant,Lune vrille Lune avec rotation longitudinale de 360°dans le 2e envol
-Saut,valorisation,2 sauts de 1er envol différents,familles,2,,,saut-50-p3-21,P3,Saut par renversement avant,Lune vrille et demie. Lune avec rotation longitudinale de 540°
-Saut,valorisation,2 sauts de 1er envol différents,familles,2,,,saut-50-p3-44,P3,Saut par renversement latéral,Tsukahara groupé. Rotation longitudinale de 90° à 180° dans le 1er envol et salto arrière groupé dans le 2e envol
-Saut,valorisation,2 sauts de 1er envol différents,familles,2,,,saut-50-p4-45,P4,Saut par renversement latéral,Tsukahara carpé. Rotation longitudinale de 90° à 180° dans le 1er envol et salto arrière carpé dans le 2e envol
-Saut,valorisation,2 sauts de 1er envol différents,familles,2,,,saut-50-p5-25,P5,Saut par renversement avant,Lune avec salto avant groupé dans le 2e envol
-Saut,valorisation,2 sauts de 1er envol différents,familles,2,,,saut-50-p5-26,P5,Saut par renversement avant,Lune avec salto avant carpé dans le 2e envol
-Saut,valorisation,2 sauts de 1er envol différents,familles,2,,,saut-50-p5-46,P5,Saut par renversement latéral,Tsukahara tendu. Rotation longitudinale de 90° à 180° dans le 1er envol et salto arrière tendu dans le 2e envol
-Saut,valorisation,2 sauts de 1er envol différents,familles,2,,,saut-50-p6-28,P6,Saut par renversement avant,Lune avec salto avant tendu
-Saut,valorisation,2 sauts de 1er envol différents,familles,2,,,saut-50-p7-35,P7,Saut par renversement avant,Lune double salto
-Saut,valorisation,2 sauts de 1er envol différents,familles,2,,,saut-50-p7-48,P7,Saut par renversement latéral,Tsukahara vrillé ou Kasamatsu. Rotation longitudinale de 90° à 180° dans le 1er envol et salto arrière avec rotation longitudinale de 360°
-Saut,valorisation,2 sauts de 1er envol différents,familles,2,,,saut-50-p7-70-new,P7,Saut par renversement avant,Lune avec salto avant
-Saut,valorisation,2 sauts de 1er envol différents,familles,2,,,saut-51-p3-13,P3,Saut par saut de mains,Saut de main arrivée pieds sur le tremplin lune arrière debout
-Saut,valorisation,2 sauts de 1er envol différents,familles,2,,,saut-51-p3-54,P3,Saut par rondade,Rondade tremplin 1/2 tour et lune
-Saut,valorisation,2 sauts de 1er envol différents,familles,2,,,saut-51-p4-49,P4,Saut par rondade,Yurchenko groupé. Appel sur le tremplin en rondade et renversement arrière dans le 1er envol
-Saut,valorisation,2 sauts de 1er envol différents,familles,2,,,saut-51-p5-19,P5,Saut par saut de mains,Lune vrille Lune avec rotation longitudinale de 360°dans le 2e envol
-Saut,valorisation,2 sauts de 1er envol différents,familles,2,,,saut-51-p5-50,P5,Saut par rondade,Yurchenko carpé. Appel sur le tremplin en rondade et renversement arrière dans le 1er envol
-Saut,valorisation,2 sauts de 1er envol différents,familles,2,,,saut-51-p5-55,P5,Saut par rondade,Rondade tremplin 1/2 tour et vrille dans le 2e envol
-Saut,valorisation,2 sauts de 1er envol différents,familles,2,,,saut-51-p6-51,P6,Saut par rondade,Yurchenko tendu. Appel sur le tremplin en rondade et renversement arrière dans le 1er envol
-Saut,valorisation,2 sauts de 1er envol différents,familles,2,,,saut-51-p6-56,P6,Saut par rondade,Rondade tremplin 1/2 tour et salto avant dans le 2e envol
-Saut,valorisation,2 sauts de 1er envol différents,familles,2,,,saut-51-p6-56-new,P6,Saut par saut de mains,Lune avec salto avant groupé dans le 2e envol
-Saut,valorisation,2 sauts de 1er envol différents,familles,2,,,saut-51-p6-66-new,P6,Saut par saut de mains,Saut de main Tsukahara tendu. Rotation longitudinale de 90° à 180° dans le 1er envol
-Saut,valorisation,2 sauts de 1er envol différents,familles,2,,,saut-51-p7-53,P7,Saut par rondade,Yurchenko avec une vrille. Appel sur le tremplin en rondade et renversement arrière dans le 1er envol
-Saut,valorisation,2 sauts de 1er envol différents,familles,2,,,saut-51-p7-75-new,P7,Saut par saut de mains,Saut de main Tsukahara vrillé ou Kasamatsu. Rotation longitudinale de 90° à 180° dans le 1er envol
-Saut,valorisation,2 sauts de 1er envol différents,familles,2,,,saut-51-p7-76-new,P7,Saut par saut de mains,Saut de main lune avec salto avant tendu
+Saut,valorisation,2 sauts de 1er envol différents (1 des 2 sauts min. dans les paliers valorisables) hors nomades,familles,2,,,saut-50-p2-19,P2,Saut par renversement avant,Lune vrille Lune avec rotation longitudinale de 360°dans le 2e envol
+Saut,valorisation,2 sauts de 1er envol différents (1 des 2 sauts min. dans les paliers valorisables) hors nomades,familles,2,,,saut-50-p3-21,P3,Saut par renversement avant,Lune vrille et demie. Lune avec rotation longitudinale de 540°
+Saut,valorisation,2 sauts de 1er envol différents (1 des 2 sauts min. dans les paliers valorisables) hors nomades,familles,2,,,saut-50-p3-44,P3,Saut par renversement latéral,Tsukahara groupé. Rotation longitudinale de 90° à 180° dans le 1er envol et salto arrière groupé dans le 2e envol
+Saut,valorisation,2 sauts de 1er envol différents (1 des 2 sauts min. dans les paliers valorisables) hors nomades,familles,2,,,saut-50-p4-45,P4,Saut par renversement latéral,Tsukahara carpé. Rotation longitudinale de 90° à 180° dans le 1er envol et salto arrière carpé dans le 2e envol
+Saut,valorisation,2 sauts de 1er envol différents (1 des 2 sauts min. dans les paliers valorisables) hors nomades,familles,2,,,saut-50-p5-25,P5,Saut par renversement avant,Lune avec salto avant groupé dans le 2e envol
+Saut,valorisation,2 sauts de 1er envol différents (1 des 2 sauts min. dans les paliers valorisables) hors nomades,familles,2,,,saut-50-p5-26,P5,Saut par renversement avant,Lune avec salto avant carpé dans le 2e envol
+Saut,valorisation,2 sauts de 1er envol différents (1 des 2 sauts min. dans les paliers valorisables) hors nomades,familles,2,,,saut-50-p5-46,P5,Saut par renversement latéral,Tsukahara tendu. Rotation longitudinale de 90° à 180° dans le 1er envol et salto arrière tendu dans le 2e envol
+Saut,valorisation,2 sauts de 1er envol différents (1 des 2 sauts min. dans les paliers valorisables) hors nomades,familles,2,,,saut-50-p6-28,P6,Saut par renversement avant,Lune avec salto avant tendu
+Saut,valorisation,2 sauts de 1er envol différents (1 des 2 sauts min. dans les paliers valorisables) hors nomades,familles,2,,,saut-50-p7-35,P7,Saut par renversement avant,Lune double salto
+Saut,valorisation,2 sauts de 1er envol différents (1 des 2 sauts min. dans les paliers valorisables) hors nomades,familles,2,,,saut-50-p7-48,P7,Saut par renversement latéral,Tsukahara vrillé ou Kasamatsu. Rotation longitudinale de 90° à 180° dans le 1er envol et salto arrière avec rotation longitudinale de 360°
+Saut,valorisation,2 sauts de 1er envol différents (1 des 2 sauts min. dans les paliers valorisables) hors nomades,familles,2,,,saut-50-p7-70-new,P7,Saut par renversement avant,Lune avec salto avant
+Saut,valorisation,2 sauts de 1er envol différents (1 des 2 sauts min. dans les paliers valorisables) hors nomades,familles,2,,,saut-51-p3-13,P3,Saut par saut de mains,Saut de main arrivée pieds sur le tremplin lune arrière debout
+Saut,valorisation,2 sauts de 1er envol différents (1 des 2 sauts min. dans les paliers valorisables) hors nomades,familles,2,,,saut-51-p3-54,P3,Saut par rondade,Rondade tremplin 1/2 tour et lune
+Saut,valorisation,2 sauts de 1er envol différents (1 des 2 sauts min. dans les paliers valorisables) hors nomades,familles,2,,,saut-51-p4-49,P4,Saut par rondade,Yurchenko groupé. Appel sur le tremplin en rondade et renversement arrière dans le 1er envol
+Saut,valorisation,2 sauts de 1er envol différents (1 des 2 sauts min. dans les paliers valorisables) hors nomades,familles,2,,,saut-51-p5-19,P5,Saut par saut de mains,Lune vrille Lune avec rotation longitudinale de 360°dans le 2e envol
+Saut,valorisation,2 sauts de 1er envol différents (1 des 2 sauts min. dans les paliers valorisables) hors nomades,familles,2,,,saut-51-p5-50,P5,Saut par rondade,Yurchenko carpé. Appel sur le tremplin en rondade et renversement arrière dans le 1er envol
+Saut,valorisation,2 sauts de 1er envol différents (1 des 2 sauts min. dans les paliers valorisables) hors nomades,familles,2,,,saut-51-p5-55,P5,Saut par rondade,Rondade tremplin 1/2 tour et vrille dans le 2e envol
+Saut,valorisation,2 sauts de 1er envol différents (1 des 2 sauts min. dans les paliers valorisables) hors nomades,familles,2,,,saut-51-p6-51,P6,Saut par rondade,Yurchenko tendu. Appel sur le tremplin en rondade et renversement arrière dans le 1er envol
+Saut,valorisation,2 sauts de 1er envol différents (1 des 2 sauts min. dans les paliers valorisables) hors nomades,familles,2,,,saut-51-p6-56,P6,Saut par rondade,Rondade tremplin 1/2 tour et salto avant dans le 2e envol
+Saut,valorisation,2 sauts de 1er envol différents (1 des 2 sauts min. dans les paliers valorisables) hors nomades,familles,2,,,saut-51-p6-56-new,P6,Saut par saut de mains,Lune avec salto avant groupé dans le 2e envol
+Saut,valorisation,2 sauts de 1er envol différents (1 des 2 sauts min. dans les paliers valorisables) hors nomades,familles,2,,,saut-51-p6-66-new,P6,Saut par saut de mains,Saut de main Tsukahara tendu. Rotation longitudinale de 90° à 180° dans le 1er envol
+Saut,valorisation,2 sauts de 1er envol différents (1 des 2 sauts min. dans les paliers valorisables) hors nomades,familles,2,,,saut-51-p7-53,P7,Saut par rondade,Yurchenko avec une vrille. Appel sur le tremplin en rondade et renversement arrière dans le 1er envol
+Saut,valorisation,2 sauts de 1er envol différents (1 des 2 sauts min. dans les paliers valorisables) hors nomades,familles,2,,,saut-51-p7-75-new,P7,Saut par saut de mains,Saut de main Tsukahara vrillé ou Kasamatsu. Rotation longitudinale de 90° à 180° dans le 1er envol
+Saut,valorisation,2 sauts de 1er envol différents (1 des 2 sauts min. dans les paliers valorisables) hors nomades,familles,2,,,saut-51-p7-76-new,P7,Saut par saut de mains,Saut de main lune avec salto avant tendu
 Saut,valorisation,Saut avec rotation longitudinale ou transversale,elements,1,,,saut-50-pre-requis-4-new,PRÉ-REQUIS,,Rotation longitudinale dans le 1er envol. Rondade arrivée plat ventre
 Saut,valorisation,Saut avec rotation longitudinale ou transversale,elements,1,,,saut-50-p2-19,P2,Saut par renversement avant,Lune vrille Lune avec rotation longitudinale de 360°dans le 2e envol
 Saut,valorisation,Saut avec rotation longitudinale ou transversale,elements,1,,,saut-50-p3-21,P3,Saut par renversement avant,Lune vrille et demie. Lune avec rotation longitudinale de 540°
@@ -44,14 +44,14 @@ Saut,valorisation,Saut avec un élément sur le tremplin,elements,1,,,saut-51-p5
 Saut,valorisation,Saut avec un élément sur le tremplin,elements,1,,,saut-51-p6-51,P6,Saut par rondade,Yurchenko tendu. Appel sur le tremplin en rondade et renversement arrière dans le 1er envol
 Saut,valorisation,Saut avec un élément sur le tremplin,elements,1,,,saut-51-p6-56,P6,Saut par rondade,Rondade tremplin 1/2 tour et salto avant dans le 2e envol
 Saut,valorisation,Saut avec un élément sur le tremplin,elements,1,,,saut-51-p7-53,P7,Saut par rondade,Yurchenko avec une vrille. Appel sur le tremplin en rondade et renversement arrière dans le 1er envol
-Sol,exigence,1 souplesse,elements,1,,,sol-69-p2-37,P2,Souplesse,"Écrasement facial tenu 2“ en position assise, fermeture tronc-jambes"
-Sol,exigence,1 souplesse,elements,1,,,sol-69-p2-73,P2,Souplesse,Grand écart anté-postérieur tenu 2“
-Sol,exigence,1 souplesse,elements,1,,,sol-69-p3-40,P3,Souplesse,"Pont tenu 2 sec. (épaules au-dessus des mains,"
-Sol,exigence,1 souplesse,elements,1,,,sol-69-p3-78,P3,Souplesse,Grand écart facial tenu 2“
-Sol,exigence,1 souplesse,elements,1,,,sol-69-p4-11,P4,Souplesse,Y Ecart à 135° minimum (pas de règle d’angle)
-Sol,exigence,1 souplesse,elements,1,,,sol-69-p5-20,P5,Souplesse,Appui facial horizontal jambes écartées tenu 2”
-Sol,exigence,1 souplesse,elements,1,,,sol-69-p6-27,P6,Souplesse,Appui facial horizontal jambes serrées tenu 2”
-Sol,exigence,1 souplesse,elements,1,,,sol-69-p7-34,P7,Souplesse,Hirondelle tenue 2“
+Sol,exigence,1 élément de souplesse,elements,1,,,sol-69-p2-37,P2,Souplesse,"Écrasement facial tenu 2“ en position assise, fermeture tronc-jambes"
+Sol,exigence,1 élément de souplesse,elements,1,,,sol-69-p2-73,P2,Souplesse,Grand écart anté-postérieur tenu 2“
+Sol,exigence,1 élément de souplesse,elements,1,,,sol-69-p3-40,P3,Souplesse,"Pont tenu 2 sec. (épaules au-dessus des mains,"
+Sol,exigence,1 élément de souplesse,elements,1,,,sol-69-p3-78,P3,Souplesse,Grand écart facial tenu 2“
+Sol,exigence,1 élément de souplesse,elements,1,,,sol-69-p4-11,P4,Souplesse,Y Ecart à 135° minimum (pas de règle d’angle)
+Sol,exigence,1 élément de souplesse,elements,1,,,sol-69-p5-20,P5,Souplesse,Appui facial horizontal jambes écartées tenu 2”
+Sol,exigence,1 élément de souplesse,elements,1,,,sol-69-p6-27,P6,Souplesse,Appui facial horizontal jambes serrées tenu 2”
+Sol,exigence,1 élément de souplesse,elements,1,,,sol-69-p7-34,P7,Souplesse,Hirondelle tenue 2“
 Sol,exigence,2 acros,elements,2,,,sol-65-p1-70-new,P1,,Chandelle tenue 2’’
 Sol,exigence,2 acros,elements,2,,,sol-65-p2-103,P2,En avant,"Départ libre, ATR et roulade avant bras tendus, arrivée sur 1 ou 2 pieds"
 Sol,exigence,2 acros,elements,2,,,sol-65-p2-97,P2,En avant,"Départ libre, roulade avant avec appui des mains et bras tendus, arrivée sur 1 ou 2 pieds"
@@ -373,20 +373,20 @@ Sol,valorisation,1 LAE dont 1 élément P3 (min.),elements,1,,oui,sol-66-p5-175,
 Sol,valorisation,1 LAE dont 1 élément P3 (min.),elements,1,,oui,sol-66-p5-177,P5,En avant,Salto costal. Renversement latéral libre
 Sol,valorisation,1 LAE dont 1 élément P3 (min.),elements,1,,oui,sol-66-p5-182,P5,En arrière,Salto facial. Renversement avant libre
 Sol,valorisation,1 LAE dont 1 élément P3 (min.),elements,1,,oui,sol-66-p6-158-plus,P6,En avant,Flic-Flac avant Renversement avant avec envol appel 2 pieds
-Sol,valorisation,1 FORCE ou 1 saut écart P3 (min.),elements,1,,,sol-67-p3-127,P3,Force,"Départ accroupi ou à genoux, placement de dos à l’ATR jambes serrées et tendues, retour libre"
-Sol,valorisation,1 FORCE ou 1 saut écart P3 (min.),elements,1,,,sol-67-p4-84-new,P4,Force,"Equerre, dégager jambes"
-Sol,valorisation,1 FORCE ou 1 saut écart P3 (min.),elements,1,,,sol-67-p5-16,P5,Force,De la station jambes écartées monter en force jambes écartées à l’ATR
-Sol,valorisation,1 FORCE ou 1 saut écart P3 (min.),elements,1,,,sol-67-p6-23,P6,Force,"Monter à l’ATR tenu 2“ du grand écart, de l’équerre…"
-Sol,valorisation,1 FORCE ou 1 saut écart P3 (min.),elements,1,,,sol-67-p7-29,P7,Force,Rouler carpé à l’ATR tenu 2“
-Sol,valorisation,1 FORCE ou 1 saut écart P3 (min.),elements,1,,,sol-67-p7-31,P7,Force,"De l’équerre verticale tenu 2”, s’élever à l’ATR tenu 2”"
-Sol,valorisation,1 FORCE ou 1 saut écart P3 (min.),elements,1,,,sol-71-p4-44,P4,,Saut carpé jambes écartées ou serrées appel 2 pieds
-Sol,valorisation,1 FORCE ou 1 saut écart P3 (min.),elements,1,,,sol-71-p5-53,P5,,Saut carpé écarté avec 1/2 tour (180°)
-Sol,valorisation,1 FORCE ou 1 saut écart P3 (min.),elements,1,,,sol-71-p5-56,P5,,Shoushounova. Saut carpé écarté l’appui couché facial
-Sol,valorisation,1 FORCE ou 1 saut écart P3 (min.),elements,1,,,sol-71-p6-61,P6,,Popa. Saut carpé écarté avec 1 tour (360°) appel des 2 pieds
-Sol,valorisation,1 FORCE ou 1 saut écart P3 (min.),elements,1,,,sol-72-p4-45,P4,,Saut enjambé (écart à 180°) aussi avec la jambe libre fléchie tendue
-Sol,valorisation,1 FORCE ou 1 saut écart P3 (min.),elements,1,,,sol-72-p5-51,P5,,Saut enjambé avec changement de jambes (angle d’écart 180° après le changement)
-Sol,valorisation,1 FORCE ou 1 saut écart P3 (min.),elements,1,,,sol-72-p5-62,P5,,Saut enjambé. avec changement de jambes (angle d’écart 180° après le changement)
-Sol,valorisation,1 FORCE ou 1 saut écart P3 (min.),elements,1,,,sol-72-p6-70,P6,,Saut changement de jambes pied/tête. Saut enjambé avec changement de jambes (angle d’écart 180°
+Sol,valorisation,1 FORCE ou 1 SAUT écart P3 (min.),elements,1,,,sol-67-p3-127,P3,Force,"Départ accroupi ou à genoux, placement de dos à l’ATR jambes serrées et tendues, retour libre"
+Sol,valorisation,1 FORCE ou 1 SAUT écart P3 (min.),elements,1,,,sol-67-p4-84-new,P4,Force,"Equerre, dégager jambes"
+Sol,valorisation,1 FORCE ou 1 SAUT écart P3 (min.),elements,1,,,sol-67-p5-16,P5,Force,De la station jambes écartées monter en force jambes écartées à l’ATR
+Sol,valorisation,1 FORCE ou 1 SAUT écart P3 (min.),elements,1,,,sol-67-p6-23,P6,Force,"Monter à l’ATR tenu 2“ du grand écart, de l’équerre…"
+Sol,valorisation,1 FORCE ou 1 SAUT écart P3 (min.),elements,1,,,sol-67-p7-29,P7,Force,Rouler carpé à l’ATR tenu 2“
+Sol,valorisation,1 FORCE ou 1 SAUT écart P3 (min.),elements,1,,,sol-67-p7-31,P7,Force,"De l’équerre verticale tenu 2”, s’élever à l’ATR tenu 2”"
+Sol,valorisation,1 FORCE ou 1 SAUT écart P3 (min.),elements,1,,,sol-71-p4-44,P4,,Saut carpé jambes écartées ou serrées appel 2 pieds
+Sol,valorisation,1 FORCE ou 1 SAUT écart P3 (min.),elements,1,,,sol-71-p5-53,P5,,Saut carpé écarté avec 1/2 tour (180°)
+Sol,valorisation,1 FORCE ou 1 SAUT écart P3 (min.),elements,1,,,sol-71-p5-56,P5,,Shoushounova. Saut carpé écarté l’appui couché facial
+Sol,valorisation,1 FORCE ou 1 SAUT écart P3 (min.),elements,1,,,sol-71-p6-61,P6,,Popa. Saut carpé écarté avec 1 tour (360°) appel des 2 pieds
+Sol,valorisation,1 FORCE ou 1 SAUT écart P3 (min.),elements,1,,,sol-72-p4-45,P4,,Saut enjambé (écart à 180°) aussi avec la jambe libre fléchie tendue
+Sol,valorisation,1 FORCE ou 1 SAUT écart P3 (min.),elements,1,,,sol-72-p5-51,P5,,Saut enjambé avec changement de jambes (angle d’écart 180° après le changement)
+Sol,valorisation,1 FORCE ou 1 SAUT écart P3 (min.),elements,1,,,sol-72-p5-62,P5,,Saut enjambé. avec changement de jambes (angle d’écart 180° après le changement)
+Sol,valorisation,1 FORCE ou 1 SAUT écart P3 (min.),elements,1,,,sol-72-p6-70,P6,,Saut changement de jambes pied/tête. Saut enjambé avec changement de jambes (angle d’écart 180°
 Sol,valorisation,1 élément acro avec envol P3 (min.),elements,1,,oui,sol-65-p3-104,P3,En arrière,Roulade arrière jambes tendues et serrées
 Sol,valorisation,1 élément acro avec envol P3 (min.),elements,1,,oui,sol-65-p3-170,P3,En avant,Salto avant corps groupé ou carpé
 Sol,valorisation,1 élément acro avec envol P3 (min.),elements,1,,oui,sol-65-p3-61,P3,En avant,Saut de poisson
@@ -621,19 +621,19 @@ Sol,valorisation,1 LAE dont 1 élément P5,elements,1,,oui,sol-66-p5-158,P5,En a
 Sol,valorisation,1 LAE dont 1 élément P5,elements,1,,oui,sol-66-p5-175,P5,En arrière,Salto tempo. Renversement arrière libre
 Sol,valorisation,1 LAE dont 1 élément P5,elements,1,,oui,sol-66-p5-177,P5,En avant,Salto costal. Renversement latéral libre
 Sol,valorisation,1 LAE dont 1 élément P5,elements,1,,oui,sol-66-p5-182,P5,En arrière,Salto facial. Renversement avant libre
-Sol,valorisation,1 FORCE ou 1 Saut écart P4 (min.),elements,1,,,sol-67-p4-84-new,P4,Force,"Equerre, dégager jambes"
-Sol,valorisation,1 FORCE ou 1 Saut écart P4 (min.),elements,1,,,sol-67-p5-16,P5,Force,De la station jambes écartées monter en force jambes écartées à l’ATR
-Sol,valorisation,1 FORCE ou 1 Saut écart P4 (min.),elements,1,,,sol-67-p6-23,P6,Force,"Monter à l’ATR tenu 2“ du grand écart, de l’équerre…"
-Sol,valorisation,1 FORCE ou 1 Saut écart P4 (min.),elements,1,,,sol-67-p7-29,P7,Force,Rouler carpé à l’ATR tenu 2“
-Sol,valorisation,1 FORCE ou 1 Saut écart P4 (min.),elements,1,,,sol-67-p7-31,P7,Force,"De l’équerre verticale tenu 2”, s’élever à l’ATR tenu 2”"
-Sol,valorisation,1 FORCE ou 1 Saut écart P4 (min.),elements,1,,,sol-71-p4-44,P4,,Saut carpé jambes écartées ou serrées appel 2 pieds
-Sol,valorisation,1 FORCE ou 1 Saut écart P4 (min.),elements,1,,,sol-71-p5-53,P5,,Saut carpé écarté avec 1/2 tour (180°)
-Sol,valorisation,1 FORCE ou 1 Saut écart P4 (min.),elements,1,,,sol-71-p5-56,P5,,Shoushounova. Saut carpé écarté l’appui couché facial
-Sol,valorisation,1 FORCE ou 1 Saut écart P4 (min.),elements,1,,,sol-71-p6-61,P6,,Popa. Saut carpé écarté avec 1 tour (360°) appel des 2 pieds
-Sol,valorisation,1 FORCE ou 1 Saut écart P4 (min.),elements,1,,,sol-72-p4-45,P4,,Saut enjambé (écart à 180°) aussi avec la jambe libre fléchie tendue
-Sol,valorisation,1 FORCE ou 1 Saut écart P4 (min.),elements,1,,,sol-72-p5-51,P5,,Saut enjambé avec changement de jambes (angle d’écart 180° après le changement)
-Sol,valorisation,1 FORCE ou 1 Saut écart P4 (min.),elements,1,,,sol-72-p5-62,P5,,Saut enjambé. avec changement de jambes (angle d’écart 180° après le changement)
-Sol,valorisation,1 FORCE ou 1 Saut écart P4 (min.),elements,1,,,sol-72-p6-70,P6,,Saut changement de jambes pied/tête. Saut enjambé avec changement de jambes (angle d’écart 180°
+Sol,valorisation,1 FORCE ou 1 SAUT écart P4 (min.),elements,1,,,sol-67-p4-84-new,P4,Force,"Equerre, dégager jambes"
+Sol,valorisation,1 FORCE ou 1 SAUT écart P4 (min.),elements,1,,,sol-67-p5-16,P5,Force,De la station jambes écartées monter en force jambes écartées à l’ATR
+Sol,valorisation,1 FORCE ou 1 SAUT écart P4 (min.),elements,1,,,sol-67-p6-23,P6,Force,"Monter à l’ATR tenu 2“ du grand écart, de l’équerre…"
+Sol,valorisation,1 FORCE ou 1 SAUT écart P4 (min.),elements,1,,,sol-67-p7-29,P7,Force,Rouler carpé à l’ATR tenu 2“
+Sol,valorisation,1 FORCE ou 1 SAUT écart P4 (min.),elements,1,,,sol-67-p7-31,P7,Force,"De l’équerre verticale tenu 2”, s’élever à l’ATR tenu 2”"
+Sol,valorisation,1 FORCE ou 1 SAUT écart P4 (min.),elements,1,,,sol-71-p4-44,P4,,Saut carpé jambes écartées ou serrées appel 2 pieds
+Sol,valorisation,1 FORCE ou 1 SAUT écart P4 (min.),elements,1,,,sol-71-p5-53,P5,,Saut carpé écarté avec 1/2 tour (180°)
+Sol,valorisation,1 FORCE ou 1 SAUT écart P4 (min.),elements,1,,,sol-71-p5-56,P5,,Shoushounova. Saut carpé écarté l’appui couché facial
+Sol,valorisation,1 FORCE ou 1 SAUT écart P4 (min.),elements,1,,,sol-71-p6-61,P6,,Popa. Saut carpé écarté avec 1 tour (360°) appel des 2 pieds
+Sol,valorisation,1 FORCE ou 1 SAUT écart P4 (min.),elements,1,,,sol-72-p4-45,P4,,Saut enjambé (écart à 180°) aussi avec la jambe libre fléchie tendue
+Sol,valorisation,1 FORCE ou 1 SAUT écart P4 (min.),elements,1,,,sol-72-p5-51,P5,,Saut enjambé avec changement de jambes (angle d’écart 180° après le changement)
+Sol,valorisation,1 FORCE ou 1 SAUT écart P4 (min.),elements,1,,,sol-72-p5-62,P5,,Saut enjambé. avec changement de jambes (angle d’écart 180° après le changement)
+Sol,valorisation,1 FORCE ou 1 SAUT écart P4 (min.),elements,1,,,sol-72-p6-70,P6,,Saut changement de jambes pied/tête. Saut enjambé avec changement de jambes (angle d’écart 180°
 Sol,valorisation,1 salto en P5,elements,1,,,sol-65-p5-172,P5,En arrière,Salto arriére corps tendu
 Sol,valorisation,1 salto en P5,elements,1,,,sol-65-p5-173,P5,En avant,Salto avant réception pieds décalés
 Sol,valorisation,1 salto en P5,elements,1,,,sol-65-p5-174,P5,En avant,Salto avant avec demi-tour
@@ -2569,8 +2569,8 @@ Anneaux,valorisation,1 maintien P2,elements,1,,,anneaux-25-p2-109,P2,ATR,Placeme
 Anneaux,valorisation,1 «suspension» P2,elements,1,,,anneaux-24-p2-49-new,P2,,Sortie par fente de disloque arrière
 Anneaux,valorisation,1 «suspension» P2,elements,1,,,anneaux-24-p2-78-new,P2,,Traction et maintien 2“ bras fléchis
 Anneaux,valorisation,1 «suspension» P2,elements,1,,,anneaux-24-p2-85,P2,,"De la suspension renversée, prise d’élan par fermeture ouverture dynamique, épaules"
-Anneaux,valorisation,Enchainer 3 balancés complets,elements,3,,oui,anneaux-26-p1-91,P1,,"Balancer de l’arrière vers l’avant, bassin à 45° au-dessus des anneaux"
-Anneaux,valorisation,Enchainer 3 balancés complets,elements,3,,oui,anneaux-27-p1-90,P1,,"Balancer de l’avant vers l’arrière, bassin à hauteur des anneaux"
+Anneaux,valorisation,Enchaîner 3 balancés complets,elements,3,,oui,anneaux-26-p1-91,P1,,"Balancer de l’arrière vers l’avant, bassin à 45° au-dessus des anneaux"
+Anneaux,valorisation,Enchaîner 3 balancés complets,elements,3,,oui,anneaux-27-p1-90,P1,,"Balancer de l’avant vers l’arrière, bassin à hauteur des anneaux"
 Anneaux,exigence,1 dislocation,elements,1,,,anneaux-26-p2-94,P2,,Dislocation arrière corps tendu épaules en dessous des anneaux
 Anneaux,exigence,1 dislocation,elements,1,,,anneaux-26-p3-102,P3,,"Dislocation arrière corps tendu, épaules au-dessus des anneaux"
 Anneaux,exigence,1 dislocation,elements,1,,,anneaux-27-p3-95,P3,,Dislocation avant corps tendu épaules en dessous des anneaux
@@ -2658,9 +2658,9 @@ Anneaux,valorisation,1 élément des ATR P3 (min.),elements,1,,,anneaux-25-p6-12
 Anneaux,valorisation,1 élément des ATR P3 (min.),elements,1,,,anneaux-25-p6-124,P6,ATR,"Monter en force jambes serrées, bras tendu, corps cassé, ou bras fléchis corps tendu"
 Anneaux,valorisation,1 élément des ATR P3 (min.),elements,1,,,anneaux-25-p7-131,P7,ATR,"Monter en force jambes serrées, bras tendu, corps tendu"
 Anneaux,valorisation,1 sortie P3 (min.),elements,1,,,anneaux-26-p5-148,P5,,Sortie par strolli tendu et salto arrière tendu de l’appui
-Anneaux,exigence,Enchainer 2 dislocations (même sens),elements,2,,oui,anneaux-26-p2-94,P2,,Dislocation arrière corps tendu épaules en dessous des anneaux
-Anneaux,exigence,Enchainer 2 dislocations (même sens),elements,2,,oui,anneaux-26-p3-102,P3,,"Dislocation arrière corps tendu, épaules au-dessus des anneaux"
-Anneaux,exigence,Enchainer 2 dislocations (même sens),elements,2,,oui,anneaux-27-p3-95,P3,,Dislocation avant corps tendu épaules en dessous des anneaux
+Anneaux,exigence,Enchaîner 2 dislocations (même sens),elements,2,,oui,anneaux-26-p2-94,P2,,Dislocation arrière corps tendu épaules en dessous des anneaux
+Anneaux,exigence,Enchaîner 2 dislocations (même sens),elements,2,,oui,anneaux-26-p3-102,P3,,"Dislocation arrière corps tendu, épaules au-dessus des anneaux"
+Anneaux,exigence,Enchaîner 2 dislocations (même sens),elements,2,,oui,anneaux-27-p3-95,P3,,Dislocation avant corps tendu épaules en dessous des anneaux
 Anneaux,exigence,1 élément P5,elements,1,,,anneaux-24-p5-21,P5,,Bascule dorsale bras tendus à l’appui
 Anneaux,exigence,1 élément P5,elements,1,,,anneaux-24-p5-55,P5,,De la croix tenue 2” tourner en avant à la suspension dorsale horizontale tenue 2“
 Anneaux,exigence,1 élément P5,elements,1,,,anneaux-24-p5-58,P5,,Etablissement de force bras fléchi à la suspension dorsale horizontale tenu 2”
@@ -2710,9 +2710,9 @@ Anneaux,valorisation,1 maintien P5 (min.),elements,1,,,anneaux-25-p6-123,P6,ATR,
 Anneaux,valorisation,1 maintien P5 (min.),elements,1,,,anneaux-25-p6-124,P6,ATR,"Monter en force jambes serrées, bras tendu, corps cassé, ou bras fléchis corps tendu"
 Anneaux,valorisation,1 maintien P5 (min.),elements,1,,,anneaux-25-p7-131,P7,ATR,"Monter en force jambes serrées, bras tendu, corps tendu"
 Anneaux,valorisation,1 maintien P5 (min.),elements,1,,,anneaux-25-p7-63,P7,Croix,Croix renversée tenue 2“
-Anneaux,valorisation,Enchainer directement 1 élément derrière 1 descente (lune / soleil),elements,1,,oui,anneaux-26-p4-98,P4,,Descente soleil de l’ATR
-Anneaux,valorisation,Enchainer directement 1 élément derrière 1 descente (lune / soleil),elements,1,,oui,anneaux-27-p3-99,P3,,Descente lune de l’ATR (bras tendus)
-Anneaux,valorisation,Enchainer directement 1 élément derrière 1 descente (lune / soleil),elements,1,,oui,anneaux-27-p5-105,P5,,Elan arrière corps tendu à l’ATR (lune)
+Anneaux,valorisation,Enchaîner directement 1 élément derrière 1 descente (lune / soleil),elements,1,,oui,anneaux-26-p4-98,P4,,Descente soleil de l’ATR
+Anneaux,valorisation,Enchaîner directement 1 élément derrière 1 descente (lune / soleil),elements,1,,oui,anneaux-27-p3-99,P3,,Descente lune de l’ATR (bras tendus)
+Anneaux,valorisation,Enchaîner directement 1 élément derrière 1 descente (lune / soleil),elements,1,,oui,anneaux-27-p5-105,P5,,Elan arrière corps tendu à l’ATR (lune)
 Anneaux,valorisation,1 élément des ATR P5 (min.),elements,1,,,anneaux-25-p5-118,P5,ATR,"Monter en force corps cassé, jambes écartées, bras fléchis à l’ATR tenu 2’’"
 Anneaux,valorisation,1 élément des ATR P5 (min.),elements,1,,,anneaux-25-p6-123,P6,ATR,Elan à l’appui renversé tenu 2”
 Anneaux,valorisation,1 élément des ATR P5 (min.),elements,1,,,anneaux-25-p6-124,P6,ATR,"Monter en force jambes serrées, bras tendu, corps cassé, ou bras fléchis corps tendu"
@@ -2804,9 +2804,9 @@ Anneaux,valorisation,1 élément P6 (min.),elements,1,,,anneaux-27-p7-159,P7,,Do
 Anneaux,valorisation,1 élément P6 (min.),elements,1,,,anneaux-27-p7-34,P7,,Rétablissement arrière à l’appui facial horizontal
 Anneaux,valorisation,1 élément P6 (min.),elements,1,,,anneaux-27-p7-35,P7,,Rétablissement arrière à l’hirondelle tenue 2“
 Anneaux,valorisation,1 élément P6 (min.),elements,1,,,anneaux-27-p7-52-new,P7,,Grand tour avant
-Anneaux,valorisation,Enchainer directement 1 élément P4 derrière 1 descente (lune / soleil),elements,1,,oui,anneaux-26-p4-98,P4,,Descente soleil de l’ATR
-Anneaux,valorisation,Enchainer directement 1 élément P4 derrière 1 descente (lune / soleil),elements,1,,oui,anneaux-27-p3-99,P3,,Descente lune de l’ATR (bras tendus)
-Anneaux,valorisation,Enchainer directement 1 élément P4 derrière 1 descente (lune / soleil),elements,1,,oui,anneaux-27-p5-105,P5,,Elan arrière corps tendu à l’ATR (lune)
+Anneaux,valorisation,Enchaîner directement 1 élément P4 derrière 1 descente (lune / soleil),elements,1,,oui,anneaux-26-p4-98,P4,,Descente soleil de l’ATR
+Anneaux,valorisation,Enchaîner directement 1 élément P4 derrière 1 descente (lune / soleil),elements,1,,oui,anneaux-27-p3-99,P3,,Descente lune de l’ATR (bras tendus)
+Anneaux,valorisation,Enchaîner directement 1 élément P4 derrière 1 descente (lune / soleil),elements,1,,oui,anneaux-27-p5-105,P5,,Elan arrière corps tendu à l’ATR (lune)
 Anneaux,valorisation,1 élément P7,elements,1,,,anneaux-24-p7-132,P7,,Bascule dorsale à l’appui renversé tenu 2’’
 Anneaux,valorisation,1 élément P7,elements,1,,,anneaux-24-p7-25,P7,,Simultané bras tendus
 Anneaux,valorisation,1 élément P7,elements,1,,,anneaux-24-p7-67,P7,,Tourner en arrière corps tendu à la croix (Azarian)
@@ -2821,8 +2821,8 @@ Anneaux,valorisation,1 élément P7,elements,1,,,anneaux-27-p7-159,P7,,Double sa
 Anneaux,valorisation,1 élément P7,elements,1,,,anneaux-27-p7-34,P7,,Rétablissement arrière à l’appui facial horizontal
 Anneaux,valorisation,1 élément P7,elements,1,,,anneaux-27-p7-35,P7,,Rétablissement arrière à l’hirondelle tenue 2“
 Anneaux,valorisation,1 élément P7,elements,1,,,anneaux-27-p7-52-new,P7,,Grand tour avant
-Anneaux,valorisation,réaliser 1 grand tour,elements,1,,,anneaux-26-p7-51-new,P7,,Grand tour arrière
-Anneaux,valorisation,réaliser 1 grand tour,elements,1,,,anneaux-27-p7-52-new,P7,,Grand tour avant
+Anneaux,valorisation,Réaliser 1 grand tour,elements,1,,,anneaux-26-p7-51-new,P7,,Grand tour arrière
+Anneaux,valorisation,Réaliser 1 grand tour,elements,1,,,anneaux-27-p7-52-new,P7,,Grand tour avant
 Barres parallèles,exigence,Appuis / Maintiens,elements,1,,,barres-paralleles-28-pre-requis-2,PRÉ-REQUIS,,"Du siège écarté, prise d’élan vers l’avant (bassin au moins à 45°)"
 Barres parallèles,exigence,Appuis / Maintiens,elements,1,,,barres-paralleles-28-pre-requis-3,PRÉ-REQUIS,,Sauter à l’appui
 Barres parallèles,exigence,Appuis / Maintiens,elements,1,,,barres-paralleles-28-pre-requis-6-new,PRÉ-REQUIS,,Sur porte-mains ATR tenu 2“
@@ -2851,69 +2851,85 @@ Barres parallèles,exigence,1 élément P2,elements,1,,,barres-paralleles-24-p2-
 Barres parallèles,exigence,1 élément P2,elements,1,,,barres-paralleles-25-p2-153,P2,,Salto arrière groupé en bout de barre
 Barres parallèles,exigence,1 élément P2,elements,1,,,barres-paralleles-27-p2-149,P2,,Sortie arrière corps tendu en passant par l’ATR
 Barres parallèles,exigence,1 élément P2,elements,1,,,barres-paralleles-28-p2-125,P2,,Equerre jambes fléchies tenue 2“
-Barres parallèles,valorisation,Enchainer 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p1-87,P1,,"En suspension, balancer avant"
-Barres parallèles,valorisation,Enchainer 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p1-87bis,P1,,"En suspension, balancer arrière"
-Barres parallèles,valorisation,Enchainer 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p2-153,P2,,Salto arrière groupé en bout de barre
-Barres parallèles,valorisation,Enchainer 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p3-92,P3,,"De l’appui, descendre à la suspension et retour à l’appui par temps de bascule"
-Barres parallèles,valorisation,Enchainer 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p3-93,P3,,Bascule d’élan
-Barres parallèles,valorisation,Enchainer 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p4-158,P4,,Salto arrière tendu en bout de barres
-Barres parallèles,valorisation,Enchainer 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p4-95,P4,,Bascule allemande (progression) à l’appui brachial
-Barres parallèles,valorisation,Enchainer 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p4-96,P4,,Etablissement en tournant en arrière à la suspension
-Barres parallèles,valorisation,Enchainer 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p4-97,P4,,Moy à l’appui brachial
-Barres parallèles,valorisation,Enchainer 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p5-102,P5,,Bascule allemande (progression) à l’appui
-Barres parallèles,valorisation,Enchainer 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p5-103,P5,,Moy groupé à l’appui
-Barres parallèles,valorisation,Enchainer 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p5-104bis,P5,,Établissement arrière en tournant en arrière à l’appui
-Barres parallèles,valorisation,Enchainer 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p5-109,P5,,Moy carpé à l’appui
-Barres parallèles,valorisation,Enchainer 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p5-162,P5,,salto arrière tendu avec 1/1 vrille en bout de barre
-Barres parallèles,valorisation,Enchainer 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p6-110,P6,,"Sur le côté, bascule d’élan par l’équerre serrée ou écartée à l’appui renversé"
-Barres parallèles,valorisation,Enchainer 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p6-116,P6,,Bascule d’élan et passer les jambes écartées en arrière à l’ATR
-Barres parallèles,valorisation,Enchainer 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p6-119,P6,,Etablissement en tournant en arrière à l’ATR
-Barres parallèles,valorisation,Enchainer 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p6-120,P6,,Tour d’appui arrière en passant les jambes écartées en avant à l’appui
-Barres parallèles,valorisation,Enchainer 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p6-167,P6,,Double salto arrière groupé en extrémité de barres
-Barres parallèles,valorisation,Enchainer 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p7-113,P7,,Kenmotsu grand tour arrière à l’ATR
-Barres parallèles,valorisation,Enchainer 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p7-113bis,P7,,Kenmotsu grand tour arrière à l’ATR avec 1/2 tour
-Barres parallèles,valorisation,Enchainer 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p7-118,P7,,Bascule allemande en tournant en arrière avec 1/2 tour à l’appui
-Barres parallèles,valorisation,Enchainer 3 balancés complet en appui,elements,3,,oui,barres-paralleles-26-pre-requis-17,PRÉ-REQUIS,,Passer les jambes en avant à l’appui ou à l’équerre (entre les poteaux)
-Barres parallèles,valorisation,Enchainer 3 balancés complet en appui,elements,3,,oui,barres-paralleles-26-pre-requis-22,PRÉ-REQUIS,,"Kato. De l’appui ou de l’appui fléchi, établissement avant et sauté"
-Barres parallèles,valorisation,Enchainer 3 balancés complet en appui,elements,3,,oui,barres-paralleles-26-p1-7,P1,,"Balancé avant, corps aligné, bassin à 45° au-dessus des épaules"
-Barres parallèles,valorisation,Enchainer 3 balancés complet en appui,elements,3,,oui,barres-paralleles-26-p3-10,P3,,Balancé avant avec fermeture du corps (bassin à hauteur d’épaules) et ouverture
-Barres parallèles,valorisation,Enchainer 3 balancés complet en appui,elements,3,,oui,barres-paralleles-26-p3-20,P3,,Passer les jambes écartées en arrière à l’appui (entre les poteaux)
-Barres parallèles,valorisation,Enchainer 3 balancés complet en appui,elements,3,,oui,barres-paralleles-26-p5-31,P5,,Demi-tour avant à l’ATR
-Barres parallèles,valorisation,Enchainer 3 balancés complet en appui,elements,3,,oui,barres-paralleles-26-p6-33,P6,,"De l’appui ou de l’appui fléchi, passer les jambes écartées en arrière à l’ATR"
-Barres parallèles,valorisation,Enchainer 3 balancés complet en appui,elements,3,,oui,barres-paralleles-26-p6-37,P6,,Diamidov. Elan en avant 1/1 ou 5/4 sur un bras à l’ATR
-Barres parallèles,valorisation,Enchainer 3 balancés complet en appui,elements,3,,oui,barres-paralleles-27-p1-8,P1,,"Balancé arrière, corps aligné, bassin à 45° au-dessus des épaules"
-Barres parallèles,valorisation,Enchainer 3 balancés complet en appui,elements,3,,oui,barres-paralleles-27-p3-13,P3,,Salto avant tendu à l’appui brachial
-Barres parallèles,valorisation,Enchainer 3 balancés complet en appui,elements,3,,oui,barres-paralleles-27-p3-19,P3,,Élan à l’ATR tenu 2’’
-Barres parallèles,valorisation,Enchainer 3 balancés complet en appui,elements,3,,oui,barres-paralleles-27-p3-21,P3,,Elan arrière à l’ATR tenu 2“ par l’appui fléchi (épaules
-Barres parallèles,valorisation,Enchainer 3 balancés complet en appui,elements,3,,oui,barres-paralleles-27-p4-27bis,P4,,Elan en arrière à l’ATR tenue 2’’
-Barres parallèles,valorisation,Enchainer 3 balancés complet en appui,elements,3,,oui,barres-paralleles-27-p5-27,P5,,Elan en arrière avec demi-tour sauté à l’ATR tenue 2’’
-Barres parallèles,valorisation,Enchainer 3 balancés complet en appui,elements,3,,oui,barres-paralleles-27-p5-40,P5,,Salto avant à l’appui bras tendus
-Barres parallèles,valorisation,Enchainer 3 balancés complet en appui,elements,3,,oui,barres-paralleles-27-p7-32,P7,,Double salto avant groupé ou carpé à l’appui brachial
+Barres parallèles,valorisation,Enchaîner 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p1-87,P1,,"En suspension, balancer avant"
+Barres parallèles,valorisation,Enchaîner 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p1-87bis,P1,,"En suspension, balancer arrière"
+Barres parallèles,valorisation,Enchaîner 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p2-153,P2,,Salto arrière groupé en bout de barre
+Barres parallèles,valorisation,Enchaîner 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p3-92,P3,,"De l’appui, descendre à la suspension et retour à l’appui par temps de bascule"
+Barres parallèles,valorisation,Enchaîner 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p3-93,P3,,Bascule d’élan
+Barres parallèles,valorisation,Enchaîner 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p4-158,P4,,Salto arrière tendu en bout de barres
+Barres parallèles,valorisation,Enchaîner 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p4-95,P4,,Bascule allemande (progression) à l’appui brachial
+Barres parallèles,valorisation,Enchaîner 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p4-96,P4,,Etablissement en tournant en arrière à la suspension
+Barres parallèles,valorisation,Enchaîner 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p4-97,P4,,Moy à l’appui brachial
+Barres parallèles,valorisation,Enchaîner 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p5-102,P5,,Bascule allemande (progression) à l’appui
+Barres parallèles,valorisation,Enchaîner 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p5-103,P5,,Moy groupé à l’appui
+Barres parallèles,valorisation,Enchaîner 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p5-104bis,P5,,Établissement arrière en tournant en arrière à l’appui
+Barres parallèles,valorisation,Enchaîner 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p5-109,P5,,Moy carpé à l’appui
+Barres parallèles,valorisation,Enchaîner 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p5-162,P5,,salto arrière tendu avec 1/1 vrille en bout de barre
+Barres parallèles,valorisation,Enchaîner 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p6-110,P6,,"Sur le côté, bascule d’élan par l’équerre serrée ou écartée à l’appui renversé"
+Barres parallèles,valorisation,Enchaîner 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p6-116,P6,,Bascule d’élan et passer les jambes écartées en arrière à l’ATR
+Barres parallèles,valorisation,Enchaîner 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p6-119,P6,,Etablissement en tournant en arrière à l’ATR
+Barres parallèles,valorisation,Enchaîner 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p6-120,P6,,Tour d’appui arrière en passant les jambes écartées en avant à l’appui
+Barres parallèles,valorisation,Enchaîner 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p6-167,P6,,Double salto arrière groupé en extrémité de barres
+Barres parallèles,valorisation,Enchaîner 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p7-113,P7,,Kenmotsu grand tour arrière à l’ATR
+Barres parallèles,valorisation,Enchaîner 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p7-113bis,P7,,Kenmotsu grand tour arrière à l’ATR avec 1/2 tour
+Barres parallèles,valorisation,Enchaîner 2 balancés complets en suspension,elements,2,,oui,barres-paralleles-25-p7-118,P7,,Bascule allemande en tournant en arrière avec 1/2 tour à l’appui
+Barres parallèles,valorisation,Enchaîner 3 balancés complet en appui,elements,3,,oui,barres-paralleles-26-pre-requis-17,PRÉ-REQUIS,,Passer les jambes en avant à l’appui ou à l’équerre (entre les poteaux)
+Barres parallèles,valorisation,Enchaîner 3 balancés complet en appui,elements,3,,oui,barres-paralleles-26-pre-requis-22,PRÉ-REQUIS,,"Kato. De l’appui ou de l’appui fléchi, établissement avant et sauté"
+Barres parallèles,valorisation,Enchaîner 3 balancés complet en appui,elements,3,,oui,barres-paralleles-26-p1-7,P1,,"Balancé avant, corps aligné, bassin à 45° au-dessus des épaules"
+Barres parallèles,valorisation,Enchaîner 3 balancés complet en appui,elements,3,,oui,barres-paralleles-26-p3-10,P3,,Balancé avant avec fermeture du corps (bassin à hauteur d’épaules) et ouverture
+Barres parallèles,valorisation,Enchaîner 3 balancés complet en appui,elements,3,,oui,barres-paralleles-26-p3-20,P3,,Passer les jambes écartées en arrière à l’appui (entre les poteaux)
+Barres parallèles,valorisation,Enchaîner 3 balancés complet en appui,elements,3,,oui,barres-paralleles-26-p5-31,P5,,Demi-tour avant à l’ATR
+Barres parallèles,valorisation,Enchaîner 3 balancés complet en appui,elements,3,,oui,barres-paralleles-26-p6-33,P6,,"De l’appui ou de l’appui fléchi, passer les jambes écartées en arrière à l’ATR"
+Barres parallèles,valorisation,Enchaîner 3 balancés complet en appui,elements,3,,oui,barres-paralleles-26-p6-37,P6,,Diamidov. Elan en avant 1/1 ou 5/4 sur un bras à l’ATR
+Barres parallèles,valorisation,Enchaîner 3 balancés complet en appui,elements,3,,oui,barres-paralleles-27-p1-8,P1,,"Balancé arrière, corps aligné, bassin à 45° au-dessus des épaules"
+Barres parallèles,valorisation,Enchaîner 3 balancés complet en appui,elements,3,,oui,barres-paralleles-27-p3-13,P3,,Salto avant tendu à l’appui brachial
+Barres parallèles,valorisation,Enchaîner 3 balancés complet en appui,elements,3,,oui,barres-paralleles-27-p3-19,P3,,Élan à l’ATR tenu 2’’
+Barres parallèles,valorisation,Enchaîner 3 balancés complet en appui,elements,3,,oui,barres-paralleles-27-p3-21,P3,,Elan arrière à l’ATR tenu 2“ par l’appui fléchi (épaules
+Barres parallèles,valorisation,Enchaîner 3 balancés complet en appui,elements,3,,oui,barres-paralleles-27-p4-27bis,P4,,Elan en arrière à l’ATR tenue 2’’
+Barres parallèles,valorisation,Enchaîner 3 balancés complet en appui,elements,3,,oui,barres-paralleles-27-p5-27,P5,,Elan en arrière avec demi-tour sauté à l’ATR tenue 2’’
+Barres parallèles,valorisation,Enchaîner 3 balancés complet en appui,elements,3,,oui,barres-paralleles-27-p5-40,P5,,Salto avant à l’appui bras tendus
+Barres parallèles,valorisation,Enchaîner 3 balancés complet en appui,elements,3,,oui,barres-paralleles-27-p7-32,P7,,Double salto avant groupé ou carpé à l’appui brachial
+Barres parallèles,valorisation,Enchaîner 3 balancés complets en appui,elements,3,,oui,barres-paralleles-26-pre-requis-17,PRÉ-REQUIS,,Passer les jambes en avant à l’appui ou à l’équerre (entre les poteaux)
+Barres parallèles,valorisation,Enchaîner 3 balancés complets en appui,elements,3,,oui,barres-paralleles-26-pre-requis-22,PRÉ-REQUIS,,"Kato. De l’appui ou de l’appui fléchi, établissement avant et sauté"
+Barres parallèles,valorisation,Enchaîner 3 balancés complets en appui,elements,3,,oui,barres-paralleles-26-p1-7,P1,,"Balancé avant, corps aligné, bassin à 45° au-dessus des épaules"
+Barres parallèles,valorisation,Enchaîner 3 balancés complets en appui,elements,3,,oui,barres-paralleles-26-p3-10,P3,,Balancé avant avec fermeture du corps (bassin à hauteur d’épaules) et ouverture
+Barres parallèles,valorisation,Enchaîner 3 balancés complets en appui,elements,3,,oui,barres-paralleles-26-p3-20,P3,,Passer les jambes écartées en arrière à l’appui (entre les poteaux)
+Barres parallèles,valorisation,Enchaîner 3 balancés complets en appui,elements,3,,oui,barres-paralleles-26-p5-31,P5,,Demi-tour avant à l’ATR
+Barres parallèles,valorisation,Enchaîner 3 balancés complets en appui,elements,3,,oui,barres-paralleles-26-p6-33,P6,,"De l’appui ou de l’appui fléchi, passer les jambes écartées en arrière à l’ATR"
+Barres parallèles,valorisation,Enchaîner 3 balancés complets en appui,elements,3,,oui,barres-paralleles-26-p6-37,P6,,Diamidov. Elan en avant 1/1 ou 5/4 sur un bras à l’ATR
+Barres parallèles,valorisation,Enchaîner 3 balancés complets en appui,elements,3,,oui,barres-paralleles-27-p1-8,P1,,"Balancé arrière, corps aligné, bassin à 45° au-dessus des épaules"
+Barres parallèles,valorisation,Enchaîner 3 balancés complets en appui,elements,3,,oui,barres-paralleles-27-p3-13,P3,,Salto avant tendu à l’appui brachial
+Barres parallèles,valorisation,Enchaîner 3 balancés complets en appui,elements,3,,oui,barres-paralleles-27-p3-19,P3,,Élan à l’ATR tenu 2’’
+Barres parallèles,valorisation,Enchaîner 3 balancés complets en appui,elements,3,,oui,barres-paralleles-27-p3-21,P3,,Elan arrière à l’ATR tenu 2“ par l’appui fléchi (épaules
+Barres parallèles,valorisation,Enchaîner 3 balancés complets en appui,elements,3,,oui,barres-paralleles-27-p4-27bis,P4,,Elan en arrière à l’ATR tenue 2’’
+Barres parallèles,valorisation,Enchaîner 3 balancés complets en appui,elements,3,,oui,barres-paralleles-27-p5-27,P5,,Elan en arrière avec demi-tour sauté à l’ATR tenue 2’’
+Barres parallèles,valorisation,Enchaîner 3 balancés complets en appui,elements,3,,oui,barres-paralleles-27-p5-40,P5,,Salto avant à l’appui bras tendus
+Barres parallèles,valorisation,Enchaîner 3 balancés complets en appui,elements,3,,oui,barres-paralleles-27-p7-32,P7,,Double salto avant groupé ou carpé à l’appui brachial
 Barres parallèles,valorisation,Appuis / Maintiens P2,elements,1,,,barres-paralleles-28-p2-125,P2,,Equerre jambes fléchies tenue 2“
-Barres parallèles,valorisation,1 travail sur porte mains,elements,1,,,barres-paralleles-28-pre-requis-6-new,PRÉ-REQUIS,,Sur porte-mains ATR tenu 2“
-Barres parallèles,valorisation,1 travail sur porte mains,elements,1,,,barres-paralleles-28-pre-requis-9-new,PRÉ-REQUIS,,Sur porte-mains ATR 1/2 tour
-Barres parallèles,exigence,Enchainer la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p1-87,P1,,"En suspension, balancer avant"
-Barres parallèles,exigence,Enchainer la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p1-87bis,P1,,"En suspension, balancer arrière"
-Barres parallèles,exigence,Enchainer la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p2-153,P2,,Salto arrière groupé en bout de barre
-Barres parallèles,exigence,Enchainer la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p3-92,P3,,"De l’appui, descendre à la suspension et retour à l’appui par temps de bascule"
-Barres parallèles,exigence,Enchainer la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p3-93,P3,,Bascule d’élan
-Barres parallèles,exigence,Enchainer la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p4-158,P4,,Salto arrière tendu en bout de barres
-Barres parallèles,exigence,Enchainer la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p4-95,P4,,Bascule allemande (progression) à l’appui brachial
-Barres parallèles,exigence,Enchainer la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p4-96,P4,,Etablissement en tournant en arrière à la suspension
-Barres parallèles,exigence,Enchainer la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p4-97,P4,,Moy à l’appui brachial
-Barres parallèles,exigence,Enchainer la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p5-102,P5,,Bascule allemande (progression) à l’appui
-Barres parallèles,exigence,Enchainer la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p5-103,P5,,Moy groupé à l’appui
-Barres parallèles,exigence,Enchainer la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p5-104bis,P5,,Établissement arrière en tournant en arrière à l’appui
-Barres parallèles,exigence,Enchainer la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p5-109,P5,,Moy carpé à l’appui
-Barres parallèles,exigence,Enchainer la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p5-162,P5,,salto arrière tendu avec 1/1 vrille en bout de barre
-Barres parallèles,exigence,Enchainer la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p6-110,P6,,"Sur le côté, bascule d’élan par l’équerre serrée ou écartée à l’appui renversé"
-Barres parallèles,exigence,Enchainer la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p6-116,P6,,Bascule d’élan et passer les jambes écartées en arrière à l’ATR
-Barres parallèles,exigence,Enchainer la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p6-119,P6,,Etablissement en tournant en arrière à l’ATR
-Barres parallèles,exigence,Enchainer la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p6-120,P6,,Tour d’appui arrière en passant les jambes écartées en avant à l’appui
-Barres parallèles,exigence,Enchainer la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p6-167,P6,,Double salto arrière groupé en extrémité de barres
-Barres parallèles,exigence,Enchainer la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p7-113,P7,,Kenmotsu grand tour arrière à l’ATR
-Barres parallèles,exigence,Enchainer la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p7-113bis,P7,,Kenmotsu grand tour arrière à l’ATR avec 1/2 tour
-Barres parallèles,exigence,Enchainer la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p7-118,P7,,Bascule allemande en tournant en arrière avec 1/2 tour à l’appui
+Barres parallèles,valorisation,1 travail sur porte-mains,elements,1,,,barres-paralleles-28-pre-requis-6-new,PRÉ-REQUIS,,Sur porte-mains ATR tenu 2“
+Barres parallèles,valorisation,1 travail sur porte-mains,elements,1,,,barres-paralleles-28-pre-requis-9-new,PRÉ-REQUIS,,Sur porte-mains ATR 1/2 tour
+Barres parallèles,exigence,Enchaîner la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p1-87,P1,,"En suspension, balancer avant"
+Barres parallèles,exigence,Enchaîner la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p1-87bis,P1,,"En suspension, balancer arrière"
+Barres parallèles,exigence,Enchaîner la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p2-153,P2,,Salto arrière groupé en bout de barre
+Barres parallèles,exigence,Enchaîner la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p3-92,P3,,"De l’appui, descendre à la suspension et retour à l’appui par temps de bascule"
+Barres parallèles,exigence,Enchaîner la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p3-93,P3,,Bascule d’élan
+Barres parallèles,exigence,Enchaîner la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p4-158,P4,,Salto arrière tendu en bout de barres
+Barres parallèles,exigence,Enchaîner la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p4-95,P4,,Bascule allemande (progression) à l’appui brachial
+Barres parallèles,exigence,Enchaîner la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p4-96,P4,,Etablissement en tournant en arrière à la suspension
+Barres parallèles,exigence,Enchaîner la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p4-97,P4,,Moy à l’appui brachial
+Barres parallèles,exigence,Enchaîner la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p5-102,P5,,Bascule allemande (progression) à l’appui
+Barres parallèles,exigence,Enchaîner la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p5-103,P5,,Moy groupé à l’appui
+Barres parallèles,exigence,Enchaîner la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p5-104bis,P5,,Établissement arrière en tournant en arrière à l’appui
+Barres parallèles,exigence,Enchaîner la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p5-109,P5,,Moy carpé à l’appui
+Barres parallèles,exigence,Enchaîner la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p5-162,P5,,salto arrière tendu avec 1/1 vrille en bout de barre
+Barres parallèles,exigence,Enchaîner la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p6-110,P6,,"Sur le côté, bascule d’élan par l’équerre serrée ou écartée à l’appui renversé"
+Barres parallèles,exigence,Enchaîner la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p6-116,P6,,Bascule d’élan et passer les jambes écartées en arrière à l’ATR
+Barres parallèles,exigence,Enchaîner la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p6-119,P6,,Etablissement en tournant en arrière à l’ATR
+Barres parallèles,exigence,Enchaîner la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p6-120,P6,,Tour d’appui arrière en passant les jambes écartées en avant à l’appui
+Barres parallèles,exigence,Enchaîner la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p6-167,P6,,Double salto arrière groupé en extrémité de barres
+Barres parallèles,exigence,Enchaîner la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p7-113,P7,,Kenmotsu grand tour arrière à l’ATR
+Barres parallèles,exigence,Enchaîner la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p7-113bis,P7,,Kenmotsu grand tour arrière à l’ATR avec 1/2 tour
+Barres parallèles,exigence,Enchaîner la suspension à l’enchainement,elements,1,,oui,barres-paralleles-25-p7-118,P7,,Bascule allemande en tournant en arrière avec 1/2 tour à l’appui
 Barres parallèles,exigence,1 élément P3,elements,1,,,barres-paralleles-24-p3-58,P3,,Rouler en arrière
 Barres parallèles,exigence,1 élément P3,elements,1,,,barres-paralleles-24-p3-61,P3,,Établissement avant à l’appui
 Barres parallèles,exigence,1 élément P3,elements,1,,,barres-paralleles-25-p3-92,P3,,"De l’appui, descendre à la suspension et retour à l’appui par temps de bascule"
@@ -3191,9 +3207,9 @@ Barres parallèles,valorisation,1 élan en suspension P4 (min.),elements,1,,,bar
 Barres parallèles,valorisation,1 élan en suspension P4 (min.),elements,1,,,barres-paralleles-25-p7-113,P7,,Kenmotsu grand tour arrière à l’ATR
 Barres parallèles,valorisation,1 élan en suspension P4 (min.),elements,1,,,barres-paralleles-25-p7-113bis,P7,,Kenmotsu grand tour arrière à l’ATR avec 1/2 tour
 Barres parallèles,valorisation,1 élan en suspension P4 (min.),elements,1,,,barres-paralleles-25-p7-118,P7,,Bascule allemande en tournant en arrière avec 1/2 tour à l’appui
-Barres parallèles,valorisation,Elan sauté,elements,1,,oui,barres-paralleles-26-pre-requis-22,PRÉ-REQUIS,,"Kato. De l’appui ou de l’appui fléchi, établissement avant et sauté"
-Barres parallèles,valorisation,Elan sauté,elements,1,,oui,barres-paralleles-27-p5-27,P5,,Elan en arrière avec demi-tour sauté à l’ATR tenue 2’’
-Barres parallèles,valorisation,Elan sauté,elements,1,,oui,barres-paralleles-28-pre-requis-3,PRÉ-REQUIS,,Sauter à l’appui
+Barres parallèles,valorisation,Élan sauté,elements,1,,oui,barres-paralleles-26-pre-requis-22,PRÉ-REQUIS,,"Kato. De l’appui ou de l’appui fléchi, établissement avant et sauté"
+Barres parallèles,valorisation,Élan sauté,elements,1,,oui,barres-paralleles-27-p5-27,P5,,Elan en arrière avec demi-tour sauté à l’ATR tenue 2’’
+Barres parallèles,valorisation,Élan sauté,elements,1,,oui,barres-paralleles-28-pre-requis-3,PRÉ-REQUIS,,Sauter à l’appui
 Barres parallèles,valorisation,1 montée en force à l’ATR tenu,elements,1,,oui,barres-paralleles-28-p4-138,P4,,Monter en force à l’ATR tenu 2“ bras tendus jambes tendues ou bras fléchis corps tendu
 Barres parallèles,valorisation,1 montée en force à l’ATR tenu,elements,1,,oui,barres-paralleles-28-p5-138,P5,,Monter en force à l’ATR tenu 2“ bras tendus jambes tendues ou bras fléchis corps tendu
 Barres parallèles,valorisation,1 élément P5,elements,1,,,barres-paralleles-24-p5-69,P5,,Établissement arrière à l’ATR
@@ -3284,46 +3300,46 @@ Barres parallèles,valorisation,1 élément P6,elements,1,,,barres-paralleles-26
 Barres parallèles,valorisation,1 élément P6,elements,1,,,barres-paralleles-26-p6-34,P6,Sorties,Salto arrière à l’appui à l’ATR
 Barres parallèles,valorisation,1 élément P6,elements,1,,,barres-paralleles-26-p6-37,P6,,Diamidov. Elan en avant 1/1 ou 5/4 sur un bras à l’ATR
 Barres parallèles,valorisation,1 élément P6,elements,1,,,barres-paralleles-28-p6-42,P6,,Toutes formes de Healy à l’appui
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-24-p5-69,P5,,Établissement arrière à l’ATR
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-24-p5-71,P5,,Établissement arrière et passer les jambes écartées vers l’avant à l’appui
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-24-p6-66,P6,,Établissement avant et Kato
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-24-p6-71bis,P6,,Établissement arrière et passer les jambes écartées vers l’avant à l’appui
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-24-p7-76,P7,,Établissement arrière et salto avant à l’appui
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-25-p5-102,P5,,Bascule allemande (progression) à l’appui
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-25-p5-103,P5,,Moy groupé à l’appui
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-25-p5-104bis,P5,,Établissement arrière en tournant en arrière à l’appui
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-25-p5-109,P5,,Moy carpé à l’appui
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-25-p5-162,P5,,salto arrière tendu avec 1/1 vrille en bout de barre
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-25-p6-110,P6,,"Sur le côté, bascule d’élan par l’équerre serrée ou écartée à l’appui renversé"
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-25-p6-116,P6,,Bascule d’élan et passer les jambes écartées en arrière à l’ATR
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-25-p6-119,P6,,Etablissement en tournant en arrière à l’ATR
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-25-p6-120,P6,,Tour d’appui arrière en passant les jambes écartées en avant à l’appui
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-25-p6-167,P6,,Double salto arrière groupé en extrémité de barres
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-25-p7-113,P7,,Kenmotsu grand tour arrière à l’ATR
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-25-p7-113bis,P7,,Kenmotsu grand tour arrière à l’ATR avec 1/2 tour
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-25-p7-118,P7,,Bascule allemande en tournant en arrière avec 1/2 tour à l’appui
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-26-p5-161,P5,Sorties,Salto arrière carpé ou tendu avec 1/2 tour
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-26-p5-24bis,P5,Sorties,Salto arrière à l’appui
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-26-p5-31,P5,,Demi-tour avant à l’ATR
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-26-p6-163,P6,Sorties,Salto avant carpé ou tendue avec 1/1 ou +
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-26-p6-33,P6,,"De l’appui ou de l’appui fléchi, passer les jambes écartées en arrière à l’ATR"
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-26-p6-34,P6,Sorties,Salto arrière à l’appui à l’ATR
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-26-p6-37,P6,,Diamidov. Elan en avant 1/1 ou 5/4 sur un bras à l’ATR
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-26-p7-166,P7,Sorties,Double salto arrière groupé ou carpé
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-27-p5-165,P5,Sorties,Sortie Salto avant carpé ou tendu avec 1/1 ou +
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-27-p5-27,P5,,Elan en arrière avec demi-tour sauté à l’ATR tenue 2’’
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-27-p5-40,P5,,Salto avant à l’appui bras tendus
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-27-p7-164,P7,Sorties,Sortie Double salto avant groupé ou avec 1/2 tour
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-27-p7-32,P7,,Double salto avant groupé ou carpé à l’appui brachial
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-28-p5-130,P5,,De l’ATR demi-tour arrière à l’ATR
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-28-p5-133,P5,,Planche faciale jambes écartées tenue 2“
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-28-p5-136,P5,,Équerre jambes à la verticale tenue 2“
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-28-p5-138,P5,,Monter en force à l’ATR tenu 2“ bras tendus jambes tendues ou bras fléchis corps tendu
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-28-p5-26,P5,,Healy à l’appui brachial
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-28-p6-42,P6,,Toutes formes de Healy à l’appui
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-28-p7-140,P7,,Equerre jambes levées à l’horizontal tenue 2“
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-28-p7-141,P7,,De la planche faciale jambes serrées tenue 2“ remonter à l’ATR
-Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchainement,elements,4,,,barres-paralleles-28-p7-38,P7,,1 tour arrière ou avant en ATR sur une barre
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-24-p5-69,P5,,Établissement arrière à l’ATR
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-24-p5-71,P5,,Établissement arrière et passer les jambes écartées vers l’avant à l’appui
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-24-p6-66,P6,,Établissement avant et Kato
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-24-p6-71bis,P6,,Établissement arrière et passer les jambes écartées vers l’avant à l’appui
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-24-p7-76,P7,,Établissement arrière et salto avant à l’appui
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-25-p5-102,P5,,Bascule allemande (progression) à l’appui
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-25-p5-103,P5,,Moy groupé à l’appui
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-25-p5-104bis,P5,,Établissement arrière en tournant en arrière à l’appui
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-25-p5-109,P5,,Moy carpé à l’appui
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-25-p5-162,P5,,salto arrière tendu avec 1/1 vrille en bout de barre
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-25-p6-110,P6,,"Sur le côté, bascule d’élan par l’équerre serrée ou écartée à l’appui renversé"
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-25-p6-116,P6,,Bascule d’élan et passer les jambes écartées en arrière à l’ATR
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-25-p6-119,P6,,Etablissement en tournant en arrière à l’ATR
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-25-p6-120,P6,,Tour d’appui arrière en passant les jambes écartées en avant à l’appui
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-25-p6-167,P6,,Double salto arrière groupé en extrémité de barres
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-25-p7-113,P7,,Kenmotsu grand tour arrière à l’ATR
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-25-p7-113bis,P7,,Kenmotsu grand tour arrière à l’ATR avec 1/2 tour
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-25-p7-118,P7,,Bascule allemande en tournant en arrière avec 1/2 tour à l’appui
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-26-p5-161,P5,Sorties,Salto arrière carpé ou tendu avec 1/2 tour
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-26-p5-24bis,P5,Sorties,Salto arrière à l’appui
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-26-p5-31,P5,,Demi-tour avant à l’ATR
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-26-p6-163,P6,Sorties,Salto avant carpé ou tendue avec 1/1 ou +
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-26-p6-33,P6,,"De l’appui ou de l’appui fléchi, passer les jambes écartées en arrière à l’ATR"
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-26-p6-34,P6,Sorties,Salto arrière à l’appui à l’ATR
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-26-p6-37,P6,,Diamidov. Elan en avant 1/1 ou 5/4 sur un bras à l’ATR
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-26-p7-166,P7,Sorties,Double salto arrière groupé ou carpé
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-27-p5-165,P5,Sorties,Sortie Salto avant carpé ou tendu avec 1/1 ou +
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-27-p5-27,P5,,Elan en arrière avec demi-tour sauté à l’ATR tenue 2’’
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-27-p5-40,P5,,Salto avant à l’appui bras tendus
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-27-p7-164,P7,Sorties,Sortie Double salto avant groupé ou avec 1/2 tour
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-27-p7-32,P7,,Double salto avant groupé ou carpé à l’appui brachial
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-28-p5-130,P5,,De l’ATR demi-tour arrière à l’ATR
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-28-p5-133,P5,,Planche faciale jambes écartées tenue 2“
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-28-p5-136,P5,,Équerre jambes à la verticale tenue 2“
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-28-p5-138,P5,,Monter en force à l’ATR tenu 2“ bras tendus jambes tendues ou bras fléchis corps tendu
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-28-p5-26,P5,,Healy à l’appui brachial
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-28-p6-42,P6,,Toutes formes de Healy à l’appui
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-28-p7-140,P7,,Equerre jambes levées à l’horizontal tenue 2“
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-28-p7-141,P7,,De la planche faciale jambes serrées tenue 2“ remonter à l’ATR
+Barres parallèles,valorisation,Au moins 4 éléments P5 (min.) dans l'enchaînement,elements,4,,,barres-paralleles-28-p7-38,P7,,1 tour arrière ou avant en ATR sur une barre
 Barres parallèles,valorisation,1 sortie P5 (min.),elements,1,,,barres-paralleles-26-p5-161,P5,Sorties,Salto arrière carpé ou tendu avec 1/2 tour
 Barres parallèles,valorisation,1 sortie P5 (min.),elements,1,,,barres-paralleles-26-p5-24bis,P5,Sorties,Salto arrière à l’appui
 Barres parallèles,valorisation,1 sortie P5 (min.),elements,1,,,barres-paralleles-26-p6-163,P6,Sorties,Salto avant carpé ou tendue avec 1/1 ou +
@@ -3391,93 +3407,93 @@ Barres parallèles,valorisation,1 élément P7,elements,1,,,barres-paralleles-27
 Barres parallèles,valorisation,1 élément P7,elements,1,,,barres-paralleles-28-p7-140,P7,,Equerre jambes levées à l’horizontal tenue 2“
 Barres parallèles,valorisation,1 élément P7,elements,1,,,barres-paralleles-28-p7-141,P7,,De la planche faciale jambes serrées tenue 2“ remonter à l’ATR
 Barres parallèles,valorisation,1 élément P7,elements,1,,,barres-paralleles-28-p7-38,P7,,1 tour arrière ou avant en ATR sur une barre
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-24-p5-69,P5,,Établissement arrière à l’ATR
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-24-p5-71,P5,,Établissement arrière et passer les jambes écartées vers l’avant à l’appui
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-24-p6-66,P6,,Établissement avant et Kato
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-24-p6-71bis,P6,,Établissement arrière et passer les jambes écartées vers l’avant à l’appui
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-24-p7-76,P7,,Établissement arrière et salto avant à l’appui
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-25-p5-102,P5,,Bascule allemande (progression) à l’appui
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-25-p5-103,P5,,Moy groupé à l’appui
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-25-p5-104bis,P5,,Établissement arrière en tournant en arrière à l’appui
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-25-p5-109,P5,,Moy carpé à l’appui
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-25-p5-162,P5,,salto arrière tendu avec 1/1 vrille en bout de barre
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-25-p6-110,P6,,"Sur le côté, bascule d’élan par l’équerre serrée ou écartée à l’appui renversé"
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-25-p6-116,P6,,Bascule d’élan et passer les jambes écartées en arrière à l’ATR
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-25-p6-119,P6,,Etablissement en tournant en arrière à l’ATR
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-25-p6-120,P6,,Tour d’appui arrière en passant les jambes écartées en avant à l’appui
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-25-p6-167,P6,,Double salto arrière groupé en extrémité de barres
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-25-p7-113,P7,,Kenmotsu grand tour arrière à l’ATR
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-25-p7-113bis,P7,,Kenmotsu grand tour arrière à l’ATR avec 1/2 tour
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-25-p7-118,P7,,Bascule allemande en tournant en arrière avec 1/2 tour à l’appui
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-26-p5-161,P5,Sorties,Salto arrière carpé ou tendu avec 1/2 tour
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-26-p5-24bis,P5,Sorties,Salto arrière à l’appui
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-26-p5-31,P5,,Demi-tour avant à l’ATR
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-26-p6-163,P6,Sorties,Salto avant carpé ou tendue avec 1/1 ou +
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-26-p6-33,P6,,"De l’appui ou de l’appui fléchi, passer les jambes écartées en arrière à l’ATR"
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-26-p6-34,P6,Sorties,Salto arrière à l’appui à l’ATR
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-26-p6-37,P6,,Diamidov. Elan en avant 1/1 ou 5/4 sur un bras à l’ATR
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-26-p7-166,P7,Sorties,Double salto arrière groupé ou carpé
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-27-p5-165,P5,Sorties,Sortie Salto avant carpé ou tendu avec 1/1 ou +
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-27-p5-27,P5,,Elan en arrière avec demi-tour sauté à l’ATR tenue 2’’
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-27-p5-40,P5,,Salto avant à l’appui bras tendus
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-27-p7-164,P7,Sorties,Sortie Double salto avant groupé ou avec 1/2 tour
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-27-p7-32,P7,,Double salto avant groupé ou carpé à l’appui brachial
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-28-p5-130,P5,,De l’ATR demi-tour arrière à l’ATR
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-28-p5-133,P5,,Planche faciale jambes écartées tenue 2“
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-28-p5-136,P5,,Équerre jambes à la verticale tenue 2“
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-28-p5-138,P5,,Monter en force à l’ATR tenu 2“ bras tendus jambes tendues ou bras fléchis corps tendu
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-28-p5-26,P5,,Healy à l’appui brachial
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-28-p6-42,P6,,Toutes formes de Healy à l’appui
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-28-p7-140,P7,,Equerre jambes levées à l’horizontal tenue 2“
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-28-p7-141,P7,,De la planche faciale jambes serrées tenue 2“ remonter à l’ATR
-Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchainement,elements,6,,,barres-paralleles-28-p7-38,P7,,1 tour arrière ou avant en ATR sur une barre
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-24-p5-69,P5,,Établissement arrière à l’ATR
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-24-p5-71,P5,,Établissement arrière et passer les jambes écartées vers l’avant à l’appui
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-24-p6-66,P6,,Établissement avant et Kato
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-24-p6-71bis,P6,,Établissement arrière et passer les jambes écartées vers l’avant à l’appui
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-24-p7-76,P7,,Établissement arrière et salto avant à l’appui
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-25-p5-102,P5,,Bascule allemande (progression) à l’appui
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-25-p5-103,P5,,Moy groupé à l’appui
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-25-p5-104bis,P5,,Établissement arrière en tournant en arrière à l’appui
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-25-p5-109,P5,,Moy carpé à l’appui
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-25-p5-162,P5,,salto arrière tendu avec 1/1 vrille en bout de barre
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-25-p6-110,P6,,"Sur le côté, bascule d’élan par l’équerre serrée ou écartée à l’appui renversé"
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-25-p6-116,P6,,Bascule d’élan et passer les jambes écartées en arrière à l’ATR
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-25-p6-119,P6,,Etablissement en tournant en arrière à l’ATR
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-25-p6-120,P6,,Tour d’appui arrière en passant les jambes écartées en avant à l’appui
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-25-p6-167,P6,,Double salto arrière groupé en extrémité de barres
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-25-p7-113,P7,,Kenmotsu grand tour arrière à l’ATR
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-25-p7-113bis,P7,,Kenmotsu grand tour arrière à l’ATR avec 1/2 tour
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-25-p7-118,P7,,Bascule allemande en tournant en arrière avec 1/2 tour à l’appui
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-26-p5-161,P5,Sorties,Salto arrière carpé ou tendu avec 1/2 tour
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-26-p5-24bis,P5,Sorties,Salto arrière à l’appui
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-26-p5-31,P5,,Demi-tour avant à l’ATR
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-26-p6-163,P6,Sorties,Salto avant carpé ou tendue avec 1/1 ou +
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-26-p6-33,P6,,"De l’appui ou de l’appui fléchi, passer les jambes écartées en arrière à l’ATR"
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-26-p6-34,P6,Sorties,Salto arrière à l’appui à l’ATR
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-26-p6-37,P6,,Diamidov. Elan en avant 1/1 ou 5/4 sur un bras à l’ATR
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-26-p7-166,P7,Sorties,Double salto arrière groupé ou carpé
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-27-p5-165,P5,Sorties,Sortie Salto avant carpé ou tendu avec 1/1 ou +
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-27-p5-27,P5,,Elan en arrière avec demi-tour sauté à l’ATR tenue 2’’
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-27-p5-40,P5,,Salto avant à l’appui bras tendus
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-27-p7-164,P7,Sorties,Sortie Double salto avant groupé ou avec 1/2 tour
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-27-p7-32,P7,,Double salto avant groupé ou carpé à l’appui brachial
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-28-p5-130,P5,,De l’ATR demi-tour arrière à l’ATR
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-28-p5-133,P5,,Planche faciale jambes écartées tenue 2“
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-28-p5-136,P5,,Équerre jambes à la verticale tenue 2“
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-28-p5-138,P5,,Monter en force à l’ATR tenu 2“ bras tendus jambes tendues ou bras fléchis corps tendu
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-28-p5-26,P5,,Healy à l’appui brachial
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-28-p6-42,P6,,Toutes formes de Healy à l’appui
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-28-p7-140,P7,,Equerre jambes levées à l’horizontal tenue 2“
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-28-p7-141,P7,,De la planche faciale jambes serrées tenue 2“ remonter à l’ATR
+Barres parallèles,valorisation,Au moins 6 éléments P5 (min.) dans l’enchaînement,elements,6,,,barres-paralleles-28-p7-38,P7,,1 tour arrière ou avant en ATR sur une barre
 Barres parallèles,valorisation,1 sortie P6 (min.),elements,1,,,barres-paralleles-26-p6-163,P6,Sorties,Salto avant carpé ou tendue avec 1/1 ou +
 Barres parallèles,valorisation,1 sortie P6 (min.),elements,1,,,barres-paralleles-26-p6-34,P6,Sorties,Salto arrière à l’appui à l’ATR
 Barres parallèles,valorisation,1 sortie P6 (min.),elements,1,,,barres-paralleles-26-p7-166,P7,Sorties,Double salto arrière groupé ou carpé
 Barres parallèles,valorisation,1 sortie P6 (min.),elements,1,,,barres-paralleles-27-p7-164,P7,Sorties,Sortie Double salto avant groupé ou avec 1/2 tour
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-24-pre-requis-1-new,PRÉ-REQUIS,,Courbe avant
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-24-p1-11,P1,,"Balancé de l’arrière vers l’avant, bassin et épaules à 45° au-dessus de la barre"
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-24-p2-140,P2,,"Depuis un soleil, sortie par repoussé arrière depuis l’ATR (règle d’angles)"
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-24-p2-67,P2,,Balancé avant et demi-tour (épaules et bassin au-dessus de la barre)
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-24-p2-8,P2,,Traction et renversement arrière pour s’établir à l’appui facial
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-24-p3-139,P3,,Salto arrière corps tendu
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-24-p3-2-new,P3,,Balancé avec 1/2 tour à l’ATR
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-24-p3-21,P3,,Grand tour arrière (soleil) 360°
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-24-p4-142,P4,,Salto arrière carpé ou tendu avec 1/2 ou 1/1 tour
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-24-p4-146,P4,,Sortie salto arrière tendu depuis un soleil
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-24-p4-71,P4,,Grand tour arrière à l’ATR avec 1/2 tour
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-24-p5-148,P5,,Salto arrière carpé ou tendu avec 3/2 ou 2/1 tours
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-24-p5-149,P5,,Double salto arrière groupé ou carpé
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-24-p5-28,P5,,Grand tour arrière avec 1/1 tour
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-24-p5-3-new,P5,,Balancé ATR changement prise lune
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-24-p6-42,P6,,Grand tour arrière sauté ou sauté avec 1/2 tour
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-24-p6-59,P6,,Gienger. Elancer en avant et salto arrière carpé ou tendu avec 1/2 tour à la suspension
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-24-p7-154,P7,,Double salto arrière tendu
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-24-p7-155,P7,,Double salto arrière avec 1/1 tour ou +
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-24-p7-32,P7,,Grand tour arrière d’un bras
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-24-p7-33,P7,,Grand tour arrière avec 3/2 tour ou + (sauté ou non)
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-24-p7-51,P7,,Grand tour arrière sauté avec 1/1 tour ou plus
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-24-p7-55,P7,,Tkatchev (sous toute forme)
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-24-p7-60,P7,,Kovacs ou avec 1/2 tour ou avec 1/1 tour
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-24-p7-83,P7,,Grand tour arrière avec 3/2 tours en prise cubitale
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-25-pre-requis-4-new,PRÉ-REQUIS,,Courbe arrière
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-25-p1-10,P1,,Balancé arrière
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-25-p3-141,P3,,Salto avant carpé ou tendu
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-25-p3-20,P3,,Grand tour avant (lune) 360°
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-25-p3-70,P3,,Grand tour avant à l’ATR avec 1/2 tour
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-25-p4-145,P4,,Salto avant carpé ou tendu avec 1/2 tour
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-25-p4-45,P4,,Voronin. Etablissement arrière et sauté carpé avec 1/2 tour à la suspension
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-25-p4-46,P4,,Etablissement arrière et sauté dorsal avec 1/4 tour à la suspension
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-25-p5-152,P5,,Salto avant tendu avec 1/1 ou 3/2 tours
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-25-p5-24,P5,,Etablissement arrière prise cubitale et sauté par l’appui renversé
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-25-p5-40,P5,,Grand tour avant sauté ou sauté avec 1/2 tour
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-25-p6-160,P6,,Double salto avant par dessus la barre aussi avec 1/2 tour
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-25-p6-26,P6,,Grand tour avant avec 1/1 ou 3/2 tours
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-25-p6-29,P6,,Grand tour avant en prise cubitale
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-25-p6-58,P6,,Jager. Elancé en arrière et salto avant groupé carpé ou écart à la suspension
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-25-p7-159,P7,,Double salto avant groupé ou carpé aussi avec 1/2 tour ou +
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-25-p7-31,P7,,Grand tour avant d’un bras
-Barre fixe,exigence,Enchainer 5 balancés complets,elements,5,,oui,barre-fixe-25-p7-34,P7,,Grand tour avant avec 1/1 tours à la prise cubitale
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-24-pre-requis-1-new,PRÉ-REQUIS,,Courbe avant
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-24-p1-11,P1,,"Balancé de l’arrière vers l’avant, bassin et épaules à 45° au-dessus de la barre"
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-24-p2-140,P2,,"Depuis un soleil, sortie par repoussé arrière depuis l’ATR (règle d’angles)"
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-24-p2-67,P2,,Balancé avant et demi-tour (épaules et bassin au-dessus de la barre)
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-24-p2-8,P2,,Traction et renversement arrière pour s’établir à l’appui facial
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-24-p3-139,P3,,Salto arrière corps tendu
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-24-p3-2-new,P3,,Balancé avec 1/2 tour à l’ATR
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-24-p3-21,P3,,Grand tour arrière (soleil) 360°
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-24-p4-142,P4,,Salto arrière carpé ou tendu avec 1/2 ou 1/1 tour
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-24-p4-146,P4,,Sortie salto arrière tendu depuis un soleil
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-24-p4-71,P4,,Grand tour arrière à l’ATR avec 1/2 tour
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-24-p5-148,P5,,Salto arrière carpé ou tendu avec 3/2 ou 2/1 tours
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-24-p5-149,P5,,Double salto arrière groupé ou carpé
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-24-p5-28,P5,,Grand tour arrière avec 1/1 tour
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-24-p5-3-new,P5,,Balancé ATR changement prise lune
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-24-p6-42,P6,,Grand tour arrière sauté ou sauté avec 1/2 tour
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-24-p6-59,P6,,Gienger. Elancer en avant et salto arrière carpé ou tendu avec 1/2 tour à la suspension
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-24-p7-154,P7,,Double salto arrière tendu
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-24-p7-155,P7,,Double salto arrière avec 1/1 tour ou +
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-24-p7-32,P7,,Grand tour arrière d’un bras
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-24-p7-33,P7,,Grand tour arrière avec 3/2 tour ou + (sauté ou non)
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-24-p7-51,P7,,Grand tour arrière sauté avec 1/1 tour ou plus
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-24-p7-55,P7,,Tkatchev (sous toute forme)
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-24-p7-60,P7,,Kovacs ou avec 1/2 tour ou avec 1/1 tour
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-24-p7-83,P7,,Grand tour arrière avec 3/2 tours en prise cubitale
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-25-pre-requis-4-new,PRÉ-REQUIS,,Courbe arrière
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-25-p1-10,P1,,Balancé arrière
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-25-p3-141,P3,,Salto avant carpé ou tendu
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-25-p3-20,P3,,Grand tour avant (lune) 360°
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-25-p3-70,P3,,Grand tour avant à l’ATR avec 1/2 tour
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-25-p4-145,P4,,Salto avant carpé ou tendu avec 1/2 tour
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-25-p4-45,P4,,Voronin. Etablissement arrière et sauté carpé avec 1/2 tour à la suspension
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-25-p4-46,P4,,Etablissement arrière et sauté dorsal avec 1/4 tour à la suspension
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-25-p5-152,P5,,Salto avant tendu avec 1/1 ou 3/2 tours
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-25-p5-24,P5,,Etablissement arrière prise cubitale et sauté par l’appui renversé
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-25-p5-40,P5,,Grand tour avant sauté ou sauté avec 1/2 tour
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-25-p6-160,P6,,Double salto avant par dessus la barre aussi avec 1/2 tour
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-25-p6-26,P6,,Grand tour avant avec 1/1 ou 3/2 tours
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-25-p6-29,P6,,Grand tour avant en prise cubitale
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-25-p6-58,P6,,Jager. Elancé en arrière et salto avant groupé carpé ou écart à la suspension
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-25-p7-159,P7,,Double salto avant groupé ou carpé aussi avec 1/2 tour ou +
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-25-p7-31,P7,,Grand tour avant d’un bras
+Barre fixe,exigence,Enchaîner 5 balancés complets,elements,5,,oui,barre-fixe-25-p7-34,P7,,Grand tour avant avec 1/1 tours à la prise cubitale
 Barre fixe,exigence,1 élément PR,elements,1,,,barre-fixe-24-pre-requis-1-new,PRÉ-REQUIS,,Courbe avant
 Barre fixe,exigence,1 élément PR,elements,1,,,barre-fixe-25-pre-requis-4-new,PRÉ-REQUIS,,Courbe arrière
 Barre fixe,exigence,1 élément PR,elements,1,,,barre-fixe-26-pre-requis-5-new,PRÉ-REQUIS,,Appui dynamique
@@ -3581,20 +3597,18 @@ Barre fixe,exigence,1 élément P2,elements,1,,,barre-fixe-26-p2-5,P2,,De la sus
 Barre fixe,exigence,1 élément P2,elements,1,,,barre-fixe-26-p2-6-new,P2,,Montée à l’appui bras tendus avec l’aide de l’entraineur
 Barre fixe,exigence,1 élément P2,elements,1,,,barre-fixe-27-p2-105,P2,,De l’appui renversement arrière corps tendu bassin près de la barre puis filer au-dessus de l’horizontale à la suspension
 Barre fixe,exigence,1 élément P2,elements,1,,,barre-fixe-27-p2-7-new,P2,,Balancé avant fermeture et oscillation pieds sur barre
-Barre fixe,valorisation,1 appui / élan PXX,elements,1,,,barre-fixe-26-pre-requis-5-new,PRÉ-REQUIS,,Appui dynamique
-Barre fixe,valorisation,1 appui / élan PXX,elements,1,,,barre-fixe-26-p1-16,P1,,Prise d’élan corps aligné au-dessus de l’horizontale
-Barre fixe,valorisation,1 appui / élan PXX,elements,1,,,barre-fixe-26-p2-5,P2,,De la suspension prise d’élan épaules à hauteur de la barre
-Barre fixe,valorisation,1 appui / élan PXX,elements,1,,,barre-fixe-26-p2-6-new,P2,,Montée à l’appui bras tendus avec l’aide de l’entraineur
-Barre fixe,valorisation,1 appui / élan PXX,elements,1,,,barre-fixe-26-p3-15,P3,,Etablissement arrière à l’appui
-Barre fixe,valorisation,1 appui / élan PXX,elements,1,,,barre-fixe-26-p4-13,P4,,Bascule d’élan
-Barre fixe,valorisation,1 appui / élan PXX,elements,1,,,barre-fixe-26-p5-14,P5,,Bascule de l’appui à l’appui
-Barre fixe,valorisation,1 appui / élan PXX,elements,1,,,barre-fixe-26-p5-17,P5,,Prise d’élan à l’ATR
-Barre fixe,valorisation,1 appui / élan PXX,elements,1,,,barre-fixe-26-p5-19,P5,,Etablissement arrière à l’ATR
-Barre fixe,valorisation,1 appui / élan PXX,elements,1,,,barre-fixe-26-p5-37,P5,,Bascule couper écart
-Barre fixe,valorisation,1 appui / élan PXX,elements,1,,,barre-fixe-26-p6-18,P6,,Prise d’élan à l’ATR avec 1/2 tour
-Barre fixe,valorisation,1 appui / élan PXX,elements,1,,,barre-fixe-26-p6-23,P6,,Bascule d’élan puis montée ATR en liaison directe
-Barre fixe,valorisation,1 appui / élan PXX,elements,1,,,barre-fixe-26-p7-19bis,P7,,Etablissement arrière à l’ATR avec 1/2 tour
-Barre fixe,valorisation,1 appui / élan PXX,elements,1,,,barre-fixe-26-p7-23-plus,P7,,Bascule d’élan puis montée ATR avec 1/2 tour en liaison directe
+Barre fixe,valorisation,1 appui / élan P2 (min.),elements,1,,,barre-fixe-26-p2-5,P2,,De la suspension prise d’élan épaules à hauteur de la barre
+Barre fixe,valorisation,1 appui / élan P2 (min.),elements,1,,,barre-fixe-26-p2-6-new,P2,,Montée à l’appui bras tendus avec l’aide de l’entraineur
+Barre fixe,valorisation,1 appui / élan P2 (min.),elements,1,,,barre-fixe-26-p3-15,P3,,Etablissement arrière à l’appui
+Barre fixe,valorisation,1 appui / élan P2 (min.),elements,1,,,barre-fixe-26-p4-13,P4,,Bascule d’élan
+Barre fixe,valorisation,1 appui / élan P2 (min.),elements,1,,,barre-fixe-26-p5-14,P5,,Bascule de l’appui à l’appui
+Barre fixe,valorisation,1 appui / élan P2 (min.),elements,1,,,barre-fixe-26-p5-17,P5,,Prise d’élan à l’ATR
+Barre fixe,valorisation,1 appui / élan P2 (min.),elements,1,,,barre-fixe-26-p5-19,P5,,Etablissement arrière à l’ATR
+Barre fixe,valorisation,1 appui / élan P2 (min.),elements,1,,,barre-fixe-26-p5-37,P5,,Bascule couper écart
+Barre fixe,valorisation,1 appui / élan P2 (min.),elements,1,,,barre-fixe-26-p6-18,P6,,Prise d’élan à l’ATR avec 1/2 tour
+Barre fixe,valorisation,1 appui / élan P2 (min.),elements,1,,,barre-fixe-26-p6-23,P6,,Bascule d’élan puis montée ATR en liaison directe
+Barre fixe,valorisation,1 appui / élan P2 (min.),elements,1,,,barre-fixe-26-p7-19bis,P7,,Etablissement arrière à l’ATR avec 1/2 tour
+Barre fixe,valorisation,1 appui / élan P2 (min.),elements,1,,,barre-fixe-26-p7-23-plus,P7,,Bascule d’élan puis montée ATR avec 1/2 tour en liaison directe
 Barre fixe,valorisation,Faire 3 balancés successifs orientés «shoot avant»,elements,3,,oui,barre-fixe-24-pre-requis-1-new,PRÉ-REQUIS,,Courbe avant
 Barre fixe,valorisation,Faire 3 balancés successifs orientés «shoot avant»,elements,3,,oui,barre-fixe-24-p1-11,P1,,"Balancé de l’arrière vers l’avant, bassin et épaules à 45° au-dessus de la barre"
 Barre fixe,valorisation,Faire 3 balancés successifs orientés «shoot avant»,elements,3,,oui,barre-fixe-24-p2-140,P2,,"Depuis un soleil, sortie par repoussé arrière depuis l’ATR (règle d’angles)"
@@ -3620,24 +3634,24 @@ Barre fixe,valorisation,Faire 3 balancés successifs orientés «shoot avant»,e
 Barre fixe,valorisation,Faire 3 balancés successifs orientés «shoot avant»,elements,3,,oui,barre-fixe-24-p7-55,P7,,Tkatchev (sous toute forme)
 Barre fixe,valorisation,Faire 3 balancés successifs orientés «shoot avant»,elements,3,,oui,barre-fixe-24-p7-60,P7,,Kovacs ou avec 1/2 tour ou avec 1/1 tour
 Barre fixe,valorisation,Faire 3 balancés successifs orientés «shoot avant»,elements,3,,oui,barre-fixe-24-p7-83,P7,,Grand tour arrière avec 3/2 tours en prise cubitale
-Barre fixe,valorisation,"Faire 3 balancés successifs orientés ""shoot arrière""",elements,3,,oui,barre-fixe-25-pre-requis-4-new,PRÉ-REQUIS,,Courbe arrière
-Barre fixe,valorisation,"Faire 3 balancés successifs orientés ""shoot arrière""",elements,3,,oui,barre-fixe-25-p1-10,P1,,Balancé arrière
-Barre fixe,valorisation,"Faire 3 balancés successifs orientés ""shoot arrière""",elements,3,,oui,barre-fixe-25-p3-141,P3,,Salto avant carpé ou tendu
-Barre fixe,valorisation,"Faire 3 balancés successifs orientés ""shoot arrière""",elements,3,,oui,barre-fixe-25-p3-20,P3,,Grand tour avant (lune) 360°
-Barre fixe,valorisation,"Faire 3 balancés successifs orientés ""shoot arrière""",elements,3,,oui,barre-fixe-25-p3-70,P3,,Grand tour avant à l’ATR avec 1/2 tour
-Barre fixe,valorisation,"Faire 3 balancés successifs orientés ""shoot arrière""",elements,3,,oui,barre-fixe-25-p4-145,P4,,Salto avant carpé ou tendu avec 1/2 tour
-Barre fixe,valorisation,"Faire 3 balancés successifs orientés ""shoot arrière""",elements,3,,oui,barre-fixe-25-p4-45,P4,,Voronin. Etablissement arrière et sauté carpé avec 1/2 tour à la suspension
-Barre fixe,valorisation,"Faire 3 balancés successifs orientés ""shoot arrière""",elements,3,,oui,barre-fixe-25-p4-46,P4,,Etablissement arrière et sauté dorsal avec 1/4 tour à la suspension
-Barre fixe,valorisation,"Faire 3 balancés successifs orientés ""shoot arrière""",elements,3,,oui,barre-fixe-25-p5-152,P5,,Salto avant tendu avec 1/1 ou 3/2 tours
-Barre fixe,valorisation,"Faire 3 balancés successifs orientés ""shoot arrière""",elements,3,,oui,barre-fixe-25-p5-24,P5,,Etablissement arrière prise cubitale et sauté par l’appui renversé
-Barre fixe,valorisation,"Faire 3 balancés successifs orientés ""shoot arrière""",elements,3,,oui,barre-fixe-25-p5-40,P5,,Grand tour avant sauté ou sauté avec 1/2 tour
-Barre fixe,valorisation,"Faire 3 balancés successifs orientés ""shoot arrière""",elements,3,,oui,barre-fixe-25-p6-160,P6,,Double salto avant par dessus la barre aussi avec 1/2 tour
-Barre fixe,valorisation,"Faire 3 balancés successifs orientés ""shoot arrière""",elements,3,,oui,barre-fixe-25-p6-26,P6,,Grand tour avant avec 1/1 ou 3/2 tours
-Barre fixe,valorisation,"Faire 3 balancés successifs orientés ""shoot arrière""",elements,3,,oui,barre-fixe-25-p6-29,P6,,Grand tour avant en prise cubitale
-Barre fixe,valorisation,"Faire 3 balancés successifs orientés ""shoot arrière""",elements,3,,oui,barre-fixe-25-p6-58,P6,,Jager. Elancé en arrière et salto avant groupé carpé ou écart à la suspension
-Barre fixe,valorisation,"Faire 3 balancés successifs orientés ""shoot arrière""",elements,3,,oui,barre-fixe-25-p7-159,P7,,Double salto avant groupé ou carpé aussi avec 1/2 tour ou +
-Barre fixe,valorisation,"Faire 3 balancés successifs orientés ""shoot arrière""",elements,3,,oui,barre-fixe-25-p7-31,P7,,Grand tour avant d’un bras
-Barre fixe,valorisation,"Faire 3 balancés successifs orientés ""shoot arrière""",elements,3,,oui,barre-fixe-25-p7-34,P7,,Grand tour avant avec 1/1 tours à la prise cubitale
+Barre fixe,valorisation,Faire 3 balancés successifs orientés «shoot arrière»,elements,3,,oui,barre-fixe-25-pre-requis-4-new,PRÉ-REQUIS,,Courbe arrière
+Barre fixe,valorisation,Faire 3 balancés successifs orientés «shoot arrière»,elements,3,,oui,barre-fixe-25-p1-10,P1,,Balancé arrière
+Barre fixe,valorisation,Faire 3 balancés successifs orientés «shoot arrière»,elements,3,,oui,barre-fixe-25-p3-141,P3,,Salto avant carpé ou tendu
+Barre fixe,valorisation,Faire 3 balancés successifs orientés «shoot arrière»,elements,3,,oui,barre-fixe-25-p3-20,P3,,Grand tour avant (lune) 360°
+Barre fixe,valorisation,Faire 3 balancés successifs orientés «shoot arrière»,elements,3,,oui,barre-fixe-25-p3-70,P3,,Grand tour avant à l’ATR avec 1/2 tour
+Barre fixe,valorisation,Faire 3 balancés successifs orientés «shoot arrière»,elements,3,,oui,barre-fixe-25-p4-145,P4,,Salto avant carpé ou tendu avec 1/2 tour
+Barre fixe,valorisation,Faire 3 balancés successifs orientés «shoot arrière»,elements,3,,oui,barre-fixe-25-p4-45,P4,,Voronin. Etablissement arrière et sauté carpé avec 1/2 tour à la suspension
+Barre fixe,valorisation,Faire 3 balancés successifs orientés «shoot arrière»,elements,3,,oui,barre-fixe-25-p4-46,P4,,Etablissement arrière et sauté dorsal avec 1/4 tour à la suspension
+Barre fixe,valorisation,Faire 3 balancés successifs orientés «shoot arrière»,elements,3,,oui,barre-fixe-25-p5-152,P5,,Salto avant tendu avec 1/1 ou 3/2 tours
+Barre fixe,valorisation,Faire 3 balancés successifs orientés «shoot arrière»,elements,3,,oui,barre-fixe-25-p5-24,P5,,Etablissement arrière prise cubitale et sauté par l’appui renversé
+Barre fixe,valorisation,Faire 3 balancés successifs orientés «shoot arrière»,elements,3,,oui,barre-fixe-25-p5-40,P5,,Grand tour avant sauté ou sauté avec 1/2 tour
+Barre fixe,valorisation,Faire 3 balancés successifs orientés «shoot arrière»,elements,3,,oui,barre-fixe-25-p6-160,P6,,Double salto avant par dessus la barre aussi avec 1/2 tour
+Barre fixe,valorisation,Faire 3 balancés successifs orientés «shoot arrière»,elements,3,,oui,barre-fixe-25-p6-26,P6,,Grand tour avant avec 1/1 ou 3/2 tours
+Barre fixe,valorisation,Faire 3 balancés successifs orientés «shoot arrière»,elements,3,,oui,barre-fixe-25-p6-29,P6,,Grand tour avant en prise cubitale
+Barre fixe,valorisation,Faire 3 balancés successifs orientés «shoot arrière»,elements,3,,oui,barre-fixe-25-p6-58,P6,,Jager. Elancé en arrière et salto avant groupé carpé ou écart à la suspension
+Barre fixe,valorisation,Faire 3 balancés successifs orientés «shoot arrière»,elements,3,,oui,barre-fixe-25-p7-159,P7,,Double salto avant groupé ou carpé aussi avec 1/2 tour ou +
+Barre fixe,valorisation,Faire 3 balancés successifs orientés «shoot arrière»,elements,3,,oui,barre-fixe-25-p7-31,P7,,Grand tour avant d’un bras
+Barre fixe,valorisation,Faire 3 balancés successifs orientés «shoot arrière»,elements,3,,oui,barre-fixe-25-p7-34,P7,,Grand tour avant avec 1/1 tours à la prise cubitale
 Barre fixe,valorisation,1 élément P2 (min.),elements,1,,,barre-fixe-24-p2-140,P2,,"Depuis un soleil, sortie par repoussé arrière depuis l’ATR (règle d’angles)"
 Barre fixe,valorisation,1 élément P2 (min.),elements,1,,,barre-fixe-24-p2-67,P2,,Balancé avant et demi-tour (épaules et bassin au-dessus de la barre)
 Barre fixe,valorisation,1 élément P2 (min.),elements,1,,,barre-fixe-24-p2-8,P2,,Traction et renversement arrière pour s’établir à l’appui facial
