@@ -85,7 +85,9 @@ export const lexique: GroupeLexique[] = [
       {
         terme: "Élément +",
         definition:
-          "Élément acrobatique enchaîné directement d’un autre élément acrobatique au sol, ou gymnique pour les LM en poutre.",
+          "Élément acrobatique qui est enchaîné directement par un autre élément acrobatique au sol, ou gymnique pour les LM en poutre.",
+        precision:
+          "Le « + » est sur l’élément qui mène à la suite (suivi d’un autre acro) ; le dernier acro d’une ligne reste en base.",
       },
     ],
   },

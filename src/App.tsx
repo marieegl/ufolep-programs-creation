@@ -17,7 +17,7 @@ const ETATS: Record<Etat, string> = {
 
 /** An element whose number ends with "+": an acro chained directly after another. */
 const DEFINITION_PLUS =
-  "Élément + : élément acro enchaîné directement d’un autre élément acro au sol, ou gym pour les LM en poutre";
+  "Élément + : élément acro qui est enchaîné directement par un autre élément acro au sol, ou gym pour les LM en poutre (le « + » est sur l’élément suivi d’un autre acro)";
 const estPlus = (element: Element) => element.numero.endsWith("+");
 
 /** Elements in the ENTRÉES arch are mounts. A routine has exactly one, like its sortie. */
