@@ -30,8 +30,6 @@ Saut,valorisation,Saut avec rotation longitudinale ou transversale,elements,1,,,
 Saut,valorisation,Saut avec rotation longitudinale ou transversale,elements,1,,,saut-50-p4-45,P4,Saut par renversement latéral,Tsukahara carpé. Rotation longitudinale de 90° à 180° dans le 1er envol et salto arrière carpé dans le 2e envol
 Saut,valorisation,Saut avec rotation longitudinale ou transversale,elements,1,,,saut-50-p5-46,P5,Saut par renversement latéral,Tsukahara tendu. Rotation longitudinale de 90° à 180° dans le 1er envol et salto arrière tendu dans le 2e envol
 Saut,valorisation,Saut avec rotation longitudinale ou transversale,elements,1,,,saut-50-p7-48,P7,Saut par renversement latéral,Tsukahara vrillé ou Kasamatsu. Rotation longitudinale de 90° à 180° dans le 1er envol et salto arrière avec rotation longitudinale de 360°
-Saut,valorisation,Saut avec rotation longitudinale ou transversale,elements,1,,,saut-50-nomade-37,NOMADE,,Pétrick. Rotation longitudinale de 180° le 1er envol et rotation longitudinale de 180° dans le
-Saut,valorisation,Saut avec rotation longitudinale ou transversale,elements,1,,,saut-50-nomade-39,NOMADE,,Pétrick vrille (rotation longitudinale de 180° dans le 1er envol et rotation longitudinale de 360°
 Saut,valorisation,Saut avec rotation longitudinale ou transversale,elements,1,,,saut-51-p5-19,P5,Saut par saut de mains,Lune vrille Lune avec rotation longitudinale de 360°dans le 2e envol
 Saut,valorisation,Saut avec rotation longitudinale ou transversale,elements,1,,,saut-51-p6-66-new,P6,Saut par saut de mains,Saut de main Tsukahara tendu. Rotation longitudinale de 90° à 180° dans le 1er envol
 Saut,valorisation,Saut avec rotation longitudinale ou transversale,elements,1,,,saut-51-p7-75-new,P7,Saut par saut de mains,Saut de main Tsukahara vrillé ou Kasamatsu. Rotation longitudinale de 90° à 180° dans le 1er envol
@@ -156,7 +154,6 @@ Sol,valorisation,1 saut,elements,1,,,sol-72-p6-67,P6,,Saut changement de jambes 
 Sol,valorisation,1 saut,elements,1,,,sol-72-p6-70,P6,,Saut changement de jambes pied/tête. Saut enjambé avec changement de jambes (angle d’écart 180°
 Sol,valorisation,1 saut,elements,1,,,sol-72-p6-71,P6,,Saut enjambé avec 1 tour
 Sol,valorisation,1 saut,elements,1,,,sol-72-p7-72,P7,,Saut avec changement de jambes 1 tour
-Sol,valorisation,1 saut,elements,1,,,sol-72-nomade-33,NOMADE,,Saut ciseaux en avant avec les jambes tendues
 Sol,valorisation,1 élément P2,elements,1,,,sol-65-p2-103,P2,En avant,"Départ libre, ATR et roulade avant bras tendus, arrivée sur 1 ou 2 pieds"
 Sol,valorisation,1 élément P2,elements,1,,,sol-65-p2-97,P2,En avant,"Départ libre, roulade avant avec appui des mains et bras tendus, arrivée sur 1 ou 2 pieds"
 Sol,valorisation,1 élément P2,elements,1,,,sol-65-p2-99,P2,En arrière,"Départ libre, roulade arrière avec appui des mains, arrivée sur les pieds jambes fléchies"
@@ -201,13 +198,6 @@ Sol,valorisation,2 acros de sens différents,familles,2,,,sol-65-p7-188,P7,En ar
 Sol,valorisation,2 acros de sens différents,familles,2,,,sol-65-p7-189,P7,En arrière,Double salto arrière carpé
 Sol,valorisation,2 acros de sens différents,familles,2,,,sol-65-p7-78,P7,En avant,Tous salti avant avec 3/2 tours ou +
 Sol,valorisation,2 acros de sens différents,familles,2,,,sol-65-p7-80,P7,En avant,Double salto avant ou avec demi-tour ou +
-Sol,valorisation,2 acros de sens différents,familles,2,,,sol-65-nomade-181,NOMADE,,"Twist. Appel en arrière avec 1/2 tour (180°) et salto avant, réception libre"
-Sol,valorisation,2 acros de sens différents,familles,2,,,sol-65-nomade-52,NOMADE,,Roulade avant élevée
-Sol,valorisation,2 acros de sens différents,familles,2,,,sol-65-nomade-58,NOMADE,,Saut en arrière avec 1/2 tour et saut de poisson
-Sol,valorisation,2 acros de sens différents,familles,2,,,sol-65-nomade-64,NOMADE,,Salto latéral jambes groupées écartées
-Sol,valorisation,2 acros de sens différents,familles,2,,,sol-65-nomade-66,NOMADE,,Salto latéral jambes tendues écartées
-Sol,valorisation,2 acros de sens différents,familles,2,,,sol-65-nomade-70,NOMADE,,Saut en arrière avec 1/2 tour et salto avant tendu
-Sol,valorisation,2 acros de sens différents,familles,2,,,sol-65-nomade-74,NOMADE,,Saut de poisson avec 1/1 tour
 Sol,valorisation,2 acros de sens différents,familles,2,,,sol-66-pre-requis-68-new,PRÉ-REQUIS,,Sursaut fente
 Sol,valorisation,2 acros de sens différents,familles,2,,,sol-66-pre-requis-84,PRÉ-REQUIS,,Station en écart avec appui des mains devant la jambe d’appui (angle d’écart 180°) tenue 2“
 Sol,valorisation,2 acros de sens différents,familles,2,,,sol-66-p1-8,P1,,Départ fente ATR ATR ou ATR écart
@@ -227,9 +217,6 @@ Sol,valorisation,2 acros de sens différents,familles,2,,,sol-66-p5-175,P5,En ar
 Sol,valorisation,2 acros de sens différents,familles,2,,,sol-66-p5-177,P5,En avant,Salto costal. Renversement latéral libre
 Sol,valorisation,2 acros de sens différents,familles,2,,,sol-66-p5-182,P5,En arrière,Salto facial. Renversement avant libre
 Sol,valorisation,2 acros de sens différents,familles,2,,,sol-66-p6-158-plus,P6,En avant,Flic-Flac avant Renversement avant avec envol appel 2 pieds
-Sol,valorisation,2 acros de sens différents,familles,2,,,sol-66-nomade-135,NOMADE,,Saut par renversement arrière à l’appui couché ou facial
-Sol,valorisation,2 acros de sens différents,familles,2,,,sol-66-nomade-159,NOMADE,,Souplesse arrière valse. Renversement arrière sans envol avec 1 tour et plus (360° et plus) retour libre
-Sol,valorisation,2 acros de sens différents,familles,2,,,sol-66-nomade-47,NOMADE,,"Menichelli station couché dorsal, une jambe fléchie, renversement arrière à l’appui"
 Sol,exigence,1 saut,elements,1,,,sol-71-p1-121,P1,,Saut extension
 Sol,exigence,1 saut,elements,1,,,sol-71-p2-28,P2,,Saut groupé (jambes serrées) appel des 2 pieds
 Sol,exigence,1 saut,elements,1,,,sol-71-p3-122,P3,,Saut extension 1/2 tour
@@ -469,9 +456,6 @@ Sol,valorisation,1 LAE dont 1 acro avec appui manuel,elements,1,,oui,sol-66-p5-1
 Sol,valorisation,1 LAE dont 1 acro avec appui manuel,elements,1,,oui,sol-66-p5-177,P5,En avant,Salto costal. Renversement latéral libre
 Sol,valorisation,1 LAE dont 1 acro avec appui manuel,elements,1,,oui,sol-66-p5-182,P5,En arrière,Salto facial. Renversement avant libre
 Sol,valorisation,1 LAE dont 1 acro avec appui manuel,elements,1,,oui,sol-66-p6-158-plus,P6,En avant,Flic-Flac avant Renversement avant avec envol appel 2 pieds
-Sol,valorisation,1 LAE dont 1 acro avec appui manuel,elements,1,,oui,sol-66-nomade-135,NOMADE,,Saut par renversement arrière à l’appui couché ou facial
-Sol,valorisation,1 LAE dont 1 acro avec appui manuel,elements,1,,oui,sol-66-nomade-159,NOMADE,,Souplesse arrière valse. Renversement arrière sans envol avec 1 tour et plus (360° et plus) retour libre
-Sol,valorisation,1 LAE dont 1 acro avec appui manuel,elements,1,,oui,sol-66-nomade-47,NOMADE,,"Menichelli station couché dorsal, une jambe fléchie, renversement arrière à l’appui"
 Sol,valorisation,1 LAE dont 1 élément P4 (min.),elements,1,,oui,sol-65-p4-106,P4,En arrière,"Départ libre, roulade arrière à l’ATR bras tendus, retour libre"
 Sol,valorisation,1 LAE dont 1 élément P4 (min.),elements,1,,oui,sol-65-p4-169,P4,En arrière,Salto arrière corps groupé ou carpé
 Sol,valorisation,1 LAE dont 1 élément P4 (min.),elements,1,,oui,sol-65-p4-170-plus,P4,En avant,Salto avant corps groupé ou carpé
@@ -530,13 +514,6 @@ Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE
 Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,,oui,sol-65-p7-189,P7,En arrière,Double salto arrière carpé
 Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,,oui,sol-65-p7-78,P7,En avant,Tous salti avant avec 3/2 tours ou +
 Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,,oui,sol-65-p7-80,P7,En avant,Double salto avant ou avec demi-tour ou +
-Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,,oui,sol-65-nomade-181,NOMADE,,"Twist. Appel en arrière avec 1/2 tour (180°) et salto avant, réception libre"
-Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,,oui,sol-65-nomade-52,NOMADE,,Roulade avant élevée
-Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,,oui,sol-65-nomade-58,NOMADE,,Saut en arrière avec 1/2 tour et saut de poisson
-Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,,oui,sol-65-nomade-64,NOMADE,,Salto latéral jambes groupées écartées
-Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,,oui,sol-65-nomade-66,NOMADE,,Salto latéral jambes tendues écartées
-Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,,oui,sol-65-nomade-70,NOMADE,,Saut en arrière avec 1/2 tour et salto avant tendu
-Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,,oui,sol-65-nomade-74,NOMADE,,Saut de poisson avec 1/1 tour
 Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,,oui,sol-66-pre-requis-68-new,PRÉ-REQUIS,,Sursaut fente
 Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,,oui,sol-66-pre-requis-84,PRÉ-REQUIS,,Station en écart avec appui des mains devant la jambe d’appui (angle d’écart 180°) tenue 2“
 Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,,oui,sol-66-p1-8,P1,,Départ fente ATR ATR ou ATR écart
@@ -556,9 +533,6 @@ Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE
 Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,,oui,sol-66-p5-177,P5,En avant,Salto costal. Renversement latéral libre
 Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,,oui,sol-66-p5-182,P5,En arrière,Salto facial. Renversement avant libre
 Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,,oui,sol-66-p6-158-plus,P6,En avant,Flic-Flac avant Renversement avant avec envol appel 2 pieds
-Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,,oui,sol-66-nomade-135,NOMADE,,Saut par renversement arrière à l’appui couché ou facial
-Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,,oui,sol-66-nomade-159,NOMADE,,Souplesse arrière valse. Renversement arrière sans envol avec 1 tour et plus (360° et plus) retour libre
-Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,,oui,sol-66-nomade-47,NOMADE,,"Menichelli station couché dorsal, une jambe fléchie, renversement arrière à l’appui"
 Sol,exigence,1 élément P5,elements,1,,,sol-65-p5-109,P5,En arrière,"Départ libre, roulade arrière à l’ATR bras tendus 1/2 tour (180°), retour libre"
 Sol,exigence,1 élément P5,elements,1,,,sol-65-p5-172,P5,En arrière,Salto arriére corps tendu
 Sol,exigence,1 élément P5,elements,1,,,sol-65-p5-173,P5,En avant,Salto avant réception pieds décalés
@@ -606,10 +580,6 @@ Sol,valorisation,1 LAE dont 1 salto appel 2 pieds,elements,1,,oui,sol-65-p7-185,
 Sol,valorisation,1 LAE dont 1 salto appel 2 pieds,elements,1,,oui,sol-65-p7-188,P7,En arrière,Salto arrière avec 2/1 tours ou plus
 Sol,valorisation,1 LAE dont 1 salto appel 2 pieds,elements,1,,oui,sol-65-p7-189,P7,En arrière,Double salto arrière carpé
 Sol,valorisation,1 LAE dont 1 salto appel 2 pieds,elements,1,,oui,sol-65-p7-80,P7,En avant,Double salto avant ou avec demi-tour ou +
-Sol,valorisation,1 LAE dont 1 salto appel 2 pieds,elements,1,,oui,sol-65-nomade-181,NOMADE,,"Twist. Appel en arrière avec 1/2 tour (180°) et salto avant, réception libre"
-Sol,valorisation,1 LAE dont 1 salto appel 2 pieds,elements,1,,oui,sol-65-nomade-64,NOMADE,,Salto latéral jambes groupées écartées
-Sol,valorisation,1 LAE dont 1 salto appel 2 pieds,elements,1,,oui,sol-65-nomade-66,NOMADE,,Salto latéral jambes tendues écartées
-Sol,valorisation,1 LAE dont 1 salto appel 2 pieds,elements,1,,oui,sol-65-nomade-70,NOMADE,,Saut en arrière avec 1/2 tour et salto avant tendu
 Sol,valorisation,1 LAE dont 1 salto appel 2 pieds,elements,1,,oui,sol-66-p5-175,P5,En arrière,Salto tempo. Renversement arrière libre
 Sol,valorisation,1 LAE dont 1 salto appel 2 pieds,elements,1,,oui,sol-66-p5-177,P5,En avant,Salto costal. Renversement latéral libre
 Sol,valorisation,1 LAE dont 1 salto appel 2 pieds,elements,1,,oui,sol-66-p5-182,P5,En arrière,Salto facial. Renversement avant libre
@@ -711,8 +681,6 @@ Sol,valorisation,1 salto position tendue appel 2 pieds,elements,1,,,sol-65-p6-18
 Sol,valorisation,1 salto position tendue appel 2 pieds,elements,1,,,sol-65-p7-180-plus,P7,En avant,Salto avant corps tendu ou avec 1/2 tour (180°)
 Sol,valorisation,1 salto position tendue appel 2 pieds,elements,1,,,sol-65-p7-184,P7,En arrière,"Salto arrière corps groupé, carpé, tendu, avec 1 tour 1/2 (540°)"
 Sol,valorisation,1 salto position tendue appel 2 pieds,elements,1,,,sol-65-p7-185,P7,En avant,"Salto avant. corps groupé, carpé, tendu avec 1 tour (360°)"
-Sol,valorisation,1 salto position tendue appel 2 pieds,elements,1,,,sol-65-nomade-66,NOMADE,,Salto latéral jambes tendues écartées
-Sol,valorisation,1 salto position tendue appel 2 pieds,elements,1,,,sol-65-nomade-70,NOMADE,,Saut en arrière avec 1/2 tour et salto avant tendu
 Sol,valorisation,1 LAE de 3 éléments différents dont 1 P5 (min.),elements,1,,oui,sol-65-p5-109,P5,En arrière,"Départ libre, roulade arrière à l’ATR bras tendus 1/2 tour (180°), retour libre"
 Sol,valorisation,1 LAE de 3 éléments différents dont 1 P5 (min.),elements,1,,oui,sol-65-p5-172,P5,En arrière,Salto arriére corps tendu
 Sol,valorisation,1 LAE de 3 éléments différents dont 1 P5 (min.),elements,1,,oui,sol-65-p5-173,P5,En avant,Salto avant réception pieds décalés
@@ -808,10 +776,6 @@ Sol,valorisation,2 salti appel 2 pieds liés directement ou indirectement,elemen
 Sol,valorisation,2 salti appel 2 pieds liés directement ou indirectement,elements,2,,oui,sol-65-p7-188,P7,En arrière,Salto arrière avec 2/1 tours ou plus
 Sol,valorisation,2 salti appel 2 pieds liés directement ou indirectement,elements,2,,oui,sol-65-p7-189,P7,En arrière,Double salto arrière carpé
 Sol,valorisation,2 salti appel 2 pieds liés directement ou indirectement,elements,2,,oui,sol-65-p7-80,P7,En avant,Double salto avant ou avec demi-tour ou +
-Sol,valorisation,2 salti appel 2 pieds liés directement ou indirectement,elements,2,,oui,sol-65-nomade-181,NOMADE,,"Twist. Appel en arrière avec 1/2 tour (180°) et salto avant, réception libre"
-Sol,valorisation,2 salti appel 2 pieds liés directement ou indirectement,elements,2,,oui,sol-65-nomade-64,NOMADE,,Salto latéral jambes groupées écartées
-Sol,valorisation,2 salti appel 2 pieds liés directement ou indirectement,elements,2,,oui,sol-65-nomade-66,NOMADE,,Salto latéral jambes tendues écartées
-Sol,valorisation,2 salti appel 2 pieds liés directement ou indirectement,elements,2,,oui,sol-65-nomade-70,NOMADE,,Saut en arrière avec 1/2 tour et salto avant tendu
 Sol,valorisation,2 salti appel 2 pieds liés directement ou indirectement,elements,2,,oui,sol-66-p5-175,P5,En arrière,Salto tempo. Renversement arrière libre
 Sol,valorisation,2 salti appel 2 pieds liés directement ou indirectement,elements,2,,oui,sol-66-p5-177,P5,En avant,Salto costal. Renversement latéral libre
 Sol,valorisation,2 salti appel 2 pieds liés directement ou indirectement,elements,2,,oui,sol-66-p5-182,P5,En arrière,Salto facial. Renversement avant libre
@@ -951,10 +915,6 @@ Sol,valorisation,2 salti liés dont 1 P5 (min.),elements,2,,oui,sol-65-p7-185,P7
 Sol,valorisation,2 salti liés dont 1 P5 (min.),elements,2,,oui,sol-65-p7-188,P7,En arrière,Salto arrière avec 2/1 tours ou plus
 Sol,valorisation,2 salti liés dont 1 P5 (min.),elements,2,,oui,sol-65-p7-189,P7,En arrière,Double salto arrière carpé
 Sol,valorisation,2 salti liés dont 1 P5 (min.),elements,2,,oui,sol-65-p7-80,P7,En avant,Double salto avant ou avec demi-tour ou +
-Sol,valorisation,2 salti liés dont 1 P5 (min.),elements,2,,oui,sol-65-nomade-181,NOMADE,,"Twist. Appel en arrière avec 1/2 tour (180°) et salto avant, réception libre"
-Sol,valorisation,2 salti liés dont 1 P5 (min.),elements,2,,oui,sol-65-nomade-64,NOMADE,,Salto latéral jambes groupées écartées
-Sol,valorisation,2 salti liés dont 1 P5 (min.),elements,2,,oui,sol-65-nomade-66,NOMADE,,Salto latéral jambes tendues écartées
-Sol,valorisation,2 salti liés dont 1 P5 (min.),elements,2,,oui,sol-65-nomade-70,NOMADE,,Saut en arrière avec 1/2 tour et salto avant tendu
 Sol,valorisation,2 salti liés dont 1 P5 (min.),elements,2,,oui,sol-66-p5-175,P5,En arrière,Salto tempo. Renversement arrière libre
 Sol,valorisation,2 salti liés dont 1 P5 (min.),elements,2,,oui,sol-66-p5-177,P5,En avant,Salto costal. Renversement latéral libre
 Sol,valorisation,2 salti liés dont 1 P5 (min.),elements,2,,oui,sol-66-p5-182,P5,En arrière,Salto facial. Renversement avant libre
@@ -1006,7 +966,6 @@ Barres asymétriques,valorisation,1 élément des arches Balancés (hors sortie)
 Barres asymétriques,valorisation,1 élément des arches Balancés (hors sortie),elements,1,,,barres-asymetriques-52-p7-130,P7,,Grand tour arrière
 Barres asymétriques,valorisation,1 élément des arches Balancés (hors sortie),elements,1,,,barres-asymetriques-52-p7-142,P7,,"Shoushounova à l’ATR. Départ libre (pieds/mains, filer ou suspension), élan par-dessous BS avec 1/2 tour (180°) et envol par-dessus BI à l’ATR BI"
 Barres asymétriques,valorisation,1 élément des arches Balancés (hors sortie),elements,1,,,barres-asymetriques-52-p7-143,P7,,Gienger. Elancer en avant et salto arrière carpé ou tendu avec 1/2 tour
-Barres asymétriques,valorisation,1 élément des arches Balancés (hors sortie),elements,1,,,barres-asymetriques-52-nomade-22,NOMADE,,Franchissement écart. Saut écart par impulsion des mains par-dessus BI à la suspension BS
 Barres asymétriques,valorisation,1 élément des arches Balancés (hors sortie),elements,1,,,barres-asymetriques-53-pre-requis-13,PRÉ-REQUIS,,Balancés arrière BI jambes fléchies
 Barres asymétriques,valorisation,1 élément des arches Balancés (hors sortie),elements,1,,,barres-asymetriques-53-p1-12-new,P1,,Courbe arrière statique
 Barres asymétriques,valorisation,1 élément des arches Balancés (hors sortie),elements,1,,,barres-asymetriques-53-p2-116,P2,,Balancé arrière
@@ -1019,7 +978,6 @@ Barres asymétriques,valorisation,1 élément des arches Balancés (hors sortie)
 Barres asymétriques,valorisation,1 élément des arches Balancés (hors sortie),elements,1,,,barres-asymetriques-53-p7-139,P7,,Retrait à l’ATR. De la suspension passer écarté avec envol en arrière par-dessus BI à l’ATR BI
 Barres asymétriques,valorisation,1 élément des arches Balancés (hors sortie),elements,1,,,barres-asymetriques-53-p7-144,P7,,"Jaeger – Elancer en arrière et salto avant groupé, carpé, tendu ou écart à la suspension"
 Barres asymétriques,valorisation,1 élément des arches Balancés (hors sortie),elements,1,,,barres-asymetriques-53-p7-58,P7,,Grand rétablissement passement filé à l’ATR
-Barres asymétriques,valorisation,1 élément des arches Balancés (hors sortie),elements,1,,,barres-asymetriques-53-nomade-161,NOMADE,,"Salto avant groupé, carpé ou tendu ou avec 1/2 tour"
 Barres asymétriques,valorisation,1 éléments de l’arche des élans,elements,1,,,barres-asymetriques-55-pre-requis-145,PRÉ-REQUIS,,"Sortie par repoussé. De l’appui facial BI, élancer les jambes"
 Barres asymétriques,valorisation,1 éléments de l’arche des élans,elements,1,,,barres-asymetriques-55-p1-70,P1,,Prise d’élan corps aligné au-dessus de l’horizontale
 Barres asymétriques,valorisation,1 éléments de l’arche des élans,elements,1,,,barres-asymetriques-55-p2-68,P2,,"De l’appui facial, pose des pieds jambes groupées"
@@ -1029,8 +987,6 @@ Barres asymétriques,valorisation,1 éléments de l’arche des élans,elements,
 Barres asymétriques,valorisation,1 éléments de l’arche des élans,elements,1,,,barres-asymetriques-55-p6-27,P6,,Saut poisson jambes serrées par-dessus BI avec impulsion des mains à la suspensions BS
 Barres asymétriques,valorisation,1 éléments de l’arche des élans,elements,1,,,barres-asymetriques-55-p6-79,P6,,Elan en arrière à l’ATR avec jambes écartées (corps carpé) avec 1/2 tour
 Barres asymétriques,valorisation,1 éléments de l’arche des élans,elements,1,,,barres-asymetriques-55-p6-82,P6,,Elan en arrière à l’ATR et 1/2 tour (180°) minimum
-Barres asymétriques,valorisation,1 éléments de l’arche des élans,elements,1,,,barres-asymetriques-55-nomade-62,NOMADE,,"De l’appui facial BI ou BS, passage d’1 jambe latéralement par coupé pour arriver"
-Barres asymétriques,valorisation,1 éléments de l’arche des élans,elements,1,,,barres-asymetriques-55-nomade-64,NOMADE,,"Du siège latéral écarté BI ou BS, dégager la jambe par-dessus la barre pour arriver à l’appui facial"
 Barres asymétriques,valorisation,1 élément de l’arche venir à l’appui,elements,1,,,barres-asymetriques-54-pre-requis-1-new,PRÉ-REQUIS,,Appui dynamique
 Barres asymétriques,valorisation,1 élément de l’arche venir à l’appui,elements,1,,,barres-asymetriques-54-p1-1bis-new,P1,,Sauter à l’appui
 Barres asymétriques,valorisation,1 élément de l’arche venir à l’appui,elements,1,,,barres-asymetriques-54-p2-2-new,P2,,Balancé de bascule
@@ -1042,10 +998,6 @@ Barres asymétriques,valorisation,1 élément de l’arche venir à l’appui,el
 Barres asymétriques,valorisation,1 élément de l’arche venir à l’appui,elements,1,,,barres-asymetriques-54-p5-25,P5,,"1/2 tour (180°) bascule. Mains sur BI, balancé avant, 1/2 tour (180°) et bascule"
 Barres asymétriques,valorisation,1 élément de l’arche venir à l’appui,elements,1,,,barres-asymetriques-54-p5-51,P5,,Bascule faciale de l’appui libre
 Barres asymétriques,valorisation,1 élément de l’arche venir à l’appui,elements,1,,,barres-asymetriques-54-p6-53,P6,,"De l’appui facial, pose de pieds puis 3/4 de tour (270°) circulaire groupé, carpé ou écarté en avant BI"
-Barres asymétriques,valorisation,1 élément de l’arche venir à l’appui,elements,1,,,barres-asymetriques-54-nomade-21,NOMADE,,1/2 tour bascule
-Barres asymétriques,valorisation,1 élément de l’arche venir à l’appui,elements,1,,,barres-asymetriques-54-nomade-28,NOMADE,,Saut bascule
-Barres asymétriques,valorisation,1 élément de l’arche venir à l’appui,elements,1,,,barres-asymetriques-54-nomade-40,NOMADE,,Oscillation 1 jambe du siège
-Barres asymétriques,valorisation,1 élément de l’arche venir à l’appui,elements,1,,,barres-asymetriques-54-nomade-9,NOMADE,,Entré en oscillation 1 jambe
 Barres asymétriques,valorisation,Enchainement de 2 balancers (av. et arr) aide possible au démarrage du bal. av. (hors sortie),elements,2,,oui,barres-asymetriques-52-pre-requis-5-new,PRÉ-REQUIS,,Balancés avant BI jambes fléchies
 Barres asymétriques,valorisation,Enchainement de 2 balancers (av. et arr) aide possible au démarrage du bal. av. (hors sortie),elements,2,,oui,barres-asymetriques-52-pre-requis-7-new,PRÉ-REQUIS,,Balancé avant avec placement en position arrière par l’entraineur
 Barres asymétriques,valorisation,Enchainement de 2 balancers (av. et arr) aide possible au démarrage du bal. av. (hors sortie),elements,2,,oui,barres-asymetriques-52-p1-6-new,P1,,Courbe avant statique
@@ -1060,7 +1012,6 @@ Barres asymétriques,valorisation,Enchainement de 2 balancers (av. et arr) aide 
 Barres asymétriques,valorisation,Enchainement de 2 balancers (av. et arr) aide possible au démarrage du bal. av. (hors sortie),elements,2,,oui,barres-asymetriques-52-p7-130,P7,,Grand tour arrière
 Barres asymétriques,valorisation,Enchainement de 2 balancers (av. et arr) aide possible au démarrage du bal. av. (hors sortie),elements,2,,oui,barres-asymetriques-52-p7-142,P7,,"Shoushounova à l’ATR. Départ libre (pieds/mains, filer ou suspension), élan par-dessous BS avec 1/2 tour (180°) et envol par-dessus BI à l’ATR BI"
 Barres asymétriques,valorisation,Enchainement de 2 balancers (av. et arr) aide possible au démarrage du bal. av. (hors sortie),elements,2,,oui,barres-asymetriques-52-p7-143,P7,,Gienger. Elancer en avant et salto arrière carpé ou tendu avec 1/2 tour
-Barres asymétriques,valorisation,Enchainement de 2 balancers (av. et arr) aide possible au démarrage du bal. av. (hors sortie),elements,2,,oui,barres-asymetriques-52-nomade-22,NOMADE,,Franchissement écart. Saut écart par impulsion des mains par-dessus BI à la suspension BS
 Barres asymétriques,valorisation,Enchainement de 2 balancers (av. et arr) aide possible au démarrage du bal. av. (hors sortie),elements,2,,oui,barres-asymetriques-53-pre-requis-13,PRÉ-REQUIS,,Balancés arrière BI jambes fléchies
 Barres asymétriques,valorisation,Enchainement de 2 balancers (av. et arr) aide possible au démarrage du bal. av. (hors sortie),elements,2,,oui,barres-asymetriques-53-p1-12-new,P1,,Courbe arrière statique
 Barres asymétriques,valorisation,Enchainement de 2 balancers (av. et arr) aide possible au démarrage du bal. av. (hors sortie),elements,2,,oui,barres-asymetriques-53-p2-116,P2,,Balancé arrière
@@ -1073,9 +1024,7 @@ Barres asymétriques,valorisation,Enchainement de 2 balancers (av. et arr) aide 
 Barres asymétriques,valorisation,Enchainement de 2 balancers (av. et arr) aide possible au démarrage du bal. av. (hors sortie),elements,2,,oui,barres-asymetriques-53-p7-139,P7,,Retrait à l’ATR. De la suspension passer écarté avec envol en arrière par-dessus BI à l’ATR BI
 Barres asymétriques,valorisation,Enchainement de 2 balancers (av. et arr) aide possible au démarrage du bal. av. (hors sortie),elements,2,,oui,barres-asymetriques-53-p7-144,P7,,"Jaeger – Elancer en arrière et salto avant groupé, carpé, tendu ou écart à la suspension"
 Barres asymétriques,valorisation,Enchainement de 2 balancers (av. et arr) aide possible au démarrage du bal. av. (hors sortie),elements,2,,oui,barres-asymetriques-53-p7-58,P7,,Grand rétablissement passement filé à l’ATR
-Barres asymétriques,valorisation,Enchainement de 2 balancers (av. et arr) aide possible au démarrage du bal. av. (hors sortie),elements,2,,oui,barres-asymetriques-53-nomade-161,NOMADE,,"Salto avant groupé, carpé ou tendu ou avec 1/2 tour"
 Barres asymétriques,valorisation,1 sauter à l’appui,elements,1,,oui,barres-asymetriques-54-p1-1bis-new,P1,,Sauter à l’appui
-Barres asymétriques,valorisation,1 sauter à l’appui,elements,1,,oui,barres-asymetriques-54-nomade-28,NOMADE,,Saut bascule
 Barres asymétriques,valorisation,1 élément de l’arche des élans,elements,1,,,barres-asymetriques-55-pre-requis-145,PRÉ-REQUIS,,"Sortie par repoussé. De l’appui facial BI, élancer les jambes"
 Barres asymétriques,valorisation,1 élément de l’arche des élans,elements,1,,,barres-asymetriques-55-p1-70,P1,,Prise d’élan corps aligné au-dessus de l’horizontale
 Barres asymétriques,valorisation,1 élément de l’arche des élans,elements,1,,,barres-asymetriques-55-p2-68,P2,,"De l’appui facial, pose des pieds jambes groupées"
@@ -1085,8 +1034,6 @@ Barres asymétriques,valorisation,1 élément de l’arche des élans,elements,1
 Barres asymétriques,valorisation,1 élément de l’arche des élans,elements,1,,,barres-asymetriques-55-p6-27,P6,,Saut poisson jambes serrées par-dessus BI avec impulsion des mains à la suspensions BS
 Barres asymétriques,valorisation,1 élément de l’arche des élans,elements,1,,,barres-asymetriques-55-p6-79,P6,,Elan en arrière à l’ATR avec jambes écartées (corps carpé) avec 1/2 tour
 Barres asymétriques,valorisation,1 élément de l’arche des élans,elements,1,,,barres-asymetriques-55-p6-82,P6,,Elan en arrière à l’ATR et 1/2 tour (180°) minimum
-Barres asymétriques,valorisation,1 élément de l’arche des élans,elements,1,,,barres-asymetriques-55-nomade-62,NOMADE,,"De l’appui facial BI ou BS, passage d’1 jambe latéralement par coupé pour arriver"
-Barres asymétriques,valorisation,1 élément de l’arche des élans,elements,1,,,barres-asymetriques-55-nomade-64,NOMADE,,"Du siège latéral écarté BI ou BS, dégager la jambe par-dessus la barre pour arriver à l’appui facial"
 Barres asymétriques,exigence,1 élément des arches venir à l’appui,elements,1,,,barres-asymetriques-54-pre-requis-1-new,PRÉ-REQUIS,,Appui dynamique
 Barres asymétriques,exigence,1 élément des arches venir à l’appui,elements,1,,,barres-asymetriques-54-p1-1bis-new,P1,,Sauter à l’appui
 Barres asymétriques,exigence,1 élément des arches venir à l’appui,elements,1,,,barres-asymetriques-54-p2-2-new,P2,,Balancé de bascule
@@ -1116,7 +1063,6 @@ Barres asymétriques,valorisation,Enchaînement de deux balancers (av et ar ou i
 Barres asymétriques,valorisation,Enchaînement de deux balancers (av et ar ou inversement x2) (hors sortie),elements,2,,oui,barres-asymetriques-52-p7-130,P7,,Grand tour arrière
 Barres asymétriques,valorisation,Enchaînement de deux balancers (av et ar ou inversement x2) (hors sortie),elements,2,,oui,barres-asymetriques-52-p7-142,P7,,"Shoushounova à l’ATR. Départ libre (pieds/mains, filer ou suspension), élan par-dessous BS avec 1/2 tour (180°) et envol par-dessus BI à l’ATR BI"
 Barres asymétriques,valorisation,Enchaînement de deux balancers (av et ar ou inversement x2) (hors sortie),elements,2,,oui,barres-asymetriques-52-p7-143,P7,,Gienger. Elancer en avant et salto arrière carpé ou tendu avec 1/2 tour
-Barres asymétriques,valorisation,Enchaînement de deux balancers (av et ar ou inversement x2) (hors sortie),elements,2,,oui,barres-asymetriques-52-nomade-22,NOMADE,,Franchissement écart. Saut écart par impulsion des mains par-dessus BI à la suspension BS
 Barres asymétriques,valorisation,Enchaînement de deux balancers (av et ar ou inversement x2) (hors sortie),elements,2,,oui,barres-asymetriques-53-pre-requis-13,PRÉ-REQUIS,,Balancés arrière BI jambes fléchies
 Barres asymétriques,valorisation,Enchaînement de deux balancers (av et ar ou inversement x2) (hors sortie),elements,2,,oui,barres-asymetriques-53-p1-12-new,P1,,Courbe arrière statique
 Barres asymétriques,valorisation,Enchaînement de deux balancers (av et ar ou inversement x2) (hors sortie),elements,2,,oui,barres-asymetriques-53-p2-116,P2,,Balancé arrière
@@ -1129,7 +1075,6 @@ Barres asymétriques,valorisation,Enchaînement de deux balancers (av et ar ou i
 Barres asymétriques,valorisation,Enchaînement de deux balancers (av et ar ou inversement x2) (hors sortie),elements,2,,oui,barres-asymetriques-53-p7-139,P7,,Retrait à l’ATR. De la suspension passer écarté avec envol en arrière par-dessus BI à l’ATR BI
 Barres asymétriques,valorisation,Enchaînement de deux balancers (av et ar ou inversement x2) (hors sortie),elements,2,,oui,barres-asymetriques-53-p7-144,P7,,"Jaeger – Elancer en arrière et salto avant groupé, carpé, tendu ou écart à la suspension"
 Barres asymétriques,valorisation,Enchaînement de deux balancers (av et ar ou inversement x2) (hors sortie),elements,2,,oui,barres-asymetriques-53-p7-58,P7,,Grand rétablissement passement filé à l’ATR
-Barres asymétriques,valorisation,Enchaînement de deux balancers (av et ar ou inversement x2) (hors sortie),elements,2,,oui,barres-asymetriques-53-nomade-161,NOMADE,,"Salto avant groupé, carpé ou tendu ou avec 1/2 tour"
 Barres asymétriques,valorisation,1 élément P2 (min.),elements,1,,,barres-asymetriques-52-p2-115,P2,,Du balancé avant 1/2 tour au dessus de 45°
 Barres asymétriques,valorisation,1 élément P2 (min.),elements,1,,,barres-asymetriques-52-p2-117,P2,,Balancé avant à l’horizontale
 Barres asymétriques,valorisation,1 élément P2 (min.),elements,1,,,barres-asymetriques-52-p3-154,P3,Sorties,Elan vers l’avant et salto arrière groupé ou carpé
@@ -1189,7 +1134,6 @@ Barres asymétriques,valorisation,1 prise d’élan tour d’appui arrière,elem
 Barres asymétriques,valorisation,1 prise d’élan tour d’appui arrière,elements,1,,oui,barres-asymetriques-56-p1-91,P1,,Tour d’appui facial en arrière
 Barres asymétriques,valorisation,1 prise d’élan tour d’appui arrière,elements,1,,oui,barres-asymetriques-56-p4-100,P4,,Tour d’appui arrière libre à l’appui libre au-dessus de l’horizontale
 Barres asymétriques,valorisation,1 prise d’élan tour d’appui arrière,elements,1,,oui,barres-asymetriques-56-p6-103,P6,,Passement filé. Tour d’appui arrière libre à l’ATR
-Barres asymétriques,valorisation,1 prise d’élan tour d’appui arrière,elements,1,,oui,barres-asymetriques-56-nomade-94,NOMADE,,Tour d’appui facial en avant BI ou BS à l’appui jambes tendues
 Barres asymétriques,valorisation,1 sortie amenée du balancé arrière,elements,1,,oui,barres-asymetriques-52-p3-154,P3,Sorties,Elan vers l’avant et salto arrière groupé ou carpé
 Barres asymétriques,valorisation,1 sortie amenée du balancé arrière,elements,1,,oui,barres-asymetriques-52-p4-157,P4,Sorties,Elan vers l’avant et salto arrière tendu
 Barres asymétriques,valorisation,1 sortie amenée du balancé arrière,elements,1,,oui,barres-asymetriques-52-p5-157-plus,P5,Sorties,Sortie salto arrière tendu depuis le grand tour
@@ -1278,8 +1222,6 @@ Barres asymétriques,valorisation,Bascule prise d’élan à l’horizontale,ele
 Barres asymétriques,valorisation,Bascule prise d’élan à l’horizontale,elements,1,,oui,barres-asymetriques-54-p5-23,P5,,Bascule coupée écart à la suspension même barre
 Barres asymétriques,valorisation,Bascule prise d’élan à l’horizontale,elements,1,,oui,barres-asymetriques-54-p5-25,P5,,"1/2 tour (180°) bascule. Mains sur BI, balancé avant, 1/2 tour (180°) et bascule"
 Barres asymétriques,valorisation,Bascule prise d’élan à l’horizontale,elements,1,,oui,barres-asymetriques-54-p5-51,P5,,Bascule faciale de l’appui libre
-Barres asymétriques,valorisation,Bascule prise d’élan à l’horizontale,elements,1,,oui,barres-asymetriques-54-nomade-21,NOMADE,,1/2 tour bascule
-Barres asymétriques,valorisation,Bascule prise d’élan à l’horizontale,elements,1,,oui,barres-asymetriques-54-nomade-28,NOMADE,,Saut bascule
 Barres asymétriques,valorisation,1 sortie P3 (min.),elements,1,,,barres-asymetriques-52-p3-154,P3,Sorties,Elan vers l’avant et salto arrière groupé ou carpé
 Barres asymétriques,valorisation,1 sortie P3 (min.),elements,1,,,barres-asymetriques-52-p4-157,P4,Sorties,Elan vers l’avant et salto arrière tendu
 Barres asymétriques,valorisation,1 sortie P3 (min.),elements,1,,,barres-asymetriques-52-p5-157-plus,P5,Sorties,Sortie salto arrière tendu depuis le grand tour
@@ -1304,7 +1246,6 @@ Barres asymétriques,valorisation,1 élément en balancé av ou arr (hors sortie
 Barres asymétriques,valorisation,1 élément en balancé av ou arr (hors sortie),elements,1,,,barres-asymetriques-52-p7-130,P7,,Grand tour arrière
 Barres asymétriques,valorisation,1 élément en balancé av ou arr (hors sortie),elements,1,,,barres-asymetriques-52-p7-142,P7,,"Shoushounova à l’ATR. Départ libre (pieds/mains, filer ou suspension), élan par-dessous BS avec 1/2 tour (180°) et envol par-dessus BI à l’ATR BI"
 Barres asymétriques,valorisation,1 élément en balancé av ou arr (hors sortie),elements,1,,,barres-asymetriques-52-p7-143,P7,,Gienger. Elancer en avant et salto arrière carpé ou tendu avec 1/2 tour
-Barres asymétriques,valorisation,1 élément en balancé av ou arr (hors sortie),elements,1,,,barres-asymetriques-52-nomade-22,NOMADE,,Franchissement écart. Saut écart par impulsion des mains par-dessus BI à la suspension BS
 Barres asymétriques,valorisation,1 élément en balancé av ou arr (hors sortie),elements,1,,,barres-asymetriques-53-pre-requis-13,PRÉ-REQUIS,,Balancés arrière BI jambes fléchies
 Barres asymétriques,valorisation,1 élément en balancé av ou arr (hors sortie),elements,1,,,barres-asymetriques-53-p1-12-new,P1,,Courbe arrière statique
 Barres asymétriques,valorisation,1 élément en balancé av ou arr (hors sortie),elements,1,,,barres-asymetriques-53-p2-116,P2,,Balancé arrière
@@ -1317,7 +1258,6 @@ Barres asymétriques,valorisation,1 élément en balancé av ou arr (hors sortie
 Barres asymétriques,valorisation,1 élément en balancé av ou arr (hors sortie),elements,1,,,barres-asymetriques-53-p7-139,P7,,Retrait à l’ATR. De la suspension passer écarté avec envol en arrière par-dessus BI à l’ATR BI
 Barres asymétriques,valorisation,1 élément en balancé av ou arr (hors sortie),elements,1,,,barres-asymetriques-53-p7-144,P7,,"Jaeger – Elancer en arrière et salto avant groupé, carpé, tendu ou écart à la suspension"
 Barres asymétriques,valorisation,1 élément en balancé av ou arr (hors sortie),elements,1,,,barres-asymetriques-53-p7-58,P7,,Grand rétablissement passement filé à l’ATR
-Barres asymétriques,valorisation,1 élément en balancé av ou arr (hors sortie),elements,1,,,barres-asymetriques-53-nomade-161,NOMADE,,"Salto avant groupé, carpé ou tendu ou avec 1/2 tour"
 Barres asymétriques,valorisation,2 élements P3 (min.),elements,2,,,barres-asymetriques-52-p3-154,P3,Sorties,Elan vers l’avant et salto arrière groupé ou carpé
 Barres asymétriques,valorisation,2 élements P3 (min.),elements,2,,,barres-asymetriques-52-p3-44,P3,,Grande culbute
 Barres asymétriques,valorisation,2 élements P3 (min.),elements,2,,,barres-asymetriques-52-p4-157,P4,Sorties,Elan vers l’avant et salto arrière tendu
@@ -1499,8 +1439,6 @@ Barres asymétriques,valorisation,Bascule avec un élément fini à l’ATR,elem
 Barres asymétriques,valorisation,Bascule avec un élément fini à l’ATR,elements,1,,oui,barres-asymetriques-54-p5-23,P5,,Bascule coupée écart à la suspension même barre
 Barres asymétriques,valorisation,Bascule avec un élément fini à l’ATR,elements,1,,oui,barres-asymetriques-54-p5-25,P5,,"1/2 tour (180°) bascule. Mains sur BI, balancé avant, 1/2 tour (180°) et bascule"
 Barres asymétriques,valorisation,Bascule avec un élément fini à l’ATR,elements,1,,oui,barres-asymetriques-54-p5-51,P5,,Bascule faciale de l’appui libre
-Barres asymétriques,valorisation,Bascule avec un élément fini à l’ATR,elements,1,,oui,barres-asymetriques-54-nomade-21,NOMADE,,1/2 tour bascule
-Barres asymétriques,valorisation,Bascule avec un élément fini à l’ATR,elements,1,,oui,barres-asymetriques-54-nomade-28,NOMADE,,Saut bascule
 Barres asymétriques,valorisation,1 sortie P5 (min.),elements,1,,,barres-asymetriques-52-p5-157-plus,P5,Sorties,Sortie salto arrière tendu depuis le grand tour
 Barres asymétriques,valorisation,1 sortie P5 (min.),elements,1,,,barres-asymetriques-52-p6-163,P6,Sorties,Salto arrière avec 1 tour (360°)
 Barres asymétriques,valorisation,1 sortie P5 (min.),elements,1,,,barres-asymetriques-52-p7-166,P7,Sorties,"Double salto arrière groupé, carpé ou tendu"
@@ -1654,8 +1592,6 @@ Poutre,valorisation,1 élément de l’arche des pivots,elements,1,,,poutre-58-p
 Poutre,valorisation,1 élément de l’arche des pivots,elements,1,,,poutre-58-p5-85,P5,,"Pirouette 1 tour 1/2 (540°) sur 1 jambe et sur 1/2 pointes, position de la jambe libre"
 Poutre,valorisation,1 élément de l’arche des pivots,elements,1,,,poutre-58-p5-91,P5,,Pirouette 1/1 tour accroupie
 Poutre,valorisation,1 élément de l’arche des pivots,elements,1,,,poutre-58-p6-88,P6,,"Pirouette 2 tours (720°) sur 1 jambe et sur 1/2 pointes, position de la jambe libre"
-Poutre,valorisation,1 élément de l’arche des pivots,elements,1,,,poutre-58-nomade-90,NOMADE,,"Pirouette 1/2 tour (180°) sur 1 jambe et sur 1/2 pointes, pied dans la main (écart de jambes à 180°)"
-Poutre,valorisation,1 élément de l’arche des pivots,elements,1,,,poutre-58-nomade-94,NOMADE,,"Pirouette 1/1 tour (360°) sur 1 jambe et sur 1/2 pointes, pied dans la main (écart de jambes à 180°)"
 Poutre,valorisation,1 cabriole,elements,1,,,poutre-62-p1-25-new,P1,,Cabriole jambe libre fléchie
 Poutre,valorisation,1 cabriole,elements,1,,,poutre-62-p2-28-new,P2,,Cabriole
 Poutre,valorisation,ATR 1 jambe ou placement du dos,elements,1,,,poutre-57-p1-1-new,P1,,Départ accroupi Placement du dos jambes fléchies
@@ -1665,11 +1601,8 @@ Poutre,valorisation,ATR 1 jambe ou placement du dos,elements,1,,,poutre-58-p3-40
 Poutre,valorisation,ATR 1 jambe ou placement du dos,elements,1,,,poutre-58-p4-82,P4,,"Pirouette 1 tour (360°) sur 1 jambe et sur 1/2 pointes, position de la jambe libre"
 Poutre,valorisation,ATR 1 jambe ou placement du dos,elements,1,,,poutre-58-p5-85,P5,,"Pirouette 1 tour 1/2 (540°) sur 1 jambe et sur 1/2 pointes, position de la jambe libre"
 Poutre,valorisation,ATR 1 jambe ou placement du dos,elements,1,,,poutre-58-p6-88,P6,,"Pirouette 2 tours (720°) sur 1 jambe et sur 1/2 pointes, position de la jambe libre"
-Poutre,valorisation,ATR 1 jambe ou placement du dos,elements,1,,,poutre-58-nomade-90,NOMADE,,"Pirouette 1/2 tour (180°) sur 1 jambe et sur 1/2 pointes, pied dans la main (écart de jambes à 180°)"
-Poutre,valorisation,ATR 1 jambe ou placement du dos,elements,1,,,poutre-58-nomade-94,NOMADE,,"Pirouette 1/1 tour (360°) sur 1 jambe et sur 1/2 pointes, pied dans la main (écart de jambes à 180°)"
 Poutre,valorisation,ATR 1 jambe ou placement du dos,elements,1,,,poutre-60-p1-146,P1,,"De la fente avant, venir à l’ATR 1 jambe à la verticale, retour libre"
 Poutre,valorisation,ATR 1 jambe ou placement du dos,elements,1,,,poutre-62-p3-54,P3,,Saut de cosaque appel d’1 pied Saut groupé 1 jambe tendue à l’horizontale en avant
-Poutre,valorisation,ATR 1 jambe ou placement du dos,elements,1,,,poutre-62-nomade-54,NOMADE,,Saut de Cosaque appel d’1 pied Saut groupé 1 jambe tendue à l’horizontale en avant
 Poutre,valorisation,ATR 1 jambe ou placement du dos,elements,1,,,poutre-63-p4-57,P4,,Saut de cosaque appel des 2 pieds Saut groupé 1 jambe tendue à l’horizontale
 Poutre,valorisation,ATR 1 jambe ou placement du dos,elements,1,,,poutre-63-p6-64,P6,,Saut de cosaque 1/2 tour appel des 2 pieds Saut groupé 1 jambe tendue à l’horizontale en avant
 Poutre,valorisation,ATR 1 jambe ou placement du dos,elements,1,,,poutre-64-p1-1,P1,,"De la station faciale, sauter à l’appui tendu et sans arrêt, passer 1 jambe tendue latéralement et par 1/4 de tour (90°)"
@@ -1682,8 +1615,6 @@ Poutre,valorisation,1 demi pivot sur 1 jambe,elements,1,,oui,poutre-58-p4-82,P4,
 Poutre,valorisation,1 demi pivot sur 1 jambe,elements,1,,oui,poutre-58-p5-85,P5,,"Pirouette 1 tour 1/2 (540°) sur 1 jambe et sur 1/2 pointes, position de la jambe libre"
 Poutre,valorisation,1 demi pivot sur 1 jambe,elements,1,,oui,poutre-58-p5-91,P5,,Pirouette 1/1 tour accroupie
 Poutre,valorisation,1 demi pivot sur 1 jambe,elements,1,,oui,poutre-58-p6-88,P6,,"Pirouette 2 tours (720°) sur 1 jambe et sur 1/2 pointes, position de la jambe libre"
-Poutre,valorisation,1 demi pivot sur 1 jambe,elements,1,,oui,poutre-58-nomade-90,NOMADE,,"Pirouette 1/2 tour (180°) sur 1 jambe et sur 1/2 pointes, pied dans la main (écart de jambes à 180°)"
-Poutre,valorisation,1 demi pivot sur 1 jambe,elements,1,,oui,poutre-58-nomade-94,NOMADE,,"Pirouette 1/1 tour (360°) sur 1 jambe et sur 1/2 pointes, pied dans la main (écart de jambes à 180°)"
 Poutre,valorisation,1 saut appel 2 pieds,elements,1,,,poutre-63-pre-requis-33-new,PRÉ-REQUIS,,Maintien sur 2 pieds sur 1/2 pointes
 Poutre,valorisation,1 saut appel 2 pieds,elements,1,,,poutre-63-p1-38,P1,,"Soubresaut sans ou avec changement de pieds, réception 2 pieds"
 Poutre,valorisation,1 saut appel 2 pieds,elements,1,,,poutre-63-p2-44,P2,,Saut groupé appel des 2 pieds
@@ -1699,7 +1630,6 @@ Poutre,valorisation,1 saut appel 2 pieds,elements,1,,,poutre-63-p6-63,P6,,Saut a
 Poutre,valorisation,1 saut appel 2 pieds,elements,1,,,poutre-63-p6-64,P6,,Saut de cosaque 1/2 tour appel des 2 pieds Saut groupé 1 jambe tendue à l’horizontale en avant
 Poutre,valorisation,1 saut appel 2 pieds,elements,1,,,poutre-63-p6-66bis,P6,,Saut carpé serré (angle du corps 90°)
 Poutre,valorisation,1 saut appel 2 pieds,elements,1,,,poutre-63-p6-68,P6,,Saut avec 1 tour en l’air (360°) appel des 2 pieds
-Poutre,valorisation,1 saut appel 2 pieds,elements,1,,,poutre-63-nomade-37,NOMADE,,"Appel 2 pieds, saut en progression avant, réception 2 pieds"
 Poutre,valorisation,1 ATR P2,elements,1,,,poutre-57-p2-150,P2,ATR,ATR passagé
 Poutre,exigence,2 acros en poutre haute,elements,2,,,poutre-59-pre-requis-124,PRÉ-REQUIS,,"Départ libre, roulade avant arrivée au siège écart"
 Poutre,exigence,2 acros en poutre haute,elements,2,,,poutre-59-p1-5-new,P1,,Saut droit
@@ -2358,10 +2288,6 @@ Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-59-p7
 Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-59-p7-214bis,P7,Vers l’avant,Salto avant corps tendu appel des 2 pieds avec 1 tour (360°)
 Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-59-p7-217,P7,Vers l’arrière,Salto arrière avec 3/2 tour ou+
 Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-59-p7-218,P7,Vers l’arrière,Double salto arrière
-Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-59-nomade-127,NOMADE,,"Départ libre, roulade avant arrivée sur 1 ou 2 pieds"
-Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-59-nomade-130,NOMADE,,"Départ libre, roulade avant sans les mains arrivée sur 1 ou 2 pieds"
-Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-59-nomade-205,NOMADE,,"Salto Auerbach groupé, carpé ou tendu sur le côté de la poutre à la station debout"
-Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-59-nomade-213,NOMADE,,Salto Auerbach groupé au bout de la poutre à la station debout
 Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-60-p1-146,P1,,"De la fente avant, venir à l’ATR 1 jambe à la verticale, retour libre"
 Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-60-p3-150-plus,P3,Vers l’avant,ATR passagé
 Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-60-p3-152,P3,Vers l’avant,Roue : renversement latéral sans envol arrivée 1 ou 2 pieds
@@ -2388,8 +2314,6 @@ Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-60-p7
 Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-60-p7-184,P7,Vers l’avant,"Salto costal, renversement latéral libre"
 Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-60-p7-185,P7,Vers l’avant,"Salto facial, renversement avant libre"
 Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-60-p7-190,P7,Vers l’avant,Salto japonais. Salto latéral groupé ou carpé appel 1 pied en latéral et réception
-Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-60-nomade-158,NOMADE,,Renversement latéral avec envol avant ou après la pose des mains
-Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-60-nomade-167,NOMADE,,Flic-flac poisson
 Poutre,valorisation,1 sortie avec liaison acro dont un élément P4 (min.),elements,1,,oui,poutre-59-p3-199,P3,Vers l’arrière,Salto arrière groupé
 Poutre,valorisation,1 sortie avec liaison acro dont un élément P4 (min.),elements,1,,oui,poutre-59-p3-201,P3,Vers l’avant,Salto avant corps groupé ou carpé à la station debout appel 1 ou 2 pieds
 Poutre,valorisation,1 sortie avec liaison acro dont un élément P4 (min.),elements,1,,oui,poutre-59-p4-203,P4,Vers l’avant,Salto avant avec demi-tour à la station debout (appel 2 pieds)
@@ -2443,8 +2367,6 @@ Poutre,valorisation,1 LA 2 éléments dont 1 salto sur poutre,elements,1,,oui,po
 Poutre,valorisation,1 LA 2 éléments dont 1 salto sur poutre,elements,1,,oui,poutre-59-p7-214bis,P7,Vers l’avant,Salto avant corps tendu appel des 2 pieds avec 1 tour (360°)
 Poutre,valorisation,1 LA 2 éléments dont 1 salto sur poutre,elements,1,,oui,poutre-59-p7-217,P7,Vers l’arrière,Salto arrière avec 3/2 tour ou+
 Poutre,valorisation,1 LA 2 éléments dont 1 salto sur poutre,elements,1,,oui,poutre-59-p7-218,P7,Vers l’arrière,Double salto arrière
-Poutre,valorisation,1 LA 2 éléments dont 1 salto sur poutre,elements,1,,oui,poutre-59-nomade-205,NOMADE,,"Salto Auerbach groupé, carpé ou tendu sur le côté de la poutre à la station debout"
-Poutre,valorisation,1 LA 2 éléments dont 1 salto sur poutre,elements,1,,oui,poutre-59-nomade-213,NOMADE,,Salto Auerbach groupé au bout de la poutre à la station debout
 Poutre,valorisation,1 LA 2 éléments dont 1 salto sur poutre,elements,1,,oui,poutre-60-p5-202,P5,Vers l’avant,Salto avant tendu départ 1 pied
 Poutre,valorisation,1 LA 2 éléments dont 1 salto sur poutre,elements,1,,oui,poutre-60-p6-212,P6,Vers l’avant,"Salto avant corps groupé, carpé, tendu appel 1 pied avec 1 tour"
 Poutre,valorisation,1 LA 2 éléments dont 1 salto sur poutre,elements,1,,oui,poutre-60-p7-184,P7,Vers l’avant,"Salto costal, renversement latéral libre"
@@ -3018,8 +2940,6 @@ Barres parallèles,valorisation,1 élément brachial,elements,1,,,barres-paralle
 Barres parallèles,valorisation,1 élément brachial,elements,1,,,barres-paralleles-24-p6-66,P6,,Établissement avant et Kato
 Barres parallèles,valorisation,1 élément brachial,elements,1,,,barres-paralleles-24-p6-71bis,P6,,Établissement arrière et passer les jambes écartées vers l’avant à l’appui
 Barres parallèles,valorisation,1 élément brachial,elements,1,,,barres-paralleles-24-p7-76,P7,,Établissement arrière et salto avant à l’appui
-Barres parallèles,valorisation,1 élément brachial,elements,1,,,barres-paralleles-24-nomade-49,NOMADE,,Du balancer arrière s’abaisser à l’appui brachial
-Barres parallèles,valorisation,1 élément brachial,elements,1,,,barres-paralleles-24-nomade-53,NOMADE,,"Dans la position brachial s’établir à la fermeture, bassin au-dessus des barres et ouverture dynamique"
 Barres parallèles,exigence,Passage à l’ATR tenu 2’’,elements,1,,oui,barres-paralleles-24-p5-69,P5,,Établissement arrière à l’ATR
 Barres parallèles,exigence,Passage à l’ATR tenu 2’’,elements,1,,oui,barres-paralleles-25-p6-116,P6,,Bascule d’élan et passer les jambes écartées en arrière à l’ATR
 Barres parallèles,exigence,Passage à l’ATR tenu 2’’,elements,1,,oui,barres-paralleles-25-p6-119,P6,,Etablissement en tournant en arrière à l’ATR

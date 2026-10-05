@@ -24,6 +24,11 @@ const estPlus = (element: Element) => element.numero.endsWith("+");
 const estEntree = (element: Element) =>
   element.archeNom.normalize("NFKD").replace(/[^A-Za-z]+/g, "").toUpperCase().startsWith("ENTR");
 
+/** Nomade elements sit outside the palier ladder: usable at every level (they count as
+elements, so a coach can pick them regardless of the évolution), but they never satisfy a
+valorisation — the data build keeps them out of every valorisation's element list. */
+const estNomade = (palier: string) => palier === "NOMADE";
+
 /** What the criterion counts, spelt so the number on the row means something. */
 const compteur = ({ critere, trouves }: Ligne) => {
   // A criterion that selects elements and has none is unreachable: either the apparatus
@@ -83,7 +88,12 @@ export function App() {
   const evolution = evolutions.find((e) => e.evolution === evolutionNom) ?? evolutions[0];
 
   const disponibles = useMemo(
-    () => (evolution ? elementsOf(agres).filter((e) => evolution.paliersAutorises.includes(e.palier)) : []),
+    () =>
+      evolution
+        ? elementsOf(agres).filter(
+            (e) => evolution.paliersAutorises.includes(e.palier) || estNomade(e.palier),
+          )
+        : [],
     [agres, evolution],
   );
 
@@ -133,7 +143,10 @@ export function App() {
     setEvolutionNom(suivante?.evolution ?? nom);
     setChoisis((actuels) =>
       nomAgres === agres
-        ? actuels.filter((id) => permis.has(catalog.elements.find((e) => e.id === id)!.palier))
+        ? actuels.filter((id) => {
+            const palier = catalog.elements.find((e) => e.id === id)!.palier;
+            return permis.has(palier) || estNomade(palier);
+          })
         : [],
     );
     if (nomAgres !== agres) setCoches(new Set());

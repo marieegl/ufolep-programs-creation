@@ -257,3 +257,35 @@ describe("noter", () => {
     expect(note.total).toBe(14);
   });
 });
+
+describe("éléments nomades", () => {
+  const nomades = new Set(
+    catalog.elements.filter((e) => e.palier === "NOMADE").map((e) => e.id),
+  );
+
+  it("n'entrent dans aucune liste d'éléments de valorisation", () => {
+    const fautifs = catalog.criteres
+      .filter((c) => c.genre === "valorisation")
+      .flatMap((c) => c.elements.filter((id) => nomades.has(id)).map((id) => `${c.texte} ← ${id}`));
+    expect(fautifs).toEqual([]);
+  });
+
+  it("comptent toujours comme des éléments dans des exigences", () => {
+    const retenus = catalog.criteres
+      .filter((c) => c.genre === "exigence")
+      .flatMap((c) => c.elements.filter((id) => nomades.has(id)));
+    expect(retenus.length).toBeGreaterThan(0);
+  });
+
+  it("un nomade sélectionné ne crédite aucune valorisation", () => {
+    // Poutre B3 : une entrée nomade (arche ENTRÉES) ne doit valoriser nulle part.
+    const evo = evolution("Poutre", "B3");
+    const nomade = elementsOf("Poutre").find(
+      (e) => e.palier === "NOMADE" && e.archeNom.toUpperCase().startsWith("ENTR"),
+    )!;
+    expect(nomade).toBeTruthy();
+    const note = noter(evo, { elements: [nomade.id], coches: new Set() });
+    expect(note.valorisations.every((l) => !l.elementsRetenus.includes(nomade.id))).toBe(true);
+    expect(note.pointsValorisations).toBe(0);
+  });
+});
