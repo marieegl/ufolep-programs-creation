@@ -226,6 +226,12 @@ def main(rules_path: Path, catalog_path: Path, out_path: Path) -> int:
         selected: list[dict] = []
         if kind in SELECTOR_TYPES:
             selected = [e for e in pool if any(matches(r, e) for r in group)]
+            # A nomade element sits outside the palier ladder: it counts as an element
+            # (so it stays in the exigences it matches) but it never valorises. A
+            # palier-less valorisation rule — a motif or a `familles` rule — would
+            # otherwise sweep nomades in, so drop them here rather than in every rule.
+            if genre == "valorisation":
+                selected = [e for e in selected if e["palier"] != "NOMADE"]
         evolutions = printed.pop(key, None)
         if evolutions is None:
             message = "règle sans critère correspondant dans la décomposition"

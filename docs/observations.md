@@ -9,8 +9,17 @@ The women's arches (Sol, Saut, Barres asymétriques, Poutre) were re-issued date
 **SEPT. 26** and reached their first validated state — the *EN COURS DE VALIDATION*
 watermark is gone and they are filed under *NPT - PRÊT POUR DIFFUSION*. The men's-only
 arches (Anneaux, Barres parallèles, Barre fixe) are still earlier drafts, and the four
-rulebook PDFs carry no date. Items below were re-checked against the SEPT. 26 issue;
-anything specific to the men's apparatus still reflects the earlier draft.
+rulebook PDFs carry no date. Items below were re-checked against the SEPT. 26 issue.
+
+The men's **décomposition** was then refreshed from the GAM brochure dated 25 September
+2026 (`data/pdf/gam-reglement-decompo.pdf`), re-extracted rather than hand-corrected —
+see the README for the page re-ordering it needs. Its Sol and Saut sheets were taken too,
+being the mixte ones; its Sol arches re-extract to the same 155 elements with the same
+paliers and families as `arches-sol.pdf` (only the drawing coordinates moved), and its
+Saut arches are identical, so no element CSV changed. What moved is recorded below as
+items 24-26. **Its five GAM sheets still carry the *EN COURS DE VALIDATION* watermark**
+(Sol 19, Arçons 20, Anneaux 21, Barres parallèles 22, Barre fixe 23; only Saut is clean),
+so this is a dated draft, not a validated issue.
 
 The women's **décomposition** sheets were also refreshed from the SEPT. 26 brochure
 (*Programme Technique GAF 2026-2030*). `data/csv/decompo-note.csv` was hand-corrected
@@ -37,18 +46,21 @@ is wrong. The scripts flag all of them in the `controle` column.
 
 | # | Where | Observation | How to re-check |
 | --- | --- | --- | --- |
-| 1 | `decompo-note.pdf` p.6, Arçons **C2** | One valorisation flagged `(*)` where every other évolution at that level has two, so the start score comes to **14 instead of 15**. | `controle` empty for that row |
-| 2 | `decompo-note.pdf` p.9, Barre fixe **A1** | No `CHOISIR n VALORISATIONS PARMIS LES m` banner is printed at all — the page has 2 banners for 6 columns. Five valorisations are offered; taking all five gives **15 instead of 13**. A banner reading *CHOISIR 4 PARMIS LES 5* would give exactly 13. | `valorisations_a_choisir` non-empty for that row |
-| 3 | `decompo-note.pdf` p.9, Barre fixe **B1** | One valorisation flagged `(*)` instead of two, so the start score comes to **13 instead of 14**. | `controle` empty for that row |
+| 1 | Arçons **C2** | One valorisation flagged `(*)` where every other évolution at that level has two, so the start score comes to **14 instead of 15**. Still true in the 25 SEPT. 26 brochure. | `controle` empty for that row |
+| 2 | Barre fixe **A1** | No `CHOISIR n VALORISATIONS PARMIS LES m` banner is printed at all — the page has 2 banners for 6 columns. Five valorisations are offered; taking all five gives **15 instead of 13**. A banner reading *CHOISIR 4 PARMIS LES 5* would give exactly 13. Still true in the 25 SEPT. 26 brochure. | `valorisations_a_choisir` non-empty for that row |
+| 3 | Barre fixe **B1** | One valorisation flagged `(*)` instead of two, so the start score comes to **13 instead of 14**. Still true in the 25 SEPT. 26 brochure. | `controle` empty for that row |
 | 4 | `arches-poutre.pdf` p.5 | Arch 28 is titled **ACCRO POUTRE MOUSSE**; every other acrobatic arch is spelt *ACRO*. | the `arche` column for Poutre arch 28 |
 | 16 | *(resolved SEPT. 26)* Saut **B3** | ~~One valorisation read literally **"En cours de Validation"** — the watermark in a criterion's slot.~~ The refreshed SEPT. 26 sheet fills it with the three real Saut valorisations, matching C1-C3; the placeholder criterion was removed from both `decompo-note.csv` and `criteres.csv`. | — |
-| 17 | `decompo-note.pdf` p.9, Barre fixe | A valorisation reads **"1 appui / élan PXX"** — an unfilled palier placeholder. Treated as a palier-less rule, so it selects the whole *appuis / élans* vocabulary instead of one palier's worth. | `grep PXX data/csv/decompo-note.csv` |
+| 17 | *(resolved 25 SEPT. 26)* Barre fixe **B1** | ~~A valorisation reads **"1 appui / élan PXX"** — an unfilled palier placeholder.~~ The GAM brochure fills it: **`1 appui / élan P2 (min.)`**, and the rule now carries `P2+` instead of selecting the whole *appuis / élans* vocabulary. | `grep PXX data/csv/decompo-note.csv` |
+| 24 | `gam-reglement-decompo.pdf`, **C2 everywhere** | All five sheets dropped **P2** from the C2 allowed paliers — Sol, Arçons, Anneaux, Barres parallèles, Barre fixe alike — so C2 now starts at P3 wherever this brochure reaches, matching C3. Being uniform it reads as a deliberate fix rather than a bug, but Saut C2 (on the unwatermarked sheet) and the two women's sheets from the GAF brochure kept theirs, so C2 now starts at P3 on five apparatus and at P1/P2 on three. Arçons C2 also lost **P7** from its valorisable paliers. | the `paliers_autorises` of every C2 row |
+| 25 | `gam-reglement-decompo.pdf` p.20, Arçons | Four Tronc Commun element counts were lowered — B2 `8 à 10` → `6 à 8`, B3 `8 à 10` → `7 à 10`, C2 and C3 `8 à 12` → `7 à 12` — and B3's arch count went `4 arches (péda NON)` → `3`, aligning it with B2/C2. B2 now asks for no more elements than B1, and C2/C3 for no more than B3 at the bottom of their range. | the `exigences` of the Arçons rows |
+| 26 | `gam-reglement-decompo.pdf` p.24, Saut **B2** | B2 lost the valorisation *2 sauts de 1er envol différents* (it stays on B3 and C1-C3) and dropped **P1** from its valorisable paliers. Saut carries no Tronc Commun, so no start score checks this. The Sol and Saut sheets are mixte: both changes were read off the **men's** brochure and should be re-checked against the next GAF one. | the Saut B2 row |
 
 ## Missing material
 
 | # | Observation | How to re-check |
 | --- | --- | --- |
-| 5 | **No arches PDF for Arçons.** The seven other apparatus each have one, and Arçons does have its décomposition page (p.6), so its element catalog is simply not published yet. | a new `arches-arcons.pdf` on the site; `AGRES` in `extract_arches.py` already has an entry for it |
+| 5 | **No arches PDF for Arçons.** The seven other apparatus each have one, and Arçons does have its décomposition sheet, so its element catalog is simply not published yet — the 25 SEPT. 26 men's brochure reprints the Sol and Saut arches but still none for Arçons. | a new `arches-arcons.pdf` on the site; `AGRES` in `extract_arches.py` already has an entry for it |
 | 6 | **Anneaux and Barre fixe have no NOMADE elements** — the grey zone is printed on every page but left empty. Checked visually, so this is the PDF's state and not a extraction miss. Every other apparatus has some. | `palier == "NOMADE"` appearing in those two CSVs |
 | 18 | **No sortie above P5 on Anneaux or Barre fixe**, although C3 rewards `1 sortie P6 (min.)` on both. Sorties are recognised by the word in the element label, and the highest either catalog offers is P5. So the criterion is unreachable as published. | the two rows carrying `attendu` in `data/criteres.csv`; `npm run resolve` reports them and nothing else |
 | 19 | **The Poutre publishes no sortie arch** — no arch, no family, no label mentions one — yet five of its valorisations reward a sortie (`1 sortie P3 (min.)` up to `1 sortie avec liaison acro dont 1 élément P5 (min.)`). Its eight arches are ATR ET MAINTIEN, PIVOT, ACRO 1, ACRO 2, ACCRO POUTRE MOUSSE, SAUTS APPEL 1 PIED, SAUTS APPEL 2 PIEDS, ENTRÉES: entries are catalogued as their own arch, exits are not. The dismounts are the ACRO 1 / ACRO 2 acros performed as an exit, so they **are** in the catalog — just not labelled as sorties. They are now named by id in `data/sorties.csv` (19 elements, confirmed by Marie) and reach the five criteria through the `tag` column with `confirmation`, so the criteria are no longer `manuel`; the judge still ticks each one. | a dedicated sortie arch appearing in `data/csv/elements-poutre.csv`, which would let the tag be replaced by an arch motif |
