@@ -16,7 +16,7 @@ Sol,valorisation,2 acros de sens différents,familles,2,,,acros,,,,,,les famille
 Sol,exigence,1 saut,elements,1,,,sauts gymniques,,,,,,
 Sol,valorisation,1 saut P2 (min.),elements,1,,P2+,sauts gymniques,,,,,,
 Sol,valorisation,Sursaut + fente + roue,elements,1,oui,,,,roue,,,,seule la roue est un élément du catalogue ; la liaison reste à confirmer
-Sol,exigence,1 PG ou 1 FORCE,elements,1,oui,,,force,,,,,PG n'est défini dans aucun des PDF
+Sol,exigence,1 PG ou 1 FORCE,manuel,1,,,,,,,,,"PG (passage gymnique : 2 sauts gym. différents min.) ou 1 élément de force — non détectable, coché par l'utilisateur/juge"
 Sol,exigence,1 LA,manuel,1,,,,,,,,,liaison acrobatique : qualité de l'enchaînement
 Sol,valorisation,1 ATR tenu 2’’ Départ et retour en fente,elements,1,oui,,,,atr.*fente|fente.*atr,,,,le maintien 2'' est une qualité d'exécution
 Sol,valorisation,1 LAE dont 1 élément P3 (min.),elements,1,oui,P3+,acros,,,,,,LAE : liaison acro avec envol ; la liaison reste à confirmer

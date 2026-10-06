@@ -313,13 +313,6 @@ Sol,valorisation,Sursaut + fente + roue,elements,1,,oui,sol-70-p4-19,P4,,Pirouet
 Sol,valorisation,Sursaut + fente + roue,elements,1,,oui,sol-70-p5-13,P5,,"Pirouette 2 tours (720°) sur 1 jambe et sur 1/2 pointes, position de la jambe libre indifférente"
 Sol,valorisation,Sursaut + fente + roue,elements,1,,oui,sol-70-p6-22,P6,,"Pirouette 3 tours (1 080°) sur 1 jambe et sur 1/2 pointes, position de la jambe libre indifférente"
 Sol,valorisation,Sursaut + fente + roue,elements,1,,oui,sol-70-p7-23,P7,,"Pirouette 2 tours (720°) sur 1 jambe et sur 1/2 pointes,position de la jambe libre au-dessus"
-Sol,exigence,1 PG ou 1 FORCE,elements,1,,oui,sol-67-p2-124,P2,Force,"Départ accroupi ou à genoux, placement de dos à l’ATR jambes groupées"
-Sol,exigence,1 PG ou 1 FORCE,elements,1,,oui,sol-67-p3-127,P3,Force,"Départ accroupi ou à genoux, placement de dos à l’ATR jambes serrées et tendues, retour libre"
-Sol,exigence,1 PG ou 1 FORCE,elements,1,,oui,sol-67-p4-84-new,P4,Force,"Equerre, dégager jambes"
-Sol,exigence,1 PG ou 1 FORCE,elements,1,,oui,sol-67-p5-16,P5,Force,De la station jambes écartées monter en force jambes écartées à l’ATR
-Sol,exigence,1 PG ou 1 FORCE,elements,1,,oui,sol-67-p6-23,P6,Force,"Monter à l’ATR tenu 2“ du grand écart, de l’équerre…"
-Sol,exigence,1 PG ou 1 FORCE,elements,1,,oui,sol-67-p7-29,P7,Force,Rouler carpé à l’ATR tenu 2“
-Sol,exigence,1 PG ou 1 FORCE,elements,1,,oui,sol-67-p7-31,P7,Force,"De l’équerre verticale tenu 2”, s’élever à l’ATR tenu 2”"
 Sol,valorisation,1 ATR tenu 2’’ Départ et retour en fente,elements,1,,oui,sol-66-p1-8,P1,,Départ fente ATR ATR ou ATR écart
 Sol,valorisation,1 ATR tenu 2’’ Départ et retour en fente,elements,1,,oui,sol-67-pre-requis-122,PRÉ-REQUIS,,"Départ en fente, ATR 1 jambe, retour libre"
 Sol,valorisation,1 ATR tenu 2’’ Départ et retour en fente,elements,1,,oui,sol-67-p2-2,P2,,Départ fente ATR retour fente tenu 2’’
