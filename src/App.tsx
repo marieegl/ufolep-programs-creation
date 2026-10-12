@@ -124,10 +124,13 @@ export function App() {
   const plafond = evolution ? noteMaximale(evolution) : 0;
   const roles = useMemo(() => (evolution ? apports(evolution) : new Map()), [evolution]);
 
-  /** The elements eligible for the previewed valorisation — highlighted in the list. */
+  /** The elements eligible for the previewed criterion — highlighted in the list.
+  Works for an exigence as well as a valorisation; the clé is unique across both. */
   const surbrillance = useMemo(() => {
     if (!apercu || !note) return new Set<string>();
-    const ligne = note.valorisations.find((l) => cleDe(l.critere) === apercu);
+    const ligne = [...note.exigences, ...note.valorisations].find(
+      (l) => cleDe(l.critere) === apercu,
+    );
     return new Set(ligne?.critere.elements ?? []);
   }, [apercu, note]);
 
@@ -429,9 +432,10 @@ export function App() {
                         // The décomposition marks the principales with (*) on a darker cell.
                         const principale =
                           ligne.critere.genre === "valorisation" && ligne.pointsPossibles === 3;
-                        // Clicking a valorisation that selects elements previews them in the list.
-                        const cliquable =
-                          ligne.critere.genre === "valorisation" && ligne.critere.elements.length > 0;
+                        // Clicking a criterion that selects elements previews them in the list.
+                        // Arches / total / manuel carry no element list, so they stay inert —
+                        // which is exactly what we want for "N arches", "N éléments" and liaisons.
+                        const cliquable = ligne.critere.elements.length > 0;
                         const actif = apercu === cleDe(ligne.critere);
                         return (
                         <tr
