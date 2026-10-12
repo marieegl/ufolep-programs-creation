@@ -19,30 +19,30 @@ Sol,valorisation,Sursaut + fente + roue,elements,1,oui,,,,roue,,,,seule la roue 
 Sol,exigence,1 PG ou 1 FORCE,manuel,1,,,,,,,,,"PG (passage gymnique : 2 sauts gym. différents min.) ou 1 élément de force — non détectable, coché par l'utilisateur/juge"
 Sol,exigence,1 LA,manuel,1,,,,,,,,,liaison acrobatique : qualité de l'enchaînement
 Sol,valorisation,1 ATR tenu 2’’ Départ et retour en fente,elements,1,oui,,,,atr.*fente|fente.*atr,,,,le maintien 2'' est une qualité d'exécution
-Sol,valorisation,1 LAE dont 1 élément P3 (min.),elements,1,oui,P3+,acros,,,,,,LAE : liaison acro avec envol ; la liaison reste à confirmer
+Sol,valorisation,1 LAE dont 1 élément P3 (min.),elements,1,oui,P3+,acros,,,sans envol,,,LAE : liaison acro avec envol ; la liaison reste à confirmer
 Sol,valorisation,1 FORCE ou 1 SAUT écart P3 (min.),elements,1,,P3+,,force,,,,,,
 Sol,valorisation,1 FORCE ou 1 SAUT écart P3 (min.),elements,1,,P3+,sauts gymniques,,ecart,,,,,
-Sol,valorisation,1 élément acro avec envol P3 (min.),elements,1,oui,P3+,acros,,,,,,l'envol n'est pas marqué dans le catalogue
+Sol,valorisation,1 élément acro avec envol P3 (min.),elements,1,oui,P3+,acros,,,sans envol,,,l'envol n'est pas marqué dans le catalogue
 Sol,exigence,8 à 10 éléments,total,8-10,,,,,,,,,
 Sol,exigence,2 LA distinctes,manuel,2,,,,,,,,,liaisons acrobatiques
 Sol,exigence,1 élément P4,elements,1,,P4,,,,,,,
-Sol,valorisation,1 LAE dont 1 acro avec appui manuel,elements,1,oui,,acros,,appui|roue|renversement|rondade,,,,« appui manuel » ne figure pas tel quel dans les libellés
-Sol,valorisation,1 LAE dont 1 élément P4 (min.),elements,1,oui,P4+,acros,,,,,,
+Sol,valorisation,1 LAE dont 1 acro avec appui manuel,elements,1,oui,,acros,,appui|roue|renversement|rondade,sans envol,,,« appui manuel » ne figure pas tel quel dans les libellés
+Sol,valorisation,1 LAE dont 1 élément P4 (min.),elements,1,oui,P4+,acros,,,sans envol,,,
 Sol,valorisation,1 salto en P4,elements,1,,P4,,,salto,,,,
-Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,oui,,acros,,,,,,
+Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,oui,,acros,,,sans envol,,,
 Sol,exigence,1 élément P5,elements,1,,P5,,,,,,,
-Sol,valorisation,1 LAE dont 1 salto appel 2 pieds,elements,1,oui,,acros,,salto,,,,l'appel n'est pas marqué sur les éléments acro
-Sol,valorisation,1 LAE dont 1 élément P5,elements,1,oui,P5,acros,,,,,,
+Sol,valorisation,1 LAE dont 1 salto appel 2 pieds,elements,1,oui,,acros,,salto,sans envol,,,l'appel n'est pas marqué sur les éléments acro
+Sol,valorisation,1 LAE dont 1 élément P5,elements,1,oui,P5,acros,,,sans envol,,,
 Sol,valorisation,1 FORCE ou 1 SAUT écart P4 (min.),elements,1,,P4+,,force,,,,,,
 Sol,valorisation,1 FORCE ou 1 SAUT écart P4 (min.),elements,1,,P4+,sauts gymniques,,ecart,,,,,
 Sol,valorisation,1 salto en P5,elements,1,,P5,,,salto,,,,
 Sol,exigence,8 à 12 éléments,total,8-12,,,,,,,,,
 Sol,exigence,1 élément P5 (min.),elements,1,,P5+,,,,,,,
 Sol,valorisation,1 salto position tendue appel 2 pieds,elements,1,,,,,salto.*tendu,,,,
-Sol,valorisation,1 LAE de 3 éléments différents dont 1 P5 (min.),elements,1,oui,P5+,acros,,,,,,les 3 éléments de la liaison restent à confirmer
+Sol,valorisation,1 LAE de 3 éléments différents dont 1 P5 (min.),elements,1,oui,P5+,acros,,,sans envol,,,les 3 éléments de la liaison restent à confirmer
 Sol,valorisation,1 FORCE ou 1 SAUT P4 (min.),elements,1,,P4+,,force,,,,,
 Sol,valorisation,1 FORCE ou 1 SAUT P4 (min.),elements,1,,P4+,sauts gymniques,,,,,,
-Sol,valorisation,1 élément acro avec envol P5 (min.),elements,1,oui,P5+,acros,,,,,,
+Sol,valorisation,1 élément acro avec envol P5 (min.),elements,1,oui,P5+,acros,,,sans envol,,,
 Sol,valorisation,2 salti appel 2 pieds liés directement ou indirectement,elements,2,oui,,,,salto,,,,
 Sol,exigence,1 élément P6 (min.),elements,1,,P6+,,,,,,,
 Sol,valorisation,1 salto avec rotation longitudinale 360°,elements,1,,,,,salto.*360|vrille,,,,
@@ -50,8 +50,8 @@ Sol,valorisation,1 FORCE ou 1 SAUT P5 (min.),elements,1,,P5+,,force,,,,,
 Sol,valorisation,1 FORCE ou 1 SAUT P5 (min.),elements,1,,P5+,sauts gymniques,,,,,,
 Sol,valorisation,1 élément acro P6 (min.),elements,1,,P6+,acros,,,,,,
 Sol,exigence,1 élément P7,elements,1,,P7,,,,,,,
-Sol,valorisation,"1 acro avec double rotation longitudinale ou transversale, avec envol",elements,1,oui,,acros,,double,,,,
-Sol,valorisation,1 LAE de 3 éléments différents dont 1 P6 (min.),elements,1,oui,P6+,acros,,,,,,
+Sol,valorisation,"1 acro avec double rotation longitudinale ou transversale, avec envol",elements,1,oui,,acros,,double,sans envol,,,
+Sol,valorisation,1 LAE de 3 éléments différents dont 1 P6 (min.),elements,1,oui,P6+,acros,,,sans envol,,,
 Sol,valorisation,1 FORCE ou 1 SAUT P6 (min.),elements,1,,P6+,,force,,,,,
 Sol,valorisation,1 FORCE ou 1 SAUT P6 (min.),elements,1,,P6+,sauts gymniques,,,,,,
 Sol,valorisation,1 élément acro P7,elements,1,,P7,acros,,,,,,
@@ -137,7 +137,7 @@ Poutre,exigence,1 élément P6 (min.),elements,1,,P6+,,,,,,,
 Poutre,valorisation,1 LG ou LM dont 2 P4 (min.),manuel,1,,,,,,,,,liaison gymnique ou mixte
 Poutre,valorisation,1 saut avec 1 rotation à 180°,elements,1,oui,,sauts appel,,180|tour,,,,
 Poutre,valorisation,1 LA dont 1 élément avec envol sur poutre,manuel,1,,,,,,,,,liaison acrobatique ; l'envol n'est pas marqué
-Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,oui,,acro [12],,,,,,l'envol n'est pas marqué
+Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,oui,,acro [12],,,sans envol,,,l'envol n'est pas marqué
 Poutre,valorisation,1 sortie avec liaison acro dont un élément P4 (min.),elements,1,oui,P3+,,,,,,,sortie repérée par data/sorties.csv (P3+ écarte le nomade) ; la liaison acro et l'élément P4 sont confirmés à la main,sortie
 Poutre,exigence,1 élément P7,elements,1,,P7,,,,,,,
 Poutre,valorisation,1 saut écart avec 1 rotation à 180°,elements,1,oui,,sauts appel,,ecart,,,,
@@ -149,9 +149,9 @@ Poutre,valorisation,Poutre mousse : ROUE,elements,1,,,accro poutre mousse,,^roue
 Poutre,valorisation,Poutre mousse : Acro P2 (min.),elements,1,,P2+,accro poutre mousse,,,,,,
 Poutre,valorisation,Poutre mousse : Acro P3 (min.),elements,1,,P3+,accro poutre mousse,,,,,,
 Poutre,valorisation,Poutre mousse : Acro P4 (min.),elements,1,,P4+,accro poutre mousse,,,,,,
-Poutre,valorisation,Poutre mousse : 1 LA dont 1 élément avec envol,elements,2,oui,,accro poutre mousse,,,,,,liaison acrobatique de 2 éléments ; l'envol n'est pas marqué dans les libellés
+Poutre,valorisation,Poutre mousse : 1 LA dont 1 élément avec envol,elements,2,oui,,accro poutre mousse,,,sans envol,,,liaison acrobatique de 2 éléments ; l'envol n'est pas marqué dans les libellés
 Poutre,valorisation,Poutre mousse : 1 LA 2 éléments dont 1 salto,elements,1,oui,,accro poutre mousse,,salto,,,,
-Poutre,valorisation,Poutre mousse : 1 LA de 2 éléments avec envol dont 1 salto,elements,1,oui,,accro poutre mousse,,salto,,,,
+Poutre,valorisation,Poutre mousse : 1 LA de 2 éléments avec envol dont 1 salto,elements,1,oui,,accro poutre mousse,,salto,sans envol,,,
 Arçons,exigence,3 arches (min.),arches,3,,,,,,,,,,
 Arçons,exigence,6 à 8 éléments,total,6-8,,,,,,,,,
 Arçons,exigence,1 élément sur champignon,elements,1,,,champignon,,,,,,

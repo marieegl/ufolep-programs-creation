@@ -341,7 +341,6 @@ Sol,valorisation,1 LAE dont 1 élément P3 (min.),elements,1,,oui,sol-65-p7-189,
 Sol,valorisation,1 LAE dont 1 élément P3 (min.),elements,1,,oui,sol-65-p7-78,P7,En avant,Tous salti avant avec 3/2 tours ou +
 Sol,valorisation,1 LAE dont 1 élément P3 (min.),elements,1,,oui,sol-65-p7-80,P7,En avant,Double salto avant ou avec demi-tour ou +
 Sol,valorisation,1 LAE dont 1 élément P3 (min.),elements,1,,oui,sol-66-p3-148,P3,En avant,Rondade
-Sol,valorisation,1 LAE dont 1 élément P3 (min.),elements,1,,oui,sol-66-p3-152,P3,En arrière,Tic-Tac. Renversement avant-arrière sans envol
 Sol,valorisation,1 LAE dont 1 élément P3 (min.),elements,1,,oui,sol-66-p3-153,P3,En arrière,Saut de mains 1 pied. Renversement avant avec envol appel 1 pied
 Sol,valorisation,1 LAE dont 1 élément P3 (min.),elements,1,,oui,sol-66-p3-154,P3,En avant,Saut de mains 2 pieds Renversement avant avec envol appel 1 pied
 Sol,valorisation,1 LAE dont 1 élément P3 (min.),elements,1,,oui,sol-66-p3-155,P3,En arrière,Flic-Flac. Renversement arrière avec envol départ et réception libre
@@ -392,7 +391,6 @@ Sol,valorisation,1 élément acro avec envol P3 (min.),elements,1,,oui,sol-65-p7
 Sol,valorisation,1 élément acro avec envol P3 (min.),elements,1,,oui,sol-65-p7-78,P7,En avant,Tous salti avant avec 3/2 tours ou +
 Sol,valorisation,1 élément acro avec envol P3 (min.),elements,1,,oui,sol-65-p7-80,P7,En avant,Double salto avant ou avec demi-tour ou +
 Sol,valorisation,1 élément acro avec envol P3 (min.),elements,1,,oui,sol-66-p3-148,P3,En avant,Rondade
-Sol,valorisation,1 élément acro avec envol P3 (min.),elements,1,,oui,sol-66-p3-152,P3,En arrière,Tic-Tac. Renversement avant-arrière sans envol
 Sol,valorisation,1 élément acro avec envol P3 (min.),elements,1,,oui,sol-66-p3-153,P3,En arrière,Saut de mains 1 pied. Renversement avant avec envol appel 1 pied
 Sol,valorisation,1 élément acro avec envol P3 (min.),elements,1,,oui,sol-66-p3-154,P3,En avant,Saut de mains 2 pieds Renversement avant avec envol appel 1 pied
 Sol,valorisation,1 élément acro avec envol P3 (min.),elements,1,,oui,sol-66-p3-155,P3,En arrière,Flic-Flac. Renversement arrière avec envol départ et réception libre
@@ -434,10 +432,7 @@ Sol,valorisation,1 LAE dont 1 acro avec appui manuel,elements,1,,oui,sol-65-p2-9
 Sol,valorisation,1 LAE dont 1 acro avec appui manuel,elements,1,,oui,sol-65-p2-99,P2,En arrière,"Départ libre, roulade arrière avec appui des mains, arrivée sur les pieds jambes fléchies"
 Sol,valorisation,1 LAE dont 1 acro avec appui manuel,elements,1,,oui,sol-65-p3-82-new,P3,En arrière,Roulade arrière arrivée appuis facial
 Sol,valorisation,1 LAE dont 1 acro avec appui manuel,elements,1,,oui,sol-66-pre-requis-84,PRÉ-REQUIS,,Station en écart avec appui des mains devant la jambe d’appui (angle d’écart 180°) tenue 2“
-Sol,valorisation,1 LAE dont 1 acro avec appui manuel,elements,1,,oui,sol-66-p2-146,P2,En avant,Roue : renversement latéral sans envol arrivée 1 ou 2 pieds
-Sol,valorisation,1 LAE dont 1 acro avec appui manuel,elements,1,,oui,sol-66-p2-149,P2,En arrière,Souplesse arrière. Renversement arrière sans envol
 Sol,valorisation,1 LAE dont 1 acro avec appui manuel,elements,1,,oui,sol-66-p3-148,P3,En avant,Rondade
-Sol,valorisation,1 LAE dont 1 acro avec appui manuel,elements,1,,oui,sol-66-p3-152,P3,En arrière,Tic-Tac. Renversement avant-arrière sans envol
 Sol,valorisation,1 LAE dont 1 acro avec appui manuel,elements,1,,oui,sol-66-p3-153,P3,En arrière,Saut de mains 1 pied. Renversement avant avec envol appel 1 pied
 Sol,valorisation,1 LAE dont 1 acro avec appui manuel,elements,1,,oui,sol-66-p3-154,P3,En avant,Saut de mains 2 pieds Renversement avant avec envol appel 1 pied
 Sol,valorisation,1 LAE dont 1 acro avec appui manuel,elements,1,,oui,sol-66-p3-155,P3,En arrière,Flic-Flac. Renversement arrière avec envol départ et réception libre
@@ -510,11 +505,7 @@ Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE
 Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,,oui,sol-66-pre-requis-68-new,PRÉ-REQUIS,,Sursaut fente
 Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,,oui,sol-66-pre-requis-84,PRÉ-REQUIS,,Station en écart avec appui des mains devant la jambe d’appui (angle d’écart 180°) tenue 2“
 Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,,oui,sol-66-p1-8,P1,,Départ fente ATR ATR ou ATR écart
-Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,,oui,sol-66-p2-146,P2,En avant,Roue : renversement latéral sans envol arrivée 1 ou 2 pieds
-Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,,oui,sol-66-p2-149,P2,En arrière,Souplesse arrière. Renversement arrière sans envol
-Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,,oui,sol-66-p2-151,P2,En arrière,Souplesse avant. enversement avant sans envol
 Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,,oui,sol-66-p3-148,P3,En avant,Rondade
-Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,,oui,sol-66-p3-152,P3,En arrière,Tic-Tac. Renversement avant-arrière sans envol
 Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,,oui,sol-66-p3-153,P3,En arrière,Saut de mains 1 pied. Renversement avant avec envol appel 1 pied
 Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,,oui,sol-66-p3-154,P3,En avant,Saut de mains 2 pieds Renversement avant avec envol appel 1 pied
 Sol,valorisation,2 acros de sens différents avec envol incorporés dans les LAE,familles,2,,oui,sol-66-p3-155,P3,En arrière,Flic-Flac. Renversement arrière avec envol départ et réception libre
@@ -2283,18 +2274,10 @@ Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-59-p7
 Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-59-p7-218,P7,Vers l’arrière,Double salto arrière
 Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-60-p1-146,P1,,"De la fente avant, venir à l’ATR 1 jambe à la verticale, retour libre"
 Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-60-p3-150-plus,P3,Vers l’avant,ATR passagé
-Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-60-p3-152,P3,Vers l’avant,Roue : renversement latéral sans envol arrivée 1 ou 2 pieds
-Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-60-p3-153,P3,Vers l’arrière,Souplesse arrière. Renversement arrière sans envol retour libre
 Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-60-p3-196,P3,Vers l’avant,Rondade à la station debout (avec ou sans sursaut)
 Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-60-p3-197,P3,Vers l’avant,Saut de mains. Renversement avant avec envol à la station debout avec ou sans sursaut
-Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-60-p4-152-plus,P4,Vers l’avant,Roue : renversement latéral sans envol arrivée 1 ou 2 pieds
-Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-60-p4-153-plus,P4,Vers l’arrière,Souplesse arrière. Renversement arrière sans envol retour libre
 Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-60-p4-154-plus,P4,Vers l’avant,ATR tenu 2’’ retour libre
-Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-60-p4-159,P4,Vers l’avant,Souplesse avant ou roue arabe Renverse­ ment avant sans envol aussi avec appui sur 1 bras
-Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-60-p4-160,P4,Vers l’arrière,Tic-Tac. Renversement avant arrière sans envol
 Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-60-p4-200,P4,Vers l’avant,Costal
-Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-60-p5-159-plus,P5,Vers l’avant,Souplesse avant ou roue arabe Renverse­ ment avant sans envol aussi avec appui sur 1 bras
-Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-60-p5-160-plus,P5,Vers l’arrière,Tic-Tac. Renversement avant arrière sans envol
 Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-60-p5-164,P5,Vers l’avant,Rondade
 Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-60-p5-165,P5,Vers l’avant,Saut de mains. Renversement avant avec envol appel 1 pied et réception libre
 Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,,oui,poutre-60-p5-166,P5,Vers l’arrière,Flic-flac. Renversement arrière avec envol départ libre arrivée 2 pieds serrés
@@ -2432,10 +2415,6 @@ Poutre,valorisation,Poutre mousse : Acro P4 (min.),elements,1,,,poutre-61-p6-190
 Poutre,valorisation,Poutre mousse : Acro P4 (min.),elements,1,,,poutre-61-p7-185,P7,,"Salto facial, renversement avant libre"
 Poutre,valorisation,Poutre mousse : Acro P4 (min.),elements,1,,,poutre-61-p7-192,P7,,Salto arrière tendu pieds décalés
 Poutre,valorisation,Poutre mousse : 1 LA dont 1 élément avec envol,elements,2,,oui,poutre-61-pre-requis-15-new,PRÉ-REQUIS,,ATR tenu 2’’ (toutes positions de jambes) retour libre
-Poutre,valorisation,Poutre mousse : 1 LA dont 1 élément avec envol,elements,2,,oui,poutre-61-p1-152,P1,,Roue : renversement latéral sans envol arrivée 1 ou 2 pieds
-Poutre,valorisation,Poutre mousse : 1 LA dont 1 élément avec envol,elements,2,,oui,poutre-61-p2-159,P2,,Souplesse avant ou roue arabe. Renversement avant sans envol aussi avec appui sur 1 bras ou avec appui des mains successif retour libre
-Poutre,valorisation,Poutre mousse : 1 LA dont 1 élément avec envol,elements,2,,oui,poutre-61-p2-18-new,P2,,Tic-Tac. Renversement avant arrière sans envol
-Poutre,valorisation,Poutre mousse : 1 LA dont 1 élément avec envol,elements,2,,oui,poutre-61-p2-24-new,P2,,Souplesse arrière. Renversement arrière sans envol retour libre
 Poutre,valorisation,Poutre mousse : 1 LA dont 1 élément avec envol,elements,2,,oui,poutre-61-p3-19-new,P3,,Saut de mains. Renversement avant avec envol appel 1 pied et réception libre
 Poutre,valorisation,Poutre mousse : 1 LA dont 1 élément avec envol,elements,2,,oui,poutre-61-p3-20-new,P3,,Rondade
 Poutre,valorisation,Poutre mousse : 1 LA dont 1 élément avec envol,elements,2,,oui,poutre-61-p4-21-new,P4,,Salto avant corps groupé ou carpé appel 1 ou 2 pieds arrivée à la station debout

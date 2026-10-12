@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { catalog, criteresOf, elementsOf, evolutionsOf } from "./catalog";
+import { catalog, criteresOf, elementById, elementsOf, evolutionsOf } from "./catalog";
 import type { Evolution } from "./catalog";
 import { cleDe, noteMaximale, noter } from "./score";
 import type { Composition } from "./score";
@@ -287,5 +287,37 @@ describe("éléments nomades", () => {
     const note = noter(evo, { elements: [nomade.id], coches: new Set() });
     expect(note.valorisations.every((l) => !l.elementsRetenus.includes(nomade.id))).toBe(true);
     expect(note.pointsValorisations).toBe(0);
+  });
+});
+
+describe("éléments « sans envol »", () => {
+  // Une LAE (liaison acro avec envol) et toute valorisation « avec envol » exigent un
+  // envol ; un acro « sans envol » (tic-tac, souplesse, roue sans envol) n'y a pas sa
+  // place, même si son palier suffit. L'envol n'étant pas marqué au catalogue, on
+  // s'appuie sur le libellé.
+  const exigeEnvol = (texte: string) => texte.includes("LAE") || /avec envol/i.test(texte);
+  const sansEnvol = (id: string) => /sans envol/i.test(elementById.get(id)?.libelle ?? "");
+
+  it("n'entrent dans aucune valorisation exigeant un envol", () => {
+    const fautifs = catalog.criteres
+      .filter((c) => c.genre === "valorisation" && exigeEnvol(c.texte))
+      .flatMap((c) => c.elements.filter(sansEnvol).map((id) => `${c.agres} · ${c.texte} ← ${id}`));
+    expect(fautifs).toEqual([]);
+  });
+
+  it("le tic-tac (152) reste un acro mais ne compte dans aucune LAE au Sol", () => {
+    const tictac = elementsOf("Sol").find(
+      (e) => e.numero === "152" && /tic-tac/i.test(e.libelle),
+    )!;
+    expect(tictac).toBeTruthy();
+    const dansEnvol = catalog.criteres.filter(
+      (c) => c.agres === "Sol" && exigeEnvol(c.texte) && c.elements.includes(tictac.id),
+    );
+    expect(dansEnvol).toEqual([]);
+    // Il reste un acro : présent dans un critère « 2 acros » (exigence et/ou valorisation).
+    const commeAcro = catalog.criteres.filter(
+      (c) => c.agres === "Sol" && /2 acros/i.test(c.texte) && c.elements.includes(tictac.id),
+    );
+    expect(commeAcro.length).toBeGreaterThan(0);
   });
 });
