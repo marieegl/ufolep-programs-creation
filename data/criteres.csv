@@ -21,7 +21,7 @@ Sol,exigence,1 LA,manuel,1,,,,,,,,,liaison acrobatique : qualité de l'enchaîne
 Sol,valorisation,1 ATR tenu 2’’ Départ et retour en fente,elements,1,oui,,,,atr.*fente|fente.*atr,,,,le maintien 2'' est une qualité d'exécution
 Sol,valorisation,1 LAE dont 1 élément P3 (min.),elements,1,oui,P3+,acros,,,sans envol,,,LAE : liaison acro avec envol ; la liaison reste à confirmer
 Sol,valorisation,1 FORCE ou 1 SAUT écart P3 (min.),elements,1,,P3+,,force,,,,,,
-Sol,valorisation,1 FORCE ou 1 SAUT écart P3 (min.),elements,1,,P3+,sauts gymniques,,ecart,,,,,
+Sol,valorisation,1 FORCE ou 1 SAUT écart P3 (min.),elements,1,,P3+,sauts gymniques,,ecart|enjambe|antero|sissonne|biche,,,,,
 Sol,valorisation,1 élément acro avec envol P3 (min.),elements,1,oui,P3+,acros,,,sans envol,,,l'envol n'est pas marqué dans le catalogue
 Sol,exigence,8 à 10 éléments,total,8-10,,,,,,,,,
 Sol,exigence,2 LA distinctes,manuel,2,,,,,,,,,liaisons acrobatiques
@@ -34,7 +34,7 @@ Sol,exigence,1 élément P5,elements,1,,P5,,,,,,,
 Sol,valorisation,1 LAE dont 1 salto appel 2 pieds,elements,1,oui,,acros,,salto,sans envol,,,l'appel n'est pas marqué sur les éléments acro
 Sol,valorisation,1 LAE dont 1 élément P5,elements,1,oui,P5,acros,,,sans envol,,,
 Sol,valorisation,1 FORCE ou 1 SAUT écart P4 (min.),elements,1,,P4+,,force,,,,,,
-Sol,valorisation,1 FORCE ou 1 SAUT écart P4 (min.),elements,1,,P4+,sauts gymniques,,ecart,,,,,
+Sol,valorisation,1 FORCE ou 1 SAUT écart P4 (min.),elements,1,,P4+,sauts gymniques,,ecart|enjambe|antero|sissonne|biche,,,,,
 Sol,valorisation,1 salto en P5,elements,1,,P5,,,salto,,,,
 Sol,exigence,8 à 12 éléments,total,8-12,,,,,,,,,
 Sol,exigence,1 élément P5 (min.),elements,1,,P5+,,,,,,,
@@ -121,7 +121,7 @@ Poutre,exigence,8 à 10 éléments,total,8-10,,,,,,,,,
 Poutre,exigence,1 pivots P4 (min.),elements,1,,P4+,pivot,,,,,,
 Poutre,exigence,1 élément P3 (min.),elements,1,,P3+,,,,,,,
 Poutre,valorisation,2 éléments gymniques P3 (min.) dans le mouvement,elements,2,,P3+,atr et maintien|pivot|sauts appel,,,,,,« gymnique » = tout ce qui n'est pas acrobatique
-Poutre,valorisation,1 saut avec écart antéro,elements,1,,,sauts appel,,enjambe|antero|changement de jambes,,,,"écart antéro-postérieur : enjambés / antéro-postérieurs / changements de jambes, pas le carpé écarté (latéral)"
+Poutre,valorisation,1 saut avec écart antéro,elements,1,,,sauts appel,,enjambe|antero|sissonne|biche|changement de jambes,,,,"écart antéro-postérieur : enjambés / antéro-postérieurs / sissonnes / biches / changements de jambes, pas le carpé écarté (latéral)"
 Poutre,valorisation,1 élément acro sur la poutre P3 (min.),elements,1,,P3+,acro [12],,,,,,
 Poutre,exigence,3 acros en poutre haute,elements,3,,,acro [12],,,,,,
 Poutre,exigence,1 élément P4 (min.),elements,1,,P4+,,,,,,,
@@ -140,7 +140,7 @@ Poutre,valorisation,1 LA dont 1 élément avec envol sur poutre,manuel,1,,,,,,,,
 Poutre,valorisation,1 acro avec envol sur la poutre,elements,1,oui,,acro [12],,,sans envol,,,l'envol n'est pas marqué
 Poutre,valorisation,1 sortie avec liaison acro dont un élément P4 (min.),elements,1,oui,P3+,,,,,,,sortie repérée par data/sorties.csv (P3+ écarte le nomade) ; la liaison acro et l'élément P4 sont confirmés à la main,sortie
 Poutre,exigence,1 élément P7,elements,1,,P7,,,,,,,
-Poutre,valorisation,1 saut écart avec 1 rotation à 180°,elements,1,oui,,sauts appel,,ecart,,,,
+Poutre,valorisation,1 saut écart avec 1 rotation à 180°,elements,1,oui,,sauts appel,,ecart|enjambe|antero|sissonne|biche,,,,
 Poutre,valorisation,1 LA 2 éléments dont 1 salto sur poutre,elements,1,oui,,acro [12],,salto,,,,
 Poutre,valorisation,1 salto sur poutre P6 (min.),elements,1,,P6+,acro [12],,salto,,,,
 Poutre,valorisation,1 sortie avec liaison acro dont 1 élément P5 (min.),elements,1,oui,P3+,,,,,,,sortie repérée par data/sorties.csv (P3+ écarte le nomade) ; la liaison acro et l'élément P5 sont confirmés à la main,sortie

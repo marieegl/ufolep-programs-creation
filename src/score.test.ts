@@ -321,3 +321,37 @@ describe("éléments « sans envol »", () => {
     expect(commeAcro.length).toBeGreaterThan(0);
   });
 });
+
+describe("sauts écart", () => {
+  // « Saut écart » ne se limite pas aux libellés contenant « écart » : les antéro-
+  // postérieurs, sissonnes, biches et enjambés en sont aussi. Le motif a été élargi
+  // (`ecart|enjambe|antero|sissonne|biche`). La version « écart antéro » exclut en
+  // revanche le carpé écarté (latéral).
+  const numeros = (agres: string, texte: string) =>
+    new Set(
+      (catalog.criteres.find((c) => c.agres === agres && c.texte === texte)?.elements ?? []).map(
+        (id) => elementById.get(id)?.numero,
+      ),
+    );
+
+  it("au Sol, « SAUT écart » attrape antéro / sissonne / biche / enjambé", () => {
+    const p3 = numeros("Sol", "1 FORCE ou 1 SAUT écart P3 (min.)");
+    for (const n of ["37", "41", "49", "60", "69"]) expect(p3.has(n)).toBe(true);
+    // Palier exact : le P3 (37) tombe sous le seuil P4 de la règle P4.
+    const p4 = numeros("Sol", "1 FORCE ou 1 SAUT écart P4 (min.)");
+    expect(p4.has("37")).toBe(false);
+    for (const n of ["41", "49", "60", "69"]) expect(p4.has(n)).toBe(true);
+  });
+
+  it("en Poutre, « écart antéro » inclut sissonne/biche mais exclut le carpé écarté", () => {
+    const antero = numeros("Poutre", "1 saut avec écart antéro");
+    expect(antero.has("55")).toBe(true); // sissonne
+    expect(antero.has("27")).toBe(true); // biche
+    expect(antero.has("66")).toBe(false); // carpé écarté (latéral)
+  });
+
+  it("en Poutre, « saut écart avec rotation » garde le carpé écarté", () => {
+    const generique = numeros("Poutre", "1 saut écart avec 1 rotation à 180°");
+    for (const n of ["49", "55", "27", "66"]) expect(generique.has(n)).toBe(true);
+  });
+});
