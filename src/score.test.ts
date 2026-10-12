@@ -355,3 +355,28 @@ describe("sauts écart", () => {
     for (const n of ["49", "55", "27", "66"]) expect(generique.has(n)).toBe(true);
   });
 });
+
+describe("sorties Barre fixe", () => {
+  // Les saltos de sortie de la Barre fixe (doubles saltos, saltos tendus…) ne disent
+  // pas « sortie » dans leur libellé : ils sont tagués à la main dans data/sorties.csv,
+  // et les critères « sortie » sélectionnent par tag (comme la Poutre), pas par motif.
+  const ATTENDUS = ["139", "141", "142", "145", "146", "148", "149", "152", "154", "155", "159", "160"];
+
+  it("sont marqués comme sortie dans le catalogue", () => {
+    const nonMarques = ATTENDUS.filter(
+      (n) => !elementsOf("Barre fixe").some((e) => e.numero === n && e.sortie),
+    );
+    expect(nonMarques).toEqual([]);
+  });
+
+  it("comptent toutes pour l'exigence « 1 sortie »", () => {
+    const sortie = catalog.criteres.find((c) => c.agres === "Barre fixe" && c.texte === "1 sortie")!;
+    const nums = new Set(sortie.elements.map((id) => elementById.get(id)?.numero));
+    for (const n of ATTENDUS) expect(nums.has(n)).toBe(true);
+  });
+
+  it("alimentent « 1 sortie P6 (min.) », qui n'est plus vide", () => {
+    const p6 = catalog.criteres.find((c) => c.agres === "Barre fixe" && c.texte === "1 sortie P6 (min.)")!;
+    expect(p6.elements.length).toBeGreaterThan(0);
+  });
+});
