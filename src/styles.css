@@ -480,6 +480,17 @@ td {
   white-space: nowrap;
 }
 
+/* « non valorisable » : le palier est hors de la bande valorisable de l'évolution.
+   Sous le palier plutôt qu'à côté du libellé — c'est le palier qu'il qualifie. */
+.elements .palier small,
+.composition .palier small {
+  display: block;
+  color: var(--muted-2);
+  font-size: 0.7rem;
+  font-variant-numeric: normal;
+  line-height: 1.2;
+}
+
 .elements .libelle {
   flex: 1;
 }

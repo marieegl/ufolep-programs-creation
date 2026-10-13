@@ -29,6 +29,19 @@ elements, so a coach can pick them regardless of the évolution), but they never
 valorisation — the data build keeps them out of every valorisation's element list. */
 const estNomade = (palier: string) => palier === "NOMADE";
 
+/** An évolution rewards a narrower band of paliers than it allows, so an element can be
+usable without being worth a valorisation. The band alone does not settle it: a criterion
+naming its own palier reaches outside it (Barre fixe A1 rewards « les 2 courbes PR »), so
+the marker is only shown when the element credits no valorisation here either. A `max`
+does not count as one — it caps a palier, being in its list earns nothing. */
+const nonValorisable = (
+  element: Element,
+  evolution: Evolution,
+  apports: { genre: string }[],
+) =>
+  !evolution.paliersValorisables.includes(element.palier) &&
+  !apports.some((a) => a.genre === "valorisation");
+
 /** What the criterion counts, spelt so the number on the row means something. */
 const compteur = ({ critere, trouves }: Ligne) => {
   // A criterion that selects elements and has none is unreachable: either the apparatus
@@ -327,7 +340,12 @@ export function App() {
                     >
                       <span className="poignee" aria-hidden="true">⠿</span>
                       <span className="rang">{i + 1}</span>
-                      <span className="palier">{element.palier}</span>
+                      <span className="palier">
+                        {element.palier}
+                        {nonValorisable(element, evolution, roles.get(id) ?? []) && (
+                          <small>non valorisable</small>
+                        )}
+                      </span>
                       <span className="libelle">
                         {estPlus(element) && (
                           <span className="plus" title={DEFINITION_PLUS}>+ </span>
@@ -515,6 +533,11 @@ export function App() {
                             apports={roles.get(element.id) ?? []}
                             choisi={choisis.includes(element.id)}
                             apercu={surbrillance.has(element.id)}
+                            sansValorisation={nonValorisable(
+                              element,
+                              evolution,
+                              roles.get(element.id) ?? [],
+                            )}
                             onClick={() => basculer(element.id)}
                           />
                         ))}
@@ -542,14 +565,18 @@ type ChoixProps = {
   apports: { genre: string; texte: string; points: number }[];
   choisi: boolean;
   apercu: boolean;
+  sansValorisation: boolean;
   onClick: () => void;
 };
 
-function Choix({ element, apports, choisi, apercu, onClick }: ChoixProps) {
+function Choix({ element, apports, choisi, apercu, sansValorisation, onClick }: ChoixProps) {
   return (
     <li>
       <button onClick={onClick} aria-pressed={choisi} data-apercu={apercu || undefined}>
-        <span className="palier">{element.palier}</span>
+        <span className="palier">
+          {element.palier}
+          {sansValorisation && <small>non valorisable</small>}
+        </span>
         <span className="libelle">
           {estPlus(element) && <span className="plus" title={DEFINITION_PLUS}>+ </span>}
           {element.libelle}
