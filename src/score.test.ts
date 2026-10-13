@@ -380,3 +380,55 @@ describe("sorties Barre fixe", () => {
     expect(p6.elements.length).toBeGreaterThan(0);
   });
 });
+
+describe("paliers valorisables", () => {
+  // Une évolution autorise plus de paliers qu'elle n'en récompense : au Sol A1, les
+  // paliers autorisés vont de PRÉ-REQUIS à P3, mais seuls P1 et P2 sont valorisables.
+  // Un P3 compte donc dans le tronc commun sans rien rapporter en valorisation.
+  const solA1 = () => evolution("Sol", "A1");
+
+  const valorisation = (evo: Evolution, texte: string) =>
+    criteresOf(evo).valorisations.find((v) => v.critere.texte === texte)!.critere;
+
+  it("retirent d'une valorisation les éléments hors de la bande", () => {
+    const saut = valorisation(solA1(), "1 saut");
+    const paliers = new Set(saut.elements.map((id) => elementById.get(id)!.palier));
+    expect([...paliers].sort()).toEqual(["P1", "P2"]);
+  });
+
+  it("laissent ces mêmes éléments compter pour le tronc commun", () => {
+    const evo = solA1();
+    const brut = catalog.criteres.find((c) => c.agres === "Sol" && c.texte === "1 saut")!;
+    const p3 = brut.elements.find((id) => elementById.get(id)!.palier === "P3")!;
+    const note = noter(evo, { elements: [p3], coches: new Set() });
+    expect(note.valorisations.find((l) => l.critere.texte === "1 saut")!.trouves).toBe(0);
+    // Au Sol A1 le tronc commun se compte sur l'enchaînement lui-même : le P3 y entre.
+    expect(note.exigences.find((l) => l.critere.texte === "6 à 8 éléments")!.trouves).toBe(1);
+    expect(note.exigences.find((l) => l.critere.texte === "4 arches")!.trouves).toBe(1);
+  });
+
+  it("ne touchent pas à une valorisation qui nomme son propre palier", () => {
+    // Barre fixe A1 récompense « les 2 courbes PR » alors que PRÉ-REQUIS est hors
+    // de sa bande valorisable : la règle nomme son palier, elle fait autorité.
+    const courbes = valorisation(evolution("Barre fixe", "A1"), "Réaliser les 2 courbes PR");
+    expect(courbes.elements.length).toBe(2);
+    expect(courbes.elements.every((id) => elementById.get(id)!.palier === "PRÉ-REQUIS")).toBe(true);
+  });
+
+  it("ne rendent aucune valorisation imprenable", () => {
+    for (const evo of catalog.evolutions) {
+      if (evo.agres === "Arçons") continue; // agrès sans éléments dans l'édition SEPT. 26
+      for (const { critere } of criteresOf(evo).valorisations) {
+        if (critere.type !== "elements" && critere.type !== "familles") continue;
+        const brut = catalog.criteres.find(
+          (c) => c.agres === critere.agres && c.genre === "valorisation" && c.texte === critere.texte,
+        )!;
+        if (brut.elements.length < critere.nombreMin) continue; // déjà courte dans les données
+        expect(
+          critere.elements.length,
+          `${evo.agres} ${evo.evolution} · ${critere.texte}`,
+        ).toBeGreaterThanOrEqual(critere.nombreMin);
+      }
+    }
+  });
+});

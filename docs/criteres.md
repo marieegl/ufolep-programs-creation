@@ -68,6 +68,26 @@ all work.
 
 NOMADE sits outside the palier ladder, so a `P3+` threshold never reaches it.
 
+### The valorisable band
+
+`criteres.csv` is written per apparatus, but an évolution rewards a *narrower* band of
+paliers than it allows: Sol A1 allows PRÉ-REQUIS→P3 and only valorises P1/P2. So a P3
+counts towards the tronc commun and is worth nothing on top. `criteresOf` applies
+`paliersValorisables` to each valorisation's pool, which is why the same criterion
+offers different elements in different évolutions — and why clicking *1 saut* in Sol A1
+highlights no P3.
+
+The band only fills the silence. It is not applied when:
+
+- the rule names a palier itself (`palier` is set) — Barre fixe A1 rewards *"Réaliser
+  les 2 courbes PR"* although PRÉ-REQUIS is outside its band;
+- the criterion is a `max`, which names on purpose a palier the évolution does *not*
+  reward (*"1 PR max dans tout l'enchaînement"*);
+- the criterion does not select elements at all (`manuel`, `arches`, `total`);
+- the band would leave fewer elements than the minimum, which would make a printed
+  valorisation unwinnable. Barres parallèles A1 has only two *balancés complets en
+  appui* inside its band and asks for three, so what the évolution *allows* takes over.
+
 ### Tags
 
 Some criteria reward something no wording in the catalog identifies. The Poutre
