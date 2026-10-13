@@ -407,7 +407,16 @@ describe("paliers valorisables", () => {
     expect(note.exigences.find((l) => l.critere.texte === "4 arches")!.trouves).toBe(1);
   });
 
-  it("ne touchent pas à une valorisation qui nomme son propre palier", () => {
+  it("plafonnent un seuil « (min.) », qui ne nomme qu'un plancher", () => {
+    // Anneaux B1 autorise P1→P5 mais ne valorise que P1→P4 : « 1 force P3 (min.) »
+    // part de P3 et s'arrête au plafond de la bande. Un P5 y est jouable, trop haut
+    // pour être récompensé.
+    const force = valorisation(evolution("Anneaux", "B1"), "1 force P3 (min.)");
+    const paliers = new Set(force.elements.map((id) => elementById.get(id)!.palier));
+    expect([...paliers].sort()).toEqual(["P3", "P4"]);
+  });
+
+  it("ne touchent pas à une valorisation qui nomme un palier exact", () => {
     // Barre fixe A1 récompense « les 2 courbes PR » alors que PRÉ-REQUIS est hors
     // de sa bande valorisable : la règle nomme son palier, elle fait autorité.
     const courbes = valorisation(evolution("Barre fixe", "A1"), "Réaliser les 2 courbes PR");

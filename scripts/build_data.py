@@ -141,6 +141,12 @@ def build_evolutions(csv_path: Path) -> list[dict]:
     return evolutions
 
 
+def est_palier_exact(cell: str) -> bool:
+    """`P3` means exactly P3; `P3+` means P3 or above — a floor, not a ceiling."""
+    cell = cell.strip()
+    return bool(cell) and not cell.endswith("+")
+
+
 def build_criteres(rules_path: Path, pairs_path: Path) -> list[dict]:
     """One entry per criterion, carrying the elements that satisfy it.
 
@@ -153,9 +159,9 @@ def build_criteres(rules_path: Path, pairs_path: Path) -> list[dict]:
         key = (row["agres"], row["genre"], row["texte"])
         if key in criteres:
             # An 'X ou Y' criterion is spelt over several rows: the first carries the
-            # counting, but any branch naming a palier makes the whole criterion
+            # counting, but any branch naming an exact palier makes the whole criterion
             # palier-bound.
-            criteres[key]["palierPropre"] |= bool(row["palier"].strip())
+            criteres[key]["palierExact"] |= est_palier_exact(row["palier"])
             continue
         low, _, high = row["nombre"].partition("-")
         criteres[key] = {
@@ -167,9 +173,10 @@ def build_criteres(rules_path: Path, pairs_path: Path) -> list[dict]:
             "nombreMin": int(low),
             "nombreMax": int(high) if high else None,
             "confirmation": row["confirmation"] == "oui",
-            # The rule names a palier itself ('1 saut P2 (min.)', '1 ATR (PR)'), so it
-            # — not the évolution's valorisable band — says which paliers it accepts.
-            "palierPropre": bool(row["palier"].strip()),
+            # The rule names one exact palier ('1 ATR (PR)'), so it — and not the
+            # évolution's valorisable band — says what it accepts. A `P3+` threshold
+            # does not qualify: it names a floor, and the band still caps the ceiling.
+            "palierExact": est_palier_exact(row["palier"]),
             # Only an `arches` rule still needs its exclusion at scoring time: the
             # others were already applied when the elements were selected.
             "exclureArche": row["exclure_arche"] or None,

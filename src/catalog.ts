@@ -61,9 +61,10 @@ export type Critere = {
   nombreMax: number | null;
   /** The selected elements are a necessary condition only — the coach still ticks it. */
   confirmation: boolean;
-  /** The rule names a palier itself ('1 saut P2 (min.)'), so it — and not the
-  évolution's `paliersValorisables` band — decides which paliers it accepts. */
-  palierPropre: boolean;
+  /** The rule names one exact palier ('1 ATR (PR)'), so it — and not the évolution's
+  `paliersValorisables` band — decides what it accepts. A `P3+` threshold does not
+  qualify: it names a floor, and the band still caps the ceiling. */
+  palierExact: boolean;
   exclureArche: string | null;
   commentaire: string | null;
   elements: string[];
@@ -118,13 +119,17 @@ eligible elements in each évolution.
 
 Three kinds are left alone: those that do not select elements (manuel, arches, total)
 count the composition itself; a `max` names on purpose a palier the évolution does
-*not* reward ('1 PR max dans tout l'enchaînement'); and a criterion that names its own
+*not* reward ('1 PR max dans tout l'enchaînement'); and a criterion naming one exact
 palier is the authority on what it accepts — Barre fixe A1 rewards 'les 2 courbes PR'
-although PRÉ-REQUIS is outside its band. The band only fills the silence. */
+although PRÉ-REQUIS is outside its band.
+
+A `P3+` threshold is *not* in that list. It names a floor, so the band still caps the
+ceiling: Anneaux B1 valorises P1→P4, and its '1 force P3 (min.)' must stop at P4 — a P5
+is usable there but too high to be rewarded. */
 const valorisable = (critere: Critere, evolution: Evolution): Critere => {
   const compteLaComposition =
     critere.type === "arches" || critere.type === "total" || critere.type === "manuel";
-  if (compteLaComposition || critere.type === "max" || critere.palierPropre) return critere;
+  if (compteLaComposition || critere.type === "max" || critere.palierExact) return critere;
   const dans = (paliers: Palier[]) => {
     const bande = new Set<string>(paliers);
     return critere.elements.filter((id) => {

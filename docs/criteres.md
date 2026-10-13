@@ -79,14 +79,21 @@ highlights no P3.
 
 The band only fills the silence. It is not applied when:
 
-- the rule names a palier itself (`palier` is set) — Barre fixe A1 rewards *"Réaliser
-  les 2 courbes PR"* although PRÉ-REQUIS is outside its band;
+- the rule names one **exact** palier — Barre fixe A1 rewards *"Réaliser les 2 courbes
+  PR"* although PRÉ-REQUIS is outside its band. A `P3+` threshold does **not** qualify:
+  it names a floor, so the band still caps the ceiling. Anneaux B1 valorises P1→P4 and
+  its *"1 force P3 (min.)"* stops at P4 — a P5 is usable there, too high to be rewarded;
 - the criterion is a `max`, which names on purpose a palier the évolution does *not*
   reward (*"1 PR max dans tout l'enchaînement"*);
 - the criterion does not select elements at all (`manuel`, `arches`, `total`);
 - the band would leave fewer elements than the minimum, which would make a printed
   valorisation unwinnable. Barres parallèles A1 has only two *balancés complets en
   appui* inside its band and asks for three, so what the évolution *allows* takes over.
+  It also catches a gap in the programme: Anneaux B2 prints *"1 sortie P3 (min.)"* but
+  the only dismount the catalog publishes at P3 or above is a P5, outside its band.
+
+Across the 56 évolutions, 1240 available elements sit outside their band; all but five
+are refused. Those five are the exceptions above.
 
 ### Tags
 
