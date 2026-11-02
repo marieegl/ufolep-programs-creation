@@ -167,6 +167,11 @@ h1 {
   cursor: pointer;
 }
 
+/* The lit button wears the colour of what it lights. */
+.theme-toggle[aria-pressed="true"] {
+  background: var(--preview-bg);
+}
+
 .lien-lexique {
   flex: 0 0 auto;
   font: inherit;
@@ -670,6 +675,119 @@ td {
 }
 
 .composition .retirer:hover {
+  color: var(--danger);
+}
+
+/* The routines saved in this browser: a name box plus the list to load from. */
+.mouvements {
+  margin-top: 1.2rem;
+}
+
+.mouvements .enregistrer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.mouvements input {
+  flex: 1 1 18rem;
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 0.35rem 0.6rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 0.4rem;
+  background: var(--surface);
+  color: inherit;
+}
+
+.mouvements .enregistrer button {
+  flex: 0 0 auto;
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 0.35rem 0.8rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 0.4rem;
+  background: var(--surface);
+  color: inherit;
+  cursor: pointer;
+}
+
+.mouvements .enregistrer button:disabled {
+  color: var(--faint);
+  cursor: not-allowed;
+}
+
+.mouvements .enregistrer .secondaire {
+  color: var(--muted);
+}
+
+.mouvements .vide {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.mouvements ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 0.4rem;
+  background: var(--surface);
+}
+
+.mouvements li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.55rem;
+  padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.85rem;
+}
+
+.mouvements li:last-child {
+  border-bottom: 0;
+}
+
+/* The routine the save box is pointing at — "Mettre à jour" writes to this one. */
+.mouvements li[data-actif] {
+  background: var(--preview-bg);
+}
+
+.mouvements .libelle {
+  flex: 1;
+}
+
+.mouvements .libelle small {
+  display: block;
+  color: var(--muted-2);
+  font-size: 0.75rem;
+}
+
+.mouvements li button {
+  flex: 0 0 auto;
+  font: inherit;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 0.4rem;
+  background: var(--surface);
+  color: inherit;
+  cursor: pointer;
+}
+
+.mouvements li .retirer {
+  padding: 0 0.2rem;
+  border: 0;
+  background: none;
+  color: var(--faint);
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.mouvements li .retirer:hover {
   color: var(--danger);
 }
 

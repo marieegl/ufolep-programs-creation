@@ -4,6 +4,8 @@ import type { Element, Evolution } from "./catalog";
 import { cleDe, noteMaximale, noter } from "./score";
 import type { Etat, Ligne } from "./score";
 import { lexique } from "./lexique";
+import * as stockage from "./mouvements";
+import type { Mouvement } from "./mouvements";
 
 /** Injected at build time by Vite — see `define` in vite.config.ts. */
 declare const __DATE_BUILD__: string;
@@ -92,6 +94,19 @@ export function App() {
   const [lexiqueOuvert, setLexiqueOuvert] = useState(false);
   /** Clé of the valorisation whose eligible elements are highlighted, or null. */
   const [apercu, setApercu] = useState<string | null>(null);
+  /** The routines saved in this browser, newest first. */
+  const [mouvements, setMouvements] = useState<Mouvement[]>(() => stockage.trier(stockage.lire()));
+  /** The name typed in the save box, and the saved routine currently loaded (if any). */
+  const [nomMouvement, setNomMouvement] = useState("");
+  const [mouvementActif, setMouvementActif] = useState<string | null>(null);
+  /** Clicking a criterion only highlights its elements when the coach turns it on. */
+  const [surbrillanceActive, setSurbrillanceActive] = useState(() => {
+    try {
+      return localStorage.getItem("surbrillance") === "on";
+    } catch {
+      return false;
+    }
+  });
   /** "light" | "dark" once the coach has chosen; null follows the OS setting. */
   const [theme, setTheme] = useState<string | null>(
     () => document.documentElement.dataset.theme || null,
@@ -140,12 +155,12 @@ export function App() {
   /** The elements eligible for the previewed criterion — highlighted in the list.
   Works for an exigence as well as a valorisation; the clé is unique across both. */
   const surbrillance = useMemo(() => {
-    if (!apercu || !note) return new Set<string>();
+    if (!surbrillanceActive || !apercu || !note) return new Set<string>();
     const ligne = [...note.exigences, ...note.valorisations].find(
       (l) => cleDe(l.critere) === apercu,
     );
     return new Set(ligne?.critere.elements ?? []);
-  }, [apercu, note]);
+  }, [surbrillanceActive, apercu, note]);
 
   /** An évolution only allows some paliers, so changing it drops what it forbids.
 
@@ -169,6 +184,9 @@ export function App() {
     // Valorisation keys differ per évolution, so pins never carry over.
     setAffectations(new Map());
     setApercu(null);
+    // Another évolution is another routine: stop pointing at the loaded save, so the
+    // next "Enregistrer" creates a new entry instead of overwriting it.
+    if (nomAgres !== agres || suivante?.evolution !== evolutionNom) setMouvementActif(null);
   };
 
   const basculer = (id: string) => {
@@ -194,6 +212,60 @@ export function App() {
     });
 
   const sombre = theme ? theme === "dark" : !!window.matchMedia?.("(prefers-color-scheme: dark)").matches;
+  const enregistrerMouvement = () => {
+    if (!evolution || choisis.length === 0) return;
+    const nom = nomMouvement.trim() || `${agres} ${evolution.evolution}`;
+    const { liste, enregistre } = stockage.enregistrer(mouvements, {
+      id: mouvementActif ?? undefined,
+      nom,
+      agres,
+      evolution: evolution.evolution,
+      elements: choisis,
+      coches: [...coches],
+      affectations: [...affectations],
+      total: note?.total ?? 0,
+      plafond,
+    });
+    const triee = stockage.trier(liste);
+    setMouvements(triee);
+    stockage.ecrire(triee);
+    setMouvementActif(enregistre.id);
+    setNomMouvement(enregistre.nom);
+  };
+
+  const chargerMouvement = (mouvement: Mouvement) => {
+    // A saved routine can outlive the édition it was built on — drop the element ids the
+    // catalogue no longer knows rather than carrying ghosts into the score.
+    const connus = mouvement.elements.filter((id) => elementById.has(id));
+    setAgres(mouvement.agres);
+    setEvolutionNom(mouvement.evolution);
+    setChoisis(connus);
+    setCoches(new Set(mouvement.coches));
+    setAffectations(new Map(mouvement.affectations));
+    setApercu(null);
+    setMouvementActif(mouvement.id);
+    setNomMouvement(mouvement.nom);
+  };
+
+  const supprimerMouvement = (id: string) => {
+    const liste = stockage.supprimer(mouvements, id);
+    setMouvements(liste);
+    stockage.ecrire(liste);
+    if (mouvementActif === id) setMouvementActif(null);
+  };
+
+  const basculerSurbrillance = () => {
+    const suivant = !surbrillanceActive;
+    setSurbrillanceActive(suivant);
+    // Turning it off drops whatever was lit, so nothing stays highlighted behind the switch.
+    if (!suivant) setApercu(null);
+    try {
+      localStorage.setItem("surbrillance", suivant ? "on" : "off");
+    } catch {
+      // Private mode can block localStorage; the choice just won't be remembered.
+    }
+  };
+
   const basculerTheme = () => {
     const suivant = sombre ? "light" : "dark";
     setTheme(suivant);
@@ -229,6 +301,24 @@ export function App() {
         <div className="titre">
           <h1>Note de départ — NPT UFOLEP</h1>
           <div className="actions">
+            <button
+              type="button"
+              className="theme-toggle"
+              onClick={basculerSurbrillance}
+              aria-pressed={surbrillanceActive}
+              aria-label={
+                surbrillanceActive
+                  ? "Désactiver la surbrillance des éléments"
+                  : "Activer la surbrillance des éléments"
+              }
+              title={
+                surbrillanceActive
+                  ? "Surbrillance activée — cliquer une exigence ou une valorisation éclaire ses éléments"
+                  : "Surbrillance désactivée"
+              }
+            >
+              ⌖
+            </button>
             <button
               type="button"
               className="theme-toggle"
@@ -431,6 +521,84 @@ export function App() {
             </section>
           )}
 
+          <section className="mouvements">
+            <h2>
+              Mes mouvements{" "}
+              <small>enregistrés dans ce navigateur</small>
+            </h2>
+            <div className="enregistrer">
+              <input
+                type="text"
+                value={nomMouvement}
+                onChange={(event) => setNomMouvement(event.target.value)}
+                placeholder="Nom du mouvement (ex. Compèt mars — Léa)"
+                aria-label="Nom du mouvement"
+                onKeyDown={(event) => {
+                  if (event.key === "Enter") enregistrerMouvement();
+                }}
+              />
+              <button
+                type="button"
+                onClick={enregistrerMouvement}
+                disabled={choisis.length === 0}
+                title={
+                  choisis.length === 0
+                    ? "Choisis d’abord des éléments"
+                    : "Enregistrer la composition en cours"
+                }
+              >
+                {mouvementActif ? "Mettre à jour" : "Enregistrer"}
+              </button>
+              {mouvementActif && (
+                <button
+                  type="button"
+                  className="secondaire"
+                  onClick={() => {
+                    setMouvementActif(null);
+                    setNomMouvement("");
+                  }}
+                  title="Le prochain enregistrement créera une nouvelle entrée"
+                >
+                  Nouveau
+                </button>
+              )}
+            </div>
+            {mouvements.length === 0 ? (
+              <p className="vide">
+                Aucun mouvement enregistré. Compose, nomme-le puis enregistre — il reste
+                disponible sur cet appareil, dans ce navigateur.
+              </p>
+            ) : (
+              <ul>
+                {mouvements.map((mouvement) => (
+                  <li key={mouvement.id} data-actif={mouvement.id === mouvementActif || undefined}>
+                    <span className="libelle">
+                      {mouvement.nom}
+                      <small>
+                        {mouvement.agres} · {mouvement.evolution} · {mouvement.total}/
+                        {mouvement.plafond} pt · {mouvement.elements.length} élément
+                        {mouvement.elements.length > 1 ? "s" : ""}
+                        {mouvement.date && ` · ${new Date(mouvement.date).toLocaleDateString("fr-FR")}`}
+                      </small>
+                    </span>
+                    <button type="button" onClick={() => chargerMouvement(mouvement)}>
+                      Charger
+                    </button>
+                    <button
+                      type="button"
+                      className="retirer"
+                      onClick={() => supprimerMouvement(mouvement.id)}
+                      aria-label={`Supprimer ${mouvement.nom}`}
+                      title="Supprimer"
+                    >
+                      ×
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </section>
+
           <div className="colonnes">
             <section>
               <h2>Exigences et valorisations</h2>
@@ -453,7 +621,7 @@ export function App() {
                         // Clicking a criterion that selects elements previews them in the list.
                         // Arches / total / manuel carry no element list, so they stay inert —
                         // which is exactly what we want for "N arches", "N éléments" and liaisons.
-                        const cliquable = ligne.critere.elements.length > 0;
+                        const cliquable = surbrillanceActive && ligne.critere.elements.length > 0;
                         const actif = apercu === cleDe(ligne.critere);
                         return (
                         <tr
