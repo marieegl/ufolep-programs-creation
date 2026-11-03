@@ -152,8 +152,8 @@ themes — align it to the title's cap height rather than the flex baseline. */
 .titre .logo {
   flex: 0 0 auto;
   align-self: center;
-  width: 2.75rem;
-  height: 2.75rem;
+  width: 3.25rem;
+  height: 3.25rem;
   margin-bottom: 0.75rem;
 }
 

@@ -305,8 +305,8 @@ export function App() {
             src={logo}
             alt="Gymnastique Club Rungissois"
             title="Gymnastique Club Rungissois"
-            width={44}
-            height={44}
+            width={52}
+            height={52}
           />
           <h1>Note de départ — NPT UFOLEP</h1>
           <div className="actions">
