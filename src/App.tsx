@@ -4,6 +4,7 @@ import type { Element, Evolution } from "./catalog";
 import { cleDe, noteMaximale, noter } from "./score";
 import type { Etat, Ligne } from "./score";
 import { lexique } from "./lexique";
+import logo from "./logo.png";
 import * as stockage from "./mouvements";
 import type { Mouvement } from "./mouvements";
 
@@ -299,6 +300,14 @@ export function App() {
     <main>
       <header>
         <div className="titre">
+          <img
+            className="logo"
+            src={logo}
+            alt="Gymnastique Club Rungissois"
+            title="Gymnastique Club Rungissois"
+            width={44}
+            height={44}
+          />
           <h1>Note de départ — NPT UFOLEP</h1>
           <div className="actions">
             <button

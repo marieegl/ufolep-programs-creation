@@ -147,6 +147,20 @@ h1 {
   gap: 1rem;
 }
 
+/* The club's logo sits on its white disc, so it keeps its own background in both
+themes — align it to the title's cap height rather than the flex baseline. */
+.titre .logo {
+  flex: 0 0 auto;
+  align-self: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.titre h1 {
+  flex: 1;
+}
+
 .actions {
   display: flex;
   flex: 0 0 auto;
