@@ -1,7 +1,7 @@
 // Offline support for the hosted PWA. Network-first so a coach online always gets the
 // latest build, with a cache fallback so the app still opens in a gym with no signal.
 // Bump CACHE when the asset list changes to evict the old one.
-const CACHE = "npt-ufolep-v2";
+const CACHE = "gcr-ufolep-v3";
 const ASSETS = [
   "./",
   "./index.html",
