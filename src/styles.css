@@ -147,8 +147,9 @@ h1 {
   gap: 1rem;
 }
 
-/* The club's logo sits on its white disc, so it keeps its own background in both
-themes — align it to the title's cap height rather than the flex baseline. */
+/* The club's logo, untouched apart from the cut-out: the screenshot's dark backdrop
+is masked away so the disc sits on the page itself in both themes. Centred rather
+than aligned on the flex baseline — it is an image, it has no baseline to share. */
 .titre .logo {
   flex: 0 0 auto;
   align-self: center;
