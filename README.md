@@ -50,7 +50,7 @@ account. Note that nothing is saved either: a reload clears the chosen elements.
 
 ```sh
 npm run build
-cp dist/index.html ~/Desktop/"Note de départ NPT UFOLEP.html"
+cp dist/index.html ~/Desktop/"Note de départ GCR UFOLEP.html"
 ```
 
 The single file is what runs on a desktop and off a USB stick, but it will not open on an

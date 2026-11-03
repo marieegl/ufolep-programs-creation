@@ -308,7 +308,7 @@ export function App() {
             width={52}
             height={52}
           />
-          <h1>Note de départ — NPT UFOLEP</h1>
+          <h1>Note de départ — GCR UFOLEP</h1>
           <div className="actions">
             <button
               type="button"
